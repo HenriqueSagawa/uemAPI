@@ -210,10 +210,17 @@ def collect_courses(html: str) -> tuple[list[CourseCandidate], str]:
 
 
 def compare_courses(
-    courses: list[CourseCandidate], previous_courses: list[CourseCandidate] | None
+    courses: list[CourseCandidate],
+    previous_courses: list[CourseCandidate] | None,
+    nead_url: str,
+    previous_nead_url: str | None,
 ) -> dict:
     if previous_courses is None:
+        if previous_nead_url is not None:
+            raise ValueError("comparação anterior incompleta")
         return {"status": "sem_captura_anterior", "revisao_necessaria": True}
+    if previous_nead_url is None:
+        raise ValueError("comparação anterior incompleta")
 
     current = {(course.campus_id, course.url_detalhe): course for course in courses}
     previous = {(course.campus_id, course.url_detalhe): course for course in previous_courses}
@@ -235,7 +242,8 @@ def compare_courses(
         campus_id: {"anterior": previous_counts[campus_id], "atual": current_counts[campus_id]}
         for campus_id in sorted(EXPECTED_CAMPUS_IDS)
     }
-    needs_review = bool(removed or added or renamed)
+    nead_changed = nead_url != previous_nead_url
+    needs_review = bool(removed or added or renamed or nead_changed)
     return {
         "status": "revisar" if needs_review else "sem_alteracoes",
         "revisao_necessaria": needs_review,
@@ -243,6 +251,11 @@ def compare_courses(
         "removidos": removed,
         "adicionados": added,
         "nomes_alterados": renamed,
+        "link_ead": {
+            "anterior": previous_nead_url,
+            "atual": nead_url,
+            "alterado": nead_changed,
+        },
     }
 
 
@@ -253,6 +266,7 @@ def build_preview(
     consultado_em: datetime,
     previous_courses: list[CourseCandidate] | None = None,
     previous_html_path: Path | None = None,
+    previous_nead_url: str | None = None,
 ) -> dict:
     fonte = Fonte(source_id="cursos_graduacao", url=SOURCE_URL, consultado_em=consultado_em)
     return {
@@ -279,7 +293,7 @@ def build_preview(
         "ead": {"url": nead_url, "cursos_incluidos": False},
         "comparacao": {
             "entrada_anterior": str(previous_html_path) if previous_html_path else None,
-            **compare_courses(courses, previous_courses),
+            **compare_courses(courses, previous_courses, nead_url, previous_nead_url),
         },
         "total": len(courses),
         "cursos": [asdict(course) for course in courses],
@@ -305,13 +319,20 @@ def main() -> None:
         html = args.html.read_text(encoding="utf-8")
         courses, nead_url = collect_courses(html)
         previous_courses = None
+        previous_nead_url = None
         if args.html_anterior is not None:
             if args.html.resolve() == args.html_anterior.resolve():
                 raise CourseSourceError("a captura anterior deve ser diferente da captura atual")
             previous_html = args.html_anterior.read_text(encoding="utf-8")
-            previous_courses, _ = collect_courses(previous_html)
+            previous_courses, previous_nead_url = collect_courses(previous_html)
         preview = build_preview(
-            courses, nead_url, args.html, consultado_em, previous_courses, args.html_anterior
+            courses,
+            nead_url,
+            args.html,
+            consultado_em,
+            previous_courses=previous_courses,
+            previous_html_path=args.html_anterior,
+            previous_nead_url=previous_nead_url,
         )
     except (OSError, UnicodeError, ValueError) as exc:
         parser.error(str(exc))

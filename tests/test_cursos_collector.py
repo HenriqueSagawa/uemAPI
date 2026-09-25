@@ -132,10 +132,16 @@ def test_removed_course_in_existing_section_is_flagged():
         1,
     )
     current, nead_url = collect_courses(current_html)
-    previous, _ = collect_courses(previous_html)
+    previous, previous_nead_url = collect_courses(previous_html)
 
     preview = build_preview(
-        current, nead_url, FIXTURE, datetime(2026, 9, 25, tzinfo=UTC), previous, FIXTURE
+        current,
+        nead_url,
+        FIXTURE,
+        datetime(2026, 9, 25, tzinfo=UTC),
+        previous_courses=previous,
+        previous_html_path=FIXTURE,
+        previous_nead_url=previous_nead_url,
     )
     comparison = preview["comparacao"]
 
@@ -157,9 +163,47 @@ def test_identical_capture_has_no_comparison_alert():
     courses, nead_url = collect_courses(html)
 
     preview = build_preview(
-        courses, nead_url, FIXTURE, datetime(2026, 9, 25, tzinfo=UTC), courses, FIXTURE
+        courses,
+        nead_url,
+        FIXTURE,
+        datetime(2026, 9, 25, tzinfo=UTC),
+        previous_courses=courses,
+        previous_html_path=FIXTURE,
+        previous_nead_url=nead_url,
     )
 
     assert preview["comparacao"]["status"] == "sem_alteracoes"
     assert preview["comparacao"]["revisao_necessaria"] is False
     assert preview["comparacao"]["removidos"] == []
+    assert preview["comparacao"]["link_ead"]["alterado"] is False
+
+
+def test_changed_ead_link_is_flagged_without_course_changes():
+    previous_html = FIXTURE.read_text(encoding="utf-8")
+    current_html = previous_html.replace(
+        "https://portal.nead.uem.br/site/web/site/cursos#graduacao",
+        "https://portal.nead.uem.br/site/web/site/cursos",
+    )
+    current, nead_url = collect_courses(current_html)
+    previous, previous_nead_url = collect_courses(previous_html)
+
+    preview = build_preview(
+        current,
+        nead_url,
+        FIXTURE,
+        datetime(2026, 9, 25, tzinfo=UTC),
+        previous_courses=previous,
+        previous_html_path=FIXTURE,
+        previous_nead_url=previous_nead_url,
+    )
+    comparison = preview["comparacao"]
+
+    assert comparison["status"] == "revisar"
+    assert comparison["revisao_necessaria"] is True
+    assert comparison["removidos"] == []
+    assert comparison["adicionados"] == []
+    assert comparison["link_ead"] == {
+        "anterior": previous_nead_url,
+        "atual": nead_url,
+        "alterado": True,
+    }
