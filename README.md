@@ -30,7 +30,7 @@ Também é possível construir uma imagem com `docker build -t uem-api .` e inic
 
 ## Prévia local do coletor de câmpus
 
-O primeiro coletor lê somente um arquivo HTML local. Ele confere a lista de municípios da [página de câmpus](https://www.uem.br/a-uem/campus), aplica a [tabela de IDs revisada](docs/campus-identifiers.md) e imprime candidatos em JSON. Não acessa a rede nem grava em `data/`.
+O primeiro coletor lê somente um arquivo HTML local. Ele confere a presença da sede em Maringá e o conjunto dos seis municípios regionais descritos na [página de câmpus](https://www.uem.br/a-uem/campus). Em seguida, aplica o mapeamento local definido conforme a [tabela revisada](docs/campus-identifiers.md) para obter IDs, nomes, siglas e a associação de cada câmpus ao município. Ele não confere os nomes dos links da página. A prévia em JSON traz esses limites no campo `proveniencia`; o `fonte.url` de cada registro aponta para a página institucional de referência, mas não comprova que o arquivo local veio dela nem que ela sustenta todos os campos. O comando não acessa a rede nem grava em `data/`.
 
 ```bash
 .venv/bin/python -m app.collectors.campi \

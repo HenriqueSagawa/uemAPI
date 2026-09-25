@@ -16,6 +16,7 @@ from app.schemas.common import Fonte
 
 SOURCE_URL = "https://www.uem.br/a-uem/campus"
 SUPPORT_URL = "https://pld.uem.br/lni/v05-base-de-dados-2024-2025.pdf"
+IDENTIFIERS_DOC = "docs/campus-identifiers.md"
 
 
 class CampusSourceError(ValueError):
@@ -30,7 +31,7 @@ class CampusSpec:
     sigla: str | None
 
 
-# IDs definidos em docs/campus-identifiers.md; não derivar IDs dos nomes da página.
+# IDs, nomes e siglas seguem a tabela revisada; não são extraídos do HTML.
 CAMPUS_SPECS = (
     CampusSpec("sede", "Câmpus Sede", "Maringá", None),
     CampusSpec("crc", "Câmpus Regional de Cianorte", "Cianorte", "CRC"),
@@ -106,13 +107,44 @@ def extract_regional_cities(html: str) -> set[str]:
 
 
 def collect_campi(html: str, consultado_em: datetime) -> list[Campus]:
-    """Valida a lista da página e produz candidatos; não publica um snapshot."""
+    """Confere sede e municípios no HTML e aplica a tabela revisada aos candidatos."""
     extract_regional_cities(html)
     fonte = Fonte(source_id="campi_uem", url=SOURCE_URL, consultado_em=consultado_em)
     return [
         Campus(id=spec.id, nome=spec.nome, cidade=spec.cidade, sigla=spec.sigla, fonte=fonte)
         for spec in CAMPUS_SPECS
     ]
+
+
+def build_preview(campi: list[Campus], html_path: Path) -> dict:
+    """Expõe o alcance da validação antes dos registros candidatos."""
+    return {
+        "modo": "previa",
+        "publicavel": False,
+        "entrada": str(html_path),
+        "proveniencia": {
+            "fonte_url": (
+                "O campo fonte.url aponta para a página institucional de referência; "
+                "não comprova a origem do arquivo local nem todos os campos gerados."
+            ),
+            "verificado_no_html": [
+                "presença do câmpus sede em Maringá",
+                "conjunto dos seis municípios regionais",
+            ],
+            "definido_no_mapeamento_local": [
+                "id",
+                "nome",
+                "sigla",
+                "associação de cada câmpus ao município",
+            ],
+            "mapeamento_local": "app/collectors/campi.py:CAMPUS_SPECS",
+            "tabela_revisada": IDENTIFIERS_DOC,
+            "fonte_de_apoio_da_tabela": SUPPORT_URL,
+            "nomes_dos_links_verificados": False,
+            "status_e_endereco": "valores padrão do schema; não verificados no HTML",
+        },
+        "campi": [campus.model_dump(mode="json") for campus in campi],
+    }
 
 
 def main() -> None:
@@ -134,13 +166,7 @@ def main() -> None:
 
     print(
         json.dumps(
-            {
-                "modo": "previa",
-                "publicavel": False,
-                "entrada": str(args.html),
-                "fontes": [SOURCE_URL, SUPPORT_URL],
-                "campi": [campus.model_dump(mode="json") for campus in campi],
-            },
+            build_preview(campi, args.html),
             ensure_ascii=False,
             indent=2,
         )

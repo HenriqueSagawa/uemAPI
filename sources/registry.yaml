@@ -12,7 +12,7 @@ sources:
     last_verified: "2026-09-25"
     review_interval_days: null
     reuse_conditions: not_verified
-    notes: "Confirma a sede e seis câmpus regionais. Coletor atual lê apenas HTML local e gera prévia; siglas regionais vêm da tabela revisada com o relatório Base de Dados 2025 como apoio."
+    notes: "HTML confirma sede em Maringá e conjunto de seis municípios regionais. A prévia aplica IDs, nomes, siglas e vínculos com municípios da tabela revisada, apoiada pelo relatório Base de Dados 2025; rótulos dos links não são validados."
 
   estrutura_uem:
     dataset:
