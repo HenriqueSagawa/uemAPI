@@ -28,6 +28,18 @@ A documentação interativa estará em <http://127.0.0.1:8000/docs>. Até que os
 
 Também é possível construir uma imagem com `docker build -t uem-api .` e iniciar com `docker run --rm -p 8000:8000 uem-api`. A imagem atual inclui apenas o diretório `data/` vazio e, portanto, informa indisponibilidade até receber dados revisados.
 
+## Prévia local do coletor de câmpus
+
+O primeiro coletor lê somente um arquivo HTML local. Ele confere a lista de municípios da [página de câmpus](https://www.uem.br/a-uem/campus), aplica a [tabela de IDs revisada](docs/campus-identifiers.md) e imprime candidatos em JSON. Não acessa a rede nem grava em `data/`.
+
+```bash
+.venv/bin/python -m app.collectors.campi \
+  --html tests/fixtures/campi_page.html \
+  --consultado-em 2026-09-25T12:00:00Z
+```
+
+A fixture acima é um exemplo criado para testes. Ao usar um HTML capturado da página real, informe em `--consultado-em` a data e hora dessa captura. Se a lista de câmpus não corresponder aos sete registros esperados, o comando falha e exige revisão. A saída é apenas uma prévia: as condições de reutilização e o snapshot completo ainda precisam ser aprovados antes da publicação.
+
 ## Qualidade
 
 ```bash

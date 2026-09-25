@@ -12,7 +12,7 @@ sources:
     last_verified: "2026-09-25"
     review_interval_days: null
     reuse_conditions: not_verified
-    notes: "Confirma a sede e seis câmpus regionais. Siglas regionais são verificadas no relatório Base de Dados 2025; a sede usa ID interno 'sede' e não tem sigla confirmada."
+    notes: "Confirma a sede e seis câmpus regionais. Coletor atual lê apenas HTML local e gera prévia; siglas regionais vêm da tabela revisada com o relatório Base de Dados 2025 como apoio."
 
   estrutura_uem:
     dataset:

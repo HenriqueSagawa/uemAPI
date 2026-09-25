@@ -19,4 +19,4 @@ Revisão: 25 de setembro de 2026. Este inventário avalia as sete URLs já propo
 3. **Reutilização e frequência.** Não foi identificada uma licença geral de dados para essas páginas. O relatório anual declara direitos reservados. Antes de automatizar ou redistribuir, revisar as condições aplicáveis a cada fonte e definir frequência prudente de acesso. `review_interval_days` permanece sem valor no registro até essa decisão.
 4. **Cobertura dos vínculos.** Conferir os sete centros e suas páginas de departamentos. Vínculos curso–departamento não devem ser inferidos apenas por semelhança de nome ou pelo centro do curso.
 
-Após essas decisões, a primeira implementação sugerida é um coletor de câmpus com amostra local para testes, saída em modo de prévia e revisão do JSON antes da publicação. Nenhum dataset de produção foi criado nesta etapa.
+Um protótipo do coletor de câmpus agora lê HTML local, valida a lista de municípios e gera uma prévia em JSON para revisão. Ele não busca páginas automaticamente nem cria um dataset de produção. As condições de reutilização e o snapshot completo continuam pendentes antes da publicação.

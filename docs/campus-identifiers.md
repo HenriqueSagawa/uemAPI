@@ -20,6 +20,6 @@ Os vínculos entre nomes, siglas e municípios são corroborados pelo [glossári
 - Para câmpus regionais, o ID é a sigla institucional em minúsculas. Para a sede, o ID interno é `sede`.
 - `sigla` é um campo obrigatório que contém a sigla institucional verificada ou `null` para a sede; `SEDE` não deve ser apresentado como sigla oficial.
 - A consulta por ID ignora diferenças entre maiúsculas e minúsculas. Assim, `/v1/campi/CRC` e `/v1/campi/crc` identificam o mesmo registro.
-- O coletor deve usar esta tabela explícita e sinalizar nomes ou municípios desconhecidos para revisão. Não deve criar IDs automaticamente a partir do nome da cidade.
+- O coletor usa esta tabela explícita e interrompe a prévia quando os municípios da página não correspondem aos esperados. Não cria IDs automaticamente a partir do nome da cidade.
 
 Nenhum registro real foi publicado. A fonte permanece como `candidate` até a revisão de reutilização e do snapshot completo.
