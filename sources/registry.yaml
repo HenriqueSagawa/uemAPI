@@ -1,2 +1,105 @@
-# As fontes reais serão adicionadas somente após revisão de acesso e reutilização.
-sources: {}
+# Catálogo de fontes candidatas. Nenhuma entrada está autorizada para coleta
+# automatizada ou publicação de dados enquanto status for candidate.
+sources:
+  campi_uem:
+    dataset: campi
+    url: "https://www.uem.br/a-uem/campus"
+    type: html
+    collector: campi
+    access: public
+    role: primary
+    status: candidate
+    last_verified: "2026-09-25"
+    review_interval_days: null
+    reuse_conditions: not_verified
+    notes: "Confirma a sede e seis câmpus regionais; não informa siglas nem endereços por câmpus."
+
+  estrutura_uem:
+    dataset:
+      - campi
+      - centros
+      - departamentos
+    url: "https://www.npd.uem.br/transparencia/organograma/index.html"
+    type: html
+    collector: null
+    access: public
+    role: secondary
+    status: candidate
+    last_verified: "2026-09-25"
+    review_interval_days: null
+    reuse_conditions: not_verified
+    notes: "Mostra a hierarquia institucional; vínculos e nomes devem ser confrontados com páginas das unidades."
+
+  centros_pld:
+    dataset:
+      - centros
+      - departamentos
+    url: "https://pld.uem.br/dvl/regulamentos/centros-de-ensino"
+    type: html
+    collector: centros
+    access: public
+    role: primary
+    status: candidate
+    last_verified: "2026-09-25"
+    review_interval_days: null
+    reuse_conditions: not_verified
+    notes: "Sete páginas vinculadas apresentam departamentos, siglas e também outros órgãos; separar os tipos antes da coleta."
+
+  base_dados_uem:
+    dataset:
+      - campi
+      - centros
+      - departamentos
+      - cursos
+    url: "https://pld.uem.br/lni/base"
+    type: html
+    collector: null
+    access: public
+    role: validation
+    status: candidate
+    last_verified: "2026-09-25"
+    review_interval_days: null
+    reuse_conditions: not_verified
+    notes: "Página HTML que lista PDFs anuais. O relatório 2025 usa dados de 2024 e informa direitos reservados."
+
+  cursos_graduacao:
+    dataset: cursos
+    url: "https://cpr.uem.br/index.php/catalogos/graduacao"
+    type: html
+    collector: cursos
+    access: public
+    role: primary
+    status: candidate
+    last_verified: "2026-09-25"
+    review_interval_days: null
+    reuse_conditions: not_verified
+    notes: "Catálogo paginado mostra 57 resultados; detalhes incluem modalidade, grau, centro e câmpus. ID da URL não foi validado como ID institucional."
+
+  portal_graduacao:
+    dataset: cursos
+    url: "https://www.uem.br/estude-na-uem/graduacao"
+    type: html
+    collector: null
+    access: public
+    role: secondary
+    status: candidate
+    last_verified: "2026-09-25"
+    review_interval_days: null
+    reuse_conditions: not_verified
+    notes: "Página-resumo informa 80 cursos; conceito de contagem deve ser reconciliado com o catálogo."
+
+  sigaa_publico:
+    dataset:
+      - centros
+      - departamentos
+      - cursos
+    url: "https://sigs.uem.br/sigaa/public/home.jsf"
+    type: html
+    collector: null
+    access: public
+    role: validation
+    status: candidate
+    last_verified: "2026-09-25"
+    review_interval_days: null
+    reuse_conditions: not_verified
+    notes: "Página pública aponta para consultas acadêmicas; acesso e formato das páginas de resultados ainda precisam de verificação."
