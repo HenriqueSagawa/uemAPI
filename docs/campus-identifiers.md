@@ -14,12 +14,14 @@ Revisão: 25 de setembro de 2026. Esta é uma regra da **uemAPI**, não uma tabe
 
 Os vínculos entre nomes, siglas e municípios são corroborados pelo [glossário da UEM](https://cpr.uem.br/glossario/), pela [Carta de Serviços do CRN](https://cpr.uem.br/index.php/pesquisar-carta/3547-gre-crn) e pelo [contato do CRV](https://crv.uem.br/contato). O relatório anual é usado aqui para conferir a nomenclatura; suas condições de reutilização ainda precisam de revisão antes de compor um dataset publicado.
 
+Para `car`, a tabela mantém **Câmpus Regional do Arenito**, forma usada no relatório Base de Dados 2025. A [página de campi regionais da UEM](https://pld.uem.br/dvl/regulamentos/campus-regionais) usa **Câmpus do Arenito**. A diferença é uma escolha de nome canônico documentada aqui; o coletor não altera esse nome a partir do rótulo de um link.
+
 ## Regra da API
 
 - `id` é a chave estável usada por `/v1/campi/{id}` e nas referências `campus_id` de cursos e departamentos.
 - Para câmpus regionais, o ID é a sigla institucional em minúsculas. Para a sede, o ID interno é `sede`.
 - `sigla` é um campo obrigatório que contém a sigla institucional verificada ou `null` para a sede; `SEDE` não deve ser apresentado como sigla oficial.
 - A consulta por ID ignora diferenças entre maiúsculas e minúsculas. Assim, `/v1/campi/CRC` e `/v1/campi/crc` identificam o mesmo registro.
-- O coletor deve usar esta tabela explícita e sinalizar nomes ou municípios desconhecidos para revisão. Não deve criar IDs automaticamente a partir do nome da cidade.
+- O coletor usa esta tabela explícita e interrompe a prévia quando os municípios da página não correspondem aos esperados. A validação do HTML cobre a sede em Maringá e o conjunto dos municípios regionais; nomes, siglas e vínculos de cada câmpus com um município dependem desta tabela e de suas fontes de apoio. O coletor não cria IDs automaticamente a partir do nome da cidade nem valida os rótulos dos links.
 
 Nenhum registro real foi publicado. A fonte permanece como `candidate` até a revisão de reutilização e do snapshot completo.
