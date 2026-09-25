@@ -73,7 +73,7 @@ sources:
     last_verified: "2026-09-25"
     review_interval_days: null
     reuse_conditions: not_verified
-    notes: "A PEN lista cursos presenciais por câmpus e vincula páginas com turno, habilitação e grau. Educação a distância aponta para o NEAD. Centro e departamento não são informados nessa lista; o identificador da URL não foi validado como ID institucional."
+    notes: "O coletor local gera prévia das entradas presenciais por câmpus e registra o link para o NEAD. Turnos, habilitações e grau das páginas de detalhe ainda não são tratados. Centro e departamento não constam no índice; o identificador da URL não foi validado como ID institucional."
 
   portal_graduacao:
     dataset: cursos
