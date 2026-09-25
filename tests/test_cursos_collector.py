@@ -23,6 +23,8 @@ def test_courses_remain_separate_by_campus_and_ead_is_excluded():
     assert preview["publicavel"] is False
     assert preview["total"] == 6
     assert preview["ead"]["cursos_incluidos"] is False
+    assert preview["comparacao"]["status"] == "sem_captura_anterior"
+    assert preview["comparacao"]["revisao_necessaria"] is True
     assert "ID estável de curso" in preview["proveniencia"]["pendente"]
     assert "id" not in preview["cursos"][0]
 
@@ -119,3 +121,45 @@ def test_relative_course_link_is_normalized_in_known_section():
     courses, _ = collect_courses(html)
 
     assert courses[0].url_detalhe == url
+
+
+def test_removed_course_in_existing_section_is_flagged():
+    current_html = FIXTURE.read_text(encoding="utf-8")
+    extra_url = "https://www.pen.uem.br/site/public/curso/7777777777777777777777777777777777777777"
+    previous_html = current_html.replace(
+        "</a></li>\n      </ul>",
+        f'</a></li>\n        <li><a href="{extra_url}">Curso anterior</a></li>\n      </ul>',
+        1,
+    )
+    current, nead_url = collect_courses(current_html)
+    previous, _ = collect_courses(previous_html)
+
+    preview = build_preview(
+        current, nead_url, FIXTURE, datetime(2026, 9, 25, tzinfo=UTC), previous, FIXTURE
+    )
+    comparison = preview["comparacao"]
+
+    assert comparison["status"] == "revisar"
+    assert comparison["revisao_necessaria"] is True
+    assert comparison["contagens_por_campus"]["sede"] == {"anterior": 2, "atual": 1}
+    assert comparison["removidos"] == [
+        {
+            "nome": "Curso anterior",
+            "campus_id": "sede",
+            "modalidade": "presencial",
+            "url_detalhe": extra_url,
+        }
+    ]
+
+
+def test_identical_capture_has_no_comparison_alert():
+    html = FIXTURE.read_text(encoding="utf-8")
+    courses, nead_url = collect_courses(html)
+
+    preview = build_preview(
+        courses, nead_url, FIXTURE, datetime(2026, 9, 25, tzinfo=UTC), courses, FIXTURE
+    )
+
+    assert preview["comparacao"]["status"] == "sem_alteracoes"
+    assert preview["comparacao"]["revisao_necessaria"] is False
+    assert preview["comparacao"]["removidos"] == []

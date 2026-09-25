@@ -4,6 +4,7 @@ import argparse
 import json
 import re
 import unicodedata
+from collections import Counter
 from dataclasses import asdict, dataclass
 from datetime import datetime
 from html.parser import HTMLParser
@@ -208,8 +209,50 @@ def collect_courses(html: str) -> tuple[list[CourseCandidate], str]:
     return parser.courses, nead_url
 
 
+def compare_courses(
+    courses: list[CourseCandidate], previous_courses: list[CourseCandidate] | None
+) -> dict:
+    if previous_courses is None:
+        return {"status": "sem_captura_anterior", "revisao_necessaria": True}
+
+    current = {(course.campus_id, course.url_detalhe): course for course in courses}
+    previous = {(course.campus_id, course.url_detalhe): course for course in previous_courses}
+    removed = [asdict(previous[key]) for key in sorted(previous.keys() - current.keys())]
+    added = [asdict(current[key]) for key in sorted(current.keys() - previous.keys())]
+    renamed = [
+        {
+            "campus_id": key[0],
+            "url_detalhe": key[1],
+            "nome_anterior": previous[key].nome,
+            "nome_atual": current[key].nome,
+        }
+        for key in sorted(current.keys() & previous.keys())
+        if current[key].nome != previous[key].nome
+    ]
+    current_counts = Counter(course.campus_id for course in courses)
+    previous_counts = Counter(course.campus_id for course in previous_courses)
+    counts = {
+        campus_id: {"anterior": previous_counts[campus_id], "atual": current_counts[campus_id]}
+        for campus_id in sorted(EXPECTED_CAMPUS_IDS)
+    }
+    needs_review = bool(removed or added or renamed)
+    return {
+        "status": "revisar" if needs_review else "sem_alteracoes",
+        "revisao_necessaria": needs_review,
+        "contagens_por_campus": counts,
+        "removidos": removed,
+        "adicionados": added,
+        "nomes_alterados": renamed,
+    }
+
+
 def build_preview(
-    courses: list[CourseCandidate], nead_url: str, html_path: Path, consultado_em: datetime
+    courses: list[CourseCandidate],
+    nead_url: str,
+    html_path: Path,
+    consultado_em: datetime,
+    previous_courses: list[CourseCandidate] | None = None,
+    previous_html_path: Path | None = None,
 ) -> dict:
     fonte = Fonte(source_id="cursos_graduacao", url=SOURCE_URL, consultado_em=consultado_em)
     return {
@@ -234,6 +277,10 @@ def build_preview(
             ],
         },
         "ead": {"url": nead_url, "cursos_incluidos": False},
+        "comparacao": {
+            "entrada_anterior": str(previous_html_path) if previous_html_path else None,
+            **compare_courses(courses, previous_courses),
+        },
         "total": len(courses),
         "cursos": [asdict(course) for course in courses],
     }
@@ -242,6 +289,11 @@ def build_preview(
 def main() -> None:
     parser = argparse.ArgumentParser(description="Gera uma prévia local dos cursos da PEN")
     parser.add_argument("--html", required=True, type=Path, help="arquivo HTML salvo localmente")
+    parser.add_argument(
+        "--html-anterior",
+        type=Path,
+        help="captura HTML anterior para comparar os cursos por câmpus",
+    )
     parser.add_argument(
         "--consultado-em",
         required=True,
@@ -252,7 +304,15 @@ def main() -> None:
         consultado_em = datetime.fromisoformat(args.consultado_em.replace("Z", "+00:00"))
         html = args.html.read_text(encoding="utf-8")
         courses, nead_url = collect_courses(html)
-        preview = build_preview(courses, nead_url, args.html, consultado_em)
+        previous_courses = None
+        if args.html_anterior is not None:
+            if args.html.resolve() == args.html_anterior.resolve():
+                raise CourseSourceError("a captura anterior deve ser diferente da captura atual")
+            previous_html = args.html_anterior.read_text(encoding="utf-8")
+            previous_courses, _ = collect_courses(previous_html)
+        preview = build_preview(
+            courses, nead_url, args.html, consultado_em, previous_courses, args.html_anterior
+        )
     except (OSError, UnicodeError, ValueError) as exc:
         parser.error(str(exc))
     print(json.dumps(preview, ensure_ascii=False, indent=2))
