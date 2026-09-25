@@ -16,12 +16,12 @@ async def list_campi(snapshot: SnapshotDep, page: PageNumber = 1, page_size: Pag
 
 
 @router.get(
-    "/{sigla}",
+    "/{id}",
     response_model=Campus,
     responses=DETAIL_ERRORS,
 )
-async def get_campus(sigla: str, snapshot: SnapshotDep):
-    campus = snapshot.find("campi", sigla, "sigla")
+async def get_campus(id: str, snapshot: SnapshotDep):
+    campus = snapshot.find("campi", id)
     if campus is None:
-        raise ApiError(404, "not_found", "Câmpus não encontrado", {"sigla": sigla})
+        raise ApiError(404, "not_found", "Câmpus não encontrado", {"id": id})
     return campus

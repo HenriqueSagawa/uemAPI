@@ -14,7 +14,7 @@ Revisão: 25 de setembro de 2026. Este inventário avalia as sete URLs já propo
 
 ## Decisões antes do primeiro coletor
 
-1. **Identificadores e siglas de câmpus.** A página de câmpus não informa siglas. O relatório Base de Dados 2025 registra siglas regionais, mas não resolve sozinho o código público da sede. Como `/v1/campi/{sigla}` depende dessa regra, ela deve ser aprovada antes de publicar registros.
+1. **Identificadores e siglas de câmpus.** A [regra de IDs](campus-identifiers.md) usa as seis siglas regionais registradas pela UEM e `sede` como ID interno para Maringá. A sede permanece sem sigla institucional no schema; a aplicação dessa regra aos dados reais ainda exige revisão antes da publicação.
 2. **Unidade de curso.** A PEN lista cursos por câmpus e encaminha a modalidade a distância ao NEAD; o portal informa 80 cursos. O catálogo da CPR, consultado anteriormente, mostrava 57 resultados. Não tratar essas contagens como equivalentes sem entender se contam cursos, ofertas, turnos ou modalidades. Um curso com ofertas distintas não deve ser mesclado por nome.
 3. **Reutilização e frequência.** Não foi identificada uma licença geral de dados para essas páginas. O relatório anual declara direitos reservados. Antes de automatizar ou redistribuir, revisar as condições aplicáveis a cada fonte e definir frequência prudente de acesso. `review_interval_days` permanece sem valor no registro até essa decisão.
 4. **Cobertura dos vínculos.** Conferir os sete centros e suas páginas de departamentos. Vínculos curso–departamento não devem ser inferidos apenas por semelhança de nome ou pelo centro do curso.

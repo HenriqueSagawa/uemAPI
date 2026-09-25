@@ -41,7 +41,11 @@ class Snapshot:
             )
             if dataset != "cursos":
                 indexes[(dataset, "sigla")] = MappingProxyType(
-                    {record.sigla.casefold(): record for record in records}
+                    {
+                        record.sigla.casefold(): record
+                        for record in records
+                        if record.sigla is not None
+                    }
                 )
         object.__setattr__(self, "indexes", MappingProxyType(indexes))
 
@@ -65,7 +69,7 @@ class Snapshot:
 
 
 def _unique(records: tuple[Any, ...], field: str, dataset: str) -> None:
-    keys = [getattr(record, field).casefold() for record in records]
+    keys = [value.casefold() for record in records if (value := getattr(record, field)) is not None]
     if len(keys) != len(set(keys)):
         raise DatasetError(f"{dataset}: {field} duplicado")
 
