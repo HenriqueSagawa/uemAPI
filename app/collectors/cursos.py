@@ -8,10 +8,12 @@ from dataclasses import asdict, dataclass
 from datetime import datetime
 from html.parser import HTMLParser
 from pathlib import Path
+from urllib.parse import urljoin
 
 from app.schemas.common import Fonte
 
 SOURCE_URL = "https://www.pen.uem.br/site/public/cursos"
+DETAIL_PREFIX = "https://www.pen.uem.br/site/public/curso/"
 DETAIL_URL = re.compile(r"https://www\.pen\.uem\.br/site/public/curso/[0-9a-f]{40}\Z")
 NEAD_URL = re.compile(r"https://portal\.nead\.uem\.br/site/web/site/cursos(?:#graduacao)?\Z")
 
@@ -39,6 +41,8 @@ CAMPUS_HEADINGS = {
     _normalize("Campus Regional do Vale do Ivaí - Ivaiporã/PR"): "crv",
 }
 DISTANCE_HEADING = _normalize("Modalidade de Educação a Distância")
+# Seções presentes no índice da PEN verificado em 2026-09-25. Mudanças exigem revisão.
+EXPECTED_CAMPUS_IDS = frozenset({"sede", "crc", "car", "crg", "crv", "cau"})
 
 
 @dataclass(frozen=True)
@@ -74,6 +78,8 @@ class CourseIndexParser(HTMLParser):
             self._main = True
         if not self._main:
             return
+        if self._pending_section is not None and tag != "ul":
+            raise CourseSourceError("seção interrompida antes da lista de cursos")
         if tag in {"p", "h1", "h2", "h3", "h4", "h5", "h6"} and not self._in_list:
             self._heading_parts = []
             self._heading_tag = tag
@@ -92,12 +98,14 @@ class CourseIndexParser(HTMLParser):
                 raise CourseSourceError("link aninhado na lista de cursos")
             self._link_parts = []
             self._link_url = attributes.get("href")
-        elif tag == "a" and (attributes.get("href") or "").startswith(
-            "https://www.pen.uem.br/site/public/curso/"
+        elif tag == "a" and urljoin(SOURCE_URL, attributes.get("href") or "").startswith(
+            DETAIL_PREFIX
         ):
             raise CourseSourceError("link de curso fora de uma seção conhecida")
 
     def handle_data(self, data: str) -> None:
+        if self._pending_section is not None and data.strip():
+            raise CourseSourceError("seção interrompida antes da lista de cursos")
         if self._heading_parts is not None:
             self._heading_parts.append(data)
         if self._link_parts is not None:
@@ -106,6 +114,8 @@ class CourseIndexParser(HTMLParser):
     def handle_endtag(self, tag: str) -> None:
         if not self._main:
             return
+        if self._pending_section is not None:
+            raise CourseSourceError("seção interrompida antes da lista de cursos")
         if tag == self._heading_tag and self._heading_parts is not None:
             self._set_heading(" ".join(self._heading_parts))
             self._heading_parts = None
@@ -147,16 +157,17 @@ class CourseIndexParser(HTMLParser):
         name = " ".join(name.split())
         if not name or not url:
             raise CourseSourceError("nome ou URL ausente na lista de cursos")
+        absolute_url = urljoin(SOURCE_URL, url)
         if self._section == "ead":
-            if not NEAD_URL.fullmatch(url):
+            if not NEAD_URL.fullmatch(absolute_url):
                 raise CourseSourceError("link da EaD não corresponde ao portal NEAD")
             if self.nead_url is not None:
                 raise CourseSourceError("link da EaD duplicado")
-            self.nead_url = url
+            self.nead_url = absolute_url
         else:
-            if not DETAIL_URL.fullmatch(url):
+            if not DETAIL_URL.fullmatch(absolute_url):
                 raise CourseSourceError(f"URL de detalhe inesperada: {url}")
-            key = (self._section, url)
+            key = (self._section, absolute_url)
             if key in self._seen_course_links:
                 raise CourseSourceError("link de curso duplicado no mesmo câmpus")
             self._seen_course_links.add(key)
@@ -165,7 +176,7 @@ class CourseIndexParser(HTMLParser):
                     nome=name,
                     campus_id=self._section,
                     modalidade="presencial",
-                    url_detalhe=url,
+                    url_detalhe=absolute_url,
                 )
             )
         self._item_links += 1
@@ -179,6 +190,13 @@ class CourseIndexParser(HTMLParser):
             raise CourseSourceError("nenhum curso presencial encontrado")
         if self.nead_url is None:
             raise CourseSourceError("link para os cursos da EaD não encontrado")
+        found_campuses = self._seen_sections - {"ead"}
+        if found_campuses != EXPECTED_CAMPUS_IDS:
+            missing = sorted(EXPECTED_CAMPUS_IDS - found_campuses)
+            unexpected = sorted(found_campuses - EXPECTED_CAMPUS_IDS)
+            raise CourseSourceError(
+                f"cobertura de câmpus divergente; ausentes={missing}, novos={unexpected}"
+            )
         return self.nead_url
 
 
@@ -203,6 +221,8 @@ def build_preview(
             "unidade": "uma entrada de curso por câmpus no índice da PEN",
             "verificado_no_html": ["nome do link", "agrupamento por câmpus", "URL de detalhe"],
             "mapeamento_local": "títulos de câmpus para IDs da uemAPI",
+            "campi_esperados": sorted(EXPECTED_CAMPUS_IDS),
+            "campi_encontrados": sorted({course.campus_id for course in courses}),
             "modalidade": "presencial inferida da separação entre câmpus e EaD na página",
             "pendente": [
                 "ID estável de curso",
