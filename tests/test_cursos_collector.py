@@ -49,3 +49,21 @@ def test_missing_ead_section_stops_preview():
 
     with pytest.raises(CourseSourceError, match="link para os cursos da EaD"):
         collect_courses(html)
+
+
+def test_heading_css_change_does_not_drop_courses():
+    html = FIXTURE.read_text(encoding="utf-8").replace("text-xl", "text-lg")
+
+    courses, _ = collect_courses(html)
+
+    assert len(courses) == 2
+
+
+def test_course_link_outside_known_section_stops_preview():
+    html = FIXTURE.read_text(encoding="utf-8").replace(
+        '<p class="text-xl mb-3">Campus Sede - Maringá/PR</p>',
+        '<div class="text-xl mb-3">Campus Sede - Maringá/PR</div>',
+    )
+
+    with pytest.raises(CourseSourceError, match="fora de uma seção conhecida"):
+        collect_courses(html)

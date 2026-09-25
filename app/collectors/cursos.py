@@ -56,6 +56,7 @@ class CourseIndexParser(HTMLParser):
         self.nead_url: str | None = None
         self._main = False
         self._heading_parts: list[str] | None = None
+        self._heading_tag: str | None = None
         self._pending_section: str | None = None
         self._section: str | None = None
         self._in_list = False
@@ -73,8 +74,9 @@ class CourseIndexParser(HTMLParser):
             self._main = True
         if not self._main:
             return
-        if tag == "p" and "text-xl" in (attributes.get("class") or "").split():
+        if tag in {"p", "h1", "h2", "h3", "h4", "h5", "h6"} and not self._in_list:
             self._heading_parts = []
+            self._heading_tag = tag
         elif tag == "ul" and self._pending_section:
             self._section = self._pending_section
             self._pending_section = None
@@ -90,6 +92,10 @@ class CourseIndexParser(HTMLParser):
                 raise CourseSourceError("link aninhado na lista de cursos")
             self._link_parts = []
             self._link_url = attributes.get("href")
+        elif tag == "a" and (attributes.get("href") or "").startswith(
+            "https://www.pen.uem.br/site/public/curso/"
+        ):
+            raise CourseSourceError("link de curso fora de uma seção conhecida")
 
     def handle_data(self, data: str) -> None:
         if self._heading_parts is not None:
@@ -100,9 +106,10 @@ class CourseIndexParser(HTMLParser):
     def handle_endtag(self, tag: str) -> None:
         if not self._main:
             return
-        if tag == "p" and self._heading_parts is not None:
+        if tag == self._heading_tag and self._heading_parts is not None:
             self._set_heading(" ".join(self._heading_parts))
             self._heading_parts = None
+            self._heading_tag = None
         elif tag == "a" and self._link_parts is not None:
             self._add_link(" ".join(self._link_parts), self._link_url)
             self._link_parts = None
@@ -143,6 +150,8 @@ class CourseIndexParser(HTMLParser):
         if self._section == "ead":
             if not NEAD_URL.fullmatch(url):
                 raise CourseSourceError("link da EaD não corresponde ao portal NEAD")
+            if self.nead_url is not None:
+                raise CourseSourceError("link da EaD duplicado")
             self.nead_url = url
         else:
             if not DETAIL_URL.fullmatch(url):
@@ -162,7 +171,7 @@ class CourseIndexParser(HTMLParser):
         self._item_links += 1
         self._section_items += 1
 
-    def finish(self) -> None:
+    def finish(self) -> str:
         self.close()
         if self._pending_section or self._in_list or self._in_item or self._link_parts is not None:
             raise CourseSourceError("seção de cursos incompleta")
@@ -170,14 +179,15 @@ class CourseIndexParser(HTMLParser):
             raise CourseSourceError("nenhum curso presencial encontrado")
         if self.nead_url is None:
             raise CourseSourceError("link para os cursos da EaD não encontrado")
+        return self.nead_url
 
 
 def collect_courses(html: str) -> tuple[list[CourseCandidate], str]:
     """Lê o índice da PEN sem transformar seus links em IDs da API."""
     parser = CourseIndexParser()
     parser.feed(html)
-    parser.finish()
-    return parser.courses, parser.nead_url
+    nead_url = parser.finish()
+    return parser.courses, nead_url
 
 
 def build_preview(
