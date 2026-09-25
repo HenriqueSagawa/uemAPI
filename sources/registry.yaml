@@ -73,7 +73,7 @@ sources:
     last_verified: "2026-09-25"
     review_interval_days: null
     reuse_conditions: not_verified
-    notes: "Catálogo paginado mostra 57 resultados; detalhes incluem modalidade, grau, centro e câmpus. ID da URL não foi validado como ID institucional."
+    notes: "A PEN lista cursos presenciais por câmpus e vincula páginas com turno, habilitação e grau. Educação a distância aponta para o NEAD. Centro e departamento não são informados nessa lista; o identificador da URL não foi validado como ID institucional."
 
   portal_graduacao:
     dataset: cursos
