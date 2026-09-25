@@ -40,6 +40,18 @@ O primeiro coletor lê somente um arquivo HTML local. Ele confere a presença da
 
 A fixture acima é um exemplo criado para testes. Ao usar um HTML capturado da página real, informe em `--consultado-em` a data e hora dessa captura. Se a lista de câmpus não corresponder aos sete registros esperados, o comando falha e exige revisão. A saída é apenas uma prévia: as condições de reutilização e o snapshot completo ainda precisam ser aprovados antes da publicação.
 
+## Prévia local dos cursos da PEN
+
+O coletor de cursos lê um HTML local da [lista de graduação da PEN](https://www.pen.uem.br/site/public/cursos). Ele extrai as entradas presenciais por câmpus e o link para a EaD, sem acessar a rede ou gravar em `data/`.
+
+```bash
+python -m app.collectors.cursos \
+  --html tests/fixtures/cursos_pen.html \
+  --consultado-em 2026-09-25T12:00:00Z
+```
+
+A fixture é um exemplo para testes. Com uma cópia da página real, informe a hora em que ela foi capturada. A saída é uma prévia não publicável: cada entrada corresponde a um link da lista em um câmpus, e cursos de mesmo nome em câmpus diferentes permanecem separados. O coletor não usa o código da URL como ID institucional nem infere grau, centro ou departamento. Turnos e habilitações das páginas de detalhe e os cursos da EaD exigem uma etapa própria de revisão. As condições de reutilização da fonte também continuam pendentes.
+
 ## Qualidade
 
 ```bash

@@ -20,3 +20,5 @@ Revisão: 25 de setembro de 2026. Este inventário avalia as sete URLs já propo
 4. **Cobertura dos vínculos.** Conferir os sete centros e suas páginas de departamentos. Vínculos curso–departamento não devem ser inferidos apenas por semelhança de nome ou pelo centro do curso.
 
 Um protótipo do coletor de câmpus agora lê HTML local, valida a lista de municípios e gera uma prévia em JSON para revisão. Ele não busca páginas automaticamente nem cria um dataset de produção. As condições de reutilização e o snapshot completo continuam pendentes antes da publicação.
+
+O coletor de cursos lê uma cópia local do índice da PEN e gera uma prévia de entradas presenciais por câmpus. Ele não atribui IDs da API, não desdobra turnos ou habilitações e não inclui os cursos da EaD. A revisão do JSON e das condições de reutilização continua necessária antes de qualquer publicação. Nenhum dataset de produção foi criado nesta etapa.
