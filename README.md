@@ -5,12 +5,13 @@ API comunitária, independente e **não oficial** para informações públicas d
 ## O que já existe
 
 - Aplicação FastAPI com rotas de lista e detalhe para câmpus, centros, departamentos e cursos de graduação em `/v1`.
+- Câmpus consultados por ID em `/v1/campi/{id}`: `sede` para Maringá e siglas institucionais em minúsculas para os seis regionais. A sigla da sede é `null`, pois não foi encontrada uma sigla institucional para ela. Consulte [a regra e as fontes](docs/campus-identifiers.md).
 - Paginação fixa: `page` começa em 1; `page_size` usa 50 por padrão e aceita até 100.
 - Filtros de departamentos por `centro` e `campus`, e de cursos por `campus`, `centro`, `grau` e `modalidade`.
 - Schemas, formato de erro, proveniência por registro e documentação OpenAPI em `/docs`.
 - Carregamento de um snapshot JSON completo na inicialização, com validação de modelos, unicidade e referências. Se um arquivo estiver ausente ou inválido, `/v1/health` e as consultas respondem 503.
 
-Os exemplos nos testes são fictícios e não devem ser copiados para `data/`. O contrato de dados poderá ser refinado depois da conferência das fontes reais.
+Os registros dos testes servem apenas para verificar o contrato e não constituem um dataset aprovado para `data/`. O contrato de dados poderá ser refinado depois da conferência das fontes reais.
 
 ## Desenvolvimento local
 

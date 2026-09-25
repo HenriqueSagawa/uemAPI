@@ -22,7 +22,8 @@ def data_dir(tmp_path: Path) -> Path:
     }
     datasets = {
         "campi": [
-            {"id": "sede", "nome": "Câmpus Sede", "sigla": "SEDE", "fonte": fonte},
+            {"id": "sede", "nome": "Câmpus Sede", "sigla": None, "fonte": fonte},
+            {"id": "crc", "nome": "Câmpus Regional de Cianorte", "sigla": "CRC", "fonte": fonte},
         ],
         "centros": [
             {"id": "ctc", "nome": "Centro de Tecnologia", "sigla": "CTC", "fonte": fonte},
@@ -67,11 +68,19 @@ async def test_health_and_lists_with_approved_snapshot(data_dir: Path):
             assert health.json()["status"] == "ready"
             assert health.json()["datasets"]["cursos"] == 1
 
-            for resource in ("campi", "centros", "departamentos", "cursos"):
+            for resource in ("centros", "departamentos", "cursos"):
                 response = await client.get(f"/v1/{resource}")
                 assert response.status_code == 200
                 assert response.json()["meta"] == {"page": 1, "page_size": 50, "total": 1}
                 assert response.json()["data"][0]["fonte"]["source_id"] == "teste_publico"
+
+            campi = await client.get("/v1/campi")
+            assert campi.status_code == 200
+            assert campi.json()["meta"]["total"] == 2
+            assert {item["id"]: item["sigla"] for item in campi.json()["data"]} == {
+                "sede": None,
+                "crc": "CRC",
+            }
 
 
 @pytest.mark.anyio
@@ -81,12 +90,14 @@ async def test_details_filters_and_errors(data_dir: Path):
         async with AsyncClient(transport=ASGITransport(app=app), base_url="http://test") as client:
             for path in (
                 "/v1/campi/sede",
+                "/v1/campi/CRC",
                 "/v1/centros/ctc",
                 "/v1/departamentos/din",
                 "/v1/cursos/computacao-sede",
             ):
                 assert (await client.get(path)).status_code == 200
             assert (await client.get("/v1/centros/CTC")).json()["departamentos"] == ["DIN"]
+            assert (await client.get("/v1/campi/CRC")).json()["id"] == "crc"
             filtered = await client.get("/v1/cursos?centro=CTC&campus=sede")
             assert filtered.json()["meta"]["total"] == 1
             empty = await client.get("/v1/cursos?grau=licenciatura")
@@ -97,6 +108,19 @@ async def test_details_filters_and_errors(data_dir: Path):
             invalid = await client.get("/v1/cursos?page_size=101")
             assert invalid.status_code == 422
             assert invalid.json()["error"]["code"] == "validation_error"
+
+
+@pytest.mark.anyio
+async def test_duplicate_campus_acronym_prevents_publication(data_dir: Path):
+    path = data_dir / "campi.json"
+    records = json.loads(path.read_text(encoding="utf-8"))
+    records[0]["sigla"] = "CRC"
+    path.write_text(json.dumps(records, ensure_ascii=False), encoding="utf-8")
+
+    app = create_app(Settings(data_dir=data_dir))
+    async with app.router.lifespan_context(app):
+        async with AsyncClient(transport=ASGITransport(app=app), base_url="http://test") as client:
+            assert (await client.get("/v1/health")).status_code == 503
 
 
 @pytest.mark.anyio
