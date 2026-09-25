@@ -64,7 +64,7 @@ sources:
 
   cursos_graduacao:
     dataset: cursos
-    url: "https://cpr.uem.br/index.php/catalogos/graduacao"
+    url: "https://www.pen.uem.br/site/public/cursos"
     type: html
     collector: cursos
     access: public
