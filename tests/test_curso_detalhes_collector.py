@@ -138,6 +138,68 @@ def test_deadline_list_with_colons_does_not_hide_following_degree():
     assert blocks[0].habilitacoes == ["Licenciatura", "Bacharelado em Ensino (opções: A e B)"]
 
 
+def test_br_separated_dashed_habilitations_keep_degree_after_deadline():
+    detail = DETAIL.read_text(encoding="utf-8")
+    start = detail.index("            <p><b>Turno:")
+    end = detail.index("            <p><b>Coordenação:")
+    detail = (
+        detail[:start] + "<p><b>Habilitações:</b><br />\n"
+        "- Licenciatura em Área A (Matutino)<br />\n"
+        "- Bacharelado em Área B (Matutino)<br />\n"
+        "- Licenciado em Área C (Noturno)<br />\n"
+        "- Licenciado em Área D (Noturno)<br />\n"
+        "<br /><b>Prazo de Conclusão:</b><br />\n"
+        "- Licenciatura em Área A - Mínimo: 4 anos e Máximo: 7 anos<br />\n"
+        "<br /><b>Grau Acadêmico:</b> Licenciado em Pedagogia</p>\n" + detail[end:]
+    )
+    preview = build_preview(collect(detail=detail), INDEX, DETAIL)
+    academic = preview["curso"]["informacoes_academicas"]
+
+    assert academic == [
+        {
+            "turno": None,
+            "habilitacoes": [
+                "Licenciatura em Área A (Matutino)",
+                "Bacharelado em Área B (Matutino)",
+                "Licenciado em Área C (Noturno)",
+                "Licenciado em Área D (Noturno)",
+            ],
+            "graus_academicos": ["Licenciado em Pedagogia"],
+        }
+    ]
+    assert "Mínimo" not in json.dumps(preview, ensure_ascii=False)
+    assert "contato@example.org" not in json.dumps(preview, ensure_ascii=False)
+
+
+def test_br_separated_dashed_degree_items_are_preserved():
+    detail = DETAIL.read_text(encoding="utf-8").replace(
+        "<b>Grau Acadêmico:</b> Licenciado em Pedagogia<br>",
+        "<b>Grau Acadêmico:</b><br>- Licenciado em Pedagogia<br>- Bacharel em Educação<br>",
+    )
+    assert collect(detail=detail).blocks[0].graus_academicos == [
+        "Licenciado em Pedagogia",
+        "Bacharel em Educação",
+    ]
+
+
+def test_br_separated_dashed_contact_is_rejected():
+    detail = DETAIL.read_text(encoding="utf-8").replace(
+        "<b>Habilitação:</b> Licenciatura</p>",
+        "<b>Habilitação:</b> Licenciatura<br>- contato@example.org</p>",
+    )
+    with pytest.raises(CourseDetailSourceError, match="contato"):
+        collect(detail=detail)
+
+
+def test_dashed_text_in_new_paragraph_is_still_ambiguous():
+    detail = DETAIL.read_text(encoding="utf-8").replace(
+        "<b>Habilitação:</b> Licenciatura</p>",
+        "<b>Habilitação:</b> Licenciatura</p><p>- Pessoa Exemplo</p>",
+    )
+    with pytest.raises(CourseDetailSourceError, match="ambíguo"):
+        collect(detail=detail)
+
+
 def test_personal_label_after_deadline_still_stops_before_following_degree():
     detail = DETAIL.read_text(encoding="utf-8").replace(
         "<p><b>Grau Acadêmico:</b>",

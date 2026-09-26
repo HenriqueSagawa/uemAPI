@@ -103,10 +103,11 @@ class CourseDetailParser(HTMLParser):
                 if self._label_parts is not None:
                     raise CourseDetailSourceError("rótulo aninhado no detalhe")
                 self._label_parts = []
-            elif tag in {"br", "li"}:
+            elif tag == "br":
+                self.metadata_parts.append(("br", ""))
+            elif tag == "li":
                 self.metadata_parts.append(("break", ""))
-                if tag == "li":
-                    self._list_item_depth += 1
+                self._list_item_depth += 1
 
     def handle_data(self, data: str) -> None:
         if self._title_parts is not None:
@@ -171,30 +172,45 @@ def _parse_academic_blocks(parts: list[tuple[str, str]]) -> list[AcademicBlock]:
     segments: list[tuple[str, str]] = []
     text_parts: list[str] = []
     text_kind: str | None = None
+    after_br = False
     for kind, value in [*parts, ("break", "")]:
-        if kind in {"text", "item_text"} and kind == text_kind:
+        if kind in {"text", "item_text"}:
+            if kind == "item_text":
+                segment_kind = "item"
+            elif text_parts and text_kind in {"value", "br_value"}:
+                segment_kind = text_kind
+            else:
+                segment_kind = "br_value" if after_br else "value"
+            if text_parts and text_kind != segment_kind:
+                segments.append((text_kind, " ".join("".join(text_parts).split())))
+                text_parts = []
+            text_kind = segment_kind
             text_parts.append(value)
+            after_br = False
             continue
         if text_parts:
-            segment_kind = "item" if text_kind == "item_text" else "value"
-            segments.append((segment_kind, " ".join("".join(text_parts).split())))
+            segments.append((text_kind, " ".join("".join(text_parts).split())))
             text_parts = []
-        if kind in {"text", "item_text"}:
-            text_kind = kind
-            text_parts.append(value)
-            continue
         text_kind = None
         if kind == "label":
             segments.append(("label", value))
+        after_br = kind == "br"
 
     for kind, raw_value in segments:
-        value = raw_value.strip().removeprefix("-").strip()
+        stripped_value = raw_value.strip()
+        # A PEN também representa listas como linhas "- ..." separadas por <br>.
+        marked_item = (
+            kind == "br_value"
+            and stripped_value.startswith("-")
+            and current_field in {"habilitacoes", "graus_academicos"}
+        )
+        value = stripped_value.removeprefix("-").strip()
         if not value:
             continue
         html_label = kind == "label"
         if ignoring_field and kind == "item":
             continue
-        if kind in {"value", "item"}:
+        if kind in {"value", "br_value", "item"}:
             label, separator, remainder = value.partition(":")
             if separator and "(" not in label and len(label) <= 60:
                 kind = "label"
@@ -233,7 +249,7 @@ def _parse_academic_blocks(parts: list[tuple[str, str]]) -> list[AcademicBlock]:
             continue
         if kind == "item" and current_field not in {"habilitacoes", "graus_academicos"}:
             raise CourseDetailSourceError("item ambíguo em campo acadêmico")
-        if kind == "value" and not awaiting_value:
+        if kind in {"value", "br_value"} and not (awaiting_value or marked_item):
             raise CourseDetailSourceError("trecho ambíguo em campo acadêmico")
         if "@" in value:
             raise CourseDetailSourceError("contato encontrado em campo acadêmico")
