@@ -66,6 +66,21 @@ Para comparar com uma captura anterior, acrescente `--html-anterior caminho/para
 
 A fixture é um exemplo para testes. Com uma cópia da página real, informe a hora em que ela foi capturada. A saída é uma prévia não publicável: cada entrada corresponde a um link da lista em um câmpus, e cursos de mesmo nome em câmpus diferentes permanecem separados. O coletor compara as seções de câmpus com a cobertura observada na PEN em 25 de setembro de 2026; se uma seção desaparecer ou surgir, a prévia falha e pede revisão. O coletor não usa o código da URL como ID institucional nem infere grau, centro ou departamento. Turnos e habilitações das páginas de detalhe e os cursos da EaD exigem uma etapa própria de revisão. As condições de reutilização da fonte também continuam pendentes.
 
+## Prévia local do detalhe de um curso da PEN
+
+O coletor de detalhe confere uma página salva com a entrada correspondente em uma cópia local do índice. O exemplo usa fixtures sintéticas, sem dados pessoais:
+
+```bash
+python -m app.collectors.curso_detalhes \
+  --indice tests/fixtures/cursos_pen.html \
+  --html tests/fixtures/curso_detalhe_pen.html \
+  --campus sede \
+  --url https://www.pen.uem.br/site/public/curso/1111111111111111111111111111111111111111 \
+  --consultado-em 2026-09-26T12:00:00Z
+```
+
+O comando lê somente arquivos locais e imprime JSON. O título e o câmpus da página de detalhe devem coincidir com a entrada indicada no índice. Turnos, habilitações e graus são preservados em blocos conforme aparecem na seção acadêmica inicial; esses blocos ainda não representam ofertas independentes. O coletor não inclui nomes, contatos ou a descrição do curso na saída. O `id_candidato` combina o câmpus com o nome normalizado, mas muda se o nome mudar. Consulte a [decisão sobre unidade e IDs de cursos](docs/course-identity.md). O resultado permanece `publicavel: false` e não cria registros em `data/`.
+
 ## Prévia local dos departamentos da PLD
 
 O coletor de departamentos lê uma cópia HTML local da página de um centro na [PLD](https://pld.uem.br/dvl/regulamentos/centros-de-ensino). Uma execução trata somente esse centro; a saída não comprova a cobertura completa de departamentos da UEM. O comando não acessa a rede nem grava arquivos.
