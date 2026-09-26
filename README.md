@@ -40,6 +40,18 @@ O primeiro coletor lê somente um arquivo HTML local. Ele confere a presença da
 
 A fixture acima é um exemplo criado para testes. Ao usar um HTML capturado da página real, informe em `--consultado-em` a data e hora dessa captura. Se a lista de câmpus não corresponder aos sete registros esperados, o comando falha e exige revisão. A saída é apenas uma prévia: as condições de reutilização e o snapshot completo ainda precisam ser aprovados antes da publicação.
 
+## Prévia local dos centros de ensino
+
+O coletor de centros lê uma cópia local do [índice da PLD](https://pld.uem.br/dvl/regulamentos/centros-de-ensino). Ele confere as sete siglas esperadas e extrai os nomes exibidos e os links das páginas vinculadas. O ID candidato é a sigla em minúsculas; o sufixo “(Departamentos e Órgãos)” é retirado do nome. A prévia registra essas transformações em `proveniencia`.
+
+```bash
+python -m app.collectors.centros \
+  --html tests/fixtures/centros_pld.html \
+  --consultado-em 2026-09-26T12:00:00Z
+```
+
+A fixture é apenas um exemplo de teste. Para uma captura real, informe a hora da captura. O comando não acessa a rede, não visita as páginas vinculadas e não grava em `data/`. Os departamentos e demais órgãos dessas páginas ainda precisam ser separados e conferidos. `fonte.url` identifica o índice de referência, sem comprovar a origem do arquivo local. A saída permanece `publicavel: false` até a revisão dos registros e das condições de reutilização.
+
 ## Prévia local dos cursos da PEN
 
 O coletor de cursos lê um HTML local da [lista de graduação da PEN](https://www.pen.uem.br/site/public/cursos). Ele extrai as entradas presenciais por câmpus e o link para a EaD, sem acessar a rede ou gravar em `data/`.
