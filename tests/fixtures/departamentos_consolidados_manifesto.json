@@ -1,0 +1,11 @@
+{
+  "centros": [
+    {"centro_sigla": "CCA", "arquivo": "capturas/departamentos_cca.html", "consultado_em": "2026-09-26T12:00:00-03:00"},
+    {"centro_sigla": "CCB", "arquivo": "capturas/departamentos_ccb.html", "consultado_em": "2026-09-26T12:00:00-03:00"},
+    {"centro_sigla": "CCE", "arquivo": "capturas/departamentos_cce.html", "consultado_em": "2026-09-26T12:00:00-03:00"},
+    {"centro_sigla": "CCH", "arquivo": "capturas/departamentos_cch.html", "consultado_em": "2026-09-26T12:00:00-03:00"},
+    {"centro_sigla": "CCS", "arquivo": "capturas/departamentos_ccs.html", "consultado_em": "2026-09-26T12:00:00-03:00"},
+    {"centro_sigla": "CSA", "arquivo": "capturas/departamentos_csa.html", "consultado_em": "2026-09-26T12:00:00-03:00"},
+    {"centro_sigla": "CTC", "arquivo": "departamentos_ctc.html", "consultado_em": "2026-09-26T12:00:00-03:00"}
+  ]
+}
