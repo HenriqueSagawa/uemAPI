@@ -111,6 +111,17 @@ A prévia usa a sigla em minúsculas como ID interno candidato, sem afirmar que 
 
 A captura deve conter o conteúdo principal da PLD (`article#content`, título `documentFirstHeading`, `div#content-core` e lista `div.entries` com `article.entry`). Cada entrada admite um único link textual no cabeçalho e, opcionalmente, um link de ícone para a mesma URL. Mudanças nessa estrutura, siglas ou URLs duplicadas, artigos aninhados, ausência de departamentos ou links fora da página institucional do centro interrompem a prévia. O coletor não possui uma lista completa de siglas esperadas: remoções de entradas e completude precisam de conferência manual. A origem do arquivo local não é autenticada, a cobertura dos demais centros e as condições de reutilização continuam pendentes, e `publicavel` permanece `false`.
 
+## Prévia consolidada dos departamentos
+
+O consolidado lê um manifesto JSON com `centro_sigla`, `arquivo` e `consultado_em` (ISO 8601 com fuso) para cada página local. Caminhos relativos são resolvidos a partir da pasta do manifesto. O [manifesto de exemplo](tests/fixtures/departamentos_consolidados_manifesto.json) lista os sete centros; somente a captura sintética de `CTC` está incluída nas fixtures. Os outros seis caminhos ilustram onde colocar capturas próprias e aparecerão como `arquivo_ausente` até existirem.
+
+```bash
+python -m app.collectors.departamentos_consolidados \
+  --manifesto tests/fixtures/departamentos_consolidados_manifesto.json
+```
+
+O comando lê apenas arquivos locais e imprime JSON, sem acessar a rede nem gravar em `data/`. O relatório traz uma prévia individual para cada centro aceito, informa centros `sem_captura`, com `arquivo_ausente`, `falha_leitura` ou `invalido`, e identifica siglas de departamentos repetidas entre centros aceitos. Uma captura inválida não impede a análise das outras; manifestos ambíguos, com centro desconhecido, entrada duplicada, arquivo reutilizado ou horário sem fuso são rejeitados. `cobertura_fontes_completa` indica apenas que as sete páginas esperadas foram processadas. Ainda é preciso revisar cada página para verificar a completude e a atualidade de sua lista, resolver duplicidades e aprovar os dados e as condições de reutilização. A saída permanece `publicavel: false`.
+
 ## Qualidade
 
 ```bash
