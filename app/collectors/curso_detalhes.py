@@ -28,7 +28,21 @@ ACADEMIC_LABELS = {
     "habilitacoes": "habilitacoes",
     "grau academico": "graus_academicos",
 }
-IGNORED_LABELS = {"prazo minimo"}
+IGNORED_LABELS = {
+    "prazo minimo",
+    "prazo de conclusao",
+    "prazo minimo de conclusao",
+    "prazo maximo de conclusao",
+}
+STOP_PREFIXES = (
+    "coorden",
+    "responsavel",
+    "contato",
+    "e-mail",
+    "email",
+    "sobre o curso",
+    "mercado de trabalho",
+)
 
 
 class CourseDetailSourceError(ValueError):
@@ -153,6 +167,7 @@ def _parse_academic_blocks(parts: list[tuple[str, str]]) -> list[AcademicBlock]:
     block = AcademicBlock()
     current_field: str | None = None
     awaiting_value = False
+    ignoring_field = False
     segments: list[tuple[str, str]] = []
     text_parts: list[str] = []
     text_kind: str | None = None
@@ -176,6 +191,9 @@ def _parse_academic_blocks(parts: list[tuple[str, str]]) -> list[AcademicBlock]:
         value = raw_value.strip().removeprefix("-").strip()
         if not value:
             continue
+        html_label = kind == "label"
+        if ignoring_field and kind == "item":
+            continue
         if kind in {"value", "item"}:
             label, separator, remainder = value.partition(":")
             if separator and "(" not in label and len(label) <= 60:
@@ -193,6 +211,13 @@ def _parse_academic_blocks(parts: list[tuple[str, str]]) -> list[AcademicBlock]:
                 if normalized in IGNORED_LABELS:
                     current_field = None
                     awaiting_value = False
+                    ignoring_field = True
+                    continue
+                if normalized.startswith("prazo "):
+                    raise CourseDetailSourceError("rótulo de prazo acadêmico não reconhecido")
+                # Valores de prazo podem conter dois-pontos; só um rótulo HTML ou
+                # um campo conhecido retoma a coleta depois deles.
+                if ignoring_field and not html_label and not normalized.startswith(STOP_PREFIXES):
                     continue
                 break
             if field_name == "turno" and block.has_data():
@@ -200,7 +225,10 @@ def _parse_academic_blocks(parts: list[tuple[str, str]]) -> list[AcademicBlock]:
                 block = AcademicBlock()
             current_field = field_name
             awaiting_value = True
+            ignoring_field = False
             value = inline_value
+        elif ignoring_field:
+            continue
         if not value or current_field is None:
             continue
         if kind == "item" and current_field not in {"habilitacoes", "graus_academicos"}:

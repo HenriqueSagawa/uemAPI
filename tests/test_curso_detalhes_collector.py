@@ -104,6 +104,63 @@ def test_rejects_unlabelled_text_after_academic_value():
 
 
 @pytest.mark.parametrize(
+    "deadline_label",
+    [
+        "Prazo Mínimo",
+        "Prazo de Conclusão",
+        "Prazo Mínimo de Conclusão",
+        "Prazo Máximo de Conclusão",
+    ],
+)
+def test_academic_deadline_before_degree_is_ignored_without_stopping(deadline_label):
+    detail = DETAIL.read_text(encoding="utf-8").replace(
+        "<p><b>Grau Acadêmico:</b>",
+        f"<p><b>{deadline_label}:</b> 4 a 7 anos</p><p><b>Grau Acadêmico:</b>",
+    )
+    preview = build_preview(collect(detail=detail), INDEX, DETAIL)
+
+    assert preview["curso"]["informacoes_academicas"][0]["graus_academicos"] == [
+        "Licenciado em Pedagogia"
+    ]
+    assert "4 a 7 anos" not in json.dumps(preview, ensure_ascii=False)
+
+
+def test_deadline_list_with_colons_does_not_hide_following_degree():
+    detail = DETAIL.read_text(encoding="utf-8").replace(
+        "<p><b>Grau Acadêmico:</b>",
+        "<p><b>Prazo de Conclusão:</b></p>"
+        "<ul><li>Licenciatura - Mínimo: 4 anos e Máximo: 7 anos</li></ul>"
+        "<p><b>Grau Acadêmico:</b>",
+    )
+    blocks = collect(detail=detail).blocks
+
+    assert blocks[0].graus_academicos == ["Licenciado em Pedagogia"]
+    assert blocks[0].habilitacoes == ["Licenciatura", "Bacharelado em Ensino (opções: A e B)"]
+
+
+def test_personal_label_after_deadline_still_stops_before_following_degree():
+    detail = DETAIL.read_text(encoding="utf-8").replace(
+        "<p><b>Grau Acadêmico:</b>",
+        "<p><b>Prazo de Conclusão:</b> 4 a 7 anos</p>"
+        "<p><b>Responsável pelo curso:</b> Pessoa Exemplo, contato@example.org</p>"
+        "<p><b>Grau Acadêmico:</b>",
+    )
+    preview = build_preview(collect(detail=detail), INDEX, DETAIL)
+
+    assert preview["curso"]["informacoes_academicas"][0]["graus_academicos"] == []
+    assert "Pessoa Exemplo" not in json.dumps(preview, ensure_ascii=False)
+
+
+def test_unrecognized_deadline_label_requires_review():
+    detail = DETAIL.read_text(encoding="utf-8").replace(
+        "<p><b>Grau Acadêmico:</b>",
+        "<p><b>Prazo de Integralização:</b> 4 a 7 anos</p><p><b>Grau Acadêmico:</b>",
+    )
+    with pytest.raises(CourseDetailSourceError, match="prazo acadêmico não reconhecido"):
+        collect(detail=detail)
+
+
+@pytest.mark.parametrize(
     "detail,expected",
     [
         ("", "estrutura"),
