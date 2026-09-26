@@ -50,6 +50,59 @@ def test_matches_index_and_preserves_academic_blocks_without_personal_data():
     assert "Texto que não faz parte da prévia" not in json.dumps(preview, ensure_ascii=False)
 
 
+def test_unknown_html_label_stops_before_personal_data():
+    detail = DETAIL.read_text(encoding="utf-8").replace(
+        "<b>Coordenação:</b>", "<b>Responsável pelo curso:</b>"
+    )
+    preview = build_preview(collect(detail=detail), INDEX, DETAIL)
+
+    assert preview["curso"]["informacoes_academicas"][1]["habilitacoes"] == ["Licenciatura"]
+    assert "Pessoa Exemplo" not in json.dumps(preview, ensure_ascii=False)
+    assert "contato@example.org" not in json.dumps(preview, ensure_ascii=False)
+
+
+def test_known_personal_label_on_same_html_line_stops_academic_value():
+    detail = DETAIL.read_text(encoding="utf-8").replace(
+        "<b>Habilitação:</b> Licenciatura</p>\n            <p><b>Coordenação:</b>",
+        "<b>Habilitação:</b> Licenciatura <b>Coordenação:</b>",
+    )
+    preview = build_preview(collect(detail=detail), INDEX, DETAIL)
+
+    assert preview["curso"]["informacoes_academicas"][1]["habilitacoes"] == ["Licenciatura"]
+    assert "Pessoa Exemplo" not in json.dumps(preview, ensure_ascii=False)
+    assert "contato@example.org" not in json.dumps(preview, ensure_ascii=False)
+
+
+def test_html_source_line_breaks_do_not_split_academic_values():
+    detail = (
+        DETAIL.read_text(encoding="utf-8")
+        .replace("Integral<br>", "Vespertino ou\n Noturno<br>")
+        .replace("Licenciado em Pedagogia<br>", "Licenciado em\n Pedagogia<br>")
+    )
+    blocks = collect(detail=detail).blocks
+
+    assert blocks[0].turno == "Vespertino ou Noturno"
+    assert blocks[0].graus_academicos == ["Licenciado em Pedagogia"]
+
+
+def test_rejects_contact_in_academic_value():
+    detail = DETAIL.read_text(encoding="utf-8").replace(
+        "<b>Habilitação:</b> Licenciatura</p>",
+        "<b>Habilitação:</b> Licenciatura, contato@example.org</p>",
+    )
+    with pytest.raises(CourseDetailSourceError, match="contato"):
+        collect(detail=detail)
+
+
+def test_rejects_unlabelled_text_after_academic_value():
+    detail = DETAIL.read_text(encoding="utf-8").replace(
+        "<b>Habilitação:</b> Licenciatura</p>",
+        "<b>Habilitação:</b> Licenciatura<br>Pessoa Exemplo</p>",
+    )
+    with pytest.raises(CourseDetailSourceError, match="ambíguo"):
+        collect(detail=detail)
+
+
 @pytest.mark.parametrize(
     "detail,expected",
     [

@@ -79,7 +79,7 @@ python -m app.collectors.curso_detalhes \
   --consultado-em 2026-09-26T12:00:00Z
 ```
 
-O comando lê somente arquivos locais e imprime JSON. O título e o câmpus da página de detalhe devem coincidir com a entrada indicada no índice. Turnos, habilitações e graus são preservados em blocos conforme aparecem na seção acadêmica inicial; esses blocos ainda não representam ofertas independentes. O coletor não inclui nomes, contatos ou a descrição do curso na saída. O `id_candidato` combina o câmpus com o nome normalizado, mas muda se o nome mudar. Consulte a [decisão sobre unidade e IDs de cursos](docs/course-identity.md). O resultado permanece `publicavel: false` e não cria registros em `data/`.
+O comando lê somente arquivos locais e imprime JSON. O título e o câmpus da página de detalhe devem coincidir com a entrada indicada no índice. Turnos, habilitações e graus são preservados em blocos conforme aparecem na seção acadêmica inicial; esses blocos ainda não representam ofertas independentes. O coletor separa valores por elementos HTML, não por quebras de linha do arquivo. Rótulos não acadêmicos encerram a captura; trechos ambíguos e contatos detectados em valores acadêmicos causam erro. Nomes, contatos e descrição do curso não são campos da prévia. O `id_candidato` combina o câmpus com o nome normalizado, mas muda se o nome mudar. Consulte a [decisão sobre unidade e IDs de cursos](docs/course-identity.md). O resultado permanece `publicavel: false` e não cria registros em `data/`.
 
 ## Prévia local dos departamentos da PLD
 

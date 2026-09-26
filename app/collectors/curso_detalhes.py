@@ -28,7 +28,7 @@ ACADEMIC_LABELS = {
     "habilitacoes": "habilitacoes",
     "grau academico": "graus_academicos",
 }
-STOP_PREFIXES = ("coorden", "sobre o curso", "e-mail", "email", "mercado de trabalho")
+IGNORED_LABELS = {"prazo minimo"}
 
 
 class CourseDetailSourceError(ValueError):
@@ -57,9 +57,11 @@ class CourseDetailParser(HTMLParser):
         self.metadata_blocks = 0
         self.titles: list[str] = []
         self.breadcrumbs: list[str] = []
-        self.metadata_parts: list[str] = []
+        self.metadata_parts: list[tuple[str, str]] = []
         self._title_parts: list[str] | None = None
         self._breadcrumb_parts: list[str] | None = None
+        self._label_parts: list[str] | None = None
+        self._list_item_depth = 0
 
     def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
         attributes = dict(attrs)
@@ -82,8 +84,15 @@ class CourseDetailParser(HTMLParser):
             self._title_parts = []
         elif tag == "a" and attributes.get("href") == SOURCE_URL and self.metadata_depth is None:
             self._breadcrumb_parts = []
-        if self.metadata_depth is not None and tag in {"br", "li"}:
-            self.metadata_parts.append("\n")
+        if self.metadata_depth is not None:
+            if tag in {"b", "strong"}:
+                if self._label_parts is not None:
+                    raise CourseDetailSourceError("rótulo aninhado no detalhe")
+                self._label_parts = []
+            elif tag in {"br", "li"}:
+                self.metadata_parts.append(("break", ""))
+                if tag == "li":
+                    self._list_item_depth += 1
 
     def handle_data(self, data: str) -> None:
         if self._title_parts is not None:
@@ -91,7 +100,11 @@ class CourseDetailParser(HTMLParser):
         if self._breadcrumb_parts is not None:
             self._breadcrumb_parts.append(data)
         if self.metadata_depth is not None:
-            self.metadata_parts.append(data)
+            if self._label_parts is not None:
+                self._label_parts.append(data)
+            else:
+                kind = "item_text" if self._list_item_depth else "text"
+                self.metadata_parts.append((kind, data))
 
     def handle_endtag(self, tag: str) -> None:
         if tag == "h3" and self._title_parts is not None:
@@ -100,8 +113,15 @@ class CourseDetailParser(HTMLParser):
         elif tag == "a" and self._breadcrumb_parts is not None:
             self.breadcrumbs.append(" ".join("".join(self._breadcrumb_parts).split()))
             self._breadcrumb_parts = None
-        if self.metadata_depth is not None and tag in {"p", "li", "ul"}:
-            self.metadata_parts.append("\n")
+        if self.metadata_depth is not None:
+            if tag in {"b", "strong"} and self._label_parts is not None:
+                label = " ".join("".join(self._label_parts).split())
+                self._label_parts = None
+                self.metadata_parts.append(("label", label.removesuffix(":")))
+            elif tag in {"p", "li", "ul"}:
+                self.metadata_parts.append(("break", ""))
+                if tag == "li":
+                    self._list_item_depth -= 1
         if tag == "div":
             if self.metadata_depth == self.div_depth:
                 self.metadata_depth = None
@@ -115,6 +135,8 @@ class CourseDetailParser(HTMLParser):
             self.roots != 1
             or self.root_depth is not None
             or self.metadata_depth is not None
+            or self._label_parts is not None
+            or self._list_item_depth != 0
             or self.metadata_blocks != 1
             or len(self.titles) != 1
             or len(self.breadcrumbs) != 1
@@ -126,37 +148,73 @@ class CourseDetailParser(HTMLParser):
         return self.titles[0], self.breadcrumbs[0], blocks
 
 
-def _parse_academic_blocks(parts: list[str]) -> list[AcademicBlock]:
+def _parse_academic_blocks(parts: list[tuple[str, str]]) -> list[AcademicBlock]:
     blocks: list[AcademicBlock] = []
     block = AcademicBlock()
     current_field: str | None = None
-    for raw_line in "".join(parts).splitlines():
-        line = " ".join(raw_line.strip().removeprefix("-").split())
-        if not line:
+    awaiting_value = False
+    segments: list[tuple[str, str]] = []
+    text_parts: list[str] = []
+    text_kind: str | None = None
+    for kind, value in [*parts, ("break", "")]:
+        if kind in {"text", "item_text"} and kind == text_kind:
+            text_parts.append(value)
             continue
-        normalized = _normalize(line)
-        if normalized.startswith(STOP_PREFIXES):
-            break
-        label, separator, value = line.partition(":")
-        field_name = ACADEMIC_LABELS.get(_normalize(label))
-        if field_name is not None:
+        if text_parts:
+            segment_kind = "item" if text_kind == "item_text" else "value"
+            segments.append((segment_kind, " ".join("".join(text_parts).split())))
+            text_parts = []
+        if kind in {"text", "item_text"}:
+            text_kind = kind
+            text_parts.append(value)
+            continue
+        text_kind = None
+        if kind == "label":
+            segments.append(("label", value))
+
+    for kind, raw_value in segments:
+        value = raw_value.strip().removeprefix("-").strip()
+        if not value:
+            continue
+        if kind in {"value", "item"}:
+            label, separator, remainder = value.partition(":")
+            if separator and "(" not in label and len(label) <= 60:
+                kind = "label"
+                value = label
+                inline_value = remainder.strip()
+            else:
+                inline_value = ""
+        else:
+            inline_value = ""
+        if kind == "label":
+            normalized = _normalize(value)
+            field_name = ACADEMIC_LABELS.get(normalized)
+            if field_name is None:
+                if normalized in IGNORED_LABELS:
+                    current_field = None
+                    awaiting_value = False
+                    continue
+                break
             if field_name == "turno" and block.has_data():
                 blocks.append(block)
                 block = AcademicBlock()
             current_field = field_name
-            if separator and value.strip():
-                if field_name == "turno":
-                    block.turno = " ".join(value.split())
-                else:
-                    getattr(block, field_name).append(" ".join(value.split()))
+            awaiting_value = True
+            value = inline_value
+        if not value or current_field is None:
             continue
-        if normalized.startswith("prazo "):
-            current_field = None
-            continue
-        if current_field == "turno" and block.turno is None:
-            block.turno = line
-        elif current_field in {"habilitacoes", "graus_academicos"}:
-            getattr(block, current_field).append(line)
+        if kind == "item" and current_field not in {"habilitacoes", "graus_academicos"}:
+            raise CourseDetailSourceError("item ambíguo em campo acadêmico")
+        if kind == "value" and not awaiting_value:
+            raise CourseDetailSourceError("trecho ambíguo em campo acadêmico")
+        if "@" in value:
+            raise CourseDetailSourceError("contato encontrado em campo acadêmico")
+        if current_field == "turno":
+            if block.turno is None:
+                block.turno = value
+        else:
+            getattr(block, current_field).append(value)
+        awaiting_value = False
     if block.has_data():
         blocks.append(block)
     return blocks
@@ -225,7 +283,9 @@ def build_preview(collection: CourseDetailCollection, index_path: Path, detail_p
             "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
             "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
             "verificado": ["link no índice local", "título", "câmpus exibido no detalhe"],
-            "informacoes_academicas": "texto da seção inicial, agrupado pela ordem dos rótulos",
+            "informacoes_academicas": (
+                "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML"
+            ),
             "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
             "pendente": [
                 "ID estável aprovado",
