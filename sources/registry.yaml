@@ -73,7 +73,7 @@ sources:
     last_verified: "2026-09-25"
     review_interval_days: null
     reuse_conditions: not_verified
-    notes: "O coletor local gera prévia das entradas presenciais por câmpus e registra o link para o NEAD. Turnos, habilitações e grau das páginas de detalhe ainda não são tratados. Centro e departamento não constam no índice; o identificador da URL não foi validado como ID institucional."
+    notes: "O coletor do índice gera prévia das entradas presenciais por câmpus e registra o link para o NEAD. app.collectors.curso_detalhes lê HTML local de uma página de detalhe, confere título e câmpus com o índice e preserva blocos de turno, habilitações e graus, sem inferir ofertas. IDs por câmpus e nome são apenas candidatos; centro e departamento não constam no índice, o código da URL não foi validado como ID institucional e a EaD não está coberta."
 
   portal_graduacao:
     dataset: cursos
