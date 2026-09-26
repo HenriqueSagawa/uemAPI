@@ -53,11 +53,12 @@ class CenterIndexParser(HTMLParser):
                 self._content_depth = 1
         if not self._content_depth:
             return
-        if tag == "article" and "entry" in (attributes.get("class") or "").split():
+        if tag == "article":
             if self._in_entry:
                 raise CenterSourceError("entrada de centro aninhada")
-            self._in_entry = True
-            self._entry_links = []
+            if "entry" in (attributes.get("class") or "").split():
+                self._in_entry = True
+                self._entry_links = []
         elif tag == "a" and self._in_entry:
             if self._link_parts is not None:
                 raise CenterSourceError("link aninhado em uma entrada de centro")

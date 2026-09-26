@@ -75,6 +75,21 @@ def test_changed_entry_structure_cannot_silently_drop_a_center():
         collect_centros(changed, CAPTURED_AT)
 
 
+def test_nested_article_cannot_hide_an_unexpected_link():
+    html = FIXTURE.read_text(encoding="utf-8")
+    changed = html.replace(
+        "</header></article>",
+        '</header><article class="summary"></article>'
+        '<a href="centro-de-extra">XXX - CENTRO DE EXTRA (Departamentos e Órgãos)</a>'
+        "</article>",
+        1,
+    )
+    assert changed != html
+
+    with pytest.raises(CenterSourceError, match="entrada de centro aninhada"):
+        collect_centros(changed, CAPTURED_AT)
+
+
 def test_changed_center_name_is_read_from_html():
     html = FIXTURE.read_text(encoding="utf-8").replace(
         "CCA - CENTRO DE CIÊNCIAS AGRÁRIAS",
