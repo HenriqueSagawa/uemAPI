@@ -24,6 +24,7 @@ DETAIL_CAMPUSES = {
 }
 ACADEMIC_LABELS = {
     "turno": "turno",
+    "turnos": "turno",
     "habilitacao": "habilitacoes",
     "habilitacoes": "habilitacoes",
     "grau academico": "graus_academicos",
@@ -33,7 +34,9 @@ IGNORED_LABELS = {
     "prazo de conclusao",
     "prazo minimo de conclusao",
     "prazo maximo de conclusao",
+    "prazo para conclusao",
 }
+METADATA_HEADING_TAGS = {"h1", "h2", "h3", "h4", "h5", "h6"}
 STOP_PREFIXES = (
     "coorden",
     "responsavel",
@@ -75,6 +78,8 @@ class CourseDetailParser(HTMLParser):
         self._title_parts: list[str] | None = None
         self._breadcrumb_parts: list[str] | None = None
         self._label_parts: list[str] | None = None
+        self._metadata_heading_parts: list[str] | None = None
+        self._metadata_heading_tag: str | None = None
         self._list_item_depth = 0
 
     def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
@@ -99,7 +104,14 @@ class CourseDetailParser(HTMLParser):
         elif tag == "a" and attributes.get("href") == SOURCE_URL and self.metadata_depth is None:
             self._breadcrumb_parts = []
         if self.metadata_depth is not None:
-            if tag in {"b", "strong"}:
+            if tag in METADATA_HEADING_TAGS:
+                if self._metadata_heading_parts is not None:
+                    raise CourseDetailSourceError("título aninhado no detalhe")
+                self._metadata_heading_parts = []
+                self._metadata_heading_tag = tag
+            elif self._metadata_heading_parts is not None:
+                return
+            elif tag in {"b", "strong"}:
                 if self._label_parts is not None:
                     raise CourseDetailSourceError("rótulo aninhado no detalhe")
                 self._label_parts = []
@@ -115,7 +127,9 @@ class CourseDetailParser(HTMLParser):
         if self._breadcrumb_parts is not None:
             self._breadcrumb_parts.append(data)
         if self.metadata_depth is not None:
-            if self._label_parts is not None:
+            if self._metadata_heading_parts is not None:
+                self._metadata_heading_parts.append(data)
+            elif self._label_parts is not None:
                 self._label_parts.append(data)
             else:
                 kind = "item_text" if self._list_item_depth else "text"
@@ -129,7 +143,14 @@ class CourseDetailParser(HTMLParser):
             self.breadcrumbs.append(" ".join("".join(self._breadcrumb_parts).split()))
             self._breadcrumb_parts = None
         if self.metadata_depth is not None:
-            if tag in {"b", "strong"} and self._label_parts is not None:
+            if tag == self._metadata_heading_tag:
+                heading = " ".join("".join(self._metadata_heading_parts or []).split())
+                self.metadata_parts.append(("heading", heading))
+                self._metadata_heading_parts = None
+                self._metadata_heading_tag = None
+            elif self._metadata_heading_parts is not None:
+                return
+            elif tag in {"b", "strong"} and self._label_parts is not None:
                 label = " ".join("".join(self._label_parts).split())
                 self._label_parts = None
                 self.metadata_parts.append(("label", label.removesuffix(":")))
@@ -151,6 +172,7 @@ class CourseDetailParser(HTMLParser):
             or self.root_depth is not None
             or self.metadata_depth is not None
             or self._label_parts is not None
+            or self._metadata_heading_parts is not None
             or self._list_item_depth != 0
             or self.metadata_blocks != 1
             or len(self.titles) != 1
@@ -192,8 +214,8 @@ def _parse_academic_blocks(parts: list[tuple[str, str]]) -> list[AcademicBlock]:
             segments.append((text_kind, " ".join("".join(text_parts).split())))
             text_parts = []
         text_kind = None
-        if kind == "label":
-            segments.append(("label", value))
+        if kind in {"label", "heading"}:
+            segments.append((kind, value))
         after_br = kind == "br"
 
     for kind, raw_value in segments:
@@ -207,9 +229,34 @@ def _parse_academic_blocks(parts: list[tuple[str, str]]) -> list[AcademicBlock]:
         value = stripped_value.removeprefix("-").strip()
         if not value:
             continue
+        if kind == "heading":
+            normalized_heading = _normalize(value.removesuffix(":"))
+            if (
+                normalized_heading not in ACADEMIC_LABELS
+                and normalized_heading not in IGNORED_LABELS
+                and not normalized_heading.startswith("prazo ")
+            ):
+                if (
+                    current_field is None
+                    and not block.has_data()
+                    and not blocks
+                    and not normalized_heading.startswith(STOP_PREFIXES)
+                ):
+                    continue
+                break
+            kind = "label"
+            value = value.removesuffix(":")
         html_label = kind == "label"
         if ignoring_field and kind == "item":
             continue
+        if (
+            kind in {"value", "br_value"}
+            and value.startswith(":")
+            and (awaiting_value or ignoring_field)
+        ):
+            value = value[1:].strip()
+            if not value:
+                continue
         if kind in {"value", "br_value", "item"}:
             label, separator, remainder = value.partition(":")
             if separator and "(" not in label and len(label) <= 60:
@@ -231,6 +278,10 @@ def _parse_academic_blocks(parts: list[tuple[str, str]]) -> list[AcademicBlock]:
                     continue
                 if normalized.startswith("prazo "):
                     raise CourseDetailSourceError("rótulo de prazo acadêmico não reconhecido")
+                if ignoring_field and normalized.startswith("•"):
+                    if normalized.lstrip("• ").startswith(STOP_PREFIXES):
+                        break
+                    continue
                 # Valores de prazo podem conter dois-pontos; só um rótulo HTML ou
                 # um campo conhecido retoma a coleta depois deles.
                 if ignoring_field and not html_label and not normalized.startswith(STOP_PREFIXES):

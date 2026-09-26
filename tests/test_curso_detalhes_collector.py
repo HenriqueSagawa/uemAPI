@@ -30,6 +30,13 @@ def collect(index=None, detail=None, campus="sede", url=URL, captured_at=CAPTURE
     )
 
 
+def with_academic_html(academic_html: str) -> str:
+    detail = DETAIL.read_text(encoding="utf-8")
+    start = detail.index("            <p><b>Turno:")
+    end = detail.index("            <p><b>Coordenação:")
+    return detail[:start] + academic_html + detail[end:]
+
+
 def test_matches_index_and_preserves_academic_blocks_without_personal_data():
     result = collect()
     preview = build_preview(result, INDEX, DETAIL)
@@ -139,18 +146,15 @@ def test_deadline_list_with_colons_does_not_hide_following_degree():
 
 
 def test_br_separated_dashed_habilitations_keep_degree_after_deadline():
-    detail = DETAIL.read_text(encoding="utf-8")
-    start = detail.index("            <p><b>Turno:")
-    end = detail.index("            <p><b>Coordenação:")
-    detail = (
-        detail[:start] + "<p><b>Habilitações:</b><br />\n"
+    detail = with_academic_html(
+        "<p><b>Habilitações:</b><br />\n"
         "- Licenciatura em Área A (Matutino)<br />\n"
         "- Bacharelado em Área B (Matutino)<br />\n"
         "- Licenciado em Área C (Noturno)<br />\n"
         "- Licenciado em Área D (Noturno)<br />\n"
         "<br /><b>Prazo de Conclusão:</b><br />\n"
         "- Licenciatura em Área A - Mínimo: 4 anos e Máximo: 7 anos<br />\n"
-        "<br /><b>Grau Acadêmico:</b> Licenciado em Pedagogia</p>\n" + detail[end:]
+        "<br /><b>Grau Acadêmico:</b> Licenciado em Pedagogia</p>\n"
     )
     preview = build_preview(collect(detail=detail), INDEX, DETAIL)
     academic = preview["curso"]["informacoes_academicas"]
@@ -198,6 +202,81 @@ def test_dashed_text_in_new_paragraph_is_still_ambiguous():
     )
     with pytest.raises(CourseDetailSourceError, match="ambíguo"):
         collect(detail=detail)
+
+
+def test_colon_outside_strong_is_part_of_academic_value():
+    detail = with_academic_html(
+        "<p><strong>Turno</strong>: Noturno<br />"
+        "<strong>Habilitação</strong>: Bacharelado<br />"
+        "<strong>Grau Acadêmico</strong>: Arquiteto e Urbanista<br />"
+        "<strong>Prazo Mínimo de Conclusão</strong>: 5 anos</p>"
+        "<p><strong>Coordenado</strong>r: Pessoa Exemplo, contato@example.org</p>"
+    )
+    preview = build_preview(collect(detail=detail), INDEX, DETAIL)
+
+    assert preview["curso"]["informacoes_academicas"] == [
+        {
+            "turno": "Noturno",
+            "habilitacoes": ["Bacharelado"],
+            "graus_academicos": ["Arquiteto e Urbanista"],
+        }
+    ]
+    assert "Pessoa Exemplo" not in json.dumps(preview, ensure_ascii=False)
+
+
+def test_highlighted_course_heading_before_academic_fields_is_skipped():
+    detail = with_academic_html(
+        "<h1><strong>Pedagogia</strong></h1>"
+        "<p><strong>Turno:</strong> Integral<br />"
+        "<strong>Habilitação:</strong> Licenciatura<br />"
+        "<strong>Grau Acadêmico:</strong> Licenciado em Pedagogia</p>"
+    )
+    blocks = collect(detail=detail).blocks
+
+    assert len(blocks) == 1
+    assert blocks[0].turno == "Integral"
+    assert blocks[0].habilitacoes == ["Licenciatura"]
+    assert blocks[0].graus_academicos == ["Licenciado em Pedagogia"]
+
+
+def test_personal_heading_after_academic_fields_stops_capture():
+    detail = with_academic_html(
+        "<p><strong>Turno:</strong> Integral</p>"
+        "<h1><strong>Coordenação</strong></h1>"
+        "<p>Pessoa Exemplo, contato@example.org</p>"
+        "<p><strong>Grau Acadêmico:</strong> Licenciado em Pedagogia</p>"
+    )
+    preview = build_preview(collect(detail=detail), INDEX, DETAIL)
+
+    assert preview["curso"]["informacoes_academicas"] == [
+        {"turno": "Integral", "habilitacoes": [], "graus_academicos": []}
+    ]
+    assert "contato@example.org" not in json.dumps(preview, ensure_ascii=False)
+
+
+def test_plural_turnos_and_full_chemistry_deadline_structure():
+    detail = with_academic_html(
+        "<p><strong>TURNOS:</strong>&nbsp;Noturno e Integral.</p>"
+        "<p><strong>HABILITAÇÃO</strong>: Licenciatura em Área A (Noturno) "
+        "e Bacharelado em Área A (Integral).</p>"
+        "<p><strong>GRAU ACADÊMICO</strong>: Licenciado em Área A "
+        "e Bacharel em Área A.</p>"
+        "<p><strong>PRAZO PARA CONCLUSÃO:</strong><br />"
+        "<strong>• Licenciatura:</strong> Mínimo de 5 anos - Máximo de 8 anos.<br />"
+        "<strong>• Bacharelado:</strong> Mínimo de 4 anos - Máximo de 8 anos.</p>"
+    )
+    preview = build_preview(collect(detail=detail), INDEX, DETAIL)
+
+    assert preview["curso"]["informacoes_academicas"] == [
+        {
+            "turno": "Noturno e Integral.",
+            "habilitacoes": [
+                "Licenciatura em Área A (Noturno) e Bacharelado em Área A (Integral)."
+            ],
+            "graus_academicos": ["Licenciado em Área A e Bacharel em Área A."],
+        }
+    ]
+    assert "Mínimo" not in json.dumps(preview, ensure_ascii=False)
 
 
 def test_personal_label_after_deadline_still_stops_before_following_degree():
