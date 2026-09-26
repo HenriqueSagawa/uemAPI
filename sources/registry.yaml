@@ -43,7 +43,7 @@ sources:
     last_verified: "2026-09-26"
     review_interval_days: null
     reuse_conditions: not_verified
-    notes: "O coletor local gera prévia dos sete centros extraídos do índice, com siglas, nomes e links. As páginas vinculadas apresentam departamentos e outros órgãos; o coletor ainda não as lê nem separa seus tipos."
+    notes: "O coletor de centros gera prévia dos sete centros extraídos do índice, com siglas, nomes e links, sem visitar as páginas vinculadas. Essas páginas apresentam departamentos, siglas e também outras entradas. app.collectors.departamentos lê uma cópia local de um centro por execução, gera candidatos com ID interno derivado da sigla e mantém rótulos, links e exclusões para revisão. A estrutura foi conferida em 2026-09-26; completude, câmpus, situação atual, origem do arquivo e reutilização não estão verificados. As prévias não criam snapshot nem acessam a rede."
 
   base_dados_uem:
     dataset:
