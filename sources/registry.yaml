@@ -43,7 +43,7 @@ sources:
     last_verified: "2026-09-25"
     review_interval_days: null
     reuse_conditions: not_verified
-    notes: "Sete páginas vinculadas apresentam departamentos, siglas e também outros órgãos; separar os tipos antes da coleta."
+    notes: "Sete páginas vinculadas apresentam departamentos, siglas e também outras entradas. app.collectors.departamentos lê uma cópia local de um centro por execução, gera candidatos com ID interno derivado da sigla e mantém rótulos, links e exclusões para revisão. A estrutura foi conferida em 2026-09-26; completude, câmpus, situação atual, origem do arquivo e reutilização não estão verificados. A prévia não cria snapshot nem acessa a rede."
 
   base_dados_uem:
     dataset:

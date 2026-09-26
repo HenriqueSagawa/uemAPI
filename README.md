@@ -54,6 +54,23 @@ Para comparar com uma captura anterior, acrescente `--html-anterior caminho/para
 
 A fixture é um exemplo para testes. Com uma cópia da página real, informe a hora em que ela foi capturada. A saída é uma prévia não publicável: cada entrada corresponde a um link da lista em um câmpus, e cursos de mesmo nome em câmpus diferentes permanecem separados. O coletor compara as seções de câmpus com a cobertura observada na PEN em 25 de setembro de 2026; se uma seção desaparecer ou surgir, a prévia falha e pede revisão. O coletor não usa o código da URL como ID institucional nem infere grau, centro ou departamento. Turnos e habilitações das páginas de detalhe e os cursos da EaD exigem uma etapa própria de revisão. As condições de reutilização da fonte também continuam pendentes.
 
+## Prévia local dos departamentos da PLD
+
+O coletor de departamentos lê uma cópia HTML local da página de um centro na [PLD](https://pld.uem.br/dvl/regulamentos/centros-de-ensino). Uma execução trata somente esse centro; a saída não comprova a cobertura completa de departamentos da UEM. O comando não acessa a rede nem grava arquivos.
+
+```bash
+python -m app.collectors.departamentos \
+  --html tests/fixtures/departamentos_ctc.html \
+  --centro CTC \
+  --consultado-em 2026-09-26T12:00:00Z
+```
+
+`--centro` aceita `CCA`, `CCB`, `CCE`, `CCH`, `CCS`, `CSA` e `CTC`. A fixture é sintética e contém somente exemplos. Para uma captura real, informe a hora da captura com fuso horário. O coletor confere o título da página e a entrada do próprio centro, extrai sigla e nome dos rótulos de regulamentos e mantém os rótulos originais e links em `auditoria`. Entradas que não identificam departamentos aparecem em `excluidos` com motivo; sua classificação institucional ainda exige revisão.
+
+A prévia usa a sigla em minúsculas como ID interno candidato, sem afirmar que seja um identificador institucional. Remove o sufixo de resolução do nome e mantém os demais parênteses. Reconhece a grafia `Deparamento de Engenharia Mecânica` na entrada `DEM`, preservando o nome e registrando uma observação para revisão. `campus_id` permanece `null` e `status` permanece `desconhecido`; a página de regulamentos não comprova esses campos. Os links dos regulamentos são preservados, mas seu conteúdo não é lido.
+
+A captura deve conter o conteúdo principal da PLD (`article#content`, título `documentFirstHeading`, `div#content-core` e lista `div.entries` com `article.entry`). Cada entrada admite um único link textual no cabeçalho e, opcionalmente, um link de ícone para a mesma URL. Mudanças nessa estrutura, siglas ou URLs duplicadas, artigos aninhados, ausência de departamentos ou links fora da página institucional do centro interrompem a prévia. O coletor não possui uma lista completa de siglas esperadas: remoções de entradas e completude precisam de conferência manual. A origem do arquivo local não é autenticada, a cobertura dos demais centros e as condições de reutilização continuam pendentes, e `publicavel` permanece `false`.
+
 ## Qualidade
 
 ```bash
