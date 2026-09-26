@@ -81,6 +81,19 @@ python -m app.collectors.curso_detalhes \
 
 O comando lê somente arquivos locais e imprime JSON. O título e o câmpus da página de detalhe devem coincidir com a entrada indicada no índice. Turnos, habilitações e graus são preservados em blocos conforme aparecem na seção acadêmica inicial; esses blocos ainda não representam ofertas independentes. O coletor separa valores por elementos HTML, não por quebras de linha do arquivo. Rótulos não acadêmicos encerram a captura; trechos ambíguos e contatos detectados em valores acadêmicos causam erro. Nomes, contatos e descrição do curso não são campos da prévia. O `id_candidato` combina o câmpus com o nome normalizado, mas muda se o nome mudar. Consulte a [decisão sobre unidade e IDs de cursos](docs/course-identity.md). O resultado permanece `publicavel: false` e não cria registros em `data/`.
 
+## Prévia consolidada dos detalhes de cursos
+
+Para conferir a cobertura do índice, associe cada página salva ao câmpus e à URL do curso em um manifesto JSON. Cada entrada contém `campus_id`, `url_detalhe`, `arquivo` e `consultado_em` com fuso horário. Caminhos relativos em `arquivo` são resolvidos a partir da pasta do manifesto. O [manifesto de exemplo](tests/fixtures/cursos_consolidados_manifesto.json) contém uma captura sintética; as demais entradas do índice aparecerão como `sem_captura`.
+
+```bash
+python -m app.collectors.cursos_consolidados \
+  --indice tests/fixtures/cursos_pen.html \
+  --manifesto tests/fixtures/cursos_consolidados_manifesto.json \
+  --consultado-em-indice 2026-09-26T12:00:00Z
+```
+
+O comando não acessa a rede nem grava arquivos. Ele imprime uma prévia por curso validado e informa, separadamente, cursos `sem_captura`, `arquivo_ausente`, com `falha_leitura` ou `invalido`, além de capturas `fora_do_indice`. O resumo inclui contagens por câmpus. Uma falha em um detalhe não impede a conferência dos demais. Entradas malformadas, repetidas ou que reutilizem o mesmo arquivo para dois cursos interrompem a execução para evitar associação ambígua. `cobertura_completa` indica apenas que todas as entradas presenciais do índice tiveram um detalhe aceito e que não sobraram capturas no manifesto; não aprova os dados para publicação. O relatório não inclui o HTML bruto nem mensagens de erro com conteúdo da página. A saída permanece `publicavel: false` e não cria `cursos.json`.
+
 ## Prévia local dos departamentos da PLD
 
 O coletor de departamentos lê uma cópia HTML local da página de um centro na [PLD](https://pld.uem.br/dvl/regulamentos/centros-de-ensino). Uma execução trata somente esse centro; a saída não comprova a cobertura completa de departamentos da UEM. O comando não acessa a rede nem grava arquivos.
