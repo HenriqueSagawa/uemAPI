@@ -122,6 +122,19 @@ python -m app.collectors.departamentos_consolidados \
 
 O comando lê apenas arquivos locais e imprime JSON, sem acessar a rede nem gravar em `data/`. O relatório traz uma prévia individual para cada centro aceito, informa centros `sem_captura`, com `arquivo_ausente`, `falha_leitura` ou `invalido`, e identifica siglas de departamentos repetidas entre centros aceitos. Uma captura inválida não impede a análise das outras; manifestos ambíguos, com centro desconhecido, entrada duplicada, arquivo reutilizado ou horário sem fuso são rejeitados. `cobertura_fontes_completa` indica apenas que as sete páginas esperadas foram processadas. Ainda é preciso revisar cada página para verificar a completude e a atualidade de sua lista, resolver duplicidades e aprovar os dados e as condições de reutilização. A saída permanece `publicavel: false`.
 
+## Revisão local de prévias
+
+As prévias de câmpus e centros podem ser comparadas com capturas anteriores. O relatório destaca mudanças de registros e proveniência, informa decisões pendentes ou desatualizadas e oferece um modelo para registrar justificativas e evidências. Consulte o [procedimento de revisão](docs/review-workflow.md). A revisão não publica dados nem cria arquivos em `data/`.
+
+```bash
+python -m app.review.previews \
+  --dataset campi \
+  --atual caminho/para/campi-atual.json \
+  --anterior caminho/para/campi-anterior.json
+```
+
+Na primeira revisão, omita `--anterior`. O mesmo comando aceita `--dataset centros` para as prévias do índice da PLD.
+
 ## Qualidade
 
 ```bash
@@ -136,8 +149,8 @@ O diretório configurado deve conter `campi.json`, `centros.json`, `departamento
 
 ## Próximas etapas
 
-1. Verificar fontes institucionais públicas para cada dataset, condições de uso e identificadores disponíveis.
-2. Implementar o Source Registry e os coletores, com fixtures sem dados pessoais.
-3. Definir o processo de revisão dos diffs e publicar os primeiros JSON reais aprovados.
+1. Aplicar a revisão de prévias a capturas reais de câmpus e centros, registrando decisões e evidências.
+2. Estender a revisão a departamentos e cursos; resolver cobertura da EaD, vínculos e IDs estáveis de cursos.
+3. Verificar condições de reutilização das fontes e aprovar o snapshot completo antes de publicar os primeiros JSON reais.
 
 O projeto não coleta dados pessoais, conteúdos restritos ou informações que exijam autenticação.
