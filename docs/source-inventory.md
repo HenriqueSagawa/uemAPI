@@ -1,6 +1,6 @@
 # Inventário inicial de fontes da uemAPI
 
-Revisão: 25 de setembro de 2026. Este inventário avalia as sete URLs já propostas em `sources/registry.yaml`. Todas permanecem **candidatas**. Acesso público à página confirma que ela pode ser lida sem login; não confirma permissão para coleta automatizada ou redistribuição de um dataset.
+Revisão inicial: 25 de setembro de 2026; índice dos centros reconferido em 26 de setembro. Este inventário avalia as sete URLs já propostas em `sources/registry.yaml`. Todas permanecem **candidatas**. Acesso público à página confirma que ela pode ser lida sem login; não confirma permissão para coleta automatizada ou redistribuição de um dataset.
 
 | Fonte | Dados observados | Uso proposto | Limite encontrado |
 | --- | --- | --- | --- |
@@ -22,3 +22,5 @@ Revisão: 25 de setembro de 2026. Este inventário avalia as sete URLs já propo
 Um protótipo do coletor de câmpus agora lê HTML local, valida a lista de municípios e gera uma prévia em JSON para revisão. Ele não busca páginas automaticamente nem cria um dataset de produção. As condições de reutilização e o snapshot completo continuam pendentes antes da publicação.
 
 O coletor de cursos lê uma cópia local do índice da PEN e gera uma prévia de entradas presenciais por câmpus. Ele não atribui IDs da API, não desdobra turnos ou habilitações e não inclui os cursos da EaD. A revisão do JSON e das condições de reutilização continua necessária antes de qualquer publicação. Nenhum dataset de produção foi criado nesta etapa.
+
+O coletor de centros lê uma cópia local do índice da PLD, valida as sete siglas observadas e gera uma prévia com nomes e links das páginas de cada centro. Os IDs são derivados das siglas em minúsculas. O coletor não lê essas páginas nem classifica os departamentos e outros órgãos nelas listados. A revisão da prévia e das condições de reutilização continua pendente; nenhum dataset de produção foi criado.
