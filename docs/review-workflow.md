@@ -15,6 +15,8 @@ python -m app.collectors.campi \
 
 Para centros, use `python -m app.collectors.centros` com os mesmos argumentos. Guarde a prévia anterior se quiser acompanhar o que mudou. Se não houver uma, a revisão tratará todos os registros atuais como candidatos novos.
 
+Ao carregar uma prévia de centros, a revisão exige que cada `id` corresponda à `sigla` em minúsculas, conforme a regra do coletor. Uma divergência interrompe a análise antes de registrar aprovações.
+
 ## Comparar e criar um modelo de decisões
 
 ```bash

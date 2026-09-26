@@ -166,6 +166,14 @@ def test_all_decisions_approved_still_do_not_publish(tmp_path):
     assert report["publicavel"] is False
 
 
+def test_center_id_must_match_sigla_even_with_complete_coverage(tmp_path):
+    wrong_id = _centros()
+    wrong_id["centros"][0]["id"] = "wrong-id"
+
+    with pytest.raises(PreviewReviewError, match="ID de centro não corresponde à sigla"):
+        load_preview(_write_json(tmp_path / "wrong-id.json", wrong_id), "centros")
+
+
 def test_invalid_preview_or_decision_is_rejected(tmp_path):
     preview = _centros()
     preview["centros"].append(deepcopy(preview["centros"][0]))

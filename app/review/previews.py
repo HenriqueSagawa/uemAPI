@@ -91,6 +91,8 @@ def load_preview(path: Path, dataset: Dataset) -> CandidatePreview:
                 raise PreviewReviewError(f"sigla duplicada na prévia: {record.sigla}")
             siglas.add(record.sigla.casefold())
         if dataset == "centros":
+            if record.id != record.sigla.lower():
+                raise PreviewReviewError("ID de centro não corresponde à sigla")
             if not isinstance(detail_url, str):
                 raise PreviewReviewError("link de centro ausente ou incompatível")
             try:
