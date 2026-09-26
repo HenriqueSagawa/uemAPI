@@ -315,7 +315,7 @@ def _parse_academic_blocks(parts: list[tuple[str, str]]) -> list[AcademicBlock]:
     return blocks
 
 
-def _candidate_id(course: CourseCandidate) -> str:
+def candidate_id(course: CourseCandidate) -> str:
     slug = re.sub(r"[^a-z0-9]+", "-", _normalize(course.nome)).strip("-")
     if not slug:
         raise CourseDetailSourceError("nome sem ID candidato válido")
@@ -341,7 +341,7 @@ def collect_course_detail(
     if not DETAIL_URL.fullmatch(detail_url):
         raise CourseDetailSourceError("URL de detalhe inesperada")
     courses, _ = collect_courses(index_html)
-    ids = [_candidate_id(course) for course in courses]
+    ids = [candidate_id(course) for course in courses]
     if len(ids) != len(set(ids)):
         raise CourseDetailSourceError("IDs candidatos duplicados no índice")
     matches = [
@@ -351,16 +351,29 @@ def collect_course_detail(
     ]
     if len(matches) != 1:
         raise CourseDetailSourceError("curso não encontrado no índice e câmpus informados")
-    course = matches[0]
+    return collect_course_detail_from_candidate(matches[0], detail_html, consultado_em)
+
+
+def collect_course_detail_from_candidate(
+    course: CourseCandidate,
+    detail_html: str,
+    consultado_em: datetime,
+) -> CourseDetailCollection:
+    """Confere um detalhe quando a entrada do índice já foi validada."""
     parser = CourseDetailParser()
-    parser.feed(detail_html)
-    title, breadcrumb, blocks = parser.finish()
+    try:
+        parser.feed(detail_html)
+        title, breadcrumb, blocks = parser.finish()
+    except CourseDetailSourceError:
+        raise
+    except ValueError as exc:
+        raise CourseDetailSourceError("HTML de detalhe inválido") from exc
     if _normalize(title) != _normalize(course.nome):
         raise CourseDetailSourceError("título do detalhe difere do índice")
-    if DETAIL_CAMPUSES.get(_normalize(breadcrumb)) != campus_id:
+    if DETAIL_CAMPUSES.get(_normalize(breadcrumb)) != course.campus_id:
         raise CourseDetailSourceError("câmpus do detalhe difere do índice")
-    fonte = Fonte(source_id="cursos_graduacao", url=detail_url, consultado_em=consultado_em)
-    return CourseDetailCollection(course, _candidate_id(course), blocks, fonte)
+    fonte = Fonte(source_id="cursos_graduacao", url=course.url_detalhe, consultado_em=consultado_em)
+    return CourseDetailCollection(course, candidate_id(course), blocks, fonte)
 
 
 def build_preview(collection: CourseDetailCollection, index_path: Path, detail_path: Path) -> dict:
