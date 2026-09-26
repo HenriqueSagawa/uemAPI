@@ -40,10 +40,10 @@ sources:
     access: public
     role: primary
     status: candidate
-    last_verified: "2026-09-25"
+    last_verified: "2026-09-26"
     review_interval_days: null
     reuse_conditions: not_verified
-    notes: "Sete páginas vinculadas apresentam departamentos, siglas e também outros órgãos; separar os tipos antes da coleta."
+    notes: "O coletor local gera prévia dos sete centros extraídos do índice, com siglas, nomes e links. As páginas vinculadas apresentam departamentos e outros órgãos; o coletor ainda não as lê nem separa seus tipos."
 
   base_dados_uem:
     dataset:
