@@ -361,8 +361,13 @@ def collect_course_detail_from_candidate(
 ) -> CourseDetailCollection:
     """Confere um detalhe quando a entrada do índice já foi validada."""
     parser = CourseDetailParser()
-    parser.feed(detail_html)
-    title, breadcrumb, blocks = parser.finish()
+    try:
+        parser.feed(detail_html)
+        title, breadcrumb, blocks = parser.finish()
+    except CourseDetailSourceError:
+        raise
+    except ValueError as exc:
+        raise CourseDetailSourceError("HTML de detalhe inválido") from exc
     if _normalize(title) != _normalize(course.nome):
         raise CourseDetailSourceError("título do detalhe difere do índice")
     if DETAIL_CAMPUSES.get(_normalize(breadcrumb)) != course.campus_id:

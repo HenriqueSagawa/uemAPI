@@ -123,6 +123,27 @@ def test_unreadable_utf8_is_reported_without_stopping_other_courses(tmp_path):
     assert "previa" not in preview["resultados"][1]
 
 
+def test_long_numeric_entity_invalidates_only_its_detail(tmp_path):
+    malformed = tmp_path / "entidade-longa.html"
+    malformed.write_text(
+        DETAIL.read_text(encoding="utf-8")
+        .replace("Pedagogia</h3>", "Design</h3>")
+        .replace("Graduação - Campus Sede", "Graduação - Campus Regional de Cianorte")
+        .replace("Integral<br>", "&#" + "9" * 5000 + ";<br>"),
+        encoding="utf-8",
+    )
+
+    preview = report([capture(COURSES[0], DETAIL), capture(COURSES[1], malformed)])
+
+    assert preview["resumo"]["aceitos"] == 1
+    assert preview["resumo"]["invalidos"] == 1
+    assert preview["resultados"][0]["status"] == "aceito"
+    assert preview["resultados"][0]["previa"]["curso"]["nome"] == "Pedagogia"
+    assert preview["resultados"][1]["status"] == "invalido"
+    assert preview["resultados"][1]["motivo"] == "HTML de detalhe inválido"
+    assert "9" * 5000 not in json.dumps(preview)
+
+
 @pytest.mark.parametrize(
     "mutate,expected",
     [
