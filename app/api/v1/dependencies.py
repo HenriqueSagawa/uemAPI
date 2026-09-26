@@ -14,5 +14,5 @@ async def get_snapshot(request: Request) -> Snapshot:
 
 
 SnapshotDep = Annotated[Snapshot, Depends(get_snapshot)]
-PageNumber = Annotated[int, Query(ge=1, default=1)]
-PageSize = Annotated[int, Query(ge=1, le=100, default=20)]
+PageNumber = Annotated[int, Query(ge=1)]
+PageSize = Annotated[int, Query(ge=1, le=100)]
