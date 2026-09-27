@@ -310,6 +310,15 @@ def test_department_review_rejects_inconsistent_preview(tmp_path, invalid):
         load_preview(_write_json(tmp_path / "invalida.json", preview), "departamentos")
 
 
+def test_department_review_rejects_case_variant_acronym_across_sections(tmp_path):
+    preview = _departamentos()
+    preview["excluidos"][1]["sigla"] = "dem"
+    preview["excluidos"][1]["rotulo_original"] = "dem - Outro órgão"
+
+    with pytest.raises(PreviewReviewError, match="sigla ou URL de excluidos inválida"):
+        load_preview(_write_json(tmp_path / "sigla-duplicada.json", preview), "departamentos")
+
+
 def test_department_review_rejects_consolidated_input_shape(tmp_path):
     capture = DepartmentCapture("CTC", FIXTURES / "departamentos_ctc.html", CAPTURED_AT)
     preview = build_batch_preview([capture], tmp_path / "manifesto.json")

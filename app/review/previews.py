@@ -187,7 +187,7 @@ def load_preview(path: Path, dataset: Dataset) -> CandidatePreview:
                 except ValueError as exc:
                     raise PreviewReviewError(f"URL de {section} inválida") from exc
                 if (
-                    sigla in seen_siglas
+                    sigla.casefold() in seen_siglas
                     or url in seen_urls
                     or parsed.scheme != "https"
                     or parsed.netloc != "pld.uem.br"
@@ -202,13 +202,13 @@ def load_preview(path: Path, dataset: Dataset) -> CandidatePreview:
                     or parsed.fragment
                 ):
                     raise PreviewReviewError(f"sigla ou URL de {section} inválida")
-                seen_siglas.add(sigla)
+                seen_siglas.add(sigla.casefold())
                 seen_urls.add(url)
                 if section == "auditoria":
                     audit_siglas.add(sigla)
         if audit_siglas != {record["sigla"] for record in records.values()}:
             raise PreviewReviewError("auditoria não corresponde aos departamentos")
-        if center not in seen_siglas - audit_siglas:
+        if not any(item["sigla"] == center for item in raw["excluidos"]):
             raise PreviewReviewError("regulamento do centro ausente das exclusões")
 
     return CandidatePreview(
