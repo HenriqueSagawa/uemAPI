@@ -232,6 +232,36 @@ def test_cli_creates_decision_template_without_overwriting(tmp_path):
     assert "File exists" in second.stderr or "arquivo existe" in second.stderr
 
 
+def test_department_review_cli_creates_report_and_decision_template(tmp_path):
+    current = _write_json(tmp_path / "departamentos.json", _departamentos())
+    template = tmp_path / "decisoes-departamentos.json"
+
+    result = subprocess.run(
+        [
+            sys.executable,
+            "-m",
+            "app.review.previews",
+            "--dataset",
+            "departamentos",
+            "--atual",
+            str(current),
+            "--modelo-decisoes",
+            str(template),
+        ],
+        capture_output=True,
+        text=True,
+        check=True,
+    )
+
+    report = json.loads(result.stdout)
+    assert report["dataset"] == "departamentos"
+    assert report["centro_sigla"] == "CTC"
+    assert report["publicavel"] is False
+    assert report["comparacao"]["status"] == "sem_captura_anterior"
+    assert report["revisao"]["pendentes"] == len(_departamentos()["departamentos"])
+    assert json.loads(template.read_text(encoding="utf-8")) == report["modelo_decisoes"]
+
+
 def test_department_review_is_per_center_and_never_publishes(tmp_path):
     current = load_preview(
         _write_json(tmp_path / "departamentos.json", _departamentos()), "departamentos"
