@@ -299,7 +299,10 @@ def test_department_review_compares_only_captures_of_the_same_center(tmp_path):
     previous_data["auditoria"] = [
         item for item in previous_data["auditoria"] if item["sigla"] != removed["sigla"]
     ]
-    previous_data["departamentos"][0]["nome"] = "Nome anterior"
+    previous_data["departamentos"][0]["nome"] = "Departamento de Informática Anterior"
+    previous_data["auditoria"][0]["rotulo_original"] = (
+        "DIN - Departamento de Informática Anterior (Resolução nº 067/2011-CTC)"
+    )
 
     current = load_preview(_write_json(tmp_path / "atual.json", current_data), "departamentos")
     previous = load_preview(_write_json(tmp_path / "anterior.json", previous_data), "departamentos")
@@ -347,6 +350,49 @@ def test_department_review_rejects_case_variant_acronym_across_sections(tmp_path
 
     with pytest.raises(PreviewReviewError, match="sigla ou URL de excluidos inválida"):
         load_preview(_write_json(tmp_path / "sigla-duplicada.json", preview), "departamentos")
+
+
+@pytest.mark.parametrize(
+    "label",
+    [
+        "XXX - Departamento Inexistente",
+        "DIN - Departamento Inexistente",
+        "sem formato de sigla e nome",
+    ],
+)
+def test_department_review_rejects_audit_label_inconsistent_with_record(tmp_path, label):
+    preview = _departamentos()
+    preview["auditoria"][0]["rotulo_original"] = label
+
+    with pytest.raises(PreviewReviewError, match="rótulo de auditoria"):
+        load_preview(_write_json(tmp_path / "rotulo-invalido.json", preview), "departamentos")
+
+
+@pytest.mark.parametrize(
+    "name_label, expected_name",
+    [
+        ("Departamento de Informática", "Departamento de Informática"),
+        ("Departamento de Informática (Resolucao 1)", "Departamento de Informática"),
+        ("Departamento de Informática (Resolução 1", "Departamento de Informática"),
+        (
+            "Departamento de Informática (Aplicada) -(Resolução 1)",
+            "Departamento de Informática (Aplicada)",
+        ),
+    ],
+)
+def test_department_review_accepts_collector_audit_label_variants(
+    tmp_path, name_label, expected_name
+):
+    source = FIXTURES / "departamentos_ctc.html"
+    html = source.read_text(encoding="utf-8").replace(
+        "Departamento de <strong>Informática</strong> (Resolução nº 067/2011-CTC)", name_label
+    )
+    preview = department_preview(collect_departamentos(html, "CTC", CAPTURED_AT), source)
+
+    current = load_preview(_write_json(tmp_path / "departamentos.json", preview), "departamentos")
+
+    assert current.records["din"]["nome"] == expected_name
+    assert current.records["dem"]["nome"] == "Deparamento de Engenharia Mecânica"
 
 
 def test_department_review_rejects_consolidated_input_shape(tmp_path):
