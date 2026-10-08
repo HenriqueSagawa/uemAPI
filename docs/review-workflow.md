@@ -1,4 +1,4 @@
-# Revisão local de prévias de câmpus, centros e departamentos
+# Revisão local de prévias de câmpus, centros, departamentos e cursos
 
 As prévias produzidas pelos coletores são candidatas. O comando de revisão compara duas prévias do mesmo dataset, destaca mudanças e associa decisões registradas a versões específicas de cada registro. Ele não acessa a rede, não altera as prévias e não cria arquivos em `data/`.
 
@@ -80,3 +80,38 @@ na auditoria ou nas exclusões exigem nova conferência. O relatório mantém a 
 dos departamentos do centro como não verificada, mesmo se todas as decisões dos registros
 listados forem aprovadas. Ele não aprova o conjunto dos sete centros, não resolve siglas
 repetidas entre eles e não grava em `data/`.
+
+## Cursos presenciais da PEN
+
+Para cursos, revise a **prévia consolidada** gerada por `app.collectors.cursos_consolidados`.
+O comando é separado porque o lote também contém entradas sem captura ou com detalhe
+inválido. Uma decisão de registro só é oferecida quando o detalhe foi aceito:
+
+```bash
+python -m app.review.cursos \
+  --atual caminho/para/cursos-consolidados-atual.json \
+  --anterior caminho/para/cursos-consolidados-anterior.json \
+  --modelo-decisoes /tmp/decisoes-cursos.json \
+  > /tmp/revisao-cursos.json
+```
+
+Omita `--anterior` na primeira revisão. Edite o modelo com decisões, justificativas,
+evidências e datas como descrito acima. Depois execute novamente, substituindo
+`--modelo-decisoes` por `--decisoes /tmp/decisoes-cursos.json`.
+
+O campo `id` do modelo é uma **chave de revisão** formada por `campus_id|url_detalhe`;
+ele não é o ID da API. Mudanças de nome sob o mesmo link aparecem como alteração do
+registro e tornam a decisão anterior desatualizada. Uma URL nova é outra entrada do
+índice: aparece como adição, e a URL removida exige uma decisão de remoção própria.
+Uma falha ou ausência da captura do detalhe mantém a entrada no índice e aparece em
+`inconsistencias_cobertura`, sem gerar uma remoção falsa. A ordem das entradas, o caminho
+do arquivo e a hora da captura não alteram a impressão de uma decisão. Mudanças em
+capturas fora do índice aparecem em `comparacao.cobertura_alterada`.
+
+O relatório confere as contagens do lote, as seções de câmpus observadas na PEN,
+os IDs candidatos, a correspondência entre cada detalhe aceito e sua entrada no índice,
+e a proveniência declarada. Capturas fora do índice e a EaD ainda não incluída também
+aparecem como pendências. Mesmo com todas as decisões registradas, o resultado fica
+`publicavel: false`: a chave de revisão não resolve os IDs estáveis, os blocos acadêmicos
+não foram desdobrados em ofertas, os vínculos e a completude ainda exigem conferência e
+as condições de reutilização das fontes seguem pendentes.

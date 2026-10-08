@@ -124,7 +124,7 @@ O comando lê apenas arquivos locais e imprime JSON, sem acessar a rede nem grav
 
 ## Revisão local de prévias
 
-As prévias de câmpus e centros podem ser comparadas com capturas anteriores. O relatório destaca mudanças de registros e proveniência, informa decisões pendentes ou desatualizadas e oferece um modelo para registrar justificativas e evidências. Consulte o [procedimento de revisão](docs/review-workflow.md). A revisão não publica dados nem cria arquivos em `data/`.
+As prévias de câmpus, centros e departamentos podem ser comparadas com capturas anteriores. O relatório destaca mudanças de registros e proveniência, informa decisões pendentes ou desatualizadas e oferece um modelo para registrar justificativas e evidências. O lote consolidado de cursos tem um comando próprio que revisa somente detalhes aceitos e informa capturas ausentes ou inválidas. Consulte o [procedimento de revisão](docs/review-workflow.md). A revisão não publica dados nem cria arquivos em `data/`.
 
 ```bash
 python -m app.review.previews \
@@ -133,7 +133,7 @@ python -m app.review.previews \
   --anterior caminho/para/campi-anterior.json
 ```
 
-Na primeira revisão, omita `--anterior`. O mesmo comando aceita `--dataset centros` para as prévias do índice da PLD.
+Na primeira revisão, omita `--anterior`. O mesmo comando aceita `--dataset centros` e `--dataset departamentos` para as prévias da PLD. Para o lote de cursos, use `python -m app.review.cursos --atual caminho/para/cursos-consolidados.json`; a chave de revisão é o par câmpus e URL do detalhe, sem definir o ID permanente da API.
 
 ## Qualidade
 
@@ -150,7 +150,7 @@ O diretório configurado deve conter `campi.json`, `centros.json`, `departamento
 ## Próximas etapas
 
 1. Aplicar a revisão de prévias a capturas reais de câmpus e centros, registrando decisões e evidências.
-2. Estender a revisão a departamentos e cursos; resolver cobertura da EaD, vínculos e IDs estáveis de cursos.
+2. Revisar as prévias consolidadas de departamentos e cursos; resolver cobertura da EaD, vínculos e IDs estáveis de cursos.
 3. Verificar condições de reutilização das fontes e aprovar o snapshot completo antes de publicar os primeiros JSON reais.
 
 O projeto não coleta dados pessoais, conteúdos restritos ou informações que exijam autenticação.
