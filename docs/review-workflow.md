@@ -1,4 +1,4 @@
-# Revisão local de prévias de câmpus e centros
+# Revisão local de prévias de câmpus, centros e departamentos
 
 As prévias produzidas pelos coletores são candidatas. O comando de revisão compara duas prévias do mesmo dataset, destaca mudanças e associa decisões registradas a versões específicas de cada registro. Ele não acessa a rede, não altera as prévias e não cria arquivos em `data/`.
 
@@ -53,3 +53,30 @@ python -m app.review.previews \
 Cada decisão usa a `impressao` gerada para o registro e sua proveniência. Uma mudança de nome, ID, sigla, cidade, fonte, link de centro, status ou proveniência torna a decisão anterior `decisao_desatualizada`. Uma nova data de captura, sozinha, não a invalida. Registros removidos têm decisões próprias. Decisões que não correspondem a um registro atual ou a uma remoção aparecem em `decisoes_obsoletas`; IDs ausentes ou inesperados aparecem em `inconsistencias_cobertura`.
 
 `todos_itens_aprovados` indica apenas que as decisões do relatório foram registradas e que não há inconsistências de cobertura. O relatório permanece `publicavel: false`: a origem dos arquivos locais não é autenticada, as condições de reutilização das fontes continuam pendentes e a API exige revisão do snapshot completo de quatro datasets antes de publicar dados.
+
+## Departamentos de um centro
+
+A revisão de departamentos recebe a prévia de uma única página de centro produzida por
+`app.collectors.departamentos`. Gere a captura atual e, se disponível, uma captura anterior
+do **mesmo centro**. Por exemplo:
+
+```bash
+python -m app.collectors.departamentos \
+  --html caminho/para/departamentos-ctc-atual.html \
+  --centro CTC \
+  --consultado-em 2026-09-26T12:00:00-03:00 \
+  > /tmp/departamentos-ctc-atual.json
+
+python -m app.review.previews \
+  --dataset departamentos \
+  --atual /tmp/departamentos-ctc-atual.json \
+  --anterior caminho/para/departamentos-ctc-anterior.json \
+  --modelo-decisoes /tmp/decisoes-departamentos-ctc.json
+```
+
+Omita `--anterior` na primeira revisão. O comando recusa prévias de centros diferentes,
+IDs incompatíveis com as siglas e a saída do coletor consolidado. Mudanças nos registros,
+na auditoria ou nas exclusões exigem nova conferência. O relatório mantém a completude
+dos departamentos do centro como não verificada, mesmo se todas as decisões dos registros
+listados forem aprovadas. Ele não aprova o conjunto dos sete centros, não resolve siglas
+repetidas entre eles e não grava em `data/`.

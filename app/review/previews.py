@@ -15,14 +15,19 @@ from app.collectors.campi import CAMPUS_SPECS
 from app.collectors.campi import SOURCE_URL as CAMPUS_SOURCE_URL
 from app.collectors.centros import EXPECTED_SIGLAS
 from app.collectors.centros import SOURCE_URL as CENTER_SOURCE_URL
+from app.collectors.departamentos import CENTROS as DEPARTMENT_CENTERS
+from app.collectors.departamentos import LABEL, RESOLUTION
+from app.collectors.departamentos import SOURCE_ROOT as DEPARTMENT_SOURCE_ROOT
 from app.schemas.campus import Campus
 from app.schemas.centro import Centro
+from app.schemas.departamento import Departamento
 
-Dataset = Literal["campi", "centros"]
+Dataset = Literal["campi", "centros", "departamentos"]
 DecisionKey = tuple[str, str]
 DATASETS = {
     "campi": (Campus, "campi_uem", CAMPUS_SOURCE_URL),
     "centros": (Centro, "centros_pld", CENTER_SOURCE_URL),
+    "departamentos": (Departamento, "centros_pld", None),
 }
 DECISIONS = frozenset({"pendente", "aprovado", "rejeitado"})
 
@@ -39,6 +44,7 @@ class CandidatePreview:
     captured_at: datetime
     provenance: dict[str, Any]
     records: dict[str, dict[str, Any]]
+    center: str | None = None
 
 
 def _read_json(path: Path) -> Any:
@@ -64,6 +70,30 @@ def load_preview(path: Path, dataset: Dataset) -> CandidatePreview:
         raise PreviewReviewError(f"prévia de {dataset} inválida: {path}")
 
     model, source_id, source_url = DATASETS[dataset]
+    center = None
+    provenance = raw["proveniencia"]
+    if dataset == "departamentos":
+        coverage = raw.get("cobertura")
+        if not isinstance(coverage, dict):
+            raise PreviewReviewError("cobertura de departamentos inválida")
+        center = coverage.get("centro_sigla")
+        if (
+            not isinstance(center, str)
+            or center not in DEPARTMENT_CENTERS
+            or coverage.get("status") != "parcial_por_centro"
+        ):
+            raise PreviewReviewError("centro ou cobertura de departamentos inválidos")
+        source_url = f"{DEPARTMENT_SOURCE_ROOT}/{DEPARTMENT_CENTERS[center][1]}"
+        if provenance.get("fonte_url") != source_url:
+            raise PreviewReviewError("fonte da prévia incompatível com o centro")
+        if not isinstance(raw.get("auditoria"), list) or not isinstance(raw.get("excluidos"), list):
+            raise PreviewReviewError("auditoria ou exclusões de departamentos inválidas")
+        provenance = {
+            **provenance,
+            "cobertura": coverage,
+            "auditoria": raw["auditoria"],
+            "excluidos": raw["excluidos"],
+        }
     if dataset == "centros" and (
         type(raw.get("total")) is not int or raw["total"] != len(raw[dataset])
     ):
@@ -90,6 +120,10 @@ def load_preview(path: Path, dataset: Dataset) -> CandidatePreview:
             if record.sigla.casefold() in siglas:
                 raise PreviewReviewError(f"sigla duplicada na prévia: {record.sigla}")
             siglas.add(record.sigla.casefold())
+        if dataset == "departamentos" and (
+            record.centro_sigla != center or record.id != record.sigla.lower()
+        ):
+            raise PreviewReviewError("departamento incompatível com o centro ou a sigla")
         if dataset == "centros":
             if record.id != record.sigla.lower():
                 raise PreviewReviewError("ID de centro não corresponde à sigla")
@@ -123,8 +157,75 @@ def load_preview(path: Path, dataset: Dataset) -> CandidatePreview:
     if len(timestamps) != 1:
         raise PreviewReviewError("registros da prévia têm horários de captura divergentes")
 
+    if dataset == "departamentos":
+        audit_siglas: set[str] = set()
+        seen_siglas: set[str] = set()
+        seen_urls: set[str] = set()
+        source_path = urlsplit(source_url).path + "/"
+        for section in ("auditoria", "excluidos"):
+            required = {"sigla", "rotulo_original", "regulamento_url"}
+            if section == "excluidos":
+                required.add("motivo")
+            for item in raw[section]:
+                if not isinstance(item, dict) or not required <= item.keys():
+                    raise PreviewReviewError(f"entrada de {section} inválida")
+                if set(item) - required - ({"observacao"} if section == "auditoria" else set()):
+                    raise PreviewReviewError(f"entrada de {section} inválida")
+                if any(
+                    not isinstance(item[field], str) or not item[field].strip()
+                    for field in required
+                ):
+                    raise PreviewReviewError(f"entrada de {section} inválida")
+                if (
+                    section == "auditoria"
+                    and "observacao" in item
+                    and (not isinstance(item["observacao"], str) or not item["observacao"].strip())
+                ):
+                    raise PreviewReviewError("entrada de auditoria inválida")
+                sigla, url = item["sigla"], item["regulamento_url"]
+                try:
+                    parsed = urlsplit(url)
+                except ValueError as exc:
+                    raise PreviewReviewError(f"URL de {section} inválida") from exc
+                if (
+                    sigla.casefold() in seen_siglas
+                    or url in seen_urls
+                    or parsed.scheme != "https"
+                    or parsed.netloc != "pld.uem.br"
+                    or not url.startswith(source_url + "/")
+                    or not parsed.path.startswith(source_path)
+                    or parsed.path == source_path
+                    or "//" in parsed.path
+                    or any(char.isspace() or ord(char) < 32 for char in url)
+                    or any(char in url for char in "\\%?#")
+                    or any(segment in {".", ".."} for segment in parsed.path.split("/"))
+                    or parsed.query
+                    or parsed.fragment
+                ):
+                    raise PreviewReviewError(f"sigla ou URL de {section} inválida")
+                seen_siglas.add(sigla.casefold())
+                seen_urls.add(url)
+                if section == "auditoria":
+                    record = records.get(sigla.lower())
+                    label = LABEL.fullmatch(item["rotulo_original"])
+                    if (
+                        record is None
+                        or label is None
+                        or label[1] != sigla
+                        or label[1] != record["sigla"]
+                        or RESOLUTION.sub("", label[2]).strip() != record["nome"]
+                    ):
+                        raise PreviewReviewError(
+                            "rótulo de auditoria não corresponde ao departamento"
+                        )
+                    audit_siglas.add(sigla)
+        if audit_siglas != {record["sigla"] for record in records.values()}:
+            raise PreviewReviewError("auditoria não corresponde aos departamentos")
+        if not any(item["sigla"] == center for item in raw["excluidos"]):
+            raise PreviewReviewError("regulamento do centro ausente das exclusões")
+
     return CandidatePreview(
-        dataset, path, raw["entrada"], timestamps.pop(), raw["proveniencia"], records
+        dataset, path, raw["entrada"], timestamps.pop(), provenance, records, center
     )
 
 
@@ -227,6 +328,8 @@ def _changes(previous: dict[str, Any], current: dict[str, Any]) -> dict[str, Any
 
 
 def _coverage_issues(current: CandidatePreview) -> list[str]:
+    if current.dataset == "departamentos":
+        return ["completude dos departamentos do centro não verificada"]
     if current.dataset == "campi":
         expected = {spec.id for spec in CAMPUS_SPECS}
         observed = set(current.records)
@@ -250,6 +353,8 @@ def build_review(
     if previous is not None:
         if previous.dataset != current.dataset:
             raise PreviewReviewError("prévia anterior pertence a outro dataset")
+        if current.dataset == "departamentos" and previous.center != current.center:
+            raise PreviewReviewError("prévias de departamentos pertencem a centros diferentes")
         if previous.captured_at > current.captured_at:
             raise PreviewReviewError("prévia anterior é mais recente que a atual")
     decisions = decisions or {}
@@ -276,7 +381,12 @@ def build_review(
     ]:
         key = (kind, record_id)
         used_keys.add(key)
-        provenance = current.provenance if kind == "registro" else previous.provenance
+        if kind == "registro":
+            provenance = current.provenance
+        elif current.dataset == "departamentos":
+            provenance = {"anterior": previous.provenance, "atual": current.provenance}
+        else:
+            provenance = previous.provenance
         digest = fingerprint(record, provenance)
         decision = decisions.get(key)
         if decision is None:
@@ -313,6 +423,7 @@ def build_review(
         "modo": "revisao",
         "publicavel": False,
         "dataset": current.dataset,
+        **({"centro_sigla": current.center} if current.center else {}),
         "entradas": {
             "atual": str(current.file),
             "html_atual": current.html_file,
@@ -366,7 +477,9 @@ def build_review(
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Revisa prévias locais de câmpus ou centros")
+    parser = argparse.ArgumentParser(
+        description="Revisa prévias locais de câmpus, centros ou departamentos por centro"
+    )
     parser.add_argument("--dataset", required=True, choices=DATASETS)
     parser.add_argument("--atual", required=True, type=Path, help="JSON da prévia atual")
     parser.add_argument("--anterior", type=Path, help="JSON da prévia anterior")
