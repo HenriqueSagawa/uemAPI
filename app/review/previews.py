@@ -16,6 +16,7 @@ from app.collectors.campi import SOURCE_URL as CAMPUS_SOURCE_URL
 from app.collectors.centros import EXPECTED_SIGLAS
 from app.collectors.centros import SOURCE_URL as CENTER_SOURCE_URL
 from app.collectors.departamentos import CENTROS as DEPARTMENT_CENTERS
+from app.collectors.departamentos import LABEL, RESOLUTION
 from app.collectors.departamentos import SOURCE_ROOT as DEPARTMENT_SOURCE_ROOT
 from app.schemas.campus import Campus
 from app.schemas.centro import Centro
@@ -205,6 +206,18 @@ def load_preview(path: Path, dataset: Dataset) -> CandidatePreview:
                 seen_siglas.add(sigla.casefold())
                 seen_urls.add(url)
                 if section == "auditoria":
+                    record = records.get(sigla.lower())
+                    label = LABEL.fullmatch(item["rotulo_original"])
+                    if (
+                        record is None
+                        or label is None
+                        or label[1] != sigla
+                        or label[1] != record["sigla"]
+                        or RESOLUTION.sub("", label[2]).strip() != record["nome"]
+                    ):
+                        raise PreviewReviewError(
+                            "rótulo de auditoria não corresponde ao departamento"
+                        )
                     audit_siglas.add(sigla)
         if audit_siglas != {record["sigla"] for record in records.values()}:
             raise PreviewReviewError("auditoria não corresponde aos departamentos")
