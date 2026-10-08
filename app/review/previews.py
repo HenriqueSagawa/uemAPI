@@ -1,4 +1,4 @@
-"""Compara prévias de câmpus e centros e registra decisões sobre candidatos."""
+"""Compara prévias de câmpus, centros e departamentos e registra decisões."""
 
 import argparse
 import hashlib
@@ -23,6 +23,7 @@ from app.schemas.centro import Centro
 from app.schemas.departamento import Departamento
 
 Dataset = Literal["campi", "centros", "departamentos"]
+DecisionDataset = Literal["campi", "centros", "departamentos", "cursos"]
 DecisionKey = tuple[str, str]
 DATASETS = {
     "campi": (Campus, "campi_uem", CAMPUS_SOURCE_URL),
@@ -47,7 +48,7 @@ class CandidatePreview:
     center: str | None = None
 
 
-def _read_json(path: Path) -> Any:
+def read_json(path: Path) -> Any:
     try:
         return json.loads(path.read_text(encoding="utf-8"))
     except (OSError, UnicodeError, ValueError) as exc:
@@ -56,7 +57,7 @@ def _read_json(path: Path) -> Any:
 
 def load_preview(path: Path, dataset: Dataset) -> CandidatePreview:
     """Valida o formato da prévia e normaliza apenas os campos revisáveis."""
-    raw = _read_json(path)
+    raw = read_json(path)
     if (
         not isinstance(raw, dict)
         or raw.get("modo") != "previa"
@@ -251,8 +252,8 @@ def _parse_decision_time(value: Any) -> None:
         raise PreviewReviewError("data_decisao deve incluir fuso horário")
 
 
-def load_decisions(path: Path, dataset: Dataset) -> dict[DecisionKey, dict[str, Any]]:
-    raw = _read_json(path)
+def load_decisions(path: Path, dataset: DecisionDataset) -> dict[DecisionKey, dict[str, Any]]:
+    raw = read_json(path)
     if (
         not isinstance(raw, dict)
         or set(raw) != {"versao", "dataset", "decisoes"}
@@ -311,7 +312,7 @@ def load_decisions(path: Path, dataset: Dataset) -> dict[DecisionKey, dict[str, 
     return decisions
 
 
-def _changes(previous: dict[str, Any], current: dict[str, Any]) -> dict[str, Any]:
+def diff_fields(previous: dict[str, Any], current: dict[str, Any]) -> dict[str, Any]:
     changed: dict[str, Any] = {}
     for field in sorted(set(previous) | set(current)):
         before, after = previous.get(field), current.get(field)
@@ -367,7 +368,7 @@ def build_review(
         [{"id": key, "tipo": "adicionado", "atual": new[key]} for key in added]
         + [{"id": key, "tipo": "removido", "anterior": old[key]} for key in removed]
         + [
-            {"id": key, "tipo": "alterado", "campos": _changes(old[key], new[key])}
+            {"id": key, "tipo": "alterado", "campos": diff_fields(old[key], new[key])}
             for key in modified
         ]
     )
