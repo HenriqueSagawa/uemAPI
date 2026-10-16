@@ -1,0 +1,561 @@
+{
+  "modo": "revisao",
+  "publicavel": false,
+  "dataset": "departamentos",
+  "centro_sigla": "CCH",
+  "entradas": {
+    "atual": "reviews/2026-10-16-departamentos/cch/previa.json",
+    "html_atual": "reviews/2026-10-16-departamentos/capturas/departamentos-cch.html",
+    "consultado_em_atual": "2026-10-16T16:41:27.840273+00:00",
+    "anterior": null,
+    "html_anterior": null,
+    "consultado_em_anterior": null
+  },
+  "comparacao": {
+    "status": "sem_captura_anterior",
+    "adicionados": 11,
+    "removidos": 0,
+    "alterados": 0,
+    "inalterados": 0,
+    "mudancas": [
+      {
+        "id": "dcs",
+        "tipo": "adicionado",
+        "atual": {
+          "id": "dcs",
+          "nome": "Departamento de Ciências Sociais",
+          "status": "desconhecido",
+          "fonte": {
+            "source_id": "centros_pld",
+            "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch"
+          },
+          "sigla": "DCS",
+          "centro_sigla": "CCH",
+          "campus_id": null
+        }
+      },
+      {
+        "id": "dfe",
+        "tipo": "adicionado",
+        "atual": {
+          "id": "dfe",
+          "nome": "Departamento de Fundamentos da Educação",
+          "status": "desconhecido",
+          "fonte": {
+            "source_id": "centros_pld",
+            "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch"
+          },
+          "sigla": "DFE",
+          "centro_sigla": "CCH",
+          "campus_id": null
+        }
+      },
+      {
+        "id": "dfl",
+        "tipo": "adicionado",
+        "atual": {
+          "id": "dfl",
+          "nome": "Departamento de Filosofia",
+          "status": "desconhecido",
+          "fonte": {
+            "source_id": "centros_pld",
+            "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch"
+          },
+          "sigla": "DFL",
+          "centro_sigla": "CCH",
+          "campus_id": null
+        }
+      },
+      {
+        "id": "dge",
+        "tipo": "adicionado",
+        "atual": {
+          "id": "dge",
+          "nome": "Departamento de Geografia",
+          "status": "desconhecido",
+          "fonte": {
+            "source_id": "centros_pld",
+            "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch"
+          },
+          "sigla": "DGE",
+          "centro_sigla": "CCH",
+          "campus_id": null
+        }
+      },
+      {
+        "id": "dhi",
+        "tipo": "adicionado",
+        "atual": {
+          "id": "dhi",
+          "nome": "Departamento de História",
+          "status": "desconhecido",
+          "fonte": {
+            "source_id": "centros_pld",
+            "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch"
+          },
+          "sigla": "DHI",
+          "centro_sigla": "CCH",
+          "campus_id": null
+        }
+      },
+      {
+        "id": "dlm",
+        "tipo": "adicionado",
+        "atual": {
+          "id": "dlm",
+          "nome": "Departamento de Letras Modernas",
+          "status": "desconhecido",
+          "fonte": {
+            "source_id": "centros_pld",
+            "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch"
+          },
+          "sigla": "DLM",
+          "centro_sigla": "CCH",
+          "campus_id": null
+        }
+      },
+      {
+        "id": "dlp",
+        "tipo": "adicionado",
+        "atual": {
+          "id": "dlp",
+          "nome": "Departamento de Língua Portuguesa",
+          "status": "desconhecido",
+          "fonte": {
+            "source_id": "centros_pld",
+            "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch"
+          },
+          "sigla": "DLP",
+          "centro_sigla": "CCH",
+          "campus_id": null
+        }
+      },
+      {
+        "id": "dmc",
+        "tipo": "adicionado",
+        "atual": {
+          "id": "dmc",
+          "nome": "Departamento de Música e Artes Cênicas",
+          "status": "desconhecido",
+          "fonte": {
+            "source_id": "centros_pld",
+            "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch"
+          },
+          "sigla": "DMC",
+          "centro_sigla": "CCH",
+          "campus_id": null
+        }
+      },
+      {
+        "id": "dpd",
+        "tipo": "adicionado",
+        "atual": {
+          "id": "dpd",
+          "nome": "Departamento de Pedagogia",
+          "status": "desconhecido",
+          "fonte": {
+            "source_id": "centros_pld",
+            "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch"
+          },
+          "sigla": "DPD",
+          "centro_sigla": "CCH",
+          "campus_id": null
+        }
+      },
+      {
+        "id": "dtl",
+        "tipo": "adicionado",
+        "atual": {
+          "id": "dtl",
+          "nome": "Departamento de Teorias Linguísticas e Literárias",
+          "status": "desconhecido",
+          "fonte": {
+            "source_id": "centros_pld",
+            "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch"
+          },
+          "sigla": "DTL",
+          "centro_sigla": "CCH",
+          "campus_id": null
+        }
+      },
+      {
+        "id": "dtp",
+        "tipo": "adicionado",
+        "atual": {
+          "id": "dtp",
+          "nome": "Departamento de Teoria e Prática da Educação",
+          "status": "desconhecido",
+          "fonte": {
+            "source_id": "centros_pld",
+            "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch"
+          },
+          "sigla": "DTP",
+          "centro_sigla": "CCH",
+          "campus_id": null
+        }
+      }
+    ],
+    "proveniencia_alterada": false
+  },
+  "revisao": {
+    "registros": [
+      {
+        "tipo": "registro",
+        "id": "dcs",
+        "impressao": "658ddbc5ca6499d1bf98f626579f29ff1740e0a5840c0705d65a5b805f7b75b5",
+        "status": "aprovado",
+        "justificativa": "Conferidos sigla DCS, nome Departamento de Ciências Sociais e href no rótulo DCS - Departamento de Ciências Sociais (Resolução nº 030/2013-DCS). O vínculo candidato com CCH corresponde à página cujo título e regulamento próprio identificam esse centro. O ID é a sigla em minúsculas. A decisão cobre a fidelidade à listagem capturada; campus_id permanece null e status permanece desconhecido. O documento vinculado e a atualidade institucional não foram verificados.",
+        "evidencias": [
+          "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch",
+          "reviews/2026-10-16-departamentos/capturas.json",
+          "reviews/2026-10-16-departamentos/exclusoes.md"
+        ],
+        "data_decisao": "2026-10-16T16:43:05+00:00"
+      },
+      {
+        "tipo": "registro",
+        "id": "dfe",
+        "impressao": "61fb8ac5e1ed6729e1b8d4993101d5921d794be0d79e68270dd78dfc2a8443f6",
+        "status": "aprovado",
+        "justificativa": "Conferidos sigla DFE, nome Departamento de Fundamentos da Educação e href no rótulo DFE - Departamento de Fundamentos da Educação (Resolução nº 006/2019-CI/CCH). O vínculo candidato com CCH corresponde à página cujo título e regulamento próprio identificam esse centro. O ID é a sigla em minúsculas. A decisão cobre a fidelidade à listagem capturada; campus_id permanece null e status permanece desconhecido. O documento vinculado e a atualidade institucional não foram verificados.",
+        "evidencias": [
+          "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch",
+          "reviews/2026-10-16-departamentos/capturas.json",
+          "reviews/2026-10-16-departamentos/exclusoes.md"
+        ],
+        "data_decisao": "2026-10-16T16:43:05+00:00"
+      },
+      {
+        "tipo": "registro",
+        "id": "dfl",
+        "impressao": "0d8e4f7c485ce0e19fc40ba6df2f88c038fc18ae97f52aabc9e0747ce2205241",
+        "status": "aprovado",
+        "justificativa": "Conferidos sigla DFL, nome Departamento de Filosofia e href no rótulo DFL - Departamento de Filosofia (Resolução CI/CCH Nº 130, de 26 de agosto de 2026). O vínculo candidato com CCH corresponde à página cujo título e regulamento próprio identificam esse centro. O ID é a sigla em minúsculas. A decisão cobre a fidelidade à listagem capturada; campus_id permanece null e status permanece desconhecido. O documento vinculado e a atualidade institucional não foram verificados.",
+        "evidencias": [
+          "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch",
+          "reviews/2026-10-16-departamentos/capturas.json",
+          "reviews/2026-10-16-departamentos/exclusoes.md"
+        ],
+        "data_decisao": "2026-10-16T16:43:05+00:00"
+      },
+      {
+        "tipo": "registro",
+        "id": "dge",
+        "impressao": "71c6f1ea976dfcefeea7d138fa963109d0d2586a47b721a0d3a9f8750fa68e86",
+        "status": "aprovado",
+        "justificativa": "Conferidos sigla DGE, nome Departamento de Geografia e href no rótulo DGE - Departamento de Geografia (Resolução nº 026/2022-CI/CCH). O vínculo candidato com CCH corresponde à página cujo título e regulamento próprio identificam esse centro. O ID é a sigla em minúsculas. A decisão cobre a fidelidade à listagem capturada; campus_id permanece null e status permanece desconhecido. O documento vinculado e a atualidade institucional não foram verificados.",
+        "evidencias": [
+          "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch",
+          "reviews/2026-10-16-departamentos/capturas.json",
+          "reviews/2026-10-16-departamentos/exclusoes.md"
+        ],
+        "data_decisao": "2026-10-16T16:43:05+00:00"
+      },
+      {
+        "tipo": "registro",
+        "id": "dhi",
+        "impressao": "3fbf2944a2781d592ec295491946ad2c54b04f4bc00df9e51f514f678ed39fe0",
+        "status": "aprovado",
+        "justificativa": "Conferidos sigla DHI, nome Departamento de História e href no rótulo DHI - Departamento de História (Resolução nº 044/2016-CI/CCH). O vínculo candidato com CCH corresponde à página cujo título e regulamento próprio identificam esse centro. O ID é a sigla em minúsculas. A decisão cobre a fidelidade à listagem capturada; campus_id permanece null e status permanece desconhecido. O documento vinculado e a atualidade institucional não foram verificados.",
+        "evidencias": [
+          "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch",
+          "reviews/2026-10-16-departamentos/capturas.json",
+          "reviews/2026-10-16-departamentos/exclusoes.md"
+        ],
+        "data_decisao": "2026-10-16T16:43:05+00:00"
+      },
+      {
+        "tipo": "registro",
+        "id": "dlm",
+        "impressao": "d90ce9d901ad9908bca558434ae7de27d8b87de5bc4cbca6c838c9f5bb5174a7",
+        "status": "aprovado",
+        "justificativa": "Conferidos sigla DLM, nome Departamento de Letras Modernas e href no rótulo DLM - Departamento de Letras Modernas (Resolução nº 097/2016-CI/CCH). O vínculo candidato com CCH corresponde à página cujo título e regulamento próprio identificam esse centro. O ID é a sigla em minúsculas. A decisão cobre a fidelidade à listagem capturada; campus_id permanece null e status permanece desconhecido. O documento vinculado e a atualidade institucional não foram verificados.",
+        "evidencias": [
+          "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch",
+          "reviews/2026-10-16-departamentos/capturas.json",
+          "reviews/2026-10-16-departamentos/exclusoes.md"
+        ],
+        "data_decisao": "2026-10-16T16:43:05+00:00"
+      },
+      {
+        "tipo": "registro",
+        "id": "dlp",
+        "impressao": "7b1835d0b689b499fabe885d7b31106cac1a431f76f354db844c931a93d00f69",
+        "status": "aprovado",
+        "justificativa": "Conferidos sigla DLP, nome Departamento de Língua Portuguesa e href no rótulo DLP - Departamento de Língua Portuguesa (Resolução nº 169/2024-CI/CCH). O vínculo candidato com CCH corresponde à página cujo título e regulamento próprio identificam esse centro. O ID é a sigla em minúsculas. A decisão cobre a fidelidade à listagem capturada; campus_id permanece null e status permanece desconhecido. O documento vinculado e a atualidade institucional não foram verificados.",
+        "evidencias": [
+          "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch",
+          "reviews/2026-10-16-departamentos/capturas.json",
+          "reviews/2026-10-16-departamentos/exclusoes.md"
+        ],
+        "data_decisao": "2026-10-16T16:43:05+00:00"
+      },
+      {
+        "tipo": "registro",
+        "id": "dmc",
+        "impressao": "082122729c17ac158de307992ea2937205e9f6ec6ab6d64311457f033b1cd988",
+        "status": "aprovado",
+        "justificativa": "Conferidos sigla DMC, nome Departamento de Música e Artes Cênicas e href no rótulo DMC - Departamento de Música e Artes Cênicas (Resolução nº 059/2024-CI/CCH). O vínculo candidato com CCH corresponde à página cujo título e regulamento próprio identificam esse centro. O ID é a sigla em minúsculas. A decisão cobre a fidelidade à listagem capturada; campus_id permanece null e status permanece desconhecido. O documento vinculado e a atualidade institucional não foram verificados.",
+        "evidencias": [
+          "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch",
+          "reviews/2026-10-16-departamentos/capturas.json",
+          "reviews/2026-10-16-departamentos/exclusoes.md"
+        ],
+        "data_decisao": "2026-10-16T16:43:05+00:00"
+      },
+      {
+        "tipo": "registro",
+        "id": "dpd",
+        "impressao": "e45bc71d6829c43e5f0065ba1726bd27de9234fbc1a374c43550aa8eaa2290cc",
+        "status": "aprovado",
+        "justificativa": "Conferidos sigla DPD, nome Departamento de Pedagogia e href no rótulo DPD - Departamento de Pedagogia (Resolução nº 151/2017-CI/CCH). O vínculo candidato com CCH corresponde à página cujo título e regulamento próprio identificam esse centro. O ID é a sigla em minúsculas. A decisão cobre a fidelidade à listagem capturada; campus_id permanece null e status permanece desconhecido. O documento vinculado e a atualidade institucional não foram verificados.",
+        "evidencias": [
+          "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch",
+          "reviews/2026-10-16-departamentos/capturas.json",
+          "reviews/2026-10-16-departamentos/exclusoes.md"
+        ],
+        "data_decisao": "2026-10-16T16:43:05+00:00"
+      },
+      {
+        "tipo": "registro",
+        "id": "dtl",
+        "impressao": "67168bf5d713da3123b4a8d575f9897061a0ea838a974ff8798cf6dd1f539867",
+        "status": "aprovado",
+        "justificativa": "Conferidos sigla DTL, nome Departamento de Teorias Linguísticas e Literárias e href no rótulo DTL - Departamento de Teorias Linguísticas e Literárias (Resolução nº 151/2016-CI/CCH). O vínculo candidato com CCH corresponde à página cujo título e regulamento próprio identificam esse centro. O ID é a sigla em minúsculas. A decisão cobre a fidelidade à listagem capturada; campus_id permanece null e status permanece desconhecido. O documento vinculado e a atualidade institucional não foram verificados.",
+        "evidencias": [
+          "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch",
+          "reviews/2026-10-16-departamentos/capturas.json",
+          "reviews/2026-10-16-departamentos/exclusoes.md"
+        ],
+        "data_decisao": "2026-10-16T16:43:05+00:00"
+      },
+      {
+        "tipo": "registro",
+        "id": "dtp",
+        "impressao": "f49a3491f89107b08b77bd3dbb76e833aab7e29e49c1a24fb7f15657a77f4032",
+        "status": "aprovado",
+        "justificativa": "Conferidos sigla DTP, nome Departamento de Teoria e Prática da Educação e href no rótulo DTP - Departamento de Teoria e Prática da Educação (Resolução nº 043/2023-CI/CCH). O vínculo candidato com CCH corresponde à página cujo título e regulamento próprio identificam esse centro. O ID é a sigla em minúsculas. A decisão cobre a fidelidade à listagem capturada; campus_id permanece null e status permanece desconhecido. O documento vinculado e a atualidade institucional não foram verificados.",
+        "evidencias": [
+          "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch",
+          "reviews/2026-10-16-departamentos/capturas.json",
+          "reviews/2026-10-16-departamentos/exclusoes.md"
+        ],
+        "data_decisao": "2026-10-16T16:43:05+00:00"
+      }
+    ],
+    "pendentes": 0,
+    "rejeitados": 0,
+    "aprovados": 11,
+    "decisoes_obsoletas": [],
+    "inconsistencias_cobertura": [
+      "completude dos departamentos do centro não verificada"
+    ],
+    "todos_itens_aprovados": false
+  },
+  "modelo_decisoes": {
+    "versao": 1,
+    "dataset": "departamentos",
+    "decisoes": [
+      {
+        "tipo": "registro",
+        "id": "dcs",
+        "impressao": "658ddbc5ca6499d1bf98f626579f29ff1740e0a5840c0705d65a5b805f7b75b5",
+        "decisao": "pendente",
+        "justificativa": "",
+        "evidencias": [],
+        "data_decisao": null
+      },
+      {
+        "tipo": "registro",
+        "id": "dfe",
+        "impressao": "61fb8ac5e1ed6729e1b8d4993101d5921d794be0d79e68270dd78dfc2a8443f6",
+        "decisao": "pendente",
+        "justificativa": "",
+        "evidencias": [],
+        "data_decisao": null
+      },
+      {
+        "tipo": "registro",
+        "id": "dfl",
+        "impressao": "0d8e4f7c485ce0e19fc40ba6df2f88c038fc18ae97f52aabc9e0747ce2205241",
+        "decisao": "pendente",
+        "justificativa": "",
+        "evidencias": [],
+        "data_decisao": null
+      },
+      {
+        "tipo": "registro",
+        "id": "dge",
+        "impressao": "71c6f1ea976dfcefeea7d138fa963109d0d2586a47b721a0d3a9f8750fa68e86",
+        "decisao": "pendente",
+        "justificativa": "",
+        "evidencias": [],
+        "data_decisao": null
+      },
+      {
+        "tipo": "registro",
+        "id": "dhi",
+        "impressao": "3fbf2944a2781d592ec295491946ad2c54b04f4bc00df9e51f514f678ed39fe0",
+        "decisao": "pendente",
+        "justificativa": "",
+        "evidencias": [],
+        "data_decisao": null
+      },
+      {
+        "tipo": "registro",
+        "id": "dlm",
+        "impressao": "d90ce9d901ad9908bca558434ae7de27d8b87de5bc4cbca6c838c9f5bb5174a7",
+        "decisao": "pendente",
+        "justificativa": "",
+        "evidencias": [],
+        "data_decisao": null
+      },
+      {
+        "tipo": "registro",
+        "id": "dlp",
+        "impressao": "7b1835d0b689b499fabe885d7b31106cac1a431f76f354db844c931a93d00f69",
+        "decisao": "pendente",
+        "justificativa": "",
+        "evidencias": [],
+        "data_decisao": null
+      },
+      {
+        "tipo": "registro",
+        "id": "dmc",
+        "impressao": "082122729c17ac158de307992ea2937205e9f6ec6ab6d64311457f033b1cd988",
+        "decisao": "pendente",
+        "justificativa": "",
+        "evidencias": [],
+        "data_decisao": null
+      },
+      {
+        "tipo": "registro",
+        "id": "dpd",
+        "impressao": "e45bc71d6829c43e5f0065ba1726bd27de9234fbc1a374c43550aa8eaa2290cc",
+        "decisao": "pendente",
+        "justificativa": "",
+        "evidencias": [],
+        "data_decisao": null
+      },
+      {
+        "tipo": "registro",
+        "id": "dtl",
+        "impressao": "67168bf5d713da3123b4a8d575f9897061a0ea838a974ff8798cf6dd1f539867",
+        "decisao": "pendente",
+        "justificativa": "",
+        "evidencias": [],
+        "data_decisao": null
+      },
+      {
+        "tipo": "registro",
+        "id": "dtp",
+        "impressao": "f49a3491f89107b08b77bd3dbb76e833aab7e29e49c1a24fb7f15657a77f4032",
+        "decisao": "pendente",
+        "justificativa": "",
+        "evidencias": [],
+        "data_decisao": null
+      }
+    ]
+  },
+  "proveniencia": {
+    "atual": {
+      "fonte_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch",
+      "origem_arquivo": "não autenticada; URL institucional de referência",
+      "id": "candidato interno obtido da sigla em minúsculas; exige revisão",
+      "centro_sigla": "validado pelo título e pelo regulamento do próprio centro",
+      "campus_id": "não informado na página; permanece null",
+      "status": "desconhecido; situação atual não verificada",
+      "reutilizacao": "condições pendentes de revisão",
+      "regulamentos": "links preservados; conteúdo dos documentos não consultado",
+      "cobertura": {
+        "centro_sigla": "CCH",
+        "status": "parcial_por_centro",
+        "completude": "não verificada; conferir ausências e alterações manualmente",
+        "outros_centros": "não coletados nesta captura"
+      },
+      "auditoria": [
+        {
+          "sigla": "DCS",
+          "rotulo_original": "DCS - Departamento de Ciências Sociais (Resolução nº 030/2013-DCS)",
+          "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch/resolucao-030-2013-dcs.pdf/view"
+        },
+        {
+          "sigla": "DFE",
+          "rotulo_original": "DFE - Departamento de Fundamentos da Educação (Resolução nº 006/2019-CI/CCH)",
+          "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch/resolucao-006-2019-ci-cch.pdf/view"
+        },
+        {
+          "sigla": "DFL",
+          "rotulo_original": "DFL - Departamento de Filosofia (Resolução CI/CCH Nº 130, de 26 de agosto de 2026)",
+          "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch/resolucao-156-2014-ci-cch.pdf/view"
+        },
+        {
+          "sigla": "DGE",
+          "rotulo_original": "DGE - Departamento de Geografia (Resolução nº 026/2022-CI/CCH)",
+          "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch/dge-resolucao-026-2022-ci-cch.pdf/view"
+        },
+        {
+          "sigla": "DHI",
+          "rotulo_original": "DHI - Departamento de História (Resolução nº 044/2016-CI/CCH)",
+          "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch/resolucao-044-2016-ci-cch.pdf/view"
+        },
+        {
+          "sigla": "DLM",
+          "rotulo_original": "DLM - Departamento de Letras Modernas (Resolução nº 097/2016-CI/CCH)",
+          "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch/resolucao-097-2016-ci-cch.pdf/view"
+        },
+        {
+          "sigla": "DLP",
+          "rotulo_original": "DLP - Departamento de Língua Portuguesa (Resolução nº 169/2024-CI/CCH)",
+          "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch/resolucao-084-2015-ci-cch.pdf/view"
+        },
+        {
+          "sigla": "DMC",
+          "rotulo_original": "DMC - Departamento de Música e Artes Cênicas (Resolução nº 059/2024-CI/CCH)",
+          "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch/dmc-departamento-de-musica-e-artes-cenicas"
+        },
+        {
+          "sigla": "DPD",
+          "rotulo_original": "DPD - Departamento de Pedagogia (Resolução nº 151/2017-CI/CCH)",
+          "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch/resolucao-151-2017-ci-cch.pdf/view"
+        },
+        {
+          "sigla": "DTL",
+          "rotulo_original": "DTL - Departamento de Teorias Linguísticas e Literárias (Resolução nº 151/2016-CI/CCH)",
+          "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch/resolucao-151-2016-ci-cch.pdf/view"
+        },
+        {
+          "sigla": "DTP",
+          "rotulo_original": "DTP - Departamento de Teoria e Prática da Educação (Resolução nº 043/2023-CI/CCH)",
+          "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch/resolucao-131-2015-ci-cch.pdf/view"
+        }
+      ],
+      "excluidos": [
+        {
+          "sigla": "CCH",
+          "rotulo_original": "CCH - CENTRO DE CIÊNCIAS HUMANAS, LETRAS E ARTES (Resolução nº 015/2012-COU)",
+          "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch/resolucao-015-2012-cou.pdf/view",
+          "motivo": "regulamento do próprio centro"
+        },
+        {
+          "sigla": "EMU",
+          "rotulo_original": "EMU - Escola de Música (Resolução nº 292/97-CAD alterada pela Resolução nº 036/09-COU)",
+          "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch/escola-de-musica-emu.pdf/view",
+          "motivo": "rótulo não identifica departamento; classificação exige revisão"
+        },
+        {
+          "sigla": "GEMA",
+          "rotulo_original": "GEMA - Instituto GEMA (Resolução nº 24/2025- CI/CCH)",
+          "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch/gema-instituto-gema",
+          "motivo": "rótulo não identifica departamento; classificação exige revisão"
+        }
+      ]
+    },
+    "anterior": null
+  },
+  "limites": [
+    "a origem dos arquivos HTML e JSON locais não é autenticada",
+    "decisões registradas não aprovam condições de reutilização das fontes",
+    "a revisão não gera arquivos em data/ nem autoriza publicação"
+  ]
+}

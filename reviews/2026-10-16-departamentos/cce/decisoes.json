@@ -1,0 +1,71 @@
+{
+  "versao": 1,
+  "dataset": "departamentos",
+  "decisoes": [
+    {
+      "tipo": "registro",
+      "id": "dci",
+      "impressao": "c7c308c568753444c1de390e59eb793f4a383edb420db3596fdcccd4401d0048",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos sigla DCI, nome Departamento de Ciências e href no rótulo DCI - Departamento de Ciências (Resolução nº 009/2012-CI/CCE). O vínculo candidato com CCE corresponde à página cujo título e regulamento próprio identificam esse centro. O ID é a sigla em minúsculas. A decisão cobre a fidelidade à listagem capturada; campus_id permanece null e status permanece desconhecido. O documento vinculado e a atualidade institucional não foram verificados.",
+      "evidencias": [
+        "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-exatas-cce",
+        "reviews/2026-10-16-departamentos/capturas.json",
+        "reviews/2026-10-16-departamentos/exclusoes.md"
+      ],
+      "data_decisao": "2026-10-16T16:43:05+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "des",
+      "impressao": "d4acd01a94802e59d45f0644057839c9ad921b7c7cc943b3c945e7e1d52f6c2d",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos sigla DES, nome Departamento de Estatística e href no rótulo DES - Departamento de Estatística (Resolução nº 049/2012-CI/CCE). O vínculo candidato com CCE corresponde à página cujo título e regulamento próprio identificam esse centro. O ID é a sigla em minúsculas. A decisão cobre a fidelidade à listagem capturada; campus_id permanece null e status permanece desconhecido. O documento vinculado e a atualidade institucional não foram verificados.",
+      "evidencias": [
+        "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-exatas-cce",
+        "reviews/2026-10-16-departamentos/capturas.json",
+        "reviews/2026-10-16-departamentos/exclusoes.md"
+      ],
+      "data_decisao": "2026-10-16T16:43:05+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "dfi",
+      "impressao": "62e9cab658b5dd229b8dd835ce13761856274ccb15f83633de41600c4c3edf8a",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos sigla DFI, nome Departamento de Física e href no rótulo DFI - Departamento de Física (Resolução nº 017/2012-CI/CCE). O vínculo candidato com CCE corresponde à página cujo título e regulamento próprio identificam esse centro. O ID é a sigla em minúsculas. A decisão cobre a fidelidade à listagem capturada; campus_id permanece null e status permanece desconhecido. O documento vinculado e a atualidade institucional não foram verificados.",
+      "evidencias": [
+        "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-exatas-cce",
+        "reviews/2026-10-16-departamentos/capturas.json",
+        "reviews/2026-10-16-departamentos/exclusoes.md"
+      ],
+      "data_decisao": "2026-10-16T16:43:05+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "dma",
+      "impressao": "abd55fbbc879f5b44789e1fa49dd5bf278aba1a887c909923682dacac2a7ad56",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos sigla DMA, nome Departamento de Matemática e href no rótulo DMA - Departamento de Matemática (Resolução nº 079/2023-CI/CCE). O vínculo candidato com CCE corresponde à página cujo título e regulamento próprio identificam esse centro. O ID é a sigla em minúsculas. A decisão cobre a fidelidade à listagem capturada; campus_id permanece null e status permanece desconhecido. O documento vinculado e a atualidade institucional não foram verificados.",
+      "evidencias": [
+        "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-exatas-cce",
+        "reviews/2026-10-16-departamentos/capturas.json",
+        "reviews/2026-10-16-departamentos/exclusoes.md"
+      ],
+      "data_decisao": "2026-10-16T16:43:05+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "dqi",
+      "impressao": "8af7db55f601264200322e648b9f7e27dca10e0faaf3a167f0c3470c0b53c482",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos sigla DQI, nome Departamento de Química e href no rótulo DQI - Departamento de Química (Resolução nº 041/2010-CI/CCE). O vínculo candidato com CCE corresponde à página cujo título e regulamento próprio identificam esse centro. O ID é a sigla em minúsculas. A decisão cobre a fidelidade à listagem capturada; campus_id permanece null e status permanece desconhecido. O documento vinculado e a atualidade institucional não foram verificados.",
+      "evidencias": [
+        "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-exatas-cce",
+        "reviews/2026-10-16-departamentos/capturas.json",
+        "reviews/2026-10-16-departamentos/exclusoes.md"
+      ],
+      "data_decisao": "2026-10-16T16:43:05+00:00"
+    }
+  ]
+}

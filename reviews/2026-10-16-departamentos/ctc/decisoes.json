@@ -1,0 +1,136 @@
+{
+  "versao": 1,
+  "dataset": "departamentos",
+  "decisoes": [
+    {
+      "tipo": "registro",
+      "id": "dal",
+      "impressao": "0a317e9b5c7a52eb69c514c2fcb77818a5b97f05007b85bb48939cec94e28885",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos sigla DAL, nome Departamento de Engenharia de Alimentos e href no rótulo DAL - Departamento de Engenharia de Alimentos (Resolução nº 033/2011-COU). O vínculo candidato com CTC corresponde à página cujo título e regulamento próprio identificam esse centro. O ID é a sigla em minúsculas. A decisão cobre a fidelidade à listagem capturada; campus_id permanece null e status permanece desconhecido. O documento vinculado e a atualidade institucional não foram verificados.",
+      "evidencias": [
+        "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc",
+        "reviews/2026-10-16-departamentos/capturas.json",
+        "reviews/2026-10-16-departamentos/exclusoes.md"
+      ],
+      "data_decisao": "2026-10-16T16:43:05+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "dam",
+      "impressao": "8bc872bd751abea64bc88d07ee4856de5ea9af63543cde1251da0fb682204de6",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos sigla DAM, nome Departamento de Meio-Ambiente e href no rótulo DAM - Departamento de Meio-Ambiente (Resolução nº 212/2017-CI/CTC). O vínculo candidato com CTC corresponde à página cujo título e regulamento próprio identificam esse centro. O ID é a sigla em minúsculas. A decisão cobre a fidelidade à listagem capturada; campus_id permanece null e status permanece desconhecido. O documento vinculado e a atualidade institucional não foram verificados. Mantida a grafia Meio-Ambiente com hífen exibida no rótulo.",
+      "evidencias": [
+        "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc",
+        "reviews/2026-10-16-departamentos/capturas.json",
+        "reviews/2026-10-16-departamentos/exclusoes.md"
+      ],
+      "data_decisao": "2026-10-16T16:43:05+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "dau",
+      "impressao": "10acc47d018dca7323b4eceb1c697f1d78e9b83ae7a09f1f82ef86ce9911c6ca",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos sigla DAU, nome Departamento de Arquitetura e Urbanismo e href no rótulo DAU - Departamento de Arquitetura e Urbanismo (Resolução nº 828/2021-CI/CTC. O vínculo candidato com CTC corresponde à página cujo título e regulamento próprio identificam esse centro. O ID é a sigla em minúsculas. A decisão cobre a fidelidade à listagem capturada; campus_id permanece null e status permanece desconhecido. O documento vinculado e a atualidade institucional não foram verificados. O rótulo da resolução termina sem fechar parênteses; o nome anterior ao sufixo foi preservado.",
+      "evidencias": [
+        "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc",
+        "reviews/2026-10-16-departamentos/capturas.json",
+        "reviews/2026-10-16-departamentos/exclusoes.md"
+      ],
+      "data_decisao": "2026-10-16T16:43:05+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "ddm",
+      "impressao": "f7a04c57d416a3893fcdaf98ba810c1d1515f30add89fb9e7dfe22ecf24eb81b",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos sigla DDM, nome Departamento de Design e Moda e href no rótulo DDM - Departamento de Design e Moda (Resolucao nº 137/2021-CI/CTC). O vínculo candidato com CTC corresponde à página cujo título e regulamento próprio identificam esse centro. O ID é a sigla em minúsculas. A decisão cobre a fidelidade à listagem capturada; campus_id permanece null e status permanece desconhecido. O documento vinculado e a atualidade institucional não foram verificados. A fonte escreve Resolucao sem acento no sufixo removido; o nome do departamento não foi alterado.",
+      "evidencias": [
+        "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc",
+        "reviews/2026-10-16-departamentos/capturas.json",
+        "reviews/2026-10-16-departamentos/exclusoes.md"
+      ],
+      "data_decisao": "2026-10-16T16:43:05+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "dec",
+      "impressao": "7779d9370cf7c282ba27f216c946c5a041171c4008d96b2d5ed5d7ccf3638f2e",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos sigla DEC, nome Departamento de Engenharia Civil e href no rótulo DEC - Departamento de Engenharia Civil (Resolução nº 054/2024-CI/CTC). O vínculo candidato com CTC corresponde à página cujo título e regulamento próprio identificam esse centro. O ID é a sigla em minúsculas. A decisão cobre a fidelidade à listagem capturada; campus_id permanece null e status permanece desconhecido. O documento vinculado e a atualidade institucional não foram verificados.",
+      "evidencias": [
+        "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc",
+        "reviews/2026-10-16-departamentos/capturas.json",
+        "reviews/2026-10-16-departamentos/exclusoes.md"
+      ],
+      "data_decisao": "2026-10-16T16:43:05+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "dem",
+      "impressao": "1d1931efd45902e991ece591c64ef38244fe923c16600e9e3e38fe63707a22f7",
+      "decisao": "pendente",
+      "justificativa": "A captura e o href foram conferidos, mas a fonte escreve Deparamento de Engenharia Mecânica. O coletor preserva essa grafia e a sinaliza na auditoria. Definir e comprovar o nome canônico antes de aprovar este candidato; a prévia não foi corrigida manualmente. ID dem e vínculo candidato com CTC seguem a página. campus_id permanece null e status desconhecido.",
+      "evidencias": [
+        "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc",
+        "reviews/2026-10-16-departamentos/capturas.json",
+        "reviews/2026-10-16-departamentos/exclusoes.md"
+      ],
+      "data_decisao": "2026-10-16T16:43:05+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "dep",
+      "impressao": "08dfd3298719531979b6faa15fa9d5b23f26f84198070ae52ed447ed63fb9f80",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos sigla DEP, nome Departamento de Engenharia de Produção e href no rótulo DEP - Departamento de Engenharia de Produção (Resolução nº 021/2011-CTC). O vínculo candidato com CTC corresponde à página cujo título e regulamento próprio identificam esse centro. O ID é a sigla em minúsculas. A decisão cobre a fidelidade à listagem capturada; campus_id permanece null e status permanece desconhecido. O documento vinculado e a atualidade institucional não foram verificados.",
+      "evidencias": [
+        "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc",
+        "reviews/2026-10-16-departamentos/capturas.json",
+        "reviews/2026-10-16-departamentos/exclusoes.md"
+      ],
+      "data_decisao": "2026-10-16T16:43:05+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "det",
+      "impressao": "8d7e6d1ea492eb3f08020e51fd7fbf7b42c3d24ba0f9cc526637d9334f6adb00",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos sigla DET, nome Departamento de Engenharia Têxtil e href no rótulo DET - Departamento de Engenharia Têxtil (Resolução nº 133/2017-CI/CTC). O vínculo candidato com CTC corresponde à página cujo título e regulamento próprio identificam esse centro. O ID é a sigla em minúsculas. A decisão cobre a fidelidade à listagem capturada; campus_id permanece null e status permanece desconhecido. O documento vinculado e a atualidade institucional não foram verificados.",
+      "evidencias": [
+        "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc",
+        "reviews/2026-10-16-departamentos/capturas.json",
+        "reviews/2026-10-16-departamentos/exclusoes.md"
+      ],
+      "data_decisao": "2026-10-16T16:43:05+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "din",
+      "impressao": "9da2815554b93e60c593029c20bdaeb5afe77edaae9349bb4b9f33571767c815",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos sigla DIN, nome Departamento de Informática e href no rótulo DIN - Departamento de Informática (Resolução nº 067/2011-CTC). O vínculo candidato com CTC corresponde à página cujo título e regulamento próprio identificam esse centro. O ID é a sigla em minúsculas. A decisão cobre a fidelidade à listagem capturada; campus_id permanece null e status permanece desconhecido. O documento vinculado e a atualidade institucional não foram verificados.",
+      "evidencias": [
+        "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc",
+        "reviews/2026-10-16-departamentos/capturas.json",
+        "reviews/2026-10-16-departamentos/exclusoes.md"
+      ],
+      "data_decisao": "2026-10-16T16:43:05+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "dtc",
+      "impressao": "d8d2997f56b5c189b2eca7607b76d75ed1332ea45d73f981d79481a3f7814b14",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos sigla DTC, nome Departamento de Tecnologia e href no rótulo DTC - Departamento de Tecnologia (Resolução nº 182/2018-CI/CTC). O vínculo candidato com CTC corresponde à página cujo título e regulamento próprio identificam esse centro. O ID é a sigla em minúsculas. A decisão cobre a fidelidade à listagem capturada; campus_id permanece null e status permanece desconhecido. O documento vinculado e a atualidade institucional não foram verificados.",
+      "evidencias": [
+        "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc",
+        "reviews/2026-10-16-departamentos/capturas.json",
+        "reviews/2026-10-16-departamentos/exclusoes.md"
+      ],
+      "data_decisao": "2026-10-16T16:43:05+00:00"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "versao": 1,
+  "dataset": "departamentos",
+  "decisoes": [
+    {
+      "tipo": "registro",
+      "id": "dad",
+      "impressao": "01279cfa4a1ca85bfaed6d7162c0f778ada33291bf6d4b899de5c85d3a807ba7",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos sigla DAD, nome Departamento de Administração e href no rótulo DAD - Departamento de Administração (Resolução nº 105/2019-CI/CSA). O vínculo candidato com CSA corresponde à página cujo título e regulamento próprio identificam esse centro. O ID é a sigla em minúsculas. A decisão cobre a fidelidade à listagem capturada; campus_id permanece null e status permanece desconhecido. O documento vinculado e a atualidade institucional não foram verificados.",
+      "evidencias": [
+        "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-sociais-aplicadas-csa",
+        "reviews/2026-10-16-departamentos/capturas.json",
+        "reviews/2026-10-16-departamentos/exclusoes.md"
+      ],
+      "data_decisao": "2026-10-16T16:43:05+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "dcc",
+      "impressao": "b6aec7944d8bd7bd38993b3c74223449b02f78c06d2f7c3a462e360e4a0d0996",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos sigla DCC, nome Departamento de Ciências Contábeis e href no rótulo DCC - Departamento de Ciências Contábeis (Resolução nº 064/2025-CI/CSA). O vínculo candidato com CSA corresponde à página cujo título e regulamento próprio identificam esse centro. O ID é a sigla em minúsculas. A decisão cobre a fidelidade à listagem capturada; campus_id permanece null e status permanece desconhecido. O documento vinculado e a atualidade institucional não foram verificados.",
+      "evidencias": [
+        "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-sociais-aplicadas-csa",
+        "reviews/2026-10-16-departamentos/capturas.json",
+        "reviews/2026-10-16-departamentos/exclusoes.md"
+      ],
+      "data_decisao": "2026-10-16T16:43:05+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "dco",
+      "impressao": "4fdc409b25c7fde5e0bc8fb4b1f116a9194bad7c65547fd74b72b1f396bc582c",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos sigla DCO, nome Departamento de Economia e href no rótulo DCO - Departamento de Economia (Resolução nº 087/2019-CI/CSA). O vínculo candidato com CSA corresponde à página cujo título e regulamento próprio identificam esse centro. O ID é a sigla em minúsculas. A decisão cobre a fidelidade à listagem capturada; campus_id permanece null e status permanece desconhecido. O documento vinculado e a atualidade institucional não foram verificados.",
+      "evidencias": [
+        "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-sociais-aplicadas-csa",
+        "reviews/2026-10-16-departamentos/capturas.json",
+        "reviews/2026-10-16-departamentos/exclusoes.md"
+      ],
+      "data_decisao": "2026-10-16T16:43:05+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "ddp",
+      "impressao": "0b9fddeb583422e7d506a629ba566490581cc6dc4e83702dfc0b7f66ae0df652",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos sigla DDP, nome Departamento de Direito Público e href no rótulo DDP - Departamento de Direito Público (Resolução nº 103/2019-CI/CSA ). O vínculo candidato com CSA corresponde à página cujo título e regulamento próprio identificam esse centro. O ID é a sigla em minúsculas. A decisão cobre a fidelidade à listagem capturada; campus_id permanece null e status permanece desconhecido. O documento vinculado e a atualidade institucional não foram verificados.",
+      "evidencias": [
+        "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-sociais-aplicadas-csa",
+        "reviews/2026-10-16-departamentos/capturas.json",
+        "reviews/2026-10-16-departamentos/exclusoes.md"
+      ],
+      "data_decisao": "2026-10-16T16:43:05+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "dpp",
+      "impressao": "8c477bb9aac249d222ab1dae1d59544d52bdd376ea32dcf0dce838011ae74eb3",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos sigla DPP, nome Departamento de Direito Privado e Processual e href no rótulo DPP - Departamento de Direito Privado e Processual (Resolução nº 104/2019-CI/CSA). O vínculo candidato com CSA corresponde à página cujo título e regulamento próprio identificam esse centro. O ID é a sigla em minúsculas. A decisão cobre a fidelidade à listagem capturada; campus_id permanece null e status permanece desconhecido. O documento vinculado e a atualidade institucional não foram verificados.",
+      "evidencias": [
+        "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-sociais-aplicadas-csa",
+        "reviews/2026-10-16-departamentos/capturas.json",
+        "reviews/2026-10-16-departamentos/exclusoes.md"
+      ],
+      "data_decisao": "2026-10-16T16:43:05+00:00"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "versao": 1,
+  "dataset": "departamentos",
+  "decisoes": [
+    {
+      "tipo": "registro",
+      "id": "dbc",
+      "impressao": "a9c10bf3e48acd6f7f80918d224ae3e80b206d6dfcce118bc1557cc767b5bfbb",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos sigla DBC, nome Departamento de Biotecnologia, Genética e Biologia Celular e href no rótulo DBC - Departamento de Biotecnologia, Genética e Biologia Celular (Resolução nº 047/2012-CI/CCB). O vínculo candidato com CCB corresponde à página cujo título e regulamento próprio identificam esse centro. O ID é a sigla em minúsculas. A decisão cobre a fidelidade à listagem capturada; campus_id permanece null e status permanece desconhecido. O documento vinculado e a atualidade institucional não foram verificados.",
+      "evidencias": [
+        "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-biologicas-ccb",
+        "reviews/2026-10-16-departamentos/capturas.json",
+        "reviews/2026-10-16-departamentos/exclusoes.md"
+      ],
+      "data_decisao": "2026-10-16T16:43:05+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "dbi",
+      "impressao": "125f8f1891a78e5b6131c0b890ad13db313dc0743106a4826bf4434aed49bdca",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos sigla DBI, nome Departamento de Biologia e href no rótulo DBI - Departamento de Biologia (Resolução 023/2012-CI/CCB). O vínculo candidato com CCB corresponde à página cujo título e regulamento próprio identificam esse centro. O ID é a sigla em minúsculas. A decisão cobre a fidelidade à listagem capturada; campus_id permanece null e status permanece desconhecido. O documento vinculado e a atualidade institucional não foram verificados.",
+      "evidencias": [
+        "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-biologicas-ccb",
+        "reviews/2026-10-16-departamentos/capturas.json",
+        "reviews/2026-10-16-departamentos/exclusoes.md"
+      ],
+      "data_decisao": "2026-10-16T16:43:05+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "dbq",
+      "impressao": "9d44cbd9035d70ea882ccf42b5bf999381892f1d4446b3d47523d0ac09141bba",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos sigla DBQ, nome Departamento de Bioquímica e href no rótulo DBQ - Departamento de Bioquímica (Resolução nº 008/2012-CI/CCB). O vínculo candidato com CCB corresponde à página cujo título e regulamento próprio identificam esse centro. O ID é a sigla em minúsculas. A decisão cobre a fidelidade à listagem capturada; campus_id permanece null e status permanece desconhecido. O documento vinculado e a atualidade institucional não foram verificados.",
+      "evidencias": [
+        "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-biologicas-ccb",
+        "reviews/2026-10-16-departamentos/capturas.json",
+        "reviews/2026-10-16-departamentos/exclusoes.md"
+      ],
+      "data_decisao": "2026-10-16T16:43:05+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "dcm",
+      "impressao": "df327ea335f1adde04bf07dea8763809492fc8a3cf050d5f39bc421d10a2ca93",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos sigla DCM, nome Departamento de Ciências Morfológicas e href no rótulo DCM - Departamento de Ciências Morfológicas (Resolução nº 025/2012-CI/CCB). O vínculo candidato com CCB corresponde à página cujo título e regulamento próprio identificam esse centro. O ID é a sigla em minúsculas. A decisão cobre a fidelidade à listagem capturada; campus_id permanece null e status permanece desconhecido. O documento vinculado e a atualidade institucional não foram verificados.",
+      "evidencias": [
+        "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-biologicas-ccb",
+        "reviews/2026-10-16-departamentos/capturas.json",
+        "reviews/2026-10-16-departamentos/exclusoes.md"
+      ],
+      "data_decisao": "2026-10-16T16:43:05+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "dfs",
+      "impressao": "5403d9030f42bd48897b6ac81b561166d6b91b4e4d52f2ce72adeacd432c7674",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos sigla DFS, nome Departamento de Ciências Fisiológicas e href no rótulo DFS - Departamento de Ciências Fisiológicas (Resolução nº 019/2012-CI/CCB). O vínculo candidato com CCB corresponde à página cujo título e regulamento próprio identificam esse centro. O ID é a sigla em minúsculas. A decisão cobre a fidelidade à listagem capturada; campus_id permanece null e status permanece desconhecido. O documento vinculado e a atualidade institucional não foram verificados.",
+      "evidencias": [
+        "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-biologicas-ccb",
+        "reviews/2026-10-16-departamentos/capturas.json",
+        "reviews/2026-10-16-departamentos/exclusoes.md"
+      ],
+      "data_decisao": "2026-10-16T16:43:05+00:00"
+    }
+  ]
+}
