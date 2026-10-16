@@ -8,3 +8,6 @@ __pycache__/
 *.egg-info/
 dist/
 build/
+
+# Capturas institucionais brutas usadas nas revisões locais.
+reviews/*/capturas/

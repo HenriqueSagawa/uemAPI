@@ -1,0 +1,118 @@
+{
+  "versao": 1,
+  "dataset": "campi",
+  "decisoes": [
+    {
+      "tipo": "registro",
+      "id": "car",
+      "impressao": "2806e0582b807d90cf25861f4422f8d5e706a976fb3d037bf2269c9b6b8e110e",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos CAR e o nome canônico Câmpus Regional do Arenito nas páginas 8 e 17 do relatório; o glossário associa a unidade a Cidade Gaúcha. A página principal e a PLD usam Câmpus do Arenito. Mantida a escolha canônica já documentada, sem tratar essa variante como uma mudança automática de nome. O ID car é interno. A grafia Câmpus é a convenção local; endereço permanece null e status permanece desconhecido, sem afirmação de atualidade a partir do relatório histórico de ano base 2024.",
+      "evidencias": [
+        "https://www.uem.br/a-uem/campus",
+        "https://pld.uem.br/lni/v05-base-de-dados-2024-2025.pdf#page=8",
+        "https://pld.uem.br/lni/v05-base-de-dados-2024-2025.pdf#page=17",
+        "https://cpr.uem.br/glossario/",
+        "https://pld.uem.br/dvl/regulamentos/campus-regionais",
+        "docs/campus-identifiers.md",
+        "reviews/2026-10-16-campi-centros/capturas.json"
+      ],
+      "data_decisao": "2026-10-16T15:30:44+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "cau",
+      "impressao": "fa2b292d419b8a7cae3766210acacebbbaeeed868dc0b4f7de63fb017d8f99c2",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos nome e sigla CAU nas páginas 8 e 17 do relatório e no glossário. Umuarama consta no conjunto de municípios e no nome da unidade. O ID cau segue a sigla em minúsculas. A grafia Câmpus é a convenção local; endereço permanece null e status permanece desconhecido, sem afirmação de atualidade a partir do relatório histórico de ano base 2024.",
+      "evidencias": [
+        "https://www.uem.br/a-uem/campus",
+        "https://pld.uem.br/lni/v05-base-de-dados-2024-2025.pdf#page=8",
+        "https://pld.uem.br/lni/v05-base-de-dados-2024-2025.pdf#page=17",
+        "https://cpr.uem.br/glossario/",
+        "docs/campus-identifiers.md",
+        "reviews/2026-10-16-campi-centros/capturas.json"
+      ],
+      "data_decisao": "2026-10-16T15:30:44+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "crc",
+      "impressao": "c48e9b6c65bf28f83bbb959887bf7437390253e153ceb358afbac4cafc1460a6",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos nome e sigla CRC nas páginas 8 e 17 do relatório e no glossário. Cianorte consta no conjunto de municípios e no nome da unidade. O ID crc segue a sigla em minúsculas. A grafia Câmpus é a convenção local; endereço permanece null e status permanece desconhecido, sem afirmação de atualidade a partir do relatório histórico de ano base 2024.",
+      "evidencias": [
+        "https://www.uem.br/a-uem/campus",
+        "https://pld.uem.br/lni/v05-base-de-dados-2024-2025.pdf#page=8",
+        "https://pld.uem.br/lni/v05-base-de-dados-2024-2025.pdf#page=17",
+        "https://cpr.uem.br/glossario/",
+        "docs/campus-identifiers.md",
+        "reviews/2026-10-16-campi-centros/capturas.json"
+      ],
+      "data_decisao": "2026-10-16T15:30:44+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "crg",
+      "impressao": "d30ebc2f141a78537b1bfe991c976efc1b73dbee15a73c5b6e7b82a99598dea1",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos nome e sigla CRG nas páginas 8 e 17 do relatório e no glossário. Goioerê consta no conjunto de municípios e no nome da unidade. O ID crg segue a sigla em minúsculas. A grafia Câmpus é a convenção local; endereço permanece null e status permanece desconhecido, sem afirmação de atualidade a partir do relatório histórico de ano base 2024.",
+      "evidencias": [
+        "https://www.uem.br/a-uem/campus",
+        "https://pld.uem.br/lni/v05-base-de-dados-2024-2025.pdf#page=8",
+        "https://pld.uem.br/lni/v05-base-de-dados-2024-2025.pdf#page=17",
+        "https://cpr.uem.br/glossario/",
+        "docs/campus-identifiers.md",
+        "reviews/2026-10-16-campi-centros/capturas.json"
+      ],
+      "data_decisao": "2026-10-16T15:30:44+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "crn",
+      "impressao": "60e3b3a1fff7497ced71446cfa9065f1b0e3748ca221ef127923a73bf7c91ea7",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos nome e sigla CRN nas páginas 8 e 17 do relatório e no glossário. A Carta de Serviços situa o CRN em Diamante do Norte. A página principal escreve Diamante de Norte; aprovada a normalização documentada para Diamante do Norte. O ID crn segue a sigla em minúsculas. A grafia Câmpus é a convenção local; endereço permanece null e status permanece desconhecido, sem afirmação de atualidade a partir do relatório histórico de ano base 2024.",
+      "evidencias": [
+        "https://www.uem.br/a-uem/campus",
+        "https://pld.uem.br/lni/v05-base-de-dados-2024-2025.pdf#page=8",
+        "https://pld.uem.br/lni/v05-base-de-dados-2024-2025.pdf#page=17",
+        "https://cpr.uem.br/glossario/",
+        "https://cpr.uem.br/index.php/pesquisar-carta/3547-gre-crn",
+        "docs/campus-identifiers.md",
+        "reviews/2026-10-16-campi-centros/capturas.json"
+      ],
+      "data_decisao": "2026-10-16T15:30:44+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "crv",
+      "impressao": "ff2a70dc1ba80a248bf5e50cc7d01c90c5204f1b9e130d90c65b790919bc463e",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos nome e sigla CRV nas páginas 8 e 17 do relatório. A página de contato do CRV situa a unidade em Ivaiporã, município também listado na página principal. Somente a localização foi usada como evidência; nomes e contatos pessoais não integram a prévia. O ID crv segue a sigla em minúsculas. A grafia Câmpus é a convenção local; endereço permanece null e status permanece desconhecido, sem afirmação de atualidade a partir do relatório histórico de ano base 2024.",
+      "evidencias": [
+        "https://www.uem.br/a-uem/campus",
+        "https://pld.uem.br/lni/v05-base-de-dados-2024-2025.pdf#page=8",
+        "https://pld.uem.br/lni/v05-base-de-dados-2024-2025.pdf#page=17",
+        "https://crv.uem.br/contato",
+        "docs/campus-identifiers.md",
+        "reviews/2026-10-16-campi-centros/capturas.json"
+      ],
+      "data_decisao": "2026-10-16T15:30:44+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "sede",
+      "impressao": "923c3c1f9e3f9d2630eaa899fe79ec3fbf3c0fbee12270ecb76a72427ab14e9e",
+      "decisao": "aprovado",
+      "justificativa": "Conferida a sede em Maringá no parágrafo institucional e a denominação da sede na estrutura multicampi da página 17 do relatório. A sede aparece sem sigla nessa lista; mantidos sigla=null e o ID interno sede da regra da uemAPI. A grafia Câmpus é a convenção local; endereço permanece null e status permanece desconhecido, sem afirmação de atualidade a partir do relatório histórico de ano base 2024.",
+      "evidencias": [
+        "https://www.uem.br/a-uem/campus",
+        "https://pld.uem.br/lni/v05-base-de-dados-2024-2025.pdf#page=17",
+        "docs/campus-identifiers.md",
+        "reviews/2026-10-16-campi-centros/capturas.json"
+      ],
+      "data_decisao": "2026-10-16T15:30:44+00:00"
+    }
+  ]
+}

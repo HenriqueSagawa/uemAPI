@@ -1,0 +1,88 @@
+{
+  "versao": 1,
+  "metodo": "GET HTTPS com curl, validação TLS e redirecionamentos HTTPS",
+  "codigo_base": "3d5bad9acc67b4a8480dbc8c3790ee280be8d3d6",
+  "capturas": [
+    {
+      "arquivo": "reviews/2026-10-16-campi-centros/capturas/campi.html",
+      "url_solicitada": "https://www.uem.br/a-uem/campus",
+      "url_final": "https://www.uem.br/a-uem/campus",
+      "consultado_em": "2026-10-16T15:28:56.372959+00:00",
+      "http_status": 200,
+      "content_type": "text/html;charset=utf-8",
+      "tls_verificado": true,
+      "bytes": 36169,
+      "sha256": "15f3b74f99f416e4d47348811b8f3b3e9de8ea6010ae4c92d4099d827e168d9b"
+    },
+    {
+      "arquivo": "reviews/2026-10-16-campi-centros/capturas/centros.html",
+      "url_solicitada": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino",
+      "url_final": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino",
+      "consultado_em": "2026-10-16T15:29:31.827522+00:00",
+      "http_status": 200,
+      "content_type": "text/html;charset=utf-8",
+      "tls_verificado": true,
+      "bytes": 24178,
+      "sha256": "272f373917700fb7c88443e0064518586f2ede7e0f6c9b976b90edcce4b99fcc"
+    },
+    {
+      "arquivo": "reviews/2026-10-16-campi-centros/capturas/base-2025.pdf",
+      "url_solicitada": "https://pld.uem.br/lni/v05-base-de-dados-2024-2025.pdf",
+      "url_final": "https://pld.uem.br/lni/v05-base-de-dados-2024-2025.pdf",
+      "consultado_em": "2026-10-16T15:29:32.387062+00:00",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "tls_verificado": true,
+      "bytes": 2038903,
+      "sha256": "16b71c2e80fa6a3ac3c7e48ffe9b4828032086c8556e99e84f8c8e8a4f62a0c6"
+    },
+    {
+      "arquivo": "reviews/2026-10-16-campi-centros/capturas/glossario.html",
+      "url_solicitada": "https://cpr.uem.br/glossario/",
+      "url_final": "https://cpr.uem.br/glossario/",
+      "consultado_em": "2026-10-16T15:29:32.686966+00:00",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "tls_verificado": true,
+      "bytes": 33697,
+      "sha256": "764a6a99c57359096ac52e34ff1974884262e2b20732e1d3655ffcf556e4210a"
+    },
+    {
+      "arquivo": "reviews/2026-10-16-campi-centros/capturas/carta-crn.html",
+      "url_solicitada": "https://cpr.uem.br/index.php/pesquisar-carta/3547-gre-crn",
+      "url_final": "https://cpr.uem.br/index.php/pesquisar-carta/3547-gre-crn",
+      "consultado_em": "2026-10-16T15:29:33.087965+00:00",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "tls_verificado": true,
+      "bytes": 20117,
+      "sha256": "6bdcefa73b18bf9ed0ee0e85c03cb2793ab84484d6c2be1a6a02b499f9a43a99"
+    },
+    {
+      "arquivo": "reviews/2026-10-16-campi-centros/capturas/contato-crv.html",
+      "url_solicitada": "https://crv.uem.br/contato",
+      "url_final": "https://crv.uem.br/contato",
+      "consultado_em": "2026-10-16T15:29:34.272437+00:00",
+      "http_status": 200,
+      "content_type": "text/html;charset=utf-8",
+      "tls_verificado": true,
+      "bytes": 19059,
+      "sha256": "effd30ca590c5daba9f764b8e933d1e065522d6c931d704e3581d5fa906a470e"
+    },
+    {
+      "arquivo": "reviews/2026-10-16-campi-centros/capturas/campi-regionais.html",
+      "url_solicitada": "https://pld.uem.br/dvl/regulamentos/campus-regionais",
+      "url_final": "https://pld.uem.br/dvl/regulamentos/campus-regionais",
+      "consultado_em": "2026-10-16T15:29:35.996064+00:00",
+      "http_status": 200,
+      "content_type": "text/html;charset=utf-8",
+      "tls_verificado": true,
+      "bytes": 22060,
+      "sha256": "e55a1861f8869ba437cde952e626b5cf8fae1e584cc8bc2e7ddeeab012e37a36"
+    }
+  ],
+  "limites": [
+    "Registro local de obtenção por HTTPS; o manifesto não é uma assinatura institucional.",
+    "Os hashes identificam os bytes guardados localmente e não autorizam sua redistribuição."
+  ]
+}

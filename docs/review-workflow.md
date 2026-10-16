@@ -2,6 +2,8 @@
 
 As prévias produzidas pelos coletores são candidatas. O comando de revisão compara duas prévias do mesmo dataset, destaca mudanças e associa decisões registradas a versões específicas de cada registro. Ele não acessa a rede, não altera as prévias e não cria arquivos em `data/`.
 
+Uma [execução com capturas reais de câmpus e centros](../reviews/2026-10-16-campi-centros/README.md) registra URLs, horários, hashes, justificativas por registro e instruções de reprodução local. As decisões técnicas desse lote estão disponíveis para revisão no PR; a aprovação do snapshot e das condições de reutilização continua separada.
+
 ## Preparar as prévias
 
 Salve a saída de uma captura atual. Informe a data e a hora em que o HTML foi obtido, com fuso horário:

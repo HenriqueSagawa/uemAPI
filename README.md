@@ -1,6 +1,6 @@
 # uemAPI
 
-API comunitária, independente e **não oficial** para informações públicas da Universidade Estadual de Maringá. Este repositório contém a base da v0.1 Fundação. Ainda não há fontes revisadas nem dados de produção aprovados.
+API comunitária, independente e **não oficial** para informações públicas da Universidade Estadual de Maringá. Este repositório contém a base da v0.1 Fundação. Há uma primeira conferência de prévias reais de câmpus e centros; as fontes e o snapshot de produção ainda não estão aprovados para publicação.
 
 ## O que já existe
 
@@ -149,8 +149,10 @@ O diretório configurado deve conter `campi.json`, `centros.json`, `departamento
 
 ## Próximas etapas
 
-1. Aplicar a revisão de prévias a capturas reais de câmpus e centros, registrando decisões e evidências.
-2. Revisar as prévias consolidadas de departamentos e cursos; resolver cobertura da EaD, vínculos e IDs estáveis de cursos.
+O [lote de 16 de outubro de 2026](reviews/2026-10-16-campi-centros/README.md) registra a primeira conferência real de sete câmpus e sete centros, com capturas locais identificadas por hash, decisões e relatórios não publicáveis.
+
+1. Revisar no PR as decisões e evidências registradas para câmpus e centros.
+2. Aplicar o fluxo às capturas reais de departamentos e cursos; resolver cobertura da EaD, vínculos e IDs estáveis de cursos.
 3. Verificar condições de reutilização das fontes e aprovar o snapshot completo antes de publicar os primeiros JSON reais.
 
 O projeto não coleta dados pessoais, conteúdos restritos ou informações que exijam autenticação.
