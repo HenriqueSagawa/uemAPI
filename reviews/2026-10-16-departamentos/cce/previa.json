@@ -1,0 +1,129 @@
+{
+  "modo": "previa",
+  "publicavel": false,
+  "entrada": "reviews/2026-10-16-departamentos/capturas/departamentos-cce.html",
+  "cobertura": {
+    "centro_sigla": "CCE",
+    "status": "parcial_por_centro",
+    "completude": "não verificada; conferir ausências e alterações manualmente",
+    "outros_centros": "não coletados nesta captura"
+  },
+  "proveniencia": {
+    "fonte_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-exatas-cce",
+    "origem_arquivo": "não autenticada; URL institucional de referência",
+    "id": "candidato interno obtido da sigla em minúsculas; exige revisão",
+    "centro_sigla": "validado pelo título e pelo regulamento do próprio centro",
+    "campus_id": "não informado na página; permanece null",
+    "status": "desconhecido; situação atual não verificada",
+    "reutilizacao": "condições pendentes de revisão",
+    "regulamentos": "links preservados; conteúdo dos documentos não consultado"
+  },
+  "departamentos": [
+    {
+      "id": "dci",
+      "nome": "Departamento de Ciências",
+      "status": "desconhecido",
+      "fonte": {
+        "source_id": "centros_pld",
+        "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-exatas-cce",
+        "consultado_em": "2026-10-16T16:41:26.583225Z"
+      },
+      "sigla": "DCI",
+      "centro_sigla": "CCE",
+      "campus_id": null
+    },
+    {
+      "id": "des",
+      "nome": "Departamento de Estatística",
+      "status": "desconhecido",
+      "fonte": {
+        "source_id": "centros_pld",
+        "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-exatas-cce",
+        "consultado_em": "2026-10-16T16:41:26.583225Z"
+      },
+      "sigla": "DES",
+      "centro_sigla": "CCE",
+      "campus_id": null
+    },
+    {
+      "id": "dfi",
+      "nome": "Departamento de Física",
+      "status": "desconhecido",
+      "fonte": {
+        "source_id": "centros_pld",
+        "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-exatas-cce",
+        "consultado_em": "2026-10-16T16:41:26.583225Z"
+      },
+      "sigla": "DFI",
+      "centro_sigla": "CCE",
+      "campus_id": null
+    },
+    {
+      "id": "dma",
+      "nome": "Departamento de Matemática",
+      "status": "desconhecido",
+      "fonte": {
+        "source_id": "centros_pld",
+        "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-exatas-cce",
+        "consultado_em": "2026-10-16T16:41:26.583225Z"
+      },
+      "sigla": "DMA",
+      "centro_sigla": "CCE",
+      "campus_id": null
+    },
+    {
+      "id": "dqi",
+      "nome": "Departamento de Química",
+      "status": "desconhecido",
+      "fonte": {
+        "source_id": "centros_pld",
+        "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-exatas-cce",
+        "consultado_em": "2026-10-16T16:41:26.583225Z"
+      },
+      "sigla": "DQI",
+      "centro_sigla": "CCE",
+      "campus_id": null
+    }
+  ],
+  "auditoria": [
+    {
+      "sigla": "DCI",
+      "rotulo_original": "DCI - Departamento de Ciências (Resolução nº 009/2012-CI/CCE)",
+      "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-exatas-cce/resolucao-009-2012-ci-cce.pdf/view"
+    },
+    {
+      "sigla": "DES",
+      "rotulo_original": "DES - Departamento de Estatística (Resolução nº 049/2012-CI/CCE)",
+      "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-exatas-cce/resolucao-049-2012-ci-cce.pdf/view"
+    },
+    {
+      "sigla": "DFI",
+      "rotulo_original": "DFI - Departamento de Física (Resolução nº 017/2012-CI/CCE)",
+      "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-exatas-cce/resolucao-017-2012-ci-cce.pdf/view"
+    },
+    {
+      "sigla": "DMA",
+      "rotulo_original": "DMA - Departamento de Matemática (Resolução nº 079/2023-CI/CCE)",
+      "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-exatas-cce/dma-resolucao-041-2011-ci-cce.pdf/view"
+    },
+    {
+      "sigla": "DQI",
+      "rotulo_original": "DQI - Departamento de Química (Resolução nº 041/2010-CI/CCE)",
+      "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-exatas-cce/dqi-resolucao-041-2010-ci-cce.pdf/view"
+    }
+  ],
+  "excluidos": [
+    {
+      "sigla": "CCE",
+      "rotulo_original": "CCE - CENTRO DE CIÊNCIAS EXATAS (Resolução Nº 017/2011-COU)",
+      "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-exatas-cce/resolucao-017-2011-cou.pdf/view",
+      "motivo": "regulamento do próprio centro"
+    },
+    {
+      "sigla": "SRP",
+      "rotulo_original": "SRP - Serviço de Rádio Proteção (Resolução nº 050/2021-CI/CCE)",
+      "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-exatas-cce/srp-resolucao-050-2021-ci-cce.pdf/view",
+      "motivo": "rótulo não identifica departamento; classificação exige revisão"
+    }
+  ]
+}

@@ -1,0 +1,214 @@
+{
+  "modo": "previa",
+  "publicavel": false,
+  "entrada": "reviews/2026-10-16-departamentos/capturas/departamentos-ctc.html",
+  "cobertura": {
+    "centro_sigla": "CTC",
+    "status": "parcial_por_centro",
+    "completude": "não verificada; conferir ausências e alterações manualmente",
+    "outros_centros": "não coletados nesta captura"
+  },
+  "proveniencia": {
+    "fonte_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc",
+    "origem_arquivo": "não autenticada; URL institucional de referência",
+    "id": "candidato interno obtido da sigla em minúsculas; exige revisão",
+    "centro_sigla": "validado pelo título e pelo regulamento do próprio centro",
+    "campus_id": "não informado na página; permanece null",
+    "status": "desconhecido; situação atual não verificada",
+    "reutilizacao": "condições pendentes de revisão",
+    "regulamentos": "links preservados; conteúdo dos documentos não consultado"
+  },
+  "departamentos": [
+    {
+      "id": "dal",
+      "nome": "Departamento de Engenharia de Alimentos",
+      "status": "desconhecido",
+      "fonte": {
+        "source_id": "centros_pld",
+        "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc",
+        "consultado_em": "2026-10-16T16:41:29.912824Z"
+      },
+      "sigla": "DAL",
+      "centro_sigla": "CTC",
+      "campus_id": null
+    },
+    {
+      "id": "dam",
+      "nome": "Departamento de Meio-Ambiente",
+      "status": "desconhecido",
+      "fonte": {
+        "source_id": "centros_pld",
+        "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc",
+        "consultado_em": "2026-10-16T16:41:29.912824Z"
+      },
+      "sigla": "DAM",
+      "centro_sigla": "CTC",
+      "campus_id": null
+    },
+    {
+      "id": "dau",
+      "nome": "Departamento de Arquitetura e Urbanismo",
+      "status": "desconhecido",
+      "fonte": {
+        "source_id": "centros_pld",
+        "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc",
+        "consultado_em": "2026-10-16T16:41:29.912824Z"
+      },
+      "sigla": "DAU",
+      "centro_sigla": "CTC",
+      "campus_id": null
+    },
+    {
+      "id": "ddm",
+      "nome": "Departamento de Design e Moda",
+      "status": "desconhecido",
+      "fonte": {
+        "source_id": "centros_pld",
+        "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc",
+        "consultado_em": "2026-10-16T16:41:29.912824Z"
+      },
+      "sigla": "DDM",
+      "centro_sigla": "CTC",
+      "campus_id": null
+    },
+    {
+      "id": "dec",
+      "nome": "Departamento de Engenharia Civil",
+      "status": "desconhecido",
+      "fonte": {
+        "source_id": "centros_pld",
+        "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc",
+        "consultado_em": "2026-10-16T16:41:29.912824Z"
+      },
+      "sigla": "DEC",
+      "centro_sigla": "CTC",
+      "campus_id": null
+    },
+    {
+      "id": "dem",
+      "nome": "Deparamento de Engenharia Mecânica",
+      "status": "desconhecido",
+      "fonte": {
+        "source_id": "centros_pld",
+        "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc",
+        "consultado_em": "2026-10-16T16:41:29.912824Z"
+      },
+      "sigla": "DEM",
+      "centro_sigla": "CTC",
+      "campus_id": null
+    },
+    {
+      "id": "dep",
+      "nome": "Departamento de Engenharia de Produção",
+      "status": "desconhecido",
+      "fonte": {
+        "source_id": "centros_pld",
+        "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc",
+        "consultado_em": "2026-10-16T16:41:29.912824Z"
+      },
+      "sigla": "DEP",
+      "centro_sigla": "CTC",
+      "campus_id": null
+    },
+    {
+      "id": "det",
+      "nome": "Departamento de Engenharia Têxtil",
+      "status": "desconhecido",
+      "fonte": {
+        "source_id": "centros_pld",
+        "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc",
+        "consultado_em": "2026-10-16T16:41:29.912824Z"
+      },
+      "sigla": "DET",
+      "centro_sigla": "CTC",
+      "campus_id": null
+    },
+    {
+      "id": "din",
+      "nome": "Departamento de Informática",
+      "status": "desconhecido",
+      "fonte": {
+        "source_id": "centros_pld",
+        "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc",
+        "consultado_em": "2026-10-16T16:41:29.912824Z"
+      },
+      "sigla": "DIN",
+      "centro_sigla": "CTC",
+      "campus_id": null
+    },
+    {
+      "id": "dtc",
+      "nome": "Departamento de Tecnologia",
+      "status": "desconhecido",
+      "fonte": {
+        "source_id": "centros_pld",
+        "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc",
+        "consultado_em": "2026-10-16T16:41:29.912824Z"
+      },
+      "sigla": "DTC",
+      "centro_sigla": "CTC",
+      "campus_id": null
+    }
+  ],
+  "auditoria": [
+    {
+      "sigla": "DAL",
+      "rotulo_original": "DAL - Departamento de Engenharia de Alimentos (Resolução nº 033/2011-COU)",
+      "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc/dal-regulamento-departamento.pdf/view"
+    },
+    {
+      "sigla": "DAM",
+      "rotulo_original": "DAM - Departamento de Meio-Ambiente (Resolução nº 212/2017-CI/CTC)",
+      "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc/damresolucao-212-2017-ci-ctc.pdf/view"
+    },
+    {
+      "sigla": "DAU",
+      "rotulo_original": "DAU - Departamento de Arquitetura e Urbanismo (Resolução nº 828/2021-CI/CTC",
+      "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc/dau-resolucao-828-2021-ctc.pdf/view"
+    },
+    {
+      "sigla": "DDM",
+      "rotulo_original": "DDM - Departamento de Design e Moda (Resolucao nº 137/2021-CI/CTC)",
+      "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc/ddm-departamento-de-design-e-moda-resolucao-no-137-2021-ci-ctc.pdf/view"
+    },
+    {
+      "sigla": "DEC",
+      "rotulo_original": "DEC - Departamento de Engenharia Civil (Resolução nº 054/2024-CI/CTC)",
+      "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc/resolucao-044-2010-ctc.pdf/view"
+    },
+    {
+      "sigla": "DEM",
+      "rotulo_original": "DEM - Deparamento de Engenharia Mecânica (Resolução nº 106/2018-CI/CTC)",
+      "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc/dem-deparamento-de-engenharia-mecancia-resolucao-106-2018-ctc-pdf-crdownload/view",
+      "observacao": "grafia Deparamento observada na fonte; nome preservado para revisão"
+    },
+    {
+      "sigla": "DEP",
+      "rotulo_original": "DEP - Departamento de Engenharia de Produção (Resolução nº 021/2011-CTC)",
+      "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc/resolucao-021-2011-ctc.pdf/view"
+    },
+    {
+      "sigla": "DET",
+      "rotulo_original": "DET - Departamento de Engenharia Têxtil (Resolução nº 133/2017-CI/CTC)",
+      "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc/resolucao-133-2017-ctc-1.pdf/view"
+    },
+    {
+      "sigla": "DIN",
+      "rotulo_original": "DIN - Departamento de Informática (Resolução nº 067/2011-CTC)",
+      "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc/resolucao-067-2011-ctc.pdf/view"
+    },
+    {
+      "sigla": "DTC",
+      "rotulo_original": "DTC - Departamento de Tecnologia (Resolução nº 182/2018-CI/CTC)",
+      "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc/resolucao-182-2018-ci-ctc.pdf/view"
+    }
+  ],
+  "excluidos": [
+    {
+      "sigla": "CTC",
+      "rotulo_original": "CTC - CENTRO DE TECNOLOGIA (Resolução nº 002/2011-COU)",
+      "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc/resolucao-002-2011-cou.pdf/view",
+      "motivo": "regulamento do próprio centro"
+    }
+  ]
+}
