@@ -1,0 +1,99 @@
+{
+  "versao": 1,
+  "metodo": "GET HTTPS com curl, validação TLS e redirecionamentos HTTPS",
+  "codigo_base": "a27d4cf84d2db323d93fdf6cc87c337b017590ca",
+  "capturas": [
+    {
+      "arquivo": "reviews/2026-10-16-departamentos/capturas/centros.html",
+      "url_solicitada": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino",
+      "url_final": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino",
+      "consultado_em": "2026-10-16T16:41:24.641239+00:00",
+      "http_status": 200,
+      "content_type": "text/html;charset=utf-8",
+      "tls_verificado": true,
+      "bytes": 24178,
+      "sha256": "272f373917700fb7c88443e0064518586f2ede7e0f6c9b976b90edcce4b99fcc"
+    },
+    {
+      "arquivo": "reviews/2026-10-16-departamentos/capturas/departamentos-cca.html",
+      "url_solicitada": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-agrarias",
+      "url_final": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-agrarias",
+      "consultado_em": "2026-10-16T16:41:25.775401+00:00",
+      "http_status": 200,
+      "content_type": "text/html;charset=utf-8",
+      "tls_verificado": true,
+      "bytes": 29015,
+      "sha256": "5e1cbfe16bd60b46985947ac3f16ac112eb53a2a936264e53d1934581a53f9bc"
+    },
+    {
+      "arquivo": "reviews/2026-10-16-departamentos/capturas/departamentos-ccb.html",
+      "url_solicitada": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-biologicas-ccb",
+      "url_final": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-biologicas-ccb",
+      "consultado_em": "2026-10-16T16:41:26.252243+00:00",
+      "http_status": 200,
+      "content_type": "text/html;charset=utf-8",
+      "tls_verificado": true,
+      "bytes": 28085,
+      "sha256": "ab5e4a6c6b552e8d6d8b25f1459ff54c07a5f6504666b91038cb988222af75fd"
+    },
+    {
+      "arquivo": "reviews/2026-10-16-departamentos/capturas/departamentos-cce.html",
+      "url_solicitada": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-exatas-cce",
+      "url_final": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-exatas-cce",
+      "consultado_em": "2026-10-16T16:41:26.583225+00:00",
+      "http_status": 200,
+      "content_type": "text/html;charset=utf-8",
+      "tls_verificado": true,
+      "bytes": 27876,
+      "sha256": "2e4131a429ba086f27c7e3f873fb79c1bdee9f6bd00e92915f0628eaeddbc158"
+    },
+    {
+      "arquivo": "reviews/2026-10-16-departamentos/capturas/departamentos-cch.html",
+      "url_solicitada": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch",
+      "url_final": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch",
+      "consultado_em": "2026-10-16T16:41:27.840273+00:00",
+      "http_status": 200,
+      "content_type": "text/html;charset=utf-8",
+      "tls_verificado": true,
+      "bytes": 35854,
+      "sha256": "861dfccdd57f31d0b3f875be2e16761a4b126b96552e356e0974427040c2370f"
+    },
+    {
+      "arquivo": "reviews/2026-10-16-departamentos/capturas/departamentos-ccs.html",
+      "url_solicitada": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-da-saude-ccs",
+      "url_final": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-da-saude-ccs",
+      "consultado_em": "2026-10-16T16:41:28.393221+00:00",
+      "http_status": 200,
+      "content_type": "text/html;charset=utf-8",
+      "tls_verificado": true,
+      "bytes": 32670,
+      "sha256": "60ef804fc4eccda9f644e0cf2a14874bc6e9f4111fea49c80c5213ca6228c2ae"
+    },
+    {
+      "arquivo": "reviews/2026-10-16-departamentos/capturas/departamentos-csa.html",
+      "url_solicitada": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-sociais-aplicadas-csa",
+      "url_final": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-sociais-aplicadas-csa",
+      "consultado_em": "2026-10-16T16:41:28.789629+00:00",
+      "http_status": 200,
+      "content_type": "text/html;charset=utf-8",
+      "tls_verificado": true,
+      "bytes": 27056,
+      "sha256": "a8f76395d33cbd9fdcae3ab0b9e1af716e4e7b5d44aca714536e4033e49c2ff5"
+    },
+    {
+      "arquivo": "reviews/2026-10-16-departamentos/capturas/departamentos-ctc.html",
+      "url_solicitada": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc",
+      "url_final": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc",
+      "consultado_em": "2026-10-16T16:41:29.912824+00:00",
+      "http_status": 200,
+      "content_type": "text/html;charset=utf-8",
+      "tls_verificado": true,
+      "bytes": 32398,
+      "sha256": "1f80adc8abddef5e8181b9ec3120663b2bfcd455a37524df1136d344abdfc18d"
+    }
+  ],
+  "limites": [
+    "Registro local de obtenção por HTTPS; o manifesto não é uma assinatura institucional.",
+    "Os hashes identificam os bytes guardados localmente e não autorizam sua redistribuição."
+  ]
+}
