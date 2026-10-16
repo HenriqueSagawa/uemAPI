@@ -1,0 +1,110 @@
+{
+  "modo": "previa",
+  "publicavel": false,
+  "entrada": "reviews/2026-10-16-campi-centros/capturas/centros.html",
+  "proveniencia": {
+    "fonte_url": "O campo fonte.url aponta para o índice institucional; não comprova a origem do arquivo local.",
+    "verificado_no_html": [
+      "sigla",
+      "nome exibido",
+      "link da página vinculada"
+    ],
+    "transformacoes_locais": [
+      "id = sigla em minúsculas",
+      "sufixo '(Departamentos e Órgãos)' removido do nome"
+    ],
+    "campi_e_departamentos": "não verificados neste índice",
+    "status": "valor padrão do schema; não verificado no HTML",
+    "pendente": [
+      "revisão dos registros",
+      "condições de reutilização"
+    ]
+  },
+  "total": 7,
+  "centros": [
+    {
+      "id": "cca",
+      "nome": "CENTRO DE CIÊNCIAS AGRÁRIAS",
+      "status": "desconhecido",
+      "fonte": {
+        "source_id": "centros_pld",
+        "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino",
+        "consultado_em": "2026-10-16T15:29:31.827522Z"
+      },
+      "sigla": "CCA",
+      "url_pagina_vinculada": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-agrarias"
+    },
+    {
+      "id": "ccb",
+      "nome": "CENTRO DE CIÊNCIAS BIOLÓGICAS",
+      "status": "desconhecido",
+      "fonte": {
+        "source_id": "centros_pld",
+        "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino",
+        "consultado_em": "2026-10-16T15:29:31.827522Z"
+      },
+      "sigla": "CCB",
+      "url_pagina_vinculada": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-biologicas-ccb"
+    },
+    {
+      "id": "cce",
+      "nome": "CENTRO DE CIÊNCIAS EXATAS",
+      "status": "desconhecido",
+      "fonte": {
+        "source_id": "centros_pld",
+        "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino",
+        "consultado_em": "2026-10-16T15:29:31.827522Z"
+      },
+      "sigla": "CCE",
+      "url_pagina_vinculada": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-exatas-cce"
+    },
+    {
+      "id": "cch",
+      "nome": "CENTRO DE CIÊNCIAS HUMANAS, LETRAS E ARTES",
+      "status": "desconhecido",
+      "fonte": {
+        "source_id": "centros_pld",
+        "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino",
+        "consultado_em": "2026-10-16T15:29:31.827522Z"
+      },
+      "sigla": "CCH",
+      "url_pagina_vinculada": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch"
+    },
+    {
+      "id": "ccs",
+      "nome": "CENTRO DE CIÊNCIAS DA SAÚDE",
+      "status": "desconhecido",
+      "fonte": {
+        "source_id": "centros_pld",
+        "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino",
+        "consultado_em": "2026-10-16T15:29:31.827522Z"
+      },
+      "sigla": "CCS",
+      "url_pagina_vinculada": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-da-saude-ccs"
+    },
+    {
+      "id": "csa",
+      "nome": "CENTRO DE CIÊNCIAS SOCIAIS APLICADAS",
+      "status": "desconhecido",
+      "fonte": {
+        "source_id": "centros_pld",
+        "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino",
+        "consultado_em": "2026-10-16T15:29:31.827522Z"
+      },
+      "sigla": "CSA",
+      "url_pagina_vinculada": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-sociais-aplicadas-csa"
+    },
+    {
+      "id": "ctc",
+      "nome": "CENTRO DE TECNOLOGIA",
+      "status": "desconhecido",
+      "fonte": {
+        "source_id": "centros_pld",
+        "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino",
+        "consultado_em": "2026-10-16T15:29:31.827522Z"
+      },
+      "sigla": "CTC",
+      "url_pagina_vinculada": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc"
+    }
+  ]
+}
