@@ -1,0 +1,90 @@
+{
+  "versao": 1,
+  "dataset": "centros",
+  "decisoes": [
+    {
+      "tipo": "registro",
+      "id": "cca",
+      "impressao": "86124a997504b1044ff87627901cede05c423efe67f265b8c0a36b66d4db5f9f",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos a sigla CCA, o nome CENTRO DE CIÊNCIAS AGRÁRIAS e o href da entrada no índice atual da PLD. O ID corresponde à sigla em minúsculas e o nome corresponde ao texto entre a sigla inicial e o sufixo (Departamentos e Órgãos). O conteúdo da página vinculada e os vínculos institucionais não foram validados nesta etapa; status permanece desconhecido.",
+      "evidencias": [
+        "https://pld.uem.br/dvl/regulamentos/centros-de-ensino",
+        "reviews/2026-10-16-campi-centros/capturas.json"
+      ],
+      "data_decisao": "2026-10-16T15:30:44+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "ccb",
+      "impressao": "2286306a3e850eacc4731b38f0cc9d8acd875a3942b28300cfae7cfee92c035d",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos a sigla CCB, o nome CENTRO DE CIÊNCIAS BIOLÓGICAS e o href da entrada no índice atual da PLD. O ID corresponde à sigla em minúsculas e o nome corresponde ao texto entre a sigla inicial e o sufixo (Departamentos e Órgãos). O conteúdo da página vinculada e os vínculos institucionais não foram validados nesta etapa; status permanece desconhecido.",
+      "evidencias": [
+        "https://pld.uem.br/dvl/regulamentos/centros-de-ensino",
+        "reviews/2026-10-16-campi-centros/capturas.json"
+      ],
+      "data_decisao": "2026-10-16T15:30:44+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "cce",
+      "impressao": "9b91e1af0fab2bc7d6edc00354e22d346dd9334a902a17c6f5f0b11bdc74db98",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos a sigla CCE, o nome CENTRO DE CIÊNCIAS EXATAS e o href da entrada no índice atual da PLD. O ID corresponde à sigla em minúsculas e o nome corresponde ao texto entre a sigla inicial e o sufixo (Departamentos e Órgãos). O conteúdo da página vinculada e os vínculos institucionais não foram validados nesta etapa; status permanece desconhecido.",
+      "evidencias": [
+        "https://pld.uem.br/dvl/regulamentos/centros-de-ensino",
+        "reviews/2026-10-16-campi-centros/capturas.json"
+      ],
+      "data_decisao": "2026-10-16T15:30:44+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "cch",
+      "impressao": "29c5fa076db45e2f5918a9a0005ac423de5741bd6e1935e377131d8b3c58f28a",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos a sigla CCH, o nome CENTRO DE CIÊNCIAS HUMANAS, LETRAS E ARTES e o href da entrada no índice atual da PLD. O ID corresponde à sigla em minúsculas e o nome corresponde ao texto entre a sigla inicial e o sufixo (Departamentos e Órgãos). O conteúdo da página vinculada e os vínculos institucionais não foram validados nesta etapa; status permanece desconhecido.",
+      "evidencias": [
+        "https://pld.uem.br/dvl/regulamentos/centros-de-ensino",
+        "reviews/2026-10-16-campi-centros/capturas.json"
+      ],
+      "data_decisao": "2026-10-16T15:30:44+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "ccs",
+      "impressao": "bfc2e960eeab5cb206e7b855c1cd6247dd77adbafa9fa52980fa7a105276dae1",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos a sigla CCS, o nome CENTRO DE CIÊNCIAS DA SAÚDE e o href da entrada no índice atual da PLD. O ID corresponde à sigla em minúsculas e o nome corresponde ao texto entre a sigla inicial e o sufixo (Departamentos e Órgãos). O conteúdo da página vinculada e os vínculos institucionais não foram validados nesta etapa; status permanece desconhecido.",
+      "evidencias": [
+        "https://pld.uem.br/dvl/regulamentos/centros-de-ensino",
+        "reviews/2026-10-16-campi-centros/capturas.json"
+      ],
+      "data_decisao": "2026-10-16T15:30:44+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "csa",
+      "impressao": "9d9be19a8fb0340efb8a9ffc03d8bf585431f772449c711cc168b065cd0260a0",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos a sigla CSA, o nome CENTRO DE CIÊNCIAS SOCIAIS APLICADAS e o href da entrada no índice atual da PLD. O ID corresponde à sigla em minúsculas e o nome corresponde ao texto entre a sigla inicial e o sufixo (Departamentos e Órgãos). O conteúdo da página vinculada e os vínculos institucionais não foram validados nesta etapa; status permanece desconhecido.",
+      "evidencias": [
+        "https://pld.uem.br/dvl/regulamentos/centros-de-ensino",
+        "reviews/2026-10-16-campi-centros/capturas.json"
+      ],
+      "data_decisao": "2026-10-16T15:30:44+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "ctc",
+      "impressao": "fc60d631713cd57f3bf721718564736d4dc348ed32d307aac962fe06b8efd266",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos a sigla CTC, o nome CENTRO DE TECNOLOGIA e o href da entrada no índice atual da PLD. O ID corresponde à sigla em minúsculas e o nome corresponde ao texto entre a sigla inicial e o sufixo (Departamentos e Órgãos). O conteúdo da página vinculada e os vínculos institucionais não foram validados nesta etapa; status permanece desconhecido.",
+      "evidencias": [
+        "https://pld.uem.br/dvl/regulamentos/centros-de-ensino",
+        "reviews/2026-10-16-campi-centros/capturas.json"
+      ],
+      "data_decisao": "2026-10-16T15:30:44+00:00"
+    }
+  ]
+}

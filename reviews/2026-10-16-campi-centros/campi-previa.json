@@ -1,0 +1,116 @@
+{
+  "modo": "previa",
+  "publicavel": false,
+  "entrada": "reviews/2026-10-16-campi-centros/capturas/campi.html",
+  "proveniencia": {
+    "fonte_url": "O campo fonte.url aponta para a página institucional de referência; não comprova a origem do arquivo local nem todos os campos gerados.",
+    "verificado_no_html": [
+      "presença do câmpus sede em Maringá",
+      "conjunto dos seis municípios regionais"
+    ],
+    "definido_no_mapeamento_local": [
+      "id",
+      "nome",
+      "sigla",
+      "associação de cada câmpus ao município"
+    ],
+    "mapeamento_local": "app/collectors/campi.py:CAMPUS_SPECS",
+    "tabela_revisada": "docs/campus-identifiers.md",
+    "fonte_de_apoio_da_tabela": "https://pld.uem.br/lni/v05-base-de-dados-2024-2025.pdf",
+    "nomes_dos_links_verificados": false,
+    "status_e_endereco": "valores padrão do schema; não verificados no HTML"
+  },
+  "campi": [
+    {
+      "id": "sede",
+      "nome": "Câmpus Sede",
+      "status": "desconhecido",
+      "fonte": {
+        "source_id": "campi_uem",
+        "url": "https://www.uem.br/a-uem/campus",
+        "consultado_em": "2026-10-16T15:28:56.372959Z"
+      },
+      "sigla": null,
+      "cidade": "Maringá",
+      "endereco": null
+    },
+    {
+      "id": "crc",
+      "nome": "Câmpus Regional de Cianorte",
+      "status": "desconhecido",
+      "fonte": {
+        "source_id": "campi_uem",
+        "url": "https://www.uem.br/a-uem/campus",
+        "consultado_em": "2026-10-16T15:28:56.372959Z"
+      },
+      "sigla": "CRC",
+      "cidade": "Cianorte",
+      "endereco": null
+    },
+    {
+      "id": "crg",
+      "nome": "Câmpus Regional de Goioerê",
+      "status": "desconhecido",
+      "fonte": {
+        "source_id": "campi_uem",
+        "url": "https://www.uem.br/a-uem/campus",
+        "consultado_em": "2026-10-16T15:28:56.372959Z"
+      },
+      "sigla": "CRG",
+      "cidade": "Goioerê",
+      "endereco": null
+    },
+    {
+      "id": "car",
+      "nome": "Câmpus Regional do Arenito",
+      "status": "desconhecido",
+      "fonte": {
+        "source_id": "campi_uem",
+        "url": "https://www.uem.br/a-uem/campus",
+        "consultado_em": "2026-10-16T15:28:56.372959Z"
+      },
+      "sigla": "CAR",
+      "cidade": "Cidade Gaúcha",
+      "endereco": null
+    },
+    {
+      "id": "crn",
+      "nome": "Câmpus Regional do Noroeste",
+      "status": "desconhecido",
+      "fonte": {
+        "source_id": "campi_uem",
+        "url": "https://www.uem.br/a-uem/campus",
+        "consultado_em": "2026-10-16T15:28:56.372959Z"
+      },
+      "sigla": "CRN",
+      "cidade": "Diamante do Norte",
+      "endereco": null
+    },
+    {
+      "id": "cau",
+      "nome": "Câmpus Regional de Umuarama",
+      "status": "desconhecido",
+      "fonte": {
+        "source_id": "campi_uem",
+        "url": "https://www.uem.br/a-uem/campus",
+        "consultado_em": "2026-10-16T15:28:56.372959Z"
+      },
+      "sigla": "CAU",
+      "cidade": "Umuarama",
+      "endereco": null
+    },
+    {
+      "id": "crv",
+      "nome": "Câmpus Regional do Vale do Ivaí",
+      "status": "desconhecido",
+      "fonte": {
+        "source_id": "campi_uem",
+        "url": "https://www.uem.br/a-uem/campus",
+        "consultado_em": "2026-10-16T15:28:56.372959Z"
+      },
+      "sigla": "CRV",
+      "cidade": "Ivaiporã",
+      "endereco": null
+    }
+  ]
+}
