@@ -83,6 +83,12 @@ dos departamentos do centro como não verificada, mesmo se todas as decisões do
 listados forem aprovadas. Ele não aprova o conjunto dos sete centros, não resolve siglas
 repetidas entre eles e não grava em `data/`.
 
+A [primeira execução real para os sete centros](../reviews/2026-10-16-departamentos/README.md)
+registra capturas identificadas por hash, a prévia consolidada, decisões por centro
+e a conferência individual das exclusões. O lote mantém a decisão do DEM pendente
+por sua grafia na fonte. Mesmo nos centros sem decisões pendentes de registros,
+`todos_itens_aprovados` permanece `false` devido à completude não verificada.
+
 ## Cursos presenciais da PEN
 
 Para cursos, revise a **prévia consolidada** gerada por `app.collectors.cursos_consolidados`.
