@@ -1,0 +1,123 @@
+{
+  "modo": "previa",
+  "publicavel": false,
+  "entrada": "reviews/2026-10-16-departamentos/capturas/departamentos-csa.html",
+  "cobertura": {
+    "centro_sigla": "CSA",
+    "status": "parcial_por_centro",
+    "completude": "não verificada; conferir ausências e alterações manualmente",
+    "outros_centros": "não coletados nesta captura"
+  },
+  "proveniencia": {
+    "fonte_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-sociais-aplicadas-csa",
+    "origem_arquivo": "não autenticada; URL institucional de referência",
+    "id": "candidato interno obtido da sigla em minúsculas; exige revisão",
+    "centro_sigla": "validado pelo título e pelo regulamento do próprio centro",
+    "campus_id": "não informado na página; permanece null",
+    "status": "desconhecido; situação atual não verificada",
+    "reutilizacao": "condições pendentes de revisão",
+    "regulamentos": "links preservados; conteúdo dos documentos não consultado"
+  },
+  "departamentos": [
+    {
+      "id": "dad",
+      "nome": "Departamento de Administração",
+      "status": "desconhecido",
+      "fonte": {
+        "source_id": "centros_pld",
+        "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-sociais-aplicadas-csa",
+        "consultado_em": "2026-10-16T16:41:28.789629Z"
+      },
+      "sigla": "DAD",
+      "centro_sigla": "CSA",
+      "campus_id": null
+    },
+    {
+      "id": "dcc",
+      "nome": "Departamento de Ciências Contábeis",
+      "status": "desconhecido",
+      "fonte": {
+        "source_id": "centros_pld",
+        "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-sociais-aplicadas-csa",
+        "consultado_em": "2026-10-16T16:41:28.789629Z"
+      },
+      "sigla": "DCC",
+      "centro_sigla": "CSA",
+      "campus_id": null
+    },
+    {
+      "id": "dco",
+      "nome": "Departamento de Economia",
+      "status": "desconhecido",
+      "fonte": {
+        "source_id": "centros_pld",
+        "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-sociais-aplicadas-csa",
+        "consultado_em": "2026-10-16T16:41:28.789629Z"
+      },
+      "sigla": "DCO",
+      "centro_sigla": "CSA",
+      "campus_id": null
+    },
+    {
+      "id": "ddp",
+      "nome": "Departamento de Direito Público",
+      "status": "desconhecido",
+      "fonte": {
+        "source_id": "centros_pld",
+        "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-sociais-aplicadas-csa",
+        "consultado_em": "2026-10-16T16:41:28.789629Z"
+      },
+      "sigla": "DDP",
+      "centro_sigla": "CSA",
+      "campus_id": null
+    },
+    {
+      "id": "dpp",
+      "nome": "Departamento de Direito Privado e Processual",
+      "status": "desconhecido",
+      "fonte": {
+        "source_id": "centros_pld",
+        "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-sociais-aplicadas-csa",
+        "consultado_em": "2026-10-16T16:41:28.789629Z"
+      },
+      "sigla": "DPP",
+      "centro_sigla": "CSA",
+      "campus_id": null
+    }
+  ],
+  "auditoria": [
+    {
+      "sigla": "DAD",
+      "rotulo_original": "DAD - Departamento de Administração (Resolução nº 105/2019-CI/CSA)",
+      "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-sociais-aplicadas-csa/resolucao-105-2019-ci-csa.pdf/view"
+    },
+    {
+      "sigla": "DCC",
+      "rotulo_original": "DCC - Departamento de Ciências Contábeis (Resolução nº 064/2025-CI/CSA)",
+      "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-sociais-aplicadas-csa/resolucao-012-2010-dcc.pdf/view"
+    },
+    {
+      "sigla": "DCO",
+      "rotulo_original": "DCO - Departamento de Economia (Resolução nº 087/2019-CI/CSA)",
+      "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-sociais-aplicadas-csa/resolucao-087-2019-ci-csa.pdf/view"
+    },
+    {
+      "sigla": "DDP",
+      "rotulo_original": "DDP - Departamento de Direito Público (Resolução nº 103/2019-CI/CSA )",
+      "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-sociais-aplicadas-csa/resolucao-103-2019-ci-csa.pdf/view"
+    },
+    {
+      "sigla": "DPP",
+      "rotulo_original": "DPP - Departamento de Direito Privado e Processual (Resolução nº 104/2019-CI/CSA)",
+      "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-sociais-aplicadas-csa/resolucao-104-2019-ci-csa.pdf/view"
+    }
+  ],
+  "excluidos": [
+    {
+      "sigla": "CSA",
+      "rotulo_original": "CSA - CENTRO DE CIÊNCIAS SOCIAIS APLICADAS (Resolução nº 035/2018-COU)",
+      "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-sociais-aplicadas-csa/resolucao-038-2018-cou.pdf/view",
+      "motivo": "regulamento do próprio centro"
+    }
+  ]
+}

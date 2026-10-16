@@ -1,0 +1,1257 @@
+{
+  "modo": "previa",
+  "publicavel": false,
+  "entrada": {
+    "manifesto": "reviews/2026-10-16-departamentos/departamentos-manifesto.json"
+  },
+  "resumo": {
+    "total_centros": 7,
+    "total_manifesto": 7,
+    "aceitos": 7,
+    "sem_captura": 0,
+    "arquivo_ausente": 0,
+    "falha_leitura": 0,
+    "invalidos": 0,
+    "departamentos_aceitos": 49,
+    "siglas_duplicadas": 0,
+    "cobertura_fontes_completa": true
+  },
+  "resultados": [
+    {
+      "centro_sigla": "CCA",
+      "centro_nome": "Centro de Ciências Agrárias",
+      "fonte_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-agrarias",
+      "arquivo": "reviews/2026-10-16-departamentos/capturas/departamentos-cca.html",
+      "consultado_em": "2026-10-16T16:41:25.775401+00:00",
+      "status": "aceito",
+      "quantidade_departamentos": 5,
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": "reviews/2026-10-16-departamentos/capturas/departamentos-cca.html",
+        "cobertura": {
+          "centro_sigla": "CCA",
+          "status": "parcial_por_centro",
+          "completude": "não verificada; conferir ausências e alterações manualmente",
+          "outros_centros": "não coletados nesta captura"
+        },
+        "proveniencia": {
+          "fonte_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-agrarias",
+          "origem_arquivo": "não autenticada; URL institucional de referência",
+          "id": "candidato interno obtido da sigla em minúsculas; exige revisão",
+          "centro_sigla": "validado pelo título e pelo regulamento do próprio centro",
+          "campus_id": "não informado na página; permanece null",
+          "status": "desconhecido; situação atual não verificada",
+          "reutilizacao": "condições pendentes de revisão",
+          "regulamentos": "links preservados; conteúdo dos documentos não consultado"
+        },
+        "departamentos": [
+          {
+            "id": "dag",
+            "nome": "Departamento de Agronomia",
+            "status": "desconhecido",
+            "fonte": {
+              "source_id": "centros_pld",
+              "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-agrarias",
+              "consultado_em": "2026-10-16T16:41:25.775401Z"
+            },
+            "sigla": "DAG",
+            "centro_sigla": "CCA",
+            "campus_id": null
+          },
+          {
+            "id": "dca",
+            "nome": "Departamento de Ciências Agronômicas",
+            "status": "desconhecido",
+            "fonte": {
+              "source_id": "centros_pld",
+              "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-agrarias",
+              "consultado_em": "2026-10-16T16:41:25.775401Z"
+            },
+            "sigla": "DCA",
+            "centro_sigla": "CCA",
+            "campus_id": null
+          },
+          {
+            "id": "dea",
+            "nome": "Departamento de Engenharia Agrícola",
+            "status": "desconhecido",
+            "fonte": {
+              "source_id": "centros_pld",
+              "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-agrarias",
+              "consultado_em": "2026-10-16T16:41:25.775401Z"
+            },
+            "sigla": "DEA",
+            "centro_sigla": "CCA",
+            "campus_id": null
+          },
+          {
+            "id": "dmv",
+            "nome": "Departamento de Medicina Veterinária",
+            "status": "desconhecido",
+            "fonte": {
+              "source_id": "centros_pld",
+              "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-agrarias",
+              "consultado_em": "2026-10-16T16:41:25.775401Z"
+            },
+            "sigla": "DMV",
+            "centro_sigla": "CCA",
+            "campus_id": null
+          },
+          {
+            "id": "dzo",
+            "nome": "Departamento de Zootecnia",
+            "status": "desconhecido",
+            "fonte": {
+              "source_id": "centros_pld",
+              "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-agrarias",
+              "consultado_em": "2026-10-16T16:41:25.775401Z"
+            },
+            "sigla": "DZO",
+            "centro_sigla": "CCA",
+            "campus_id": null
+          }
+        ],
+        "auditoria": [
+          {
+            "sigla": "DAG",
+            "rotulo_original": "DAG - Departamento de Agronomia (Resolução nº 007/2012-CI/CCA)",
+            "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-agrarias/resolucao-07-2012-ci-cca.pdf/view"
+          },
+          {
+            "sigla": "DCA",
+            "rotulo_original": "DCA - Departamento de Ciências Agronômicas (Resolução nº 008/2012-CI/CCA)",
+            "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-agrarias/resolucao-008-2012-ci-cca.pdf/view"
+          },
+          {
+            "sigla": "DEA",
+            "rotulo_original": "DEA - Departamento de Engenharia Agrícola (Resolução nº 009/2012-CI/CCA)",
+            "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-agrarias/resolucao-009-2012-ci-cca.pdf/view"
+          },
+          {
+            "sigla": "DMV",
+            "rotulo_original": "DMV - Departamento de Medicina Veterinária (Resolução nº 010/2012-CI/CCA)",
+            "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-agrarias/resolucao-010-2012-ci-cca.pdf/view"
+          },
+          {
+            "sigla": "DZO",
+            "rotulo_original": "DZO - Departamento de Zootecnia (Resolução nº 011/2012-CI/CCA)",
+            "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-agrarias/resolucao-011-2012-ci-cca.pdf/view"
+          }
+        ],
+        "excluidos": [
+          {
+            "sigla": "CCA",
+            "rotulo_original": "CCA - CENTRO DE CIÊNCIAS AGRÁRIAS (Resolução 011/2012-COU)",
+            "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-agrarias/resolucao-011-2012-cou.pdf/view",
+            "motivo": "regulamento do próprio centro"
+          },
+          {
+            "sigla": "FEI",
+            "rotulo_original": "FEI - Fazenda Experimental de Iguatemi (Resolução nº 018/2013-COU)",
+            "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-agrarias/fazenda-experimental-de-iguatemi-fei.pdf/view",
+            "motivo": "rótulo não identifica departamento; classificação exige revisão"
+          },
+          {
+            "sigla": "HVU",
+            "rotulo_original": "HVU - Hospital Veterinário de Umuarama (Resolução nº 037/2024-COU)",
+            "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-agrarias/resolucao-n-037-2024-cou-hvu.pdf/view",
+            "motivo": "rótulo não identifica departamento; classificação exige revisão"
+          }
+        ]
+      }
+    },
+    {
+      "centro_sigla": "CCB",
+      "centro_nome": "Centro de Ciências Biológicas",
+      "fonte_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-biologicas-ccb",
+      "arquivo": "reviews/2026-10-16-departamentos/capturas/departamentos-ccb.html",
+      "consultado_em": "2026-10-16T16:41:26.252243+00:00",
+      "status": "aceito",
+      "quantidade_departamentos": 5,
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": "reviews/2026-10-16-departamentos/capturas/departamentos-ccb.html",
+        "cobertura": {
+          "centro_sigla": "CCB",
+          "status": "parcial_por_centro",
+          "completude": "não verificada; conferir ausências e alterações manualmente",
+          "outros_centros": "não coletados nesta captura"
+        },
+        "proveniencia": {
+          "fonte_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-biologicas-ccb",
+          "origem_arquivo": "não autenticada; URL institucional de referência",
+          "id": "candidato interno obtido da sigla em minúsculas; exige revisão",
+          "centro_sigla": "validado pelo título e pelo regulamento do próprio centro",
+          "campus_id": "não informado na página; permanece null",
+          "status": "desconhecido; situação atual não verificada",
+          "reutilizacao": "condições pendentes de revisão",
+          "regulamentos": "links preservados; conteúdo dos documentos não consultado"
+        },
+        "departamentos": [
+          {
+            "id": "dbc",
+            "nome": "Departamento de Biotecnologia, Genética e Biologia Celular",
+            "status": "desconhecido",
+            "fonte": {
+              "source_id": "centros_pld",
+              "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-biologicas-ccb",
+              "consultado_em": "2026-10-16T16:41:26.252243Z"
+            },
+            "sigla": "DBC",
+            "centro_sigla": "CCB",
+            "campus_id": null
+          },
+          {
+            "id": "dbi",
+            "nome": "Departamento de Biologia",
+            "status": "desconhecido",
+            "fonte": {
+              "source_id": "centros_pld",
+              "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-biologicas-ccb",
+              "consultado_em": "2026-10-16T16:41:26.252243Z"
+            },
+            "sigla": "DBI",
+            "centro_sigla": "CCB",
+            "campus_id": null
+          },
+          {
+            "id": "dbq",
+            "nome": "Departamento de Bioquímica",
+            "status": "desconhecido",
+            "fonte": {
+              "source_id": "centros_pld",
+              "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-biologicas-ccb",
+              "consultado_em": "2026-10-16T16:41:26.252243Z"
+            },
+            "sigla": "DBQ",
+            "centro_sigla": "CCB",
+            "campus_id": null
+          },
+          {
+            "id": "dcm",
+            "nome": "Departamento de Ciências Morfológicas",
+            "status": "desconhecido",
+            "fonte": {
+              "source_id": "centros_pld",
+              "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-biologicas-ccb",
+              "consultado_em": "2026-10-16T16:41:26.252243Z"
+            },
+            "sigla": "DCM",
+            "centro_sigla": "CCB",
+            "campus_id": null
+          },
+          {
+            "id": "dfs",
+            "nome": "Departamento de Ciências Fisiológicas",
+            "status": "desconhecido",
+            "fonte": {
+              "source_id": "centros_pld",
+              "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-biologicas-ccb",
+              "consultado_em": "2026-10-16T16:41:26.252243Z"
+            },
+            "sigla": "DFS",
+            "centro_sigla": "CCB",
+            "campus_id": null
+          }
+        ],
+        "auditoria": [
+          {
+            "sigla": "DBC",
+            "rotulo_original": "DBC - Departamento de Biotecnologia, Genética e Biologia Celular (Resolução nº 047/2012-CI/CCB)",
+            "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-biologicas-ccb/resolucao-047-2012-ci-ccb.pdf/view"
+          },
+          {
+            "sigla": "DBI",
+            "rotulo_original": "DBI - Departamento de Biologia (Resolução 023/2012-CI/CCB)",
+            "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-biologicas-ccb/resolucao-023-2012-ci-ccb.pdf/view"
+          },
+          {
+            "sigla": "DBQ",
+            "rotulo_original": "DBQ - Departamento de Bioquímica (Resolução nº 008/2012-CI/CCB)",
+            "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-biologicas-ccb/resolucao-008-2012-ci-ccb.pdf/view"
+          },
+          {
+            "sigla": "DCM",
+            "rotulo_original": "DCM - Departamento de Ciências Morfológicas (Resolução nº 025/2012-CI/CCB)",
+            "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-biologicas-ccb/resolucao-025-2012-ci-ccb.pdf/view"
+          },
+          {
+            "sigla": "DFS",
+            "rotulo_original": "DFS - Departamento de Ciências Fisiológicas (Resolução nº 019/2012-CI/CCB)",
+            "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-biologicas-ccb/resolucao-019-2012-ci-ccb.pdf/view"
+          }
+        ],
+        "excluidos": [
+          {
+            "sigla": "CCB",
+            "rotulo_original": "CCB - CENTRO DE CIÊNCIAS BIOLÓGICAS (Resolução Nº 001/2011-COU)",
+            "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-biologicas-ccb/resolucao-001-2011-cou.pdf/view",
+            "motivo": "regulamento do próprio centro"
+          },
+          {
+            "sigla": "NUPÉLIA",
+            "rotulo_original": "NUPÉLIA - Instituto de Pesquisas em Limnologia, Ictiologia e Aquicultura (Resolução nº 015/2026-CCB)",
+            "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-biologicas-ccb/copy_of_nup-resolucao-001-2008-cou.pdf/view",
+            "motivo": "rótulo não identifica departamento; classificação exige revisão"
+          }
+        ]
+      }
+    },
+    {
+      "centro_sigla": "CCE",
+      "centro_nome": "Centro de Ciências Exatas",
+      "fonte_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-exatas-cce",
+      "arquivo": "reviews/2026-10-16-departamentos/capturas/departamentos-cce.html",
+      "consultado_em": "2026-10-16T16:41:26.583225+00:00",
+      "status": "aceito",
+      "quantidade_departamentos": 5,
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": "reviews/2026-10-16-departamentos/capturas/departamentos-cce.html",
+        "cobertura": {
+          "centro_sigla": "CCE",
+          "status": "parcial_por_centro",
+          "completude": "não verificada; conferir ausências e alterações manualmente",
+          "outros_centros": "não coletados nesta captura"
+        },
+        "proveniencia": {
+          "fonte_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-exatas-cce",
+          "origem_arquivo": "não autenticada; URL institucional de referência",
+          "id": "candidato interno obtido da sigla em minúsculas; exige revisão",
+          "centro_sigla": "validado pelo título e pelo regulamento do próprio centro",
+          "campus_id": "não informado na página; permanece null",
+          "status": "desconhecido; situação atual não verificada",
+          "reutilizacao": "condições pendentes de revisão",
+          "regulamentos": "links preservados; conteúdo dos documentos não consultado"
+        },
+        "departamentos": [
+          {
+            "id": "dci",
+            "nome": "Departamento de Ciências",
+            "status": "desconhecido",
+            "fonte": {
+              "source_id": "centros_pld",
+              "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-exatas-cce",
+              "consultado_em": "2026-10-16T16:41:26.583225Z"
+            },
+            "sigla": "DCI",
+            "centro_sigla": "CCE",
+            "campus_id": null
+          },
+          {
+            "id": "des",
+            "nome": "Departamento de Estatística",
+            "status": "desconhecido",
+            "fonte": {
+              "source_id": "centros_pld",
+              "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-exatas-cce",
+              "consultado_em": "2026-10-16T16:41:26.583225Z"
+            },
+            "sigla": "DES",
+            "centro_sigla": "CCE",
+            "campus_id": null
+          },
+          {
+            "id": "dfi",
+            "nome": "Departamento de Física",
+            "status": "desconhecido",
+            "fonte": {
+              "source_id": "centros_pld",
+              "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-exatas-cce",
+              "consultado_em": "2026-10-16T16:41:26.583225Z"
+            },
+            "sigla": "DFI",
+            "centro_sigla": "CCE",
+            "campus_id": null
+          },
+          {
+            "id": "dma",
+            "nome": "Departamento de Matemática",
+            "status": "desconhecido",
+            "fonte": {
+              "source_id": "centros_pld",
+              "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-exatas-cce",
+              "consultado_em": "2026-10-16T16:41:26.583225Z"
+            },
+            "sigla": "DMA",
+            "centro_sigla": "CCE",
+            "campus_id": null
+          },
+          {
+            "id": "dqi",
+            "nome": "Departamento de Química",
+            "status": "desconhecido",
+            "fonte": {
+              "source_id": "centros_pld",
+              "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-exatas-cce",
+              "consultado_em": "2026-10-16T16:41:26.583225Z"
+            },
+            "sigla": "DQI",
+            "centro_sigla": "CCE",
+            "campus_id": null
+          }
+        ],
+        "auditoria": [
+          {
+            "sigla": "DCI",
+            "rotulo_original": "DCI - Departamento de Ciências (Resolução nº 009/2012-CI/CCE)",
+            "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-exatas-cce/resolucao-009-2012-ci-cce.pdf/view"
+          },
+          {
+            "sigla": "DES",
+            "rotulo_original": "DES - Departamento de Estatística (Resolução nº 049/2012-CI/CCE)",
+            "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-exatas-cce/resolucao-049-2012-ci-cce.pdf/view"
+          },
+          {
+            "sigla": "DFI",
+            "rotulo_original": "DFI - Departamento de Física (Resolução nº 017/2012-CI/CCE)",
+            "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-exatas-cce/resolucao-017-2012-ci-cce.pdf/view"
+          },
+          {
+            "sigla": "DMA",
+            "rotulo_original": "DMA - Departamento de Matemática (Resolução nº 079/2023-CI/CCE)",
+            "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-exatas-cce/dma-resolucao-041-2011-ci-cce.pdf/view"
+          },
+          {
+            "sigla": "DQI",
+            "rotulo_original": "DQI - Departamento de Química (Resolução nº 041/2010-CI/CCE)",
+            "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-exatas-cce/dqi-resolucao-041-2010-ci-cce.pdf/view"
+          }
+        ],
+        "excluidos": [
+          {
+            "sigla": "CCE",
+            "rotulo_original": "CCE - CENTRO DE CIÊNCIAS EXATAS (Resolução Nº 017/2011-COU)",
+            "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-exatas-cce/resolucao-017-2011-cou.pdf/view",
+            "motivo": "regulamento do próprio centro"
+          },
+          {
+            "sigla": "SRP",
+            "rotulo_original": "SRP - Serviço de Rádio Proteção (Resolução nº 050/2021-CI/CCE)",
+            "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-exatas-cce/srp-resolucao-050-2021-ci-cce.pdf/view",
+            "motivo": "rótulo não identifica departamento; classificação exige revisão"
+          }
+        ]
+      }
+    },
+    {
+      "centro_sigla": "CCH",
+      "centro_nome": "Centro de Ciências Humanas, Letras e Artes",
+      "fonte_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch",
+      "arquivo": "reviews/2026-10-16-departamentos/capturas/departamentos-cch.html",
+      "consultado_em": "2026-10-16T16:41:27.840273+00:00",
+      "status": "aceito",
+      "quantidade_departamentos": 11,
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": "reviews/2026-10-16-departamentos/capturas/departamentos-cch.html",
+        "cobertura": {
+          "centro_sigla": "CCH",
+          "status": "parcial_por_centro",
+          "completude": "não verificada; conferir ausências e alterações manualmente",
+          "outros_centros": "não coletados nesta captura"
+        },
+        "proveniencia": {
+          "fonte_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch",
+          "origem_arquivo": "não autenticada; URL institucional de referência",
+          "id": "candidato interno obtido da sigla em minúsculas; exige revisão",
+          "centro_sigla": "validado pelo título e pelo regulamento do próprio centro",
+          "campus_id": "não informado na página; permanece null",
+          "status": "desconhecido; situação atual não verificada",
+          "reutilizacao": "condições pendentes de revisão",
+          "regulamentos": "links preservados; conteúdo dos documentos não consultado"
+        },
+        "departamentos": [
+          {
+            "id": "dcs",
+            "nome": "Departamento de Ciências Sociais",
+            "status": "desconhecido",
+            "fonte": {
+              "source_id": "centros_pld",
+              "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch",
+              "consultado_em": "2026-10-16T16:41:27.840273Z"
+            },
+            "sigla": "DCS",
+            "centro_sigla": "CCH",
+            "campus_id": null
+          },
+          {
+            "id": "dfe",
+            "nome": "Departamento de Fundamentos da Educação",
+            "status": "desconhecido",
+            "fonte": {
+              "source_id": "centros_pld",
+              "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch",
+              "consultado_em": "2026-10-16T16:41:27.840273Z"
+            },
+            "sigla": "DFE",
+            "centro_sigla": "CCH",
+            "campus_id": null
+          },
+          {
+            "id": "dfl",
+            "nome": "Departamento de Filosofia",
+            "status": "desconhecido",
+            "fonte": {
+              "source_id": "centros_pld",
+              "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch",
+              "consultado_em": "2026-10-16T16:41:27.840273Z"
+            },
+            "sigla": "DFL",
+            "centro_sigla": "CCH",
+            "campus_id": null
+          },
+          {
+            "id": "dge",
+            "nome": "Departamento de Geografia",
+            "status": "desconhecido",
+            "fonte": {
+              "source_id": "centros_pld",
+              "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch",
+              "consultado_em": "2026-10-16T16:41:27.840273Z"
+            },
+            "sigla": "DGE",
+            "centro_sigla": "CCH",
+            "campus_id": null
+          },
+          {
+            "id": "dhi",
+            "nome": "Departamento de História",
+            "status": "desconhecido",
+            "fonte": {
+              "source_id": "centros_pld",
+              "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch",
+              "consultado_em": "2026-10-16T16:41:27.840273Z"
+            },
+            "sigla": "DHI",
+            "centro_sigla": "CCH",
+            "campus_id": null
+          },
+          {
+            "id": "dlm",
+            "nome": "Departamento de Letras Modernas",
+            "status": "desconhecido",
+            "fonte": {
+              "source_id": "centros_pld",
+              "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch",
+              "consultado_em": "2026-10-16T16:41:27.840273Z"
+            },
+            "sigla": "DLM",
+            "centro_sigla": "CCH",
+            "campus_id": null
+          },
+          {
+            "id": "dlp",
+            "nome": "Departamento de Língua Portuguesa",
+            "status": "desconhecido",
+            "fonte": {
+              "source_id": "centros_pld",
+              "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch",
+              "consultado_em": "2026-10-16T16:41:27.840273Z"
+            },
+            "sigla": "DLP",
+            "centro_sigla": "CCH",
+            "campus_id": null
+          },
+          {
+            "id": "dmc",
+            "nome": "Departamento de Música e Artes Cênicas",
+            "status": "desconhecido",
+            "fonte": {
+              "source_id": "centros_pld",
+              "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch",
+              "consultado_em": "2026-10-16T16:41:27.840273Z"
+            },
+            "sigla": "DMC",
+            "centro_sigla": "CCH",
+            "campus_id": null
+          },
+          {
+            "id": "dpd",
+            "nome": "Departamento de Pedagogia",
+            "status": "desconhecido",
+            "fonte": {
+              "source_id": "centros_pld",
+              "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch",
+              "consultado_em": "2026-10-16T16:41:27.840273Z"
+            },
+            "sigla": "DPD",
+            "centro_sigla": "CCH",
+            "campus_id": null
+          },
+          {
+            "id": "dtl",
+            "nome": "Departamento de Teorias Linguísticas e Literárias",
+            "status": "desconhecido",
+            "fonte": {
+              "source_id": "centros_pld",
+              "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch",
+              "consultado_em": "2026-10-16T16:41:27.840273Z"
+            },
+            "sigla": "DTL",
+            "centro_sigla": "CCH",
+            "campus_id": null
+          },
+          {
+            "id": "dtp",
+            "nome": "Departamento de Teoria e Prática da Educação",
+            "status": "desconhecido",
+            "fonte": {
+              "source_id": "centros_pld",
+              "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch",
+              "consultado_em": "2026-10-16T16:41:27.840273Z"
+            },
+            "sigla": "DTP",
+            "centro_sigla": "CCH",
+            "campus_id": null
+          }
+        ],
+        "auditoria": [
+          {
+            "sigla": "DCS",
+            "rotulo_original": "DCS - Departamento de Ciências Sociais (Resolução nº 030/2013-DCS)",
+            "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch/resolucao-030-2013-dcs.pdf/view"
+          },
+          {
+            "sigla": "DFE",
+            "rotulo_original": "DFE - Departamento de Fundamentos da Educação (Resolução nº 006/2019-CI/CCH)",
+            "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch/resolucao-006-2019-ci-cch.pdf/view"
+          },
+          {
+            "sigla": "DFL",
+            "rotulo_original": "DFL - Departamento de Filosofia (Resolução CI/CCH Nº 130, de 26 de agosto de 2026)",
+            "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch/resolucao-156-2014-ci-cch.pdf/view"
+          },
+          {
+            "sigla": "DGE",
+            "rotulo_original": "DGE - Departamento de Geografia (Resolução nº 026/2022-CI/CCH)",
+            "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch/dge-resolucao-026-2022-ci-cch.pdf/view"
+          },
+          {
+            "sigla": "DHI",
+            "rotulo_original": "DHI - Departamento de História (Resolução nº 044/2016-CI/CCH)",
+            "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch/resolucao-044-2016-ci-cch.pdf/view"
+          },
+          {
+            "sigla": "DLM",
+            "rotulo_original": "DLM - Departamento de Letras Modernas (Resolução nº 097/2016-CI/CCH)",
+            "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch/resolucao-097-2016-ci-cch.pdf/view"
+          },
+          {
+            "sigla": "DLP",
+            "rotulo_original": "DLP - Departamento de Língua Portuguesa (Resolução nº 169/2024-CI/CCH)",
+            "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch/resolucao-084-2015-ci-cch.pdf/view"
+          },
+          {
+            "sigla": "DMC",
+            "rotulo_original": "DMC - Departamento de Música e Artes Cênicas (Resolução nº 059/2024-CI/CCH)",
+            "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch/dmc-departamento-de-musica-e-artes-cenicas"
+          },
+          {
+            "sigla": "DPD",
+            "rotulo_original": "DPD - Departamento de Pedagogia (Resolução nº 151/2017-CI/CCH)",
+            "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch/resolucao-151-2017-ci-cch.pdf/view"
+          },
+          {
+            "sigla": "DTL",
+            "rotulo_original": "DTL - Departamento de Teorias Linguísticas e Literárias (Resolução nº 151/2016-CI/CCH)",
+            "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch/resolucao-151-2016-ci-cch.pdf/view"
+          },
+          {
+            "sigla": "DTP",
+            "rotulo_original": "DTP - Departamento de Teoria e Prática da Educação (Resolução nº 043/2023-CI/CCH)",
+            "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch/resolucao-131-2015-ci-cch.pdf/view"
+          }
+        ],
+        "excluidos": [
+          {
+            "sigla": "CCH",
+            "rotulo_original": "CCH - CENTRO DE CIÊNCIAS HUMANAS, LETRAS E ARTES (Resolução nº 015/2012-COU)",
+            "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch/resolucao-015-2012-cou.pdf/view",
+            "motivo": "regulamento do próprio centro"
+          },
+          {
+            "sigla": "EMU",
+            "rotulo_original": "EMU - Escola de Música (Resolução nº 292/97-CAD alterada pela Resolução nº 036/09-COU)",
+            "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch/escola-de-musica-emu.pdf/view",
+            "motivo": "rótulo não identifica departamento; classificação exige revisão"
+          },
+          {
+            "sigla": "GEMA",
+            "rotulo_original": "GEMA - Instituto GEMA (Resolução nº 24/2025- CI/CCH)",
+            "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch/gema-instituto-gema",
+            "motivo": "rótulo não identifica departamento; classificação exige revisão"
+          }
+        ]
+      }
+    },
+    {
+      "centro_sigla": "CCS",
+      "centro_nome": "Centro de Ciências da Saúde",
+      "fonte_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-da-saude-ccs",
+      "arquivo": "reviews/2026-10-16-departamentos/capturas/departamentos-ccs.html",
+      "consultado_em": "2026-10-16T16:41:28.393221+00:00",
+      "status": "aceito",
+      "quantidade_departamentos": 8,
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": "reviews/2026-10-16-departamentos/capturas/departamentos-ccs.html",
+        "cobertura": {
+          "centro_sigla": "CCS",
+          "status": "parcial_por_centro",
+          "completude": "não verificada; conferir ausências e alterações manualmente",
+          "outros_centros": "não coletados nesta captura"
+        },
+        "proveniencia": {
+          "fonte_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-da-saude-ccs",
+          "origem_arquivo": "não autenticada; URL institucional de referência",
+          "id": "candidato interno obtido da sigla em minúsculas; exige revisão",
+          "centro_sigla": "validado pelo título e pelo regulamento do próprio centro",
+          "campus_id": "não informado na página; permanece null",
+          "status": "desconhecido; situação atual não verificada",
+          "reutilizacao": "condições pendentes de revisão",
+          "regulamentos": "links preservados; conteúdo dos documentos não consultado"
+        },
+        "departamentos": [
+          {
+            "id": "dab",
+            "nome": "Departamento de Análises Clínicas e Biomedicina",
+            "status": "desconhecido",
+            "fonte": {
+              "source_id": "centros_pld",
+              "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-da-saude-ccs",
+              "consultado_em": "2026-10-16T16:41:28.393221Z"
+            },
+            "sigla": "DAB",
+            "centro_sigla": "CCS",
+            "campus_id": null
+          },
+          {
+            "id": "dbs",
+            "nome": "Departamento de Ciências Básicas da Saúde",
+            "status": "desconhecido",
+            "fonte": {
+              "source_id": "centros_pld",
+              "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-da-saude-ccs",
+              "consultado_em": "2026-10-16T16:41:28.393221Z"
+            },
+            "sigla": "DBS",
+            "centro_sigla": "CCS",
+            "campus_id": null
+          },
+          {
+            "id": "def",
+            "nome": "Departamento de Educação Física",
+            "status": "desconhecido",
+            "fonte": {
+              "source_id": "centros_pld",
+              "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-da-saude-ccs",
+              "consultado_em": "2026-10-16T16:41:28.393221Z"
+            },
+            "sigla": "DEF",
+            "centro_sigla": "CCS",
+            "campus_id": null
+          },
+          {
+            "id": "dfa",
+            "nome": "Departamento de Farmácia",
+            "status": "desconhecido",
+            "fonte": {
+              "source_id": "centros_pld",
+              "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-da-saude-ccs",
+              "consultado_em": "2026-10-16T16:41:28.393221Z"
+            },
+            "sigla": "DFA",
+            "centro_sigla": "CCS",
+            "campus_id": null
+          },
+          {
+            "id": "dft",
+            "nome": "Departamento de Farmacologia e Terapêutica",
+            "status": "desconhecido",
+            "fonte": {
+              "source_id": "centros_pld",
+              "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-da-saude-ccs",
+              "consultado_em": "2026-10-16T16:41:28.393221Z"
+            },
+            "sigla": "DFT",
+            "centro_sigla": "CCS",
+            "campus_id": null
+          },
+          {
+            "id": "dmd",
+            "nome": "Departamento de Medicina",
+            "status": "desconhecido",
+            "fonte": {
+              "source_id": "centros_pld",
+              "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-da-saude-ccs",
+              "consultado_em": "2026-10-16T16:41:28.393221Z"
+            },
+            "sigla": "DMD",
+            "centro_sigla": "CCS",
+            "campus_id": null
+          },
+          {
+            "id": "dmo",
+            "nome": "Departamento de Ciências do Movimento Humano",
+            "status": "desconhecido",
+            "fonte": {
+              "source_id": "centros_pld",
+              "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-da-saude-ccs",
+              "consultado_em": "2026-10-16T16:41:28.393221Z"
+            },
+            "sigla": "DMO",
+            "centro_sigla": "CCS",
+            "campus_id": null
+          },
+          {
+            "id": "dod",
+            "nome": "Departamento de Odontologia",
+            "status": "desconhecido",
+            "fonte": {
+              "source_id": "centros_pld",
+              "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-da-saude-ccs",
+              "consultado_em": "2026-10-16T16:41:28.393221Z"
+            },
+            "sigla": "DOD",
+            "centro_sigla": "CCS",
+            "campus_id": null
+          }
+        ],
+        "auditoria": [
+          {
+            "sigla": "DAB",
+            "rotulo_original": "DAB - Departamento de Análises Clínicas e Biomedicina (Resolução nº 147/2025-CI/CCS)",
+            "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-da-saude-ccs/resolucao-050-2015-ci-ccs.pdf/view"
+          },
+          {
+            "sigla": "DBS",
+            "rotulo_original": "DBS - Departamento de Ciências Básicas da Saúde (Resolução 012/2015-CI/CCS)",
+            "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-da-saude-ccs/resolucao-012-2015-ci-ccs.pdf/view"
+          },
+          {
+            "sigla": "DEF",
+            "rotulo_original": "DEF - Departamento de Educação Física (Resolução nº 106/2025-CI/CCS)",
+            "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-da-saude-ccs/resolucao-119-2018-ci-ccs.pdf/view"
+          },
+          {
+            "sigla": "DFA",
+            "rotulo_original": "DFA - Departamento de Farmácia (Resolução nº 058/2017-CI/CCS)",
+            "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-da-saude-ccs/resolucao-058-2017-ci-ccs.pdf/view"
+          },
+          {
+            "sigla": "DFT",
+            "rotulo_original": "DFT - Departamento de Farmacologia e Terapêutica (Resolução 035/2017-CI/CCS)",
+            "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-da-saude-ccs/resolucao-035-2017-ci-ccs.pdf/view"
+          },
+          {
+            "sigla": "DMD",
+            "rotulo_original": "DMD - Departamento de Medicina (Resolução nº 081/2015-CI/CCS)",
+            "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-da-saude-ccs/resolucao-081-2015-ci-ccs.pdf/view"
+          },
+          {
+            "sigla": "DMO",
+            "rotulo_original": "DMO - Departamento de Ciências do Movimento Humano -(Resolução nº 017/2021-CI/CCS)",
+            "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-da-saude-ccs/dmo-resolucao-017-2021-ci-ccs.pdf/view"
+          },
+          {
+            "sigla": "DOD",
+            "rotulo_original": "DOD - Departamento de Odontologia (Resolução nº 006/2012-CI/CCS)",
+            "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-da-saude-ccs/resolucao-006-2012-ci-ccs.pdf/view"
+          }
+        ],
+        "excluidos": [
+          {
+            "sigla": "CCS",
+            "rotulo_original": "CCS - CENTRO DE CIÊNCIAS DA SAÚDE (Resolução Nº 037/2013-COU)",
+            "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-da-saude-ccs/resolucao-037-2013-cou.pdf/view",
+            "motivo": "regulamento do próprio centro"
+          },
+          {
+            "sigla": "COD",
+            "rotulo_original": "COD - Clínica Odontológica (Resolução nº 225/1996-COU)",
+            "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-da-saude-ccs/clinica-odontologica-cod.pdf/view",
+            "motivo": "rótulo não identifica departamento; classificação exige revisão"
+          },
+          {
+            "sigla": "UPM-LEPEMC",
+            "rotulo_original": "UPM-LEPEMC - Unidade de Produção de Medicamentos-Laboratório de Produção de Medicamentos e Cosméticos (Resolução nº 006/2005-COU e nº 011/2010-COU-Alteração Artigo 12)",
+            "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-da-saude-ccs/unidade-de-producao-de-medicamentos-upm-lepemc.pdf/view",
+            "motivo": "rótulo não identifica departamento; classificação exige revisão"
+          }
+        ]
+      }
+    },
+    {
+      "centro_sigla": "CSA",
+      "centro_nome": "Centro de Ciências Sociais Aplicadas",
+      "fonte_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-sociais-aplicadas-csa",
+      "arquivo": "reviews/2026-10-16-departamentos/capturas/departamentos-csa.html",
+      "consultado_em": "2026-10-16T16:41:28.789629+00:00",
+      "status": "aceito",
+      "quantidade_departamentos": 5,
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": "reviews/2026-10-16-departamentos/capturas/departamentos-csa.html",
+        "cobertura": {
+          "centro_sigla": "CSA",
+          "status": "parcial_por_centro",
+          "completude": "não verificada; conferir ausências e alterações manualmente",
+          "outros_centros": "não coletados nesta captura"
+        },
+        "proveniencia": {
+          "fonte_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-sociais-aplicadas-csa",
+          "origem_arquivo": "não autenticada; URL institucional de referência",
+          "id": "candidato interno obtido da sigla em minúsculas; exige revisão",
+          "centro_sigla": "validado pelo título e pelo regulamento do próprio centro",
+          "campus_id": "não informado na página; permanece null",
+          "status": "desconhecido; situação atual não verificada",
+          "reutilizacao": "condições pendentes de revisão",
+          "regulamentos": "links preservados; conteúdo dos documentos não consultado"
+        },
+        "departamentos": [
+          {
+            "id": "dad",
+            "nome": "Departamento de Administração",
+            "status": "desconhecido",
+            "fonte": {
+              "source_id": "centros_pld",
+              "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-sociais-aplicadas-csa",
+              "consultado_em": "2026-10-16T16:41:28.789629Z"
+            },
+            "sigla": "DAD",
+            "centro_sigla": "CSA",
+            "campus_id": null
+          },
+          {
+            "id": "dcc",
+            "nome": "Departamento de Ciências Contábeis",
+            "status": "desconhecido",
+            "fonte": {
+              "source_id": "centros_pld",
+              "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-sociais-aplicadas-csa",
+              "consultado_em": "2026-10-16T16:41:28.789629Z"
+            },
+            "sigla": "DCC",
+            "centro_sigla": "CSA",
+            "campus_id": null
+          },
+          {
+            "id": "dco",
+            "nome": "Departamento de Economia",
+            "status": "desconhecido",
+            "fonte": {
+              "source_id": "centros_pld",
+              "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-sociais-aplicadas-csa",
+              "consultado_em": "2026-10-16T16:41:28.789629Z"
+            },
+            "sigla": "DCO",
+            "centro_sigla": "CSA",
+            "campus_id": null
+          },
+          {
+            "id": "ddp",
+            "nome": "Departamento de Direito Público",
+            "status": "desconhecido",
+            "fonte": {
+              "source_id": "centros_pld",
+              "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-sociais-aplicadas-csa",
+              "consultado_em": "2026-10-16T16:41:28.789629Z"
+            },
+            "sigla": "DDP",
+            "centro_sigla": "CSA",
+            "campus_id": null
+          },
+          {
+            "id": "dpp",
+            "nome": "Departamento de Direito Privado e Processual",
+            "status": "desconhecido",
+            "fonte": {
+              "source_id": "centros_pld",
+              "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-sociais-aplicadas-csa",
+              "consultado_em": "2026-10-16T16:41:28.789629Z"
+            },
+            "sigla": "DPP",
+            "centro_sigla": "CSA",
+            "campus_id": null
+          }
+        ],
+        "auditoria": [
+          {
+            "sigla": "DAD",
+            "rotulo_original": "DAD - Departamento de Administração (Resolução nº 105/2019-CI/CSA)",
+            "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-sociais-aplicadas-csa/resolucao-105-2019-ci-csa.pdf/view"
+          },
+          {
+            "sigla": "DCC",
+            "rotulo_original": "DCC - Departamento de Ciências Contábeis (Resolução nº 064/2025-CI/CSA)",
+            "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-sociais-aplicadas-csa/resolucao-012-2010-dcc.pdf/view"
+          },
+          {
+            "sigla": "DCO",
+            "rotulo_original": "DCO - Departamento de Economia (Resolução nº 087/2019-CI/CSA)",
+            "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-sociais-aplicadas-csa/resolucao-087-2019-ci-csa.pdf/view"
+          },
+          {
+            "sigla": "DDP",
+            "rotulo_original": "DDP - Departamento de Direito Público (Resolução nº 103/2019-CI/CSA )",
+            "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-sociais-aplicadas-csa/resolucao-103-2019-ci-csa.pdf/view"
+          },
+          {
+            "sigla": "DPP",
+            "rotulo_original": "DPP - Departamento de Direito Privado e Processual (Resolução nº 104/2019-CI/CSA)",
+            "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-sociais-aplicadas-csa/resolucao-104-2019-ci-csa.pdf/view"
+          }
+        ],
+        "excluidos": [
+          {
+            "sigla": "CSA",
+            "rotulo_original": "CSA - CENTRO DE CIÊNCIAS SOCIAIS APLICADAS (Resolução nº 035/2018-COU)",
+            "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-sociais-aplicadas-csa/resolucao-038-2018-cou.pdf/view",
+            "motivo": "regulamento do próprio centro"
+          }
+        ]
+      }
+    },
+    {
+      "centro_sigla": "CTC",
+      "centro_nome": "Centro de Tecnologia",
+      "fonte_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc",
+      "arquivo": "reviews/2026-10-16-departamentos/capturas/departamentos-ctc.html",
+      "consultado_em": "2026-10-16T16:41:29.912824+00:00",
+      "status": "aceito",
+      "quantidade_departamentos": 10,
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": "reviews/2026-10-16-departamentos/capturas/departamentos-ctc.html",
+        "cobertura": {
+          "centro_sigla": "CTC",
+          "status": "parcial_por_centro",
+          "completude": "não verificada; conferir ausências e alterações manualmente",
+          "outros_centros": "não coletados nesta captura"
+        },
+        "proveniencia": {
+          "fonte_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc",
+          "origem_arquivo": "não autenticada; URL institucional de referência",
+          "id": "candidato interno obtido da sigla em minúsculas; exige revisão",
+          "centro_sigla": "validado pelo título e pelo regulamento do próprio centro",
+          "campus_id": "não informado na página; permanece null",
+          "status": "desconhecido; situação atual não verificada",
+          "reutilizacao": "condições pendentes de revisão",
+          "regulamentos": "links preservados; conteúdo dos documentos não consultado"
+        },
+        "departamentos": [
+          {
+            "id": "dal",
+            "nome": "Departamento de Engenharia de Alimentos",
+            "status": "desconhecido",
+            "fonte": {
+              "source_id": "centros_pld",
+              "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc",
+              "consultado_em": "2026-10-16T16:41:29.912824Z"
+            },
+            "sigla": "DAL",
+            "centro_sigla": "CTC",
+            "campus_id": null
+          },
+          {
+            "id": "dam",
+            "nome": "Departamento de Meio-Ambiente",
+            "status": "desconhecido",
+            "fonte": {
+              "source_id": "centros_pld",
+              "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc",
+              "consultado_em": "2026-10-16T16:41:29.912824Z"
+            },
+            "sigla": "DAM",
+            "centro_sigla": "CTC",
+            "campus_id": null
+          },
+          {
+            "id": "dau",
+            "nome": "Departamento de Arquitetura e Urbanismo",
+            "status": "desconhecido",
+            "fonte": {
+              "source_id": "centros_pld",
+              "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc",
+              "consultado_em": "2026-10-16T16:41:29.912824Z"
+            },
+            "sigla": "DAU",
+            "centro_sigla": "CTC",
+            "campus_id": null
+          },
+          {
+            "id": "ddm",
+            "nome": "Departamento de Design e Moda",
+            "status": "desconhecido",
+            "fonte": {
+              "source_id": "centros_pld",
+              "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc",
+              "consultado_em": "2026-10-16T16:41:29.912824Z"
+            },
+            "sigla": "DDM",
+            "centro_sigla": "CTC",
+            "campus_id": null
+          },
+          {
+            "id": "dec",
+            "nome": "Departamento de Engenharia Civil",
+            "status": "desconhecido",
+            "fonte": {
+              "source_id": "centros_pld",
+              "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc",
+              "consultado_em": "2026-10-16T16:41:29.912824Z"
+            },
+            "sigla": "DEC",
+            "centro_sigla": "CTC",
+            "campus_id": null
+          },
+          {
+            "id": "dem",
+            "nome": "Deparamento de Engenharia Mecânica",
+            "status": "desconhecido",
+            "fonte": {
+              "source_id": "centros_pld",
+              "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc",
+              "consultado_em": "2026-10-16T16:41:29.912824Z"
+            },
+            "sigla": "DEM",
+            "centro_sigla": "CTC",
+            "campus_id": null
+          },
+          {
+            "id": "dep",
+            "nome": "Departamento de Engenharia de Produção",
+            "status": "desconhecido",
+            "fonte": {
+              "source_id": "centros_pld",
+              "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc",
+              "consultado_em": "2026-10-16T16:41:29.912824Z"
+            },
+            "sigla": "DEP",
+            "centro_sigla": "CTC",
+            "campus_id": null
+          },
+          {
+            "id": "det",
+            "nome": "Departamento de Engenharia Têxtil",
+            "status": "desconhecido",
+            "fonte": {
+              "source_id": "centros_pld",
+              "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc",
+              "consultado_em": "2026-10-16T16:41:29.912824Z"
+            },
+            "sigla": "DET",
+            "centro_sigla": "CTC",
+            "campus_id": null
+          },
+          {
+            "id": "din",
+            "nome": "Departamento de Informática",
+            "status": "desconhecido",
+            "fonte": {
+              "source_id": "centros_pld",
+              "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc",
+              "consultado_em": "2026-10-16T16:41:29.912824Z"
+            },
+            "sigla": "DIN",
+            "centro_sigla": "CTC",
+            "campus_id": null
+          },
+          {
+            "id": "dtc",
+            "nome": "Departamento de Tecnologia",
+            "status": "desconhecido",
+            "fonte": {
+              "source_id": "centros_pld",
+              "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc",
+              "consultado_em": "2026-10-16T16:41:29.912824Z"
+            },
+            "sigla": "DTC",
+            "centro_sigla": "CTC",
+            "campus_id": null
+          }
+        ],
+        "auditoria": [
+          {
+            "sigla": "DAL",
+            "rotulo_original": "DAL - Departamento de Engenharia de Alimentos (Resolução nº 033/2011-COU)",
+            "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc/dal-regulamento-departamento.pdf/view"
+          },
+          {
+            "sigla": "DAM",
+            "rotulo_original": "DAM - Departamento de Meio-Ambiente (Resolução nº 212/2017-CI/CTC)",
+            "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc/damresolucao-212-2017-ci-ctc.pdf/view"
+          },
+          {
+            "sigla": "DAU",
+            "rotulo_original": "DAU - Departamento de Arquitetura e Urbanismo (Resolução nº 828/2021-CI/CTC",
+            "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc/dau-resolucao-828-2021-ctc.pdf/view"
+          },
+          {
+            "sigla": "DDM",
+            "rotulo_original": "DDM - Departamento de Design e Moda (Resolucao nº 137/2021-CI/CTC)",
+            "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc/ddm-departamento-de-design-e-moda-resolucao-no-137-2021-ci-ctc.pdf/view"
+          },
+          {
+            "sigla": "DEC",
+            "rotulo_original": "DEC - Departamento de Engenharia Civil (Resolução nº 054/2024-CI/CTC)",
+            "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc/resolucao-044-2010-ctc.pdf/view"
+          },
+          {
+            "sigla": "DEM",
+            "rotulo_original": "DEM - Deparamento de Engenharia Mecânica (Resolução nº 106/2018-CI/CTC)",
+            "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc/dem-deparamento-de-engenharia-mecancia-resolucao-106-2018-ctc-pdf-crdownload/view",
+            "observacao": "grafia Deparamento observada na fonte; nome preservado para revisão"
+          },
+          {
+            "sigla": "DEP",
+            "rotulo_original": "DEP - Departamento de Engenharia de Produção (Resolução nº 021/2011-CTC)",
+            "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc/resolucao-021-2011-ctc.pdf/view"
+          },
+          {
+            "sigla": "DET",
+            "rotulo_original": "DET - Departamento de Engenharia Têxtil (Resolução nº 133/2017-CI/CTC)",
+            "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc/resolucao-133-2017-ctc-1.pdf/view"
+          },
+          {
+            "sigla": "DIN",
+            "rotulo_original": "DIN - Departamento de Informática (Resolução nº 067/2011-CTC)",
+            "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc/resolucao-067-2011-ctc.pdf/view"
+          },
+          {
+            "sigla": "DTC",
+            "rotulo_original": "DTC - Departamento de Tecnologia (Resolução nº 182/2018-CI/CTC)",
+            "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc/resolucao-182-2018-ci-ctc.pdf/view"
+          }
+        ],
+        "excluidos": [
+          {
+            "sigla": "CTC",
+            "rotulo_original": "CTC - CENTRO DE TECNOLOGIA (Resolução nº 002/2011-COU)",
+            "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc/resolucao-002-2011-cou.pdf/view",
+            "motivo": "regulamento do próprio centro"
+          }
+        ]
+      }
+    }
+  ],
+  "duplicidades": [],
+  "proveniencia": {
+    "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+    "cobertura": "sete fontes aceitas significam apenas que as páginas esperadas foram processadas; a completude de cada lista exige revisão manual",
+    "revisao_pendente": [
+      "completude e atualidade dos departamentos em cada centro",
+      "siglas duplicadas entre centros",
+      "IDs candidatos e vínculos institucionais",
+      "condições de reutilização"
+    ]
+  }
+}

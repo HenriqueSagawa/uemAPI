@@ -1,0 +1,71 @@
+{
+  "versao": 1,
+  "dataset": "departamentos",
+  "decisoes": [
+    {
+      "tipo": "registro",
+      "id": "dag",
+      "impressao": "b02f38ed9c707b441a3ad3a8f7f767eeeb92042b600a760e9eccdd3636d1db52",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos sigla DAG, nome Departamento de Agronomia e href no rótulo DAG - Departamento de Agronomia (Resolução nº 007/2012-CI/CCA). O vínculo candidato com CCA corresponde à página cujo título e regulamento próprio identificam esse centro. O ID é a sigla em minúsculas. A decisão cobre a fidelidade à listagem capturada; campus_id permanece null e status permanece desconhecido. O documento vinculado e a atualidade institucional não foram verificados.",
+      "evidencias": [
+        "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-agrarias",
+        "reviews/2026-10-16-departamentos/capturas.json",
+        "reviews/2026-10-16-departamentos/exclusoes.md"
+      ],
+      "data_decisao": "2026-10-16T16:43:05+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "dca",
+      "impressao": "fc563bab56b740edc7813a25e30554ee6daeb9ca1edcc8ce3a09efec826a84ee",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos sigla DCA, nome Departamento de Ciências Agronômicas e href no rótulo DCA - Departamento de Ciências Agronômicas (Resolução nº 008/2012-CI/CCA). O vínculo candidato com CCA corresponde à página cujo título e regulamento próprio identificam esse centro. O ID é a sigla em minúsculas. A decisão cobre a fidelidade à listagem capturada; campus_id permanece null e status permanece desconhecido. O documento vinculado e a atualidade institucional não foram verificados.",
+      "evidencias": [
+        "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-agrarias",
+        "reviews/2026-10-16-departamentos/capturas.json",
+        "reviews/2026-10-16-departamentos/exclusoes.md"
+      ],
+      "data_decisao": "2026-10-16T16:43:05+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "dea",
+      "impressao": "c6edf7fa512bf6edbbeaf38316fd873faf0cf94ab128810c5b6539357931d56e",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos sigla DEA, nome Departamento de Engenharia Agrícola e href no rótulo DEA - Departamento de Engenharia Agrícola (Resolução nº 009/2012-CI/CCA). O vínculo candidato com CCA corresponde à página cujo título e regulamento próprio identificam esse centro. O ID é a sigla em minúsculas. A decisão cobre a fidelidade à listagem capturada; campus_id permanece null e status permanece desconhecido. O documento vinculado e a atualidade institucional não foram verificados.",
+      "evidencias": [
+        "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-agrarias",
+        "reviews/2026-10-16-departamentos/capturas.json",
+        "reviews/2026-10-16-departamentos/exclusoes.md"
+      ],
+      "data_decisao": "2026-10-16T16:43:05+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "dmv",
+      "impressao": "f4f113af0f2e140220813e1a5eaa32d813666b0f02f23a9f1dabb7bb71367baf",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos sigla DMV, nome Departamento de Medicina Veterinária e href no rótulo DMV - Departamento de Medicina Veterinária (Resolução nº 010/2012-CI/CCA). O vínculo candidato com CCA corresponde à página cujo título e regulamento próprio identificam esse centro. O ID é a sigla em minúsculas. A decisão cobre a fidelidade à listagem capturada; campus_id permanece null e status permanece desconhecido. O documento vinculado e a atualidade institucional não foram verificados.",
+      "evidencias": [
+        "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-agrarias",
+        "reviews/2026-10-16-departamentos/capturas.json",
+        "reviews/2026-10-16-departamentos/exclusoes.md"
+      ],
+      "data_decisao": "2026-10-16T16:43:05+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "dzo",
+      "impressao": "c90f3f8df71f43219add0c9bf8e346f40c02ce0db21fb2d342714f74d6db3f3e",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos sigla DZO, nome Departamento de Zootecnia e href no rótulo DZO - Departamento de Zootecnia (Resolução nº 011/2012-CI/CCA). O vínculo candidato com CCA corresponde à página cujo título e regulamento próprio identificam esse centro. O ID é a sigla em minúsculas. A decisão cobre a fidelidade à listagem capturada; campus_id permanece null e status permanece desconhecido. O documento vinculado e a atualidade institucional não foram verificados.",
+      "evidencias": [
+        "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-agrarias",
+        "reviews/2026-10-16-departamentos/capturas.json",
+        "reviews/2026-10-16-departamentos/exclusoes.md"
+      ],
+      "data_decisao": "2026-10-16T16:43:05+00:00"
+    }
+  ]
+}

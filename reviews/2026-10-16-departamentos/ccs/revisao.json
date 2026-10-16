@@ -1,0 +1,432 @@
+{
+  "modo": "revisao",
+  "publicavel": false,
+  "dataset": "departamentos",
+  "centro_sigla": "CCS",
+  "entradas": {
+    "atual": "reviews/2026-10-16-departamentos/ccs/previa.json",
+    "html_atual": "reviews/2026-10-16-departamentos/capturas/departamentos-ccs.html",
+    "consultado_em_atual": "2026-10-16T16:41:28.393221+00:00",
+    "anterior": null,
+    "html_anterior": null,
+    "consultado_em_anterior": null
+  },
+  "comparacao": {
+    "status": "sem_captura_anterior",
+    "adicionados": 8,
+    "removidos": 0,
+    "alterados": 0,
+    "inalterados": 0,
+    "mudancas": [
+      {
+        "id": "dab",
+        "tipo": "adicionado",
+        "atual": {
+          "id": "dab",
+          "nome": "Departamento de Análises Clínicas e Biomedicina",
+          "status": "desconhecido",
+          "fonte": {
+            "source_id": "centros_pld",
+            "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-da-saude-ccs"
+          },
+          "sigla": "DAB",
+          "centro_sigla": "CCS",
+          "campus_id": null
+        }
+      },
+      {
+        "id": "dbs",
+        "tipo": "adicionado",
+        "atual": {
+          "id": "dbs",
+          "nome": "Departamento de Ciências Básicas da Saúde",
+          "status": "desconhecido",
+          "fonte": {
+            "source_id": "centros_pld",
+            "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-da-saude-ccs"
+          },
+          "sigla": "DBS",
+          "centro_sigla": "CCS",
+          "campus_id": null
+        }
+      },
+      {
+        "id": "def",
+        "tipo": "adicionado",
+        "atual": {
+          "id": "def",
+          "nome": "Departamento de Educação Física",
+          "status": "desconhecido",
+          "fonte": {
+            "source_id": "centros_pld",
+            "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-da-saude-ccs"
+          },
+          "sigla": "DEF",
+          "centro_sigla": "CCS",
+          "campus_id": null
+        }
+      },
+      {
+        "id": "dfa",
+        "tipo": "adicionado",
+        "atual": {
+          "id": "dfa",
+          "nome": "Departamento de Farmácia",
+          "status": "desconhecido",
+          "fonte": {
+            "source_id": "centros_pld",
+            "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-da-saude-ccs"
+          },
+          "sigla": "DFA",
+          "centro_sigla": "CCS",
+          "campus_id": null
+        }
+      },
+      {
+        "id": "dft",
+        "tipo": "adicionado",
+        "atual": {
+          "id": "dft",
+          "nome": "Departamento de Farmacologia e Terapêutica",
+          "status": "desconhecido",
+          "fonte": {
+            "source_id": "centros_pld",
+            "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-da-saude-ccs"
+          },
+          "sigla": "DFT",
+          "centro_sigla": "CCS",
+          "campus_id": null
+        }
+      },
+      {
+        "id": "dmd",
+        "tipo": "adicionado",
+        "atual": {
+          "id": "dmd",
+          "nome": "Departamento de Medicina",
+          "status": "desconhecido",
+          "fonte": {
+            "source_id": "centros_pld",
+            "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-da-saude-ccs"
+          },
+          "sigla": "DMD",
+          "centro_sigla": "CCS",
+          "campus_id": null
+        }
+      },
+      {
+        "id": "dmo",
+        "tipo": "adicionado",
+        "atual": {
+          "id": "dmo",
+          "nome": "Departamento de Ciências do Movimento Humano",
+          "status": "desconhecido",
+          "fonte": {
+            "source_id": "centros_pld",
+            "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-da-saude-ccs"
+          },
+          "sigla": "DMO",
+          "centro_sigla": "CCS",
+          "campus_id": null
+        }
+      },
+      {
+        "id": "dod",
+        "tipo": "adicionado",
+        "atual": {
+          "id": "dod",
+          "nome": "Departamento de Odontologia",
+          "status": "desconhecido",
+          "fonte": {
+            "source_id": "centros_pld",
+            "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-da-saude-ccs"
+          },
+          "sigla": "DOD",
+          "centro_sigla": "CCS",
+          "campus_id": null
+        }
+      }
+    ],
+    "proveniencia_alterada": false
+  },
+  "revisao": {
+    "registros": [
+      {
+        "tipo": "registro",
+        "id": "dab",
+        "impressao": "baabe1268974c91d02886a26875b0700a518bd2a2dd33a5abf956f21b75a2f2c",
+        "status": "aprovado",
+        "justificativa": "Conferidos sigla DAB, nome Departamento de Análises Clínicas e Biomedicina e href no rótulo DAB - Departamento de Análises Clínicas e Biomedicina (Resolução nº 147/2025-CI/CCS). O vínculo candidato com CCS corresponde à página cujo título e regulamento próprio identificam esse centro. O ID é a sigla em minúsculas. A decisão cobre a fidelidade à listagem capturada; campus_id permanece null e status permanece desconhecido. O documento vinculado e a atualidade institucional não foram verificados.",
+        "evidencias": [
+          "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-da-saude-ccs",
+          "reviews/2026-10-16-departamentos/capturas.json",
+          "reviews/2026-10-16-departamentos/exclusoes.md"
+        ],
+        "data_decisao": "2026-10-16T16:43:05+00:00"
+      },
+      {
+        "tipo": "registro",
+        "id": "dbs",
+        "impressao": "9b4a6dbc263421511b546229862d87ddbd04a815e9cf1d2529f3cb697b6241d5",
+        "status": "aprovado",
+        "justificativa": "Conferidos sigla DBS, nome Departamento de Ciências Básicas da Saúde e href no rótulo DBS - Departamento de Ciências Básicas da Saúde (Resolução 012/2015-CI/CCS). O vínculo candidato com CCS corresponde à página cujo título e regulamento próprio identificam esse centro. O ID é a sigla em minúsculas. A decisão cobre a fidelidade à listagem capturada; campus_id permanece null e status permanece desconhecido. O documento vinculado e a atualidade institucional não foram verificados.",
+        "evidencias": [
+          "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-da-saude-ccs",
+          "reviews/2026-10-16-departamentos/capturas.json",
+          "reviews/2026-10-16-departamentos/exclusoes.md"
+        ],
+        "data_decisao": "2026-10-16T16:43:05+00:00"
+      },
+      {
+        "tipo": "registro",
+        "id": "def",
+        "impressao": "aea1a1653d718ce3e57172ffe6bf18794219edde2f2547b5295f348b958ea1ac",
+        "status": "aprovado",
+        "justificativa": "Conferidos sigla DEF, nome Departamento de Educação Física e href no rótulo DEF - Departamento de Educação Física (Resolução nº 106/2025-CI/CCS). O vínculo candidato com CCS corresponde à página cujo título e regulamento próprio identificam esse centro. O ID é a sigla em minúsculas. A decisão cobre a fidelidade à listagem capturada; campus_id permanece null e status permanece desconhecido. O documento vinculado e a atualidade institucional não foram verificados.",
+        "evidencias": [
+          "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-da-saude-ccs",
+          "reviews/2026-10-16-departamentos/capturas.json",
+          "reviews/2026-10-16-departamentos/exclusoes.md"
+        ],
+        "data_decisao": "2026-10-16T16:43:05+00:00"
+      },
+      {
+        "tipo": "registro",
+        "id": "dfa",
+        "impressao": "a6f6b084b63b6c80c18a3c87dc2a428fd8054dc3961411dd9ac43b94b54f0382",
+        "status": "aprovado",
+        "justificativa": "Conferidos sigla DFA, nome Departamento de Farmácia e href no rótulo DFA - Departamento de Farmácia (Resolução nº 058/2017-CI/CCS). O vínculo candidato com CCS corresponde à página cujo título e regulamento próprio identificam esse centro. O ID é a sigla em minúsculas. A decisão cobre a fidelidade à listagem capturada; campus_id permanece null e status permanece desconhecido. O documento vinculado e a atualidade institucional não foram verificados.",
+        "evidencias": [
+          "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-da-saude-ccs",
+          "reviews/2026-10-16-departamentos/capturas.json",
+          "reviews/2026-10-16-departamentos/exclusoes.md"
+        ],
+        "data_decisao": "2026-10-16T16:43:05+00:00"
+      },
+      {
+        "tipo": "registro",
+        "id": "dft",
+        "impressao": "f168b84c3d1dcbce7d45346871b2200f968011d86ad91b22c23d2e72e87b551b",
+        "status": "aprovado",
+        "justificativa": "Conferidos sigla DFT, nome Departamento de Farmacologia e Terapêutica e href no rótulo DFT - Departamento de Farmacologia e Terapêutica (Resolução 035/2017-CI/CCS). O vínculo candidato com CCS corresponde à página cujo título e regulamento próprio identificam esse centro. O ID é a sigla em minúsculas. A decisão cobre a fidelidade à listagem capturada; campus_id permanece null e status permanece desconhecido. O documento vinculado e a atualidade institucional não foram verificados.",
+        "evidencias": [
+          "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-da-saude-ccs",
+          "reviews/2026-10-16-departamentos/capturas.json",
+          "reviews/2026-10-16-departamentos/exclusoes.md"
+        ],
+        "data_decisao": "2026-10-16T16:43:05+00:00"
+      },
+      {
+        "tipo": "registro",
+        "id": "dmd",
+        "impressao": "31b92b7543b89d4d3faf4732999a9dc1e8a5f8b8d7aeac0cae1e567c73d77cd2",
+        "status": "aprovado",
+        "justificativa": "Conferidos sigla DMD, nome Departamento de Medicina e href no rótulo DMD - Departamento de Medicina (Resolução nº 081/2015-CI/CCS). O vínculo candidato com CCS corresponde à página cujo título e regulamento próprio identificam esse centro. O ID é a sigla em minúsculas. A decisão cobre a fidelidade à listagem capturada; campus_id permanece null e status permanece desconhecido. O documento vinculado e a atualidade institucional não foram verificados.",
+        "evidencias": [
+          "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-da-saude-ccs",
+          "reviews/2026-10-16-departamentos/capturas.json",
+          "reviews/2026-10-16-departamentos/exclusoes.md"
+        ],
+        "data_decisao": "2026-10-16T16:43:05+00:00"
+      },
+      {
+        "tipo": "registro",
+        "id": "dmo",
+        "impressao": "d601dc5e2cebb89bb8b78aadc4187022efe45530b674bca8d3917443b24120ca",
+        "status": "aprovado",
+        "justificativa": "Conferidos sigla DMO, nome Departamento de Ciências do Movimento Humano e href no rótulo DMO - Departamento de Ciências do Movimento Humano -(Resolução nº 017/2021-CI/CCS). O vínculo candidato com CCS corresponde à página cujo título e regulamento próprio identificam esse centro. O ID é a sigla em minúsculas. A decisão cobre a fidelidade à listagem capturada; campus_id permanece null e status permanece desconhecido. O documento vinculado e a atualidade institucional não foram verificados. A sigla DMO foi mantida junto ao nome Ciências do Movimento Humano tal como aparece na página; não foi recalculada pelo nome.",
+        "evidencias": [
+          "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-da-saude-ccs",
+          "reviews/2026-10-16-departamentos/capturas.json",
+          "reviews/2026-10-16-departamentos/exclusoes.md"
+        ],
+        "data_decisao": "2026-10-16T16:43:05+00:00"
+      },
+      {
+        "tipo": "registro",
+        "id": "dod",
+        "impressao": "b14e79cd2b3b6a24ed02cb3ec7926cc2c8c4705745a3acb01b9c4f520c33f024",
+        "status": "aprovado",
+        "justificativa": "Conferidos sigla DOD, nome Departamento de Odontologia e href no rótulo DOD - Departamento de Odontologia (Resolução nº 006/2012-CI/CCS). O vínculo candidato com CCS corresponde à página cujo título e regulamento próprio identificam esse centro. O ID é a sigla em minúsculas. A decisão cobre a fidelidade à listagem capturada; campus_id permanece null e status permanece desconhecido. O documento vinculado e a atualidade institucional não foram verificados.",
+        "evidencias": [
+          "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-da-saude-ccs",
+          "reviews/2026-10-16-departamentos/capturas.json",
+          "reviews/2026-10-16-departamentos/exclusoes.md"
+        ],
+        "data_decisao": "2026-10-16T16:43:05+00:00"
+      }
+    ],
+    "pendentes": 0,
+    "rejeitados": 0,
+    "aprovados": 8,
+    "decisoes_obsoletas": [],
+    "inconsistencias_cobertura": [
+      "completude dos departamentos do centro não verificada"
+    ],
+    "todos_itens_aprovados": false
+  },
+  "modelo_decisoes": {
+    "versao": 1,
+    "dataset": "departamentos",
+    "decisoes": [
+      {
+        "tipo": "registro",
+        "id": "dab",
+        "impressao": "baabe1268974c91d02886a26875b0700a518bd2a2dd33a5abf956f21b75a2f2c",
+        "decisao": "pendente",
+        "justificativa": "",
+        "evidencias": [],
+        "data_decisao": null
+      },
+      {
+        "tipo": "registro",
+        "id": "dbs",
+        "impressao": "9b4a6dbc263421511b546229862d87ddbd04a815e9cf1d2529f3cb697b6241d5",
+        "decisao": "pendente",
+        "justificativa": "",
+        "evidencias": [],
+        "data_decisao": null
+      },
+      {
+        "tipo": "registro",
+        "id": "def",
+        "impressao": "aea1a1653d718ce3e57172ffe6bf18794219edde2f2547b5295f348b958ea1ac",
+        "decisao": "pendente",
+        "justificativa": "",
+        "evidencias": [],
+        "data_decisao": null
+      },
+      {
+        "tipo": "registro",
+        "id": "dfa",
+        "impressao": "a6f6b084b63b6c80c18a3c87dc2a428fd8054dc3961411dd9ac43b94b54f0382",
+        "decisao": "pendente",
+        "justificativa": "",
+        "evidencias": [],
+        "data_decisao": null
+      },
+      {
+        "tipo": "registro",
+        "id": "dft",
+        "impressao": "f168b84c3d1dcbce7d45346871b2200f968011d86ad91b22c23d2e72e87b551b",
+        "decisao": "pendente",
+        "justificativa": "",
+        "evidencias": [],
+        "data_decisao": null
+      },
+      {
+        "tipo": "registro",
+        "id": "dmd",
+        "impressao": "31b92b7543b89d4d3faf4732999a9dc1e8a5f8b8d7aeac0cae1e567c73d77cd2",
+        "decisao": "pendente",
+        "justificativa": "",
+        "evidencias": [],
+        "data_decisao": null
+      },
+      {
+        "tipo": "registro",
+        "id": "dmo",
+        "impressao": "d601dc5e2cebb89bb8b78aadc4187022efe45530b674bca8d3917443b24120ca",
+        "decisao": "pendente",
+        "justificativa": "",
+        "evidencias": [],
+        "data_decisao": null
+      },
+      {
+        "tipo": "registro",
+        "id": "dod",
+        "impressao": "b14e79cd2b3b6a24ed02cb3ec7926cc2c8c4705745a3acb01b9c4f520c33f024",
+        "decisao": "pendente",
+        "justificativa": "",
+        "evidencias": [],
+        "data_decisao": null
+      }
+    ]
+  },
+  "proveniencia": {
+    "atual": {
+      "fonte_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-da-saude-ccs",
+      "origem_arquivo": "não autenticada; URL institucional de referência",
+      "id": "candidato interno obtido da sigla em minúsculas; exige revisão",
+      "centro_sigla": "validado pelo título e pelo regulamento do próprio centro",
+      "campus_id": "não informado na página; permanece null",
+      "status": "desconhecido; situação atual não verificada",
+      "reutilizacao": "condições pendentes de revisão",
+      "regulamentos": "links preservados; conteúdo dos documentos não consultado",
+      "cobertura": {
+        "centro_sigla": "CCS",
+        "status": "parcial_por_centro",
+        "completude": "não verificada; conferir ausências e alterações manualmente",
+        "outros_centros": "não coletados nesta captura"
+      },
+      "auditoria": [
+        {
+          "sigla": "DAB",
+          "rotulo_original": "DAB - Departamento de Análises Clínicas e Biomedicina (Resolução nº 147/2025-CI/CCS)",
+          "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-da-saude-ccs/resolucao-050-2015-ci-ccs.pdf/view"
+        },
+        {
+          "sigla": "DBS",
+          "rotulo_original": "DBS - Departamento de Ciências Básicas da Saúde (Resolução 012/2015-CI/CCS)",
+          "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-da-saude-ccs/resolucao-012-2015-ci-ccs.pdf/view"
+        },
+        {
+          "sigla": "DEF",
+          "rotulo_original": "DEF - Departamento de Educação Física (Resolução nº 106/2025-CI/CCS)",
+          "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-da-saude-ccs/resolucao-119-2018-ci-ccs.pdf/view"
+        },
+        {
+          "sigla": "DFA",
+          "rotulo_original": "DFA - Departamento de Farmácia (Resolução nº 058/2017-CI/CCS)",
+          "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-da-saude-ccs/resolucao-058-2017-ci-ccs.pdf/view"
+        },
+        {
+          "sigla": "DFT",
+          "rotulo_original": "DFT - Departamento de Farmacologia e Terapêutica (Resolução 035/2017-CI/CCS)",
+          "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-da-saude-ccs/resolucao-035-2017-ci-ccs.pdf/view"
+        },
+        {
+          "sigla": "DMD",
+          "rotulo_original": "DMD - Departamento de Medicina (Resolução nº 081/2015-CI/CCS)",
+          "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-da-saude-ccs/resolucao-081-2015-ci-ccs.pdf/view"
+        },
+        {
+          "sigla": "DMO",
+          "rotulo_original": "DMO - Departamento de Ciências do Movimento Humano -(Resolução nº 017/2021-CI/CCS)",
+          "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-da-saude-ccs/dmo-resolucao-017-2021-ci-ccs.pdf/view"
+        },
+        {
+          "sigla": "DOD",
+          "rotulo_original": "DOD - Departamento de Odontologia (Resolução nº 006/2012-CI/CCS)",
+          "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-da-saude-ccs/resolucao-006-2012-ci-ccs.pdf/view"
+        }
+      ],
+      "excluidos": [
+        {
+          "sigla": "CCS",
+          "rotulo_original": "CCS - CENTRO DE CIÊNCIAS DA SAÚDE (Resolução Nº 037/2013-COU)",
+          "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-da-saude-ccs/resolucao-037-2013-cou.pdf/view",
+          "motivo": "regulamento do próprio centro"
+        },
+        {
+          "sigla": "COD",
+          "rotulo_original": "COD - Clínica Odontológica (Resolução nº 225/1996-COU)",
+          "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-da-saude-ccs/clinica-odontologica-cod.pdf/view",
+          "motivo": "rótulo não identifica departamento; classificação exige revisão"
+        },
+        {
+          "sigla": "UPM-LEPEMC",
+          "rotulo_original": "UPM-LEPEMC - Unidade de Produção de Medicamentos-Laboratório de Produção de Medicamentos e Cosméticos (Resolução nº 006/2005-COU e nº 011/2010-COU-Alteração Artigo 12)",
+          "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-da-saude-ccs/unidade-de-producao-de-medicamentos-upm-lepemc.pdf/view",
+          "motivo": "rótulo não identifica departamento; classificação exige revisão"
+        }
+      ]
+    },
+    "anterior": null
+  },
+  "limites": [
+    "a origem dos arquivos HTML e JSON locais não é autenticada",
+    "decisões registradas não aprovam condições de reutilização das fontes",
+    "a revisão não gera arquivos em data/ nem autoriza publicação"
+  ]
+}

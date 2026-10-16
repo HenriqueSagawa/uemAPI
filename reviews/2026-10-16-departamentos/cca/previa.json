@@ -1,0 +1,135 @@
+{
+  "modo": "previa",
+  "publicavel": false,
+  "entrada": "reviews/2026-10-16-departamentos/capturas/departamentos-cca.html",
+  "cobertura": {
+    "centro_sigla": "CCA",
+    "status": "parcial_por_centro",
+    "completude": "não verificada; conferir ausências e alterações manualmente",
+    "outros_centros": "não coletados nesta captura"
+  },
+  "proveniencia": {
+    "fonte_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-agrarias",
+    "origem_arquivo": "não autenticada; URL institucional de referência",
+    "id": "candidato interno obtido da sigla em minúsculas; exige revisão",
+    "centro_sigla": "validado pelo título e pelo regulamento do próprio centro",
+    "campus_id": "não informado na página; permanece null",
+    "status": "desconhecido; situação atual não verificada",
+    "reutilizacao": "condições pendentes de revisão",
+    "regulamentos": "links preservados; conteúdo dos documentos não consultado"
+  },
+  "departamentos": [
+    {
+      "id": "dag",
+      "nome": "Departamento de Agronomia",
+      "status": "desconhecido",
+      "fonte": {
+        "source_id": "centros_pld",
+        "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-agrarias",
+        "consultado_em": "2026-10-16T16:41:25.775401Z"
+      },
+      "sigla": "DAG",
+      "centro_sigla": "CCA",
+      "campus_id": null
+    },
+    {
+      "id": "dca",
+      "nome": "Departamento de Ciências Agronômicas",
+      "status": "desconhecido",
+      "fonte": {
+        "source_id": "centros_pld",
+        "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-agrarias",
+        "consultado_em": "2026-10-16T16:41:25.775401Z"
+      },
+      "sigla": "DCA",
+      "centro_sigla": "CCA",
+      "campus_id": null
+    },
+    {
+      "id": "dea",
+      "nome": "Departamento de Engenharia Agrícola",
+      "status": "desconhecido",
+      "fonte": {
+        "source_id": "centros_pld",
+        "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-agrarias",
+        "consultado_em": "2026-10-16T16:41:25.775401Z"
+      },
+      "sigla": "DEA",
+      "centro_sigla": "CCA",
+      "campus_id": null
+    },
+    {
+      "id": "dmv",
+      "nome": "Departamento de Medicina Veterinária",
+      "status": "desconhecido",
+      "fonte": {
+        "source_id": "centros_pld",
+        "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-agrarias",
+        "consultado_em": "2026-10-16T16:41:25.775401Z"
+      },
+      "sigla": "DMV",
+      "centro_sigla": "CCA",
+      "campus_id": null
+    },
+    {
+      "id": "dzo",
+      "nome": "Departamento de Zootecnia",
+      "status": "desconhecido",
+      "fonte": {
+        "source_id": "centros_pld",
+        "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-agrarias",
+        "consultado_em": "2026-10-16T16:41:25.775401Z"
+      },
+      "sigla": "DZO",
+      "centro_sigla": "CCA",
+      "campus_id": null
+    }
+  ],
+  "auditoria": [
+    {
+      "sigla": "DAG",
+      "rotulo_original": "DAG - Departamento de Agronomia (Resolução nº 007/2012-CI/CCA)",
+      "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-agrarias/resolucao-07-2012-ci-cca.pdf/view"
+    },
+    {
+      "sigla": "DCA",
+      "rotulo_original": "DCA - Departamento de Ciências Agronômicas (Resolução nº 008/2012-CI/CCA)",
+      "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-agrarias/resolucao-008-2012-ci-cca.pdf/view"
+    },
+    {
+      "sigla": "DEA",
+      "rotulo_original": "DEA - Departamento de Engenharia Agrícola (Resolução nº 009/2012-CI/CCA)",
+      "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-agrarias/resolucao-009-2012-ci-cca.pdf/view"
+    },
+    {
+      "sigla": "DMV",
+      "rotulo_original": "DMV - Departamento de Medicina Veterinária (Resolução nº 010/2012-CI/CCA)",
+      "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-agrarias/resolucao-010-2012-ci-cca.pdf/view"
+    },
+    {
+      "sigla": "DZO",
+      "rotulo_original": "DZO - Departamento de Zootecnia (Resolução nº 011/2012-CI/CCA)",
+      "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-agrarias/resolucao-011-2012-ci-cca.pdf/view"
+    }
+  ],
+  "excluidos": [
+    {
+      "sigla": "CCA",
+      "rotulo_original": "CCA - CENTRO DE CIÊNCIAS AGRÁRIAS (Resolução 011/2012-COU)",
+      "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-agrarias/resolucao-011-2012-cou.pdf/view",
+      "motivo": "regulamento do próprio centro"
+    },
+    {
+      "sigla": "FEI",
+      "rotulo_original": "FEI - Fazenda Experimental de Iguatemi (Resolução nº 018/2013-COU)",
+      "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-agrarias/fazenda-experimental-de-iguatemi-fei.pdf/view",
+      "motivo": "rótulo não identifica departamento; classificação exige revisão"
+    },
+    {
+      "sigla": "HVU",
+      "rotulo_original": "HVU - Hospital Veterinário de Umuarama (Resolução nº 037/2024-COU)",
+      "regulamento_url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-agrarias/resolucao-n-037-2024-cou-hvu.pdf/view",
+      "motivo": "rótulo não identifica departamento; classificação exige revisão"
+    }
+  ]
+}
