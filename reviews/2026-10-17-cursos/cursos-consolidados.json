@@ -1,0 +1,3923 @@
+{
+  "modo": "previa",
+  "publicavel": false,
+  "entrada": {
+    "indice": "reviews/2026-10-17-cursos/capturas/cursos.html",
+    "manifesto": "reviews/2026-10-17-cursos/cursos-manifesto.json"
+  },
+  "fonte_indice": {
+    "source_id": "cursos_graduacao",
+    "url": "https://www.pen.uem.br/site/public/cursos",
+    "consultado_em": "2026-10-17T14:02:16.659783Z"
+  },
+  "ead": {
+    "url": "https://portal.nead.uem.br/site/web/site/cursos#graduacao",
+    "cursos_incluidos": false
+  },
+  "resumo": {
+    "total_indice": 67,
+    "total_manifesto": 67,
+    "aceitos": 67,
+    "sem_captura": 0,
+    "arquivo_ausente": 0,
+    "falha_leitura": 0,
+    "invalidos": 0,
+    "fora_do_indice": 0,
+    "cobertura_completa": true,
+    "por_campus": {
+      "car": {
+        "total": 1,
+        "aceitos": 1,
+        "sem_captura": 0,
+        "arquivo_ausente": 0,
+        "falha_leitura": 0,
+        "invalidos": 0
+      },
+      "cau": {
+        "total": 11,
+        "aceitos": 11,
+        "sem_captura": 0,
+        "arquivo_ausente": 0,
+        "falha_leitura": 0,
+        "invalidos": 0
+      },
+      "crc": {
+        "total": 4,
+        "aceitos": 4,
+        "sem_captura": 0,
+        "arquivo_ausente": 0,
+        "falha_leitura": 0,
+        "invalidos": 0
+      },
+      "crg": {
+        "total": 4,
+        "aceitos": 4,
+        "sem_captura": 0,
+        "arquivo_ausente": 0,
+        "falha_leitura": 0,
+        "invalidos": 0
+      },
+      "crv": {
+        "total": 3,
+        "aceitos": 3,
+        "sem_captura": 0,
+        "arquivo_ausente": 0,
+        "falha_leitura": 0,
+        "invalidos": 0
+      },
+      "sede": {
+        "total": 44,
+        "aceitos": 44,
+        "sem_captura": 0,
+        "arquivo_ausente": 0,
+        "falha_leitura": 0,
+        "invalidos": 0
+      }
+    }
+  },
+  "resultados": [
+    {
+      "campus_id": "sede",
+      "nome": "Administração",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/c6e9c1b9daea38a42b28d6d97f567ce6d551aeb0",
+      "arquivo": "reviews/2026-10-17-cursos/capturas/sede-c6e9c1b9daea38a42b28d6d97f567ce6d551aeb0.html",
+      "consultado_em": "2026-10-17T14:02:17.238974+00:00",
+      "status": "aceito",
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": {
+          "indice": "reviews/2026-10-17-cursos/capturas/cursos.html",
+          "detalhe": "reviews/2026-10-17-cursos/capturas/sede-c6e9c1b9daea38a42b28d6d97f567ce6d551aeb0.html"
+        },
+        "fonte": {
+          "source_id": "cursos_graduacao",
+          "url": "https://www.pen.uem.br/site/public/curso/c6e9c1b9daea38a42b28d6d97f567ce6d551aeb0",
+          "consultado_em": "2026-10-17T14:02:17.238974Z"
+        },
+        "curso": {
+          "nome": "Administração",
+          "campus_id": "sede",
+          "modalidade": "presencial",
+          "url_detalhe": "https://www.pen.uem.br/site/public/curso/c6e9c1b9daea38a42b28d6d97f567ce6d551aeb0",
+          "id_candidato": "sede-administracao",
+          "informacoes_academicas": [
+            {
+              "turno": "matutino ou noturno",
+              "habilitacoes": [
+                "Bacharelado"
+              ],
+              "graus_academicos": [
+                "Bacharel em Administração"
+              ]
+            }
+          ]
+        },
+        "proveniencia": {
+          "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
+          "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
+          "verificado": [
+            "link no índice local",
+            "título",
+            "câmpus exibido no detalhe"
+          ],
+          "informacoes_academicas": "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML",
+          "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+          "pendente": [
+            "ID estável aprovado",
+            "interpretação de turnos, habilitações e graus como ofertas",
+            "centro e departamento",
+            "cursos da EaD",
+            "completude e condições de reutilização"
+          ]
+        }
+      }
+    },
+    {
+      "campus_id": "sede",
+      "nome": "Agronomia",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/d3c228f4f03dd8ad8910dd6c06ec309f1db423a9",
+      "arquivo": "reviews/2026-10-17-cursos/capturas/sede-d3c228f4f03dd8ad8910dd6c06ec309f1db423a9.html",
+      "consultado_em": "2026-10-17T14:02:17.822057+00:00",
+      "status": "aceito",
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": {
+          "indice": "reviews/2026-10-17-cursos/capturas/cursos.html",
+          "detalhe": "reviews/2026-10-17-cursos/capturas/sede-d3c228f4f03dd8ad8910dd6c06ec309f1db423a9.html"
+        },
+        "fonte": {
+          "source_id": "cursos_graduacao",
+          "url": "https://www.pen.uem.br/site/public/curso/d3c228f4f03dd8ad8910dd6c06ec309f1db423a9",
+          "consultado_em": "2026-10-17T14:02:17.822057Z"
+        },
+        "curso": {
+          "nome": "Agronomia",
+          "campus_id": "sede",
+          "modalidade": "presencial",
+          "url_detalhe": "https://www.pen.uem.br/site/public/curso/d3c228f4f03dd8ad8910dd6c06ec309f1db423a9",
+          "id_candidato": "sede-agronomia",
+          "informacoes_academicas": [
+            {
+              "turno": "integral",
+              "habilitacoes": [
+                "Bacharelado"
+              ],
+              "graus_academicos": [
+                "Engenheiro Agrônomo"
+              ]
+            }
+          ]
+        },
+        "proveniencia": {
+          "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
+          "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
+          "verificado": [
+            "link no índice local",
+            "título",
+            "câmpus exibido no detalhe"
+          ],
+          "informacoes_academicas": "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML",
+          "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+          "pendente": [
+            "ID estável aprovado",
+            "interpretação de turnos, habilitações e graus como ofertas",
+            "centro e departamento",
+            "cursos da EaD",
+            "completude e condições de reutilização"
+          ]
+        }
+      }
+    },
+    {
+      "campus_id": "sede",
+      "nome": "Arquitetura e Urbanismo",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/b6573dc09a867d10270a581dae8a3166c84bc57c",
+      "arquivo": "reviews/2026-10-17-cursos/capturas/sede-b6573dc09a867d10270a581dae8a3166c84bc57c.html",
+      "consultado_em": "2026-10-17T14:02:18.405251+00:00",
+      "status": "aceito",
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": {
+          "indice": "reviews/2026-10-17-cursos/capturas/cursos.html",
+          "detalhe": "reviews/2026-10-17-cursos/capturas/sede-b6573dc09a867d10270a581dae8a3166c84bc57c.html"
+        },
+        "fonte": {
+          "source_id": "cursos_graduacao",
+          "url": "https://www.pen.uem.br/site/public/curso/b6573dc09a867d10270a581dae8a3166c84bc57c",
+          "consultado_em": "2026-10-17T14:02:18.405251Z"
+        },
+        "curso": {
+          "nome": "Arquitetura e Urbanismo",
+          "campus_id": "sede",
+          "modalidade": "presencial",
+          "url_detalhe": "https://www.pen.uem.br/site/public/curso/b6573dc09a867d10270a581dae8a3166c84bc57c",
+          "id_candidato": "sede-arquitetura-e-urbanismo",
+          "informacoes_academicas": [
+            {
+              "turno": "integral",
+              "habilitacoes": [
+                "Bacharelado"
+              ],
+              "graus_academicos": [
+                "Arquiteto e Urbanista"
+              ]
+            }
+          ]
+        },
+        "proveniencia": {
+          "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
+          "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
+          "verificado": [
+            "link no índice local",
+            "título",
+            "câmpus exibido no detalhe"
+          ],
+          "informacoes_academicas": "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML",
+          "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+          "pendente": [
+            "ID estável aprovado",
+            "interpretação de turnos, habilitações e graus como ofertas",
+            "centro e departamento",
+            "cursos da EaD",
+            "completude e condições de reutilização"
+          ]
+        }
+      }
+    },
+    {
+      "campus_id": "sede",
+      "nome": "Artes Cênicas",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/9de1325b805833842edf30b8d6b14b7a46914bff",
+      "arquivo": "reviews/2026-10-17-cursos/capturas/sede-9de1325b805833842edf30b8d6b14b7a46914bff.html",
+      "consultado_em": "2026-10-17T14:02:19.022967+00:00",
+      "status": "aceito",
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": {
+          "indice": "reviews/2026-10-17-cursos/capturas/cursos.html",
+          "detalhe": "reviews/2026-10-17-cursos/capturas/sede-9de1325b805833842edf30b8d6b14b7a46914bff.html"
+        },
+        "fonte": {
+          "source_id": "cursos_graduacao",
+          "url": "https://www.pen.uem.br/site/public/curso/9de1325b805833842edf30b8d6b14b7a46914bff",
+          "consultado_em": "2026-10-17T14:02:19.022967Z"
+        },
+        "curso": {
+          "nome": "Artes Cênicas",
+          "campus_id": "sede",
+          "modalidade": "presencial",
+          "url_detalhe": "https://www.pen.uem.br/site/public/curso/9de1325b805833842edf30b8d6b14b7a46914bff",
+          "id_candidato": "sede-artes-cenicas",
+          "informacoes_academicas": [
+            {
+              "turno": "Matutino",
+              "habilitacoes": [
+                "Licenciatura"
+              ],
+              "graus_academicos": [
+                "Licenciado em Teatro"
+              ]
+            }
+          ]
+        },
+        "proveniencia": {
+          "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
+          "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
+          "verificado": [
+            "link no índice local",
+            "título",
+            "câmpus exibido no detalhe"
+          ],
+          "informacoes_academicas": "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML",
+          "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+          "pendente": [
+            "ID estável aprovado",
+            "interpretação de turnos, habilitações e graus como ofertas",
+            "centro e departamento",
+            "cursos da EaD",
+            "completude e condições de reutilização"
+          ]
+        }
+      }
+    },
+    {
+      "campus_id": "sede",
+      "nome": "Artes Visuais",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/1c4e7e505f3137fa180f0e5580c8a129737f1043",
+      "arquivo": "reviews/2026-10-17-cursos/capturas/sede-1c4e7e505f3137fa180f0e5580c8a129737f1043.html",
+      "consultado_em": "2026-10-17T14:02:19.629570+00:00",
+      "status": "aceito",
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": {
+          "indice": "reviews/2026-10-17-cursos/capturas/cursos.html",
+          "detalhe": "reviews/2026-10-17-cursos/capturas/sede-1c4e7e505f3137fa180f0e5580c8a129737f1043.html"
+        },
+        "fonte": {
+          "source_id": "cursos_graduacao",
+          "url": "https://www.pen.uem.br/site/public/curso/1c4e7e505f3137fa180f0e5580c8a129737f1043",
+          "consultado_em": "2026-10-17T14:02:19.629570Z"
+        },
+        "curso": {
+          "nome": "Artes Visuais",
+          "campus_id": "sede",
+          "modalidade": "presencial",
+          "url_detalhe": "https://www.pen.uem.br/site/public/curso/1c4e7e505f3137fa180f0e5580c8a129737f1043",
+          "id_candidato": "sede-artes-visuais",
+          "informacoes_academicas": [
+            {
+              "turno": "Vespertino",
+              "habilitacoes": [
+                "Licenciatura"
+              ],
+              "graus_academicos": [
+                "Licenciado em Artes Visuais"
+              ]
+            }
+          ]
+        },
+        "proveniencia": {
+          "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
+          "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
+          "verificado": [
+            "link no índice local",
+            "título",
+            "câmpus exibido no detalhe"
+          ],
+          "informacoes_academicas": "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML",
+          "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+          "pendente": [
+            "ID estável aprovado",
+            "interpretação de turnos, habilitações e graus como ofertas",
+            "centro e departamento",
+            "cursos da EaD",
+            "completude e condições de reutilização"
+          ]
+        }
+      }
+    },
+    {
+      "campus_id": "sede",
+      "nome": "Biomedicina",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/c63ba080122ba603cfd83bc3483b79b53cef52a0",
+      "arquivo": "reviews/2026-10-17-cursos/capturas/sede-c63ba080122ba603cfd83bc3483b79b53cef52a0.html",
+      "consultado_em": "2026-10-17T14:02:20.228812+00:00",
+      "status": "aceito",
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": {
+          "indice": "reviews/2026-10-17-cursos/capturas/cursos.html",
+          "detalhe": "reviews/2026-10-17-cursos/capturas/sede-c63ba080122ba603cfd83bc3483b79b53cef52a0.html"
+        },
+        "fonte": {
+          "source_id": "cursos_graduacao",
+          "url": "https://www.pen.uem.br/site/public/curso/c63ba080122ba603cfd83bc3483b79b53cef52a0",
+          "consultado_em": "2026-10-17T14:02:20.228812Z"
+        },
+        "curso": {
+          "nome": "Biomedicina",
+          "campus_id": "sede",
+          "modalidade": "presencial",
+          "url_detalhe": "https://www.pen.uem.br/site/public/curso/c63ba080122ba603cfd83bc3483b79b53cef52a0",
+          "id_candidato": "sede-biomedicina",
+          "informacoes_academicas": [
+            {
+              "turno": "Integral",
+              "habilitacoes": [
+                "Bacharelado"
+              ],
+              "graus_academicos": [
+                "Biomédico"
+              ]
+            }
+          ]
+        },
+        "proveniencia": {
+          "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
+          "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
+          "verificado": [
+            "link no índice local",
+            "título",
+            "câmpus exibido no detalhe"
+          ],
+          "informacoes_academicas": "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML",
+          "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+          "pendente": [
+            "ID estável aprovado",
+            "interpretação de turnos, habilitações e graus como ofertas",
+            "centro e departamento",
+            "cursos da EaD",
+            "completude e condições de reutilização"
+          ]
+        }
+      }
+    },
+    {
+      "campus_id": "sede",
+      "nome": "Bioquímica",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/07144c884de58a0d5ce0cb1e89b60704a68b9104",
+      "arquivo": "reviews/2026-10-17-cursos/capturas/sede-07144c884de58a0d5ce0cb1e89b60704a68b9104.html",
+      "consultado_em": "2026-10-17T14:02:20.805721+00:00",
+      "status": "aceito",
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": {
+          "indice": "reviews/2026-10-17-cursos/capturas/cursos.html",
+          "detalhe": "reviews/2026-10-17-cursos/capturas/sede-07144c884de58a0d5ce0cb1e89b60704a68b9104.html"
+        },
+        "fonte": {
+          "source_id": "cursos_graduacao",
+          "url": "https://www.pen.uem.br/site/public/curso/07144c884de58a0d5ce0cb1e89b60704a68b9104",
+          "consultado_em": "2026-10-17T14:02:20.805721Z"
+        },
+        "curso": {
+          "nome": "Bioquímica",
+          "campus_id": "sede",
+          "modalidade": "presencial",
+          "url_detalhe": "https://www.pen.uem.br/site/public/curso/07144c884de58a0d5ce0cb1e89b60704a68b9104",
+          "id_candidato": "sede-bioquimica",
+          "informacoes_academicas": [
+            {
+              "turno": "Integral",
+              "habilitacoes": [
+                "Bacharelado"
+              ],
+              "graus_academicos": [
+                "Bioquímico"
+              ]
+            }
+          ]
+        },
+        "proveniencia": {
+          "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
+          "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
+          "verificado": [
+            "link no índice local",
+            "título",
+            "câmpus exibido no detalhe"
+          ],
+          "informacoes_academicas": "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML",
+          "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+          "pendente": [
+            "ID estável aprovado",
+            "interpretação de turnos, habilitações e graus como ofertas",
+            "centro e departamento",
+            "cursos da EaD",
+            "completude e condições de reutilização"
+          ]
+        }
+      }
+    },
+    {
+      "campus_id": "sede",
+      "nome": "Biotecnologia",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/22523083f7a79c12ef6fdd3045a3ee87dec80de6",
+      "arquivo": "reviews/2026-10-17-cursos/capturas/sede-22523083f7a79c12ef6fdd3045a3ee87dec80de6.html",
+      "consultado_em": "2026-10-17T14:02:21.389803+00:00",
+      "status": "aceito",
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": {
+          "indice": "reviews/2026-10-17-cursos/capturas/cursos.html",
+          "detalhe": "reviews/2026-10-17-cursos/capturas/sede-22523083f7a79c12ef6fdd3045a3ee87dec80de6.html"
+        },
+        "fonte": {
+          "source_id": "cursos_graduacao",
+          "url": "https://www.pen.uem.br/site/public/curso/22523083f7a79c12ef6fdd3045a3ee87dec80de6",
+          "consultado_em": "2026-10-17T14:02:21.389803Z"
+        },
+        "curso": {
+          "nome": "Biotecnologia",
+          "campus_id": "sede",
+          "modalidade": "presencial",
+          "url_detalhe": "https://www.pen.uem.br/site/public/curso/22523083f7a79c12ef6fdd3045a3ee87dec80de6",
+          "id_candidato": "sede-biotecnologia",
+          "informacoes_academicas": [
+            {
+              "turno": "Noturno",
+              "habilitacoes": [
+                "Bacharelado"
+              ],
+              "graus_academicos": [
+                "Bacharel em Biotecnologia"
+              ]
+            }
+          ]
+        },
+        "proveniencia": {
+          "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
+          "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
+          "verificado": [
+            "link no índice local",
+            "título",
+            "câmpus exibido no detalhe"
+          ],
+          "informacoes_academicas": "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML",
+          "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+          "pendente": [
+            "ID estável aprovado",
+            "interpretação de turnos, habilitações e graus como ofertas",
+            "centro e departamento",
+            "cursos da EaD",
+            "completude e condições de reutilização"
+          ]
+        }
+      }
+    },
+    {
+      "campus_id": "sede",
+      "nome": "Ciência da Computação",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/036f863d951541fb0f3a74b69bbfe24f99eae65d",
+      "arquivo": "reviews/2026-10-17-cursos/capturas/sede-036f863d951541fb0f3a74b69bbfe24f99eae65d.html",
+      "consultado_em": "2026-10-17T14:02:21.990234+00:00",
+      "status": "aceito",
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": {
+          "indice": "reviews/2026-10-17-cursos/capturas/cursos.html",
+          "detalhe": "reviews/2026-10-17-cursos/capturas/sede-036f863d951541fb0f3a74b69bbfe24f99eae65d.html"
+        },
+        "fonte": {
+          "source_id": "cursos_graduacao",
+          "url": "https://www.pen.uem.br/site/public/curso/036f863d951541fb0f3a74b69bbfe24f99eae65d",
+          "consultado_em": "2026-10-17T14:02:21.990234Z"
+        },
+        "curso": {
+          "nome": "Ciência da Computação",
+          "campus_id": "sede",
+          "modalidade": "presencial",
+          "url_detalhe": "https://www.pen.uem.br/site/public/curso/036f863d951541fb0f3a74b69bbfe24f99eae65d",
+          "id_candidato": "sede-ciencia-da-computacao",
+          "informacoes_academicas": [
+            {
+              "turno": "Integral",
+              "habilitacoes": [
+                "Bacharelado"
+              ],
+              "graus_academicos": [
+                "Bacharel em Ciência da Computação"
+              ]
+            }
+          ]
+        },
+        "proveniencia": {
+          "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
+          "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
+          "verificado": [
+            "link no índice local",
+            "título",
+            "câmpus exibido no detalhe"
+          ],
+          "informacoes_academicas": "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML",
+          "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+          "pendente": [
+            "ID estável aprovado",
+            "interpretação de turnos, habilitações e graus como ofertas",
+            "centro e departamento",
+            "cursos da EaD",
+            "completude e condições de reutilização"
+          ]
+        }
+      }
+    },
+    {
+      "campus_id": "sede",
+      "nome": "Ciências Biológicas",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/b7cbe3319cbe1355820bcb60719e3dd5f72adaea",
+      "arquivo": "reviews/2026-10-17-cursos/capturas/sede-b7cbe3319cbe1355820bcb60719e3dd5f72adaea.html",
+      "consultado_em": "2026-10-17T14:02:22.571352+00:00",
+      "status": "aceito",
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": {
+          "indice": "reviews/2026-10-17-cursos/capturas/cursos.html",
+          "detalhe": "reviews/2026-10-17-cursos/capturas/sede-b7cbe3319cbe1355820bcb60719e3dd5f72adaea.html"
+        },
+        "fonte": {
+          "source_id": "cursos_graduacao",
+          "url": "https://www.pen.uem.br/site/public/curso/b7cbe3319cbe1355820bcb60719e3dd5f72adaea",
+          "consultado_em": "2026-10-17T14:02:22.571352Z"
+        },
+        "curso": {
+          "nome": "Ciências Biológicas",
+          "campus_id": "sede",
+          "modalidade": "presencial",
+          "url_detalhe": "https://www.pen.uem.br/site/public/curso/b7cbe3319cbe1355820bcb60719e3dd5f72adaea",
+          "id_candidato": "sede-ciencias-biologicas",
+          "informacoes_academicas": [
+            {
+              "turno": "Integral",
+              "habilitacoes": [
+                "Licenciatura",
+                "Bacharelado",
+                "Licenciatura e Bacharelado"
+              ],
+              "graus_academicos": []
+            },
+            {
+              "turno": "Noturno",
+              "habilitacoes": [
+                "Licenciatura"
+              ],
+              "graus_academicos": [
+                "Licenciado em Ciências Biológicas"
+              ]
+            }
+          ]
+        },
+        "proveniencia": {
+          "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
+          "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
+          "verificado": [
+            "link no índice local",
+            "título",
+            "câmpus exibido no detalhe"
+          ],
+          "informacoes_academicas": "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML",
+          "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+          "pendente": [
+            "ID estável aprovado",
+            "interpretação de turnos, habilitações e graus como ofertas",
+            "centro e departamento",
+            "cursos da EaD",
+            "completude e condições de reutilização"
+          ]
+        }
+      }
+    },
+    {
+      "campus_id": "sede",
+      "nome": "Ciências Contábeis",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/e609c318d959a8099b8bfd33bfb0904cf64ce0a1",
+      "arquivo": "reviews/2026-10-17-cursos/capturas/sede-e609c318d959a8099b8bfd33bfb0904cf64ce0a1.html",
+      "consultado_em": "2026-10-17T14:02:23.161950+00:00",
+      "status": "aceito",
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": {
+          "indice": "reviews/2026-10-17-cursos/capturas/cursos.html",
+          "detalhe": "reviews/2026-10-17-cursos/capturas/sede-e609c318d959a8099b8bfd33bfb0904cf64ce0a1.html"
+        },
+        "fonte": {
+          "source_id": "cursos_graduacao",
+          "url": "https://www.pen.uem.br/site/public/curso/e609c318d959a8099b8bfd33bfb0904cf64ce0a1",
+          "consultado_em": "2026-10-17T14:02:23.161950Z"
+        },
+        "curso": {
+          "nome": "Ciências Contábeis",
+          "campus_id": "sede",
+          "modalidade": "presencial",
+          "url_detalhe": "https://www.pen.uem.br/site/public/curso/e609c318d959a8099b8bfd33bfb0904cf64ce0a1",
+          "id_candidato": "sede-ciencias-contabeis",
+          "informacoes_academicas": [
+            {
+              "turno": "Matutino ou Noturno",
+              "habilitacoes": [
+                "Bacharelado"
+              ],
+              "graus_academicos": [
+                "Bacharel em Ciências Contábeis"
+              ]
+            }
+          ]
+        },
+        "proveniencia": {
+          "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
+          "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
+          "verificado": [
+            "link no índice local",
+            "título",
+            "câmpus exibido no detalhe"
+          ],
+          "informacoes_academicas": "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML",
+          "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+          "pendente": [
+            "ID estável aprovado",
+            "interpretação de turnos, habilitações e graus como ofertas",
+            "centro e departamento",
+            "cursos da EaD",
+            "completude e condições de reutilização"
+          ]
+        }
+      }
+    },
+    {
+      "campus_id": "sede",
+      "nome": "Ciências Econômicas",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/d59ab31e8573afe43ff5098c2d9bfc8b284a8e64",
+      "arquivo": "reviews/2026-10-17-cursos/capturas/sede-d59ab31e8573afe43ff5098c2d9bfc8b284a8e64.html",
+      "consultado_em": "2026-10-17T14:02:23.747946+00:00",
+      "status": "aceito",
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": {
+          "indice": "reviews/2026-10-17-cursos/capturas/cursos.html",
+          "detalhe": "reviews/2026-10-17-cursos/capturas/sede-d59ab31e8573afe43ff5098c2d9bfc8b284a8e64.html"
+        },
+        "fonte": {
+          "source_id": "cursos_graduacao",
+          "url": "https://www.pen.uem.br/site/public/curso/d59ab31e8573afe43ff5098c2d9bfc8b284a8e64",
+          "consultado_em": "2026-10-17T14:02:23.747946Z"
+        },
+        "curso": {
+          "nome": "Ciências Econômicas",
+          "campus_id": "sede",
+          "modalidade": "presencial",
+          "url_detalhe": "https://www.pen.uem.br/site/public/curso/d59ab31e8573afe43ff5098c2d9bfc8b284a8e64",
+          "id_candidato": "sede-ciencias-economicas",
+          "informacoes_academicas": [
+            {
+              "turno": "Integral ou Noturno",
+              "habilitacoes": [
+                "Bacharelado"
+              ],
+              "graus_academicos": [
+                "Bacharel em Ciências Econômicas"
+              ]
+            }
+          ]
+        },
+        "proveniencia": {
+          "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
+          "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
+          "verificado": [
+            "link no índice local",
+            "título",
+            "câmpus exibido no detalhe"
+          ],
+          "informacoes_academicas": "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML",
+          "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+          "pendente": [
+            "ID estável aprovado",
+            "interpretação de turnos, habilitações e graus como ofertas",
+            "centro e departamento",
+            "cursos da EaD",
+            "completude e condições de reutilização"
+          ]
+        }
+      }
+    },
+    {
+      "campus_id": "sede",
+      "nome": "Ciências Sociais",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/17bfb4afc121bb2a7f0d8a2c7b80e89e291290fb",
+      "arquivo": "reviews/2026-10-17-cursos/capturas/sede-17bfb4afc121bb2a7f0d8a2c7b80e89e291290fb.html",
+      "consultado_em": "2026-10-17T14:02:24.325130+00:00",
+      "status": "aceito",
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": {
+          "indice": "reviews/2026-10-17-cursos/capturas/cursos.html",
+          "detalhe": "reviews/2026-10-17-cursos/capturas/sede-17bfb4afc121bb2a7f0d8a2c7b80e89e291290fb.html"
+        },
+        "fonte": {
+          "source_id": "cursos_graduacao",
+          "url": "https://www.pen.uem.br/site/public/curso/17bfb4afc121bb2a7f0d8a2c7b80e89e291290fb",
+          "consultado_em": "2026-10-17T14:02:24.325130Z"
+        },
+        "curso": {
+          "nome": "Ciências Sociais",
+          "campus_id": "sede",
+          "modalidade": "presencial",
+          "url_detalhe": "https://www.pen.uem.br/site/public/curso/17bfb4afc121bb2a7f0d8a2c7b80e89e291290fb",
+          "id_candidato": "sede-ciencias-sociais",
+          "informacoes_academicas": [
+            {
+              "turno": "Noturno",
+              "habilitacoes": [
+                "Bacharelado e/ou Licenciatura"
+              ],
+              "graus_academicos": [
+                "Bacharel e/ou Licenciado em Ciências Sociais"
+              ]
+            }
+          ]
+        },
+        "proveniencia": {
+          "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
+          "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
+          "verificado": [
+            "link no índice local",
+            "título",
+            "câmpus exibido no detalhe"
+          ],
+          "informacoes_academicas": "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML",
+          "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+          "pendente": [
+            "ID estável aprovado",
+            "interpretação de turnos, habilitações e graus como ofertas",
+            "centro e departamento",
+            "cursos da EaD",
+            "completude e condições de reutilização"
+          ]
+        }
+      }
+    },
+    {
+      "campus_id": "sede",
+      "nome": "Comunicação e Multimeios",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/c519c0122b004a4de534f49bb2743b1845135444",
+      "arquivo": "reviews/2026-10-17-cursos/capturas/sede-c519c0122b004a4de534f49bb2743b1845135444.html",
+      "consultado_em": "2026-10-17T14:02:24.912276+00:00",
+      "status": "aceito",
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": {
+          "indice": "reviews/2026-10-17-cursos/capturas/cursos.html",
+          "detalhe": "reviews/2026-10-17-cursos/capturas/sede-c519c0122b004a4de534f49bb2743b1845135444.html"
+        },
+        "fonte": {
+          "source_id": "cursos_graduacao",
+          "url": "https://www.pen.uem.br/site/public/curso/c519c0122b004a4de534f49bb2743b1845135444",
+          "consultado_em": "2026-10-17T14:02:24.912276Z"
+        },
+        "curso": {
+          "nome": "Comunicação e Multimeios",
+          "campus_id": "sede",
+          "modalidade": "presencial",
+          "url_detalhe": "https://www.pen.uem.br/site/public/curso/c519c0122b004a4de534f49bb2743b1845135444",
+          "id_candidato": "sede-comunicacao-e-multimeios",
+          "informacoes_academicas": [
+            {
+              "turno": "Noturno",
+              "habilitacoes": [
+                "Bacharelado"
+              ],
+              "graus_academicos": [
+                "Bacharel em Comunicação e Multimeios"
+              ]
+            }
+          ]
+        },
+        "proveniencia": {
+          "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
+          "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
+          "verificado": [
+            "link no índice local",
+            "título",
+            "câmpus exibido no detalhe"
+          ],
+          "informacoes_academicas": "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML",
+          "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+          "pendente": [
+            "ID estável aprovado",
+            "interpretação de turnos, habilitações e graus como ofertas",
+            "centro e departamento",
+            "cursos da EaD",
+            "completude e condições de reutilização"
+          ]
+        }
+      }
+    },
+    {
+      "campus_id": "sede",
+      "nome": "Direito",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/519a2cb9db78185f88cf29cc185d33b827c22434",
+      "arquivo": "reviews/2026-10-17-cursos/capturas/sede-519a2cb9db78185f88cf29cc185d33b827c22434.html",
+      "consultado_em": "2026-10-17T14:02:25.486921+00:00",
+      "status": "aceito",
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": {
+          "indice": "reviews/2026-10-17-cursos/capturas/cursos.html",
+          "detalhe": "reviews/2026-10-17-cursos/capturas/sede-519a2cb9db78185f88cf29cc185d33b827c22434.html"
+        },
+        "fonte": {
+          "source_id": "cursos_graduacao",
+          "url": "https://www.pen.uem.br/site/public/curso/519a2cb9db78185f88cf29cc185d33b827c22434",
+          "consultado_em": "2026-10-17T14:02:25.486921Z"
+        },
+        "curso": {
+          "nome": "Direito",
+          "campus_id": "sede",
+          "modalidade": "presencial",
+          "url_detalhe": "https://www.pen.uem.br/site/public/curso/519a2cb9db78185f88cf29cc185d33b827c22434",
+          "id_candidato": "sede-direito",
+          "informacoes_academicas": [
+            {
+              "turno": "Matutino ou Noturno",
+              "habilitacoes": [
+                "Bacharelado"
+              ],
+              "graus_academicos": [
+                "Bacharel em Direito"
+              ]
+            }
+          ]
+        },
+        "proveniencia": {
+          "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
+          "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
+          "verificado": [
+            "link no índice local",
+            "título",
+            "câmpus exibido no detalhe"
+          ],
+          "informacoes_academicas": "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML",
+          "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+          "pendente": [
+            "ID estável aprovado",
+            "interpretação de turnos, habilitações e graus como ofertas",
+            "centro e departamento",
+            "cursos da EaD",
+            "completude e condições de reutilização"
+          ]
+        }
+      }
+    },
+    {
+      "campus_id": "sede",
+      "nome": "Educação Física",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/f1f2375d3d7bd9b7277f7e5d4302cf4736025b69",
+      "arquivo": "reviews/2026-10-17-cursos/capturas/sede-f1f2375d3d7bd9b7277f7e5d4302cf4736025b69.html",
+      "consultado_em": "2026-10-17T14:02:26.065501+00:00",
+      "status": "aceito",
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": {
+          "indice": "reviews/2026-10-17-cursos/capturas/cursos.html",
+          "detalhe": "reviews/2026-10-17-cursos/capturas/sede-f1f2375d3d7bd9b7277f7e5d4302cf4736025b69.html"
+        },
+        "fonte": {
+          "source_id": "cursos_graduacao",
+          "url": "https://www.pen.uem.br/site/public/curso/f1f2375d3d7bd9b7277f7e5d4302cf4736025b69",
+          "consultado_em": "2026-10-17T14:02:26.065501Z"
+        },
+        "curso": {
+          "nome": "Educação Física",
+          "campus_id": "sede",
+          "modalidade": "presencial",
+          "url_detalhe": "https://www.pen.uem.br/site/public/curso/f1f2375d3d7bd9b7277f7e5d4302cf4736025b69",
+          "id_candidato": "sede-educacao-fisica",
+          "informacoes_academicas": [
+            {
+              "turno": "Integral ou Noturno",
+              "habilitacoes": [
+                "Licenciatura (Integral ou Noturno) ou Bacharelado (Integral)"
+              ],
+              "graus_academicos": [
+                "Licenciado ou Bacharel em Educação Física"
+              ]
+            }
+          ]
+        },
+        "proveniencia": {
+          "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
+          "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
+          "verificado": [
+            "link no índice local",
+            "título",
+            "câmpus exibido no detalhe"
+          ],
+          "informacoes_academicas": "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML",
+          "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+          "pendente": [
+            "ID estável aprovado",
+            "interpretação de turnos, habilitações e graus como ofertas",
+            "centro e departamento",
+            "cursos da EaD",
+            "completude e condições de reutilização"
+          ]
+        }
+      }
+    },
+    {
+      "campus_id": "sede",
+      "nome": "Enfermagem",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/3921879996d45763607d78a5a1107e0afbe77cc2",
+      "arquivo": "reviews/2026-10-17-cursos/capturas/sede-3921879996d45763607d78a5a1107e0afbe77cc2.html",
+      "consultado_em": "2026-10-17T14:02:26.744169+00:00",
+      "status": "aceito",
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": {
+          "indice": "reviews/2026-10-17-cursos/capturas/cursos.html",
+          "detalhe": "reviews/2026-10-17-cursos/capturas/sede-3921879996d45763607d78a5a1107e0afbe77cc2.html"
+        },
+        "fonte": {
+          "source_id": "cursos_graduacao",
+          "url": "https://www.pen.uem.br/site/public/curso/3921879996d45763607d78a5a1107e0afbe77cc2",
+          "consultado_em": "2026-10-17T14:02:26.744169Z"
+        },
+        "curso": {
+          "nome": "Enfermagem",
+          "campus_id": "sede",
+          "modalidade": "presencial",
+          "url_detalhe": "https://www.pen.uem.br/site/public/curso/3921879996d45763607d78a5a1107e0afbe77cc2",
+          "id_candidato": "sede-enfermagem",
+          "informacoes_academicas": [
+            {
+              "turno": "Integral",
+              "habilitacoes": [
+                "Bacharelado"
+              ],
+              "graus_academicos": [
+                "Enfermeiro"
+              ]
+            }
+          ]
+        },
+        "proveniencia": {
+          "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
+          "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
+          "verificado": [
+            "link no índice local",
+            "título",
+            "câmpus exibido no detalhe"
+          ],
+          "informacoes_academicas": "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML",
+          "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+          "pendente": [
+            "ID estável aprovado",
+            "interpretação de turnos, habilitações e graus como ofertas",
+            "centro e departamento",
+            "cursos da EaD",
+            "completude e condições de reutilização"
+          ]
+        }
+      }
+    },
+    {
+      "campus_id": "sede",
+      "nome": "Engenharia Civil",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/d8d9634c4fbb4b091b8b66bd181ff3b16f3b1aea",
+      "arquivo": "reviews/2026-10-17-cursos/capturas/sede-d8d9634c4fbb4b091b8b66bd181ff3b16f3b1aea.html",
+      "consultado_em": "2026-10-17T14:02:27.331741+00:00",
+      "status": "aceito",
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": {
+          "indice": "reviews/2026-10-17-cursos/capturas/cursos.html",
+          "detalhe": "reviews/2026-10-17-cursos/capturas/sede-d8d9634c4fbb4b091b8b66bd181ff3b16f3b1aea.html"
+        },
+        "fonte": {
+          "source_id": "cursos_graduacao",
+          "url": "https://www.pen.uem.br/site/public/curso/d8d9634c4fbb4b091b8b66bd181ff3b16f3b1aea",
+          "consultado_em": "2026-10-17T14:02:27.331741Z"
+        },
+        "curso": {
+          "nome": "Engenharia Civil",
+          "campus_id": "sede",
+          "modalidade": "presencial",
+          "url_detalhe": "https://www.pen.uem.br/site/public/curso/d8d9634c4fbb4b091b8b66bd181ff3b16f3b1aea",
+          "id_candidato": "sede-engenharia-civil",
+          "informacoes_academicas": [
+            {
+              "turno": "Integral",
+              "habilitacoes": [
+                "Bacharelado"
+              ],
+              "graus_academicos": [
+                "Engenheiro Civil"
+              ]
+            }
+          ]
+        },
+        "proveniencia": {
+          "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
+          "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
+          "verificado": [
+            "link no índice local",
+            "título",
+            "câmpus exibido no detalhe"
+          ],
+          "informacoes_academicas": "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML",
+          "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+          "pendente": [
+            "ID estável aprovado",
+            "interpretação de turnos, habilitações e graus como ofertas",
+            "centro e departamento",
+            "cursos da EaD",
+            "completude e condições de reutilização"
+          ]
+        }
+      }
+    },
+    {
+      "campus_id": "sede",
+      "nome": "Engenharia de Alimentos",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/1b77ae89ab3cecbc6265ae9650a50856e8efdd55",
+      "arquivo": "reviews/2026-10-17-cursos/capturas/sede-1b77ae89ab3cecbc6265ae9650a50856e8efdd55.html",
+      "consultado_em": "2026-10-17T14:02:27.921877+00:00",
+      "status": "aceito",
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": {
+          "indice": "reviews/2026-10-17-cursos/capturas/cursos.html",
+          "detalhe": "reviews/2026-10-17-cursos/capturas/sede-1b77ae89ab3cecbc6265ae9650a50856e8efdd55.html"
+        },
+        "fonte": {
+          "source_id": "cursos_graduacao",
+          "url": "https://www.pen.uem.br/site/public/curso/1b77ae89ab3cecbc6265ae9650a50856e8efdd55",
+          "consultado_em": "2026-10-17T14:02:27.921877Z"
+        },
+        "curso": {
+          "nome": "Engenharia de Alimentos",
+          "campus_id": "sede",
+          "modalidade": "presencial",
+          "url_detalhe": "https://www.pen.uem.br/site/public/curso/1b77ae89ab3cecbc6265ae9650a50856e8efdd55",
+          "id_candidato": "sede-engenharia-de-alimentos",
+          "informacoes_academicas": [
+            {
+              "turno": "Integral",
+              "habilitacoes": [
+                "Bacharelado"
+              ],
+              "graus_academicos": [
+                "Engenheiro de Alimentos"
+              ]
+            }
+          ]
+        },
+        "proveniencia": {
+          "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
+          "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
+          "verificado": [
+            "link no índice local",
+            "título",
+            "câmpus exibido no detalhe"
+          ],
+          "informacoes_academicas": "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML",
+          "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+          "pendente": [
+            "ID estável aprovado",
+            "interpretação de turnos, habilitações e graus como ofertas",
+            "centro e departamento",
+            "cursos da EaD",
+            "completude e condições de reutilização"
+          ]
+        }
+      }
+    },
+    {
+      "campus_id": "sede",
+      "nome": "Engenharia de Controle e Automação - Inteligência Artificial",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/e9764f0dddf8667c55086ce4bd2c43e465024fd5",
+      "arquivo": "reviews/2026-10-17-cursos/capturas/sede-e9764f0dddf8667c55086ce4bd2c43e465024fd5.html",
+      "consultado_em": "2026-10-17T14:02:28.506996+00:00",
+      "status": "aceito",
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": {
+          "indice": "reviews/2026-10-17-cursos/capturas/cursos.html",
+          "detalhe": "reviews/2026-10-17-cursos/capturas/sede-e9764f0dddf8667c55086ce4bd2c43e465024fd5.html"
+        },
+        "fonte": {
+          "source_id": "cursos_graduacao",
+          "url": "https://www.pen.uem.br/site/public/curso/e9764f0dddf8667c55086ce4bd2c43e465024fd5",
+          "consultado_em": "2026-10-17T14:02:28.506996Z"
+        },
+        "curso": {
+          "nome": "Engenharia de Controle e Automação - Inteligência Artificial",
+          "campus_id": "sede",
+          "modalidade": "presencial",
+          "url_detalhe": "https://www.pen.uem.br/site/public/curso/e9764f0dddf8667c55086ce4bd2c43e465024fd5",
+          "id_candidato": "sede-engenharia-de-controle-e-automacao-inteligencia-artificial",
+          "informacoes_academicas": [
+            {
+              "turno": "Integral",
+              "habilitacoes": [
+                "Bacharelado"
+              ],
+              "graus_academicos": [
+                "Engenheiro de Controle e Automação"
+              ]
+            }
+          ]
+        },
+        "proveniencia": {
+          "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
+          "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
+          "verificado": [
+            "link no índice local",
+            "título",
+            "câmpus exibido no detalhe"
+          ],
+          "informacoes_academicas": "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML",
+          "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+          "pendente": [
+            "ID estável aprovado",
+            "interpretação de turnos, habilitações e graus como ofertas",
+            "centro e departamento",
+            "cursos da EaD",
+            "completude e condições de reutilização"
+          ]
+        }
+      }
+    },
+    {
+      "campus_id": "sede",
+      "nome": "Engenharia de Produção",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/68e1e85d77ef7308b6b5ac9c2b7ded5c31fb38fb",
+      "arquivo": "reviews/2026-10-17-cursos/capturas/sede-68e1e85d77ef7308b6b5ac9c2b7ded5c31fb38fb.html",
+      "consultado_em": "2026-10-17T14:02:29.093631+00:00",
+      "status": "aceito",
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": {
+          "indice": "reviews/2026-10-17-cursos/capturas/cursos.html",
+          "detalhe": "reviews/2026-10-17-cursos/capturas/sede-68e1e85d77ef7308b6b5ac9c2b7ded5c31fb38fb.html"
+        },
+        "fonte": {
+          "source_id": "cursos_graduacao",
+          "url": "https://www.pen.uem.br/site/public/curso/68e1e85d77ef7308b6b5ac9c2b7ded5c31fb38fb",
+          "consultado_em": "2026-10-17T14:02:29.093631Z"
+        },
+        "curso": {
+          "nome": "Engenharia de Produção",
+          "campus_id": "sede",
+          "modalidade": "presencial",
+          "url_detalhe": "https://www.pen.uem.br/site/public/curso/68e1e85d77ef7308b6b5ac9c2b7ded5c31fb38fb",
+          "id_candidato": "sede-engenharia-de-producao",
+          "informacoes_academicas": [
+            {
+              "turno": "Integral",
+              "habilitacoes": [
+                "Bacharelado"
+              ],
+              "graus_academicos": [
+                "Engenheiro de Produção"
+              ]
+            }
+          ]
+        },
+        "proveniencia": {
+          "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
+          "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
+          "verificado": [
+            "link no índice local",
+            "título",
+            "câmpus exibido no detalhe"
+          ],
+          "informacoes_academicas": "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML",
+          "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+          "pendente": [
+            "ID estável aprovado",
+            "interpretação de turnos, habilitações e graus como ofertas",
+            "centro e departamento",
+            "cursos da EaD",
+            "completude e condições de reutilização"
+          ]
+        }
+      }
+    },
+    {
+      "campus_id": "sede",
+      "nome": "Engenharia de Software",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/a99a3305e6ffbd5db96ef5506978504214b31397",
+      "arquivo": "reviews/2026-10-17-cursos/capturas/sede-a99a3305e6ffbd5db96ef5506978504214b31397.html",
+      "consultado_em": "2026-10-17T14:02:29.690749+00:00",
+      "status": "aceito",
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": {
+          "indice": "reviews/2026-10-17-cursos/capturas/cursos.html",
+          "detalhe": "reviews/2026-10-17-cursos/capturas/sede-a99a3305e6ffbd5db96ef5506978504214b31397.html"
+        },
+        "fonte": {
+          "source_id": "cursos_graduacao",
+          "url": "https://www.pen.uem.br/site/public/curso/a99a3305e6ffbd5db96ef5506978504214b31397",
+          "consultado_em": "2026-10-17T14:02:29.690749Z"
+        },
+        "curso": {
+          "nome": "Engenharia de Software",
+          "campus_id": "sede",
+          "modalidade": "presencial",
+          "url_detalhe": "https://www.pen.uem.br/site/public/curso/a99a3305e6ffbd5db96ef5506978504214b31397",
+          "id_candidato": "sede-engenharia-de-software",
+          "informacoes_academicas": [
+            {
+              "turno": "Noturno",
+              "habilitacoes": [
+                "Bacharelado"
+              ],
+              "graus_academicos": [
+                "Bacharel em Engenharia de Software"
+              ]
+            }
+          ]
+        },
+        "proveniencia": {
+          "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
+          "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
+          "verificado": [
+            "link no índice local",
+            "título",
+            "câmpus exibido no detalhe"
+          ],
+          "informacoes_academicas": "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML",
+          "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+          "pendente": [
+            "ID estável aprovado",
+            "interpretação de turnos, habilitações e graus como ofertas",
+            "centro e departamento",
+            "cursos da EaD",
+            "completude e condições de reutilização"
+          ]
+        }
+      }
+    },
+    {
+      "campus_id": "sede",
+      "nome": "Engenharia Elétrica",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/79b513cb43a03e85d492f06487be472692ed3ef9",
+      "arquivo": "reviews/2026-10-17-cursos/capturas/sede-79b513cb43a03e85d492f06487be472692ed3ef9.html",
+      "consultado_em": "2026-10-17T14:02:30.278619+00:00",
+      "status": "aceito",
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": {
+          "indice": "reviews/2026-10-17-cursos/capturas/cursos.html",
+          "detalhe": "reviews/2026-10-17-cursos/capturas/sede-79b513cb43a03e85d492f06487be472692ed3ef9.html"
+        },
+        "fonte": {
+          "source_id": "cursos_graduacao",
+          "url": "https://www.pen.uem.br/site/public/curso/79b513cb43a03e85d492f06487be472692ed3ef9",
+          "consultado_em": "2026-10-17T14:02:30.278619Z"
+        },
+        "curso": {
+          "nome": "Engenharia Elétrica",
+          "campus_id": "sede",
+          "modalidade": "presencial",
+          "url_detalhe": "https://www.pen.uem.br/site/public/curso/79b513cb43a03e85d492f06487be472692ed3ef9",
+          "id_candidato": "sede-engenharia-eletrica",
+          "informacoes_academicas": [
+            {
+              "turno": "Integral",
+              "habilitacoes": [
+                "Bacharelado"
+              ],
+              "graus_academicos": [
+                "Engenheiro Eletricista"
+              ]
+            }
+          ]
+        },
+        "proveniencia": {
+          "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
+          "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
+          "verificado": [
+            "link no índice local",
+            "título",
+            "câmpus exibido no detalhe"
+          ],
+          "informacoes_academicas": "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML",
+          "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+          "pendente": [
+            "ID estável aprovado",
+            "interpretação de turnos, habilitações e graus como ofertas",
+            "centro e departamento",
+            "cursos da EaD",
+            "completude e condições de reutilização"
+          ]
+        }
+      }
+    },
+    {
+      "campus_id": "sede",
+      "nome": "Engenharia Mecânica",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/b28b3a111305a333255ca38188d25e001550a3f4",
+      "arquivo": "reviews/2026-10-17-cursos/capturas/sede-b28b3a111305a333255ca38188d25e001550a3f4.html",
+      "consultado_em": "2026-10-17T14:02:30.856938+00:00",
+      "status": "aceito",
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": {
+          "indice": "reviews/2026-10-17-cursos/capturas/cursos.html",
+          "detalhe": "reviews/2026-10-17-cursos/capturas/sede-b28b3a111305a333255ca38188d25e001550a3f4.html"
+        },
+        "fonte": {
+          "source_id": "cursos_graduacao",
+          "url": "https://www.pen.uem.br/site/public/curso/b28b3a111305a333255ca38188d25e001550a3f4",
+          "consultado_em": "2026-10-17T14:02:30.856938Z"
+        },
+        "curso": {
+          "nome": "Engenharia Mecânica",
+          "campus_id": "sede",
+          "modalidade": "presencial",
+          "url_detalhe": "https://www.pen.uem.br/site/public/curso/b28b3a111305a333255ca38188d25e001550a3f4",
+          "id_candidato": "sede-engenharia-mecanica",
+          "informacoes_academicas": [
+            {
+              "turno": "Integral",
+              "habilitacoes": [
+                "Bacharelado"
+              ],
+              "graus_academicos": [
+                "Engenheiro Mecânico"
+              ]
+            }
+          ]
+        },
+        "proveniencia": {
+          "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
+          "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
+          "verificado": [
+            "link no índice local",
+            "título",
+            "câmpus exibido no detalhe"
+          ],
+          "informacoes_academicas": "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML",
+          "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+          "pendente": [
+            "ID estável aprovado",
+            "interpretação de turnos, habilitações e graus como ofertas",
+            "centro e departamento",
+            "cursos da EaD",
+            "completude e condições de reutilização"
+          ]
+        }
+      }
+    },
+    {
+      "campus_id": "sede",
+      "nome": "Engenharia Química",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/49e8d300892d71c2f5c276f4d30e1c94c589ea35",
+      "arquivo": "reviews/2026-10-17-cursos/capturas/sede-49e8d300892d71c2f5c276f4d30e1c94c589ea35.html",
+      "consultado_em": "2026-10-17T14:02:31.460864+00:00",
+      "status": "aceito",
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": {
+          "indice": "reviews/2026-10-17-cursos/capturas/cursos.html",
+          "detalhe": "reviews/2026-10-17-cursos/capturas/sede-49e8d300892d71c2f5c276f4d30e1c94c589ea35.html"
+        },
+        "fonte": {
+          "source_id": "cursos_graduacao",
+          "url": "https://www.pen.uem.br/site/public/curso/49e8d300892d71c2f5c276f4d30e1c94c589ea35",
+          "consultado_em": "2026-10-17T14:02:31.460864Z"
+        },
+        "curso": {
+          "nome": "Engenharia Química",
+          "campus_id": "sede",
+          "modalidade": "presencial",
+          "url_detalhe": "https://www.pen.uem.br/site/public/curso/49e8d300892d71c2f5c276f4d30e1c94c589ea35",
+          "id_candidato": "sede-engenharia-quimica",
+          "informacoes_academicas": [
+            {
+              "turno": "Integral",
+              "habilitacoes": [
+                "Bacharelado"
+              ],
+              "graus_academicos": [
+                "Engenheiro Químico"
+              ]
+            }
+          ]
+        },
+        "proveniencia": {
+          "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
+          "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
+          "verificado": [
+            "link no índice local",
+            "título",
+            "câmpus exibido no detalhe"
+          ],
+          "informacoes_academicas": "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML",
+          "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+          "pendente": [
+            "ID estável aprovado",
+            "interpretação de turnos, habilitações e graus como ofertas",
+            "centro e departamento",
+            "cursos da EaD",
+            "completude e condições de reutilização"
+          ]
+        }
+      }
+    },
+    {
+      "campus_id": "sede",
+      "nome": "Engenharia Têxtil",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/dcffb82a4cca8e4383e5221e958095a206c79c51",
+      "arquivo": "reviews/2026-10-17-cursos/capturas/sede-dcffb82a4cca8e4383e5221e958095a206c79c51.html",
+      "consultado_em": "2026-10-17T14:02:32.043690+00:00",
+      "status": "aceito",
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": {
+          "indice": "reviews/2026-10-17-cursos/capturas/cursos.html",
+          "detalhe": "reviews/2026-10-17-cursos/capturas/sede-dcffb82a4cca8e4383e5221e958095a206c79c51.html"
+        },
+        "fonte": {
+          "source_id": "cursos_graduacao",
+          "url": "https://www.pen.uem.br/site/public/curso/dcffb82a4cca8e4383e5221e958095a206c79c51",
+          "consultado_em": "2026-10-17T14:02:32.043690Z"
+        },
+        "curso": {
+          "nome": "Engenharia Têxtil",
+          "campus_id": "sede",
+          "modalidade": "presencial",
+          "url_detalhe": "https://www.pen.uem.br/site/public/curso/dcffb82a4cca8e4383e5221e958095a206c79c51",
+          "id_candidato": "sede-engenharia-textil",
+          "informacoes_academicas": [
+            {
+              "turno": "Noturno",
+              "habilitacoes": [
+                "Bacharelado"
+              ],
+              "graus_academicos": [
+                "Engenheiro Têxtil"
+              ]
+            }
+          ]
+        },
+        "proveniencia": {
+          "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
+          "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
+          "verificado": [
+            "link no índice local",
+            "título",
+            "câmpus exibido no detalhe"
+          ],
+          "informacoes_academicas": "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML",
+          "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+          "pendente": [
+            "ID estável aprovado",
+            "interpretação de turnos, habilitações e graus como ofertas",
+            "centro e departamento",
+            "cursos da EaD",
+            "completude e condições de reutilização"
+          ]
+        }
+      }
+    },
+    {
+      "campus_id": "sede",
+      "nome": "Estatística",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/4615bb2ede074db880b90837bf74ebcd38105268",
+      "arquivo": "reviews/2026-10-17-cursos/capturas/sede-4615bb2ede074db880b90837bf74ebcd38105268.html",
+      "consultado_em": "2026-10-17T14:02:32.620635+00:00",
+      "status": "aceito",
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": {
+          "indice": "reviews/2026-10-17-cursos/capturas/cursos.html",
+          "detalhe": "reviews/2026-10-17-cursos/capturas/sede-4615bb2ede074db880b90837bf74ebcd38105268.html"
+        },
+        "fonte": {
+          "source_id": "cursos_graduacao",
+          "url": "https://www.pen.uem.br/site/public/curso/4615bb2ede074db880b90837bf74ebcd38105268",
+          "consultado_em": "2026-10-17T14:02:32.620635Z"
+        },
+        "curso": {
+          "nome": "Estatística",
+          "campus_id": "sede",
+          "modalidade": "presencial",
+          "url_detalhe": "https://www.pen.uem.br/site/public/curso/4615bb2ede074db880b90837bf74ebcd38105268",
+          "id_candidato": "sede-estatistica",
+          "informacoes_academicas": [
+            {
+              "turno": "Integral",
+              "habilitacoes": [
+                "Não se aplica"
+              ],
+              "graus_academicos": [
+                "Bacharelado"
+              ]
+            }
+          ]
+        },
+        "proveniencia": {
+          "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
+          "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
+          "verificado": [
+            "link no índice local",
+            "título",
+            "câmpus exibido no detalhe"
+          ],
+          "informacoes_academicas": "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML",
+          "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+          "pendente": [
+            "ID estável aprovado",
+            "interpretação de turnos, habilitações e graus como ofertas",
+            "centro e departamento",
+            "cursos da EaD",
+            "completude e condições de reutilização"
+          ]
+        }
+      }
+    },
+    {
+      "campus_id": "sede",
+      "nome": "Farmácia",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/1b0eb399801d4d24fb064045ab225191932e5449",
+      "arquivo": "reviews/2026-10-17-cursos/capturas/sede-1b0eb399801d4d24fb064045ab225191932e5449.html",
+      "consultado_em": "2026-10-17T14:02:33.195505+00:00",
+      "status": "aceito",
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": {
+          "indice": "reviews/2026-10-17-cursos/capturas/cursos.html",
+          "detalhe": "reviews/2026-10-17-cursos/capturas/sede-1b0eb399801d4d24fb064045ab225191932e5449.html"
+        },
+        "fonte": {
+          "source_id": "cursos_graduacao",
+          "url": "https://www.pen.uem.br/site/public/curso/1b0eb399801d4d24fb064045ab225191932e5449",
+          "consultado_em": "2026-10-17T14:02:33.195505Z"
+        },
+        "curso": {
+          "nome": "Farmácia",
+          "campus_id": "sede",
+          "modalidade": "presencial",
+          "url_detalhe": "https://www.pen.uem.br/site/public/curso/1b0eb399801d4d24fb064045ab225191932e5449",
+          "id_candidato": "sede-farmacia",
+          "informacoes_academicas": [
+            {
+              "turno": "Integral",
+              "habilitacoes": [
+                "Bacharelado"
+              ],
+              "graus_academicos": [
+                "Farmacêutico"
+              ]
+            }
+          ]
+        },
+        "proveniencia": {
+          "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
+          "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
+          "verificado": [
+            "link no índice local",
+            "título",
+            "câmpus exibido no detalhe"
+          ],
+          "informacoes_academicas": "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML",
+          "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+          "pendente": [
+            "ID estável aprovado",
+            "interpretação de turnos, habilitações e graus como ofertas",
+            "centro e departamento",
+            "cursos da EaD",
+            "completude e condições de reutilização"
+          ]
+        }
+      }
+    },
+    {
+      "campus_id": "sede",
+      "nome": "Filosofia",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/e53b26acbed443bcd3ae755221f91131fbed31e3",
+      "arquivo": "reviews/2026-10-17-cursos/capturas/sede-e53b26acbed443bcd3ae755221f91131fbed31e3.html",
+      "consultado_em": "2026-10-17T14:02:33.771040+00:00",
+      "status": "aceito",
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": {
+          "indice": "reviews/2026-10-17-cursos/capturas/cursos.html",
+          "detalhe": "reviews/2026-10-17-cursos/capturas/sede-e53b26acbed443bcd3ae755221f91131fbed31e3.html"
+        },
+        "fonte": {
+          "source_id": "cursos_graduacao",
+          "url": "https://www.pen.uem.br/site/public/curso/e53b26acbed443bcd3ae755221f91131fbed31e3",
+          "consultado_em": "2026-10-17T14:02:33.771040Z"
+        },
+        "curso": {
+          "nome": "Filosofia",
+          "campus_id": "sede",
+          "modalidade": "presencial",
+          "url_detalhe": "https://www.pen.uem.br/site/public/curso/e53b26acbed443bcd3ae755221f91131fbed31e3",
+          "id_candidato": "sede-filosofia",
+          "informacoes_academicas": [
+            {
+              "turno": "Noturno",
+              "habilitacoes": [
+                "Licenciatura"
+              ],
+              "graus_academicos": [
+                "Licenciado em Filosofia"
+              ]
+            }
+          ]
+        },
+        "proveniencia": {
+          "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
+          "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
+          "verificado": [
+            "link no índice local",
+            "título",
+            "câmpus exibido no detalhe"
+          ],
+          "informacoes_academicas": "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML",
+          "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+          "pendente": [
+            "ID estável aprovado",
+            "interpretação de turnos, habilitações e graus como ofertas",
+            "centro e departamento",
+            "cursos da EaD",
+            "completude e condições de reutilização"
+          ]
+        }
+      }
+    },
+    {
+      "campus_id": "sede",
+      "nome": "Física",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/e01f37bde71329590bac28c8df99e80927a7b5f4",
+      "arquivo": "reviews/2026-10-17-cursos/capturas/sede-e01f37bde71329590bac28c8df99e80927a7b5f4.html",
+      "consultado_em": "2026-10-17T14:02:34.341501+00:00",
+      "status": "aceito",
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": {
+          "indice": "reviews/2026-10-17-cursos/capturas/cursos.html",
+          "detalhe": "reviews/2026-10-17-cursos/capturas/sede-e01f37bde71329590bac28c8df99e80927a7b5f4.html"
+        },
+        "fonte": {
+          "source_id": "cursos_graduacao",
+          "url": "https://www.pen.uem.br/site/public/curso/e01f37bde71329590bac28c8df99e80927a7b5f4",
+          "consultado_em": "2026-10-17T14:02:34.341501Z"
+        },
+        "curso": {
+          "nome": "Física",
+          "campus_id": "sede",
+          "modalidade": "presencial",
+          "url_detalhe": "https://www.pen.uem.br/site/public/curso/e01f37bde71329590bac28c8df99e80927a7b5f4",
+          "id_candidato": "sede-fisica",
+          "informacoes_academicas": [
+            {
+              "turno": null,
+              "habilitacoes": [
+                "Licenciatura (noturno) ou Bacharelado (vespertino / noturno)"
+              ],
+              "graus_academicos": [
+                "Licenciado ou Bacharel em Física"
+              ]
+            }
+          ]
+        },
+        "proveniencia": {
+          "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
+          "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
+          "verificado": [
+            "link no índice local",
+            "título",
+            "câmpus exibido no detalhe"
+          ],
+          "informacoes_academicas": "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML",
+          "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+          "pendente": [
+            "ID estável aprovado",
+            "interpretação de turnos, habilitações e graus como ofertas",
+            "centro e departamento",
+            "cursos da EaD",
+            "completude e condições de reutilização"
+          ]
+        }
+      }
+    },
+    {
+      "campus_id": "sede",
+      "nome": "Geografia",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/76b47ff84354ec3e62f4fe12bd46b85f6e0bd350",
+      "arquivo": "reviews/2026-10-17-cursos/capturas/sede-76b47ff84354ec3e62f4fe12bd46b85f6e0bd350.html",
+      "consultado_em": "2026-10-17T14:02:34.926246+00:00",
+      "status": "aceito",
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": {
+          "indice": "reviews/2026-10-17-cursos/capturas/cursos.html",
+          "detalhe": "reviews/2026-10-17-cursos/capturas/sede-76b47ff84354ec3e62f4fe12bd46b85f6e0bd350.html"
+        },
+        "fonte": {
+          "source_id": "cursos_graduacao",
+          "url": "https://www.pen.uem.br/site/public/curso/76b47ff84354ec3e62f4fe12bd46b85f6e0bd350",
+          "consultado_em": "2026-10-17T14:02:34.926246Z"
+        },
+        "curso": {
+          "nome": "Geografia",
+          "campus_id": "sede",
+          "modalidade": "presencial",
+          "url_detalhe": "https://www.pen.uem.br/site/public/curso/76b47ff84354ec3e62f4fe12bd46b85f6e0bd350",
+          "id_candidato": "sede-geografia",
+          "informacoes_academicas": [
+            {
+              "turno": "Matutino ou Noturno",
+              "habilitacoes": [
+                "Bacharelado e/ou Licenciatura"
+              ],
+              "graus_academicos": [
+                "Bacharel em Geografia e/ou Licenciado em Geografia"
+              ]
+            }
+          ]
+        },
+        "proveniencia": {
+          "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
+          "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
+          "verificado": [
+            "link no índice local",
+            "título",
+            "câmpus exibido no detalhe"
+          ],
+          "informacoes_academicas": "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML",
+          "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+          "pendente": [
+            "ID estável aprovado",
+            "interpretação de turnos, habilitações e graus como ofertas",
+            "centro e departamento",
+            "cursos da EaD",
+            "completude e condições de reutilização"
+          ]
+        }
+      }
+    },
+    {
+      "campus_id": "sede",
+      "nome": "História",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/8ccbdb7427f60db26279a115d613303966b5533e",
+      "arquivo": "reviews/2026-10-17-cursos/capturas/sede-8ccbdb7427f60db26279a115d613303966b5533e.html",
+      "consultado_em": "2026-10-17T14:02:35.535770+00:00",
+      "status": "aceito",
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": {
+          "indice": "reviews/2026-10-17-cursos/capturas/cursos.html",
+          "detalhe": "reviews/2026-10-17-cursos/capturas/sede-8ccbdb7427f60db26279a115d613303966b5533e.html"
+        },
+        "fonte": {
+          "source_id": "cursos_graduacao",
+          "url": "https://www.pen.uem.br/site/public/curso/8ccbdb7427f60db26279a115d613303966b5533e",
+          "consultado_em": "2026-10-17T14:02:35.535770Z"
+        },
+        "curso": {
+          "nome": "História",
+          "campus_id": "sede",
+          "modalidade": "presencial",
+          "url_detalhe": "https://www.pen.uem.br/site/public/curso/8ccbdb7427f60db26279a115d613303966b5533e",
+          "id_candidato": "sede-historia",
+          "informacoes_academicas": [
+            {
+              "turno": "Matutino ou Noturno",
+              "habilitacoes": [
+                "Licenciatura"
+              ],
+              "graus_academicos": [
+                "Licenciado em História"
+              ]
+            }
+          ]
+        },
+        "proveniencia": {
+          "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
+          "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
+          "verificado": [
+            "link no índice local",
+            "título",
+            "câmpus exibido no detalhe"
+          ],
+          "informacoes_academicas": "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML",
+          "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+          "pendente": [
+            "ID estável aprovado",
+            "interpretação de turnos, habilitações e graus como ofertas",
+            "centro e departamento",
+            "cursos da EaD",
+            "completude e condições de reutilização"
+          ]
+        }
+      }
+    },
+    {
+      "campus_id": "sede",
+      "nome": "Letras",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/c7a280761ab813afa3f63f1f9aa7eada0c7914c5",
+      "arquivo": "reviews/2026-10-17-cursos/capturas/sede-c7a280761ab813afa3f63f1f9aa7eada0c7914c5.html",
+      "consultado_em": "2026-10-17T14:02:36.127641+00:00",
+      "status": "aceito",
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": {
+          "indice": "reviews/2026-10-17-cursos/capturas/cursos.html",
+          "detalhe": "reviews/2026-10-17-cursos/capturas/sede-c7a280761ab813afa3f63f1f9aa7eada0c7914c5.html"
+        },
+        "fonte": {
+          "source_id": "cursos_graduacao",
+          "url": "https://www.pen.uem.br/site/public/curso/c7a280761ab813afa3f63f1f9aa7eada0c7914c5",
+          "consultado_em": "2026-10-17T14:02:36.127641Z"
+        },
+        "curso": {
+          "nome": "Letras",
+          "campus_id": "sede",
+          "modalidade": "presencial",
+          "url_detalhe": "https://www.pen.uem.br/site/public/curso/c7a280761ab813afa3f63f1f9aa7eada0c7914c5",
+          "id_candidato": "sede-letras",
+          "informacoes_academicas": [
+            {
+              "turno": null,
+              "habilitacoes": [
+                "Licenciatura em Letras Português e Literaturas Correspondentes (Matutino)",
+                "Licenciatura em Letras – Inglês e Literaturas Correspondentes e Bacharelado em Tradução em Inglês (Matutino)",
+                "Licenciado em Letras Português/Inglês (Noturno)",
+                "Licenciado em Letras Português/Francês (Noturno)"
+              ],
+              "graus_academicos": [
+                "Licenciado em Letras / Bacharel em Tradução"
+              ]
+            }
+          ]
+        },
+        "proveniencia": {
+          "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
+          "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
+          "verificado": [
+            "link no índice local",
+            "título",
+            "câmpus exibido no detalhe"
+          ],
+          "informacoes_academicas": "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML",
+          "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+          "pendente": [
+            "ID estável aprovado",
+            "interpretação de turnos, habilitações e graus como ofertas",
+            "centro e departamento",
+            "cursos da EaD",
+            "completude e condições de reutilização"
+          ]
+        }
+      }
+    },
+    {
+      "campus_id": "sede",
+      "nome": "Matemática",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/e2539de527961dc7451ca5ac2839f9d15d2618f1",
+      "arquivo": "reviews/2026-10-17-cursos/capturas/sede-e2539de527961dc7451ca5ac2839f9d15d2618f1.html",
+      "consultado_em": "2026-10-17T14:02:36.699553+00:00",
+      "status": "aceito",
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": {
+          "indice": "reviews/2026-10-17-cursos/capturas/cursos.html",
+          "detalhe": "reviews/2026-10-17-cursos/capturas/sede-e2539de527961dc7451ca5ac2839f9d15d2618f1.html"
+        },
+        "fonte": {
+          "source_id": "cursos_graduacao",
+          "url": "https://www.pen.uem.br/site/public/curso/e2539de527961dc7451ca5ac2839f9d15d2618f1",
+          "consultado_em": "2026-10-17T14:02:36.699553Z"
+        },
+        "curso": {
+          "nome": "Matemática",
+          "campus_id": "sede",
+          "modalidade": "presencial",
+          "url_detalhe": "https://www.pen.uem.br/site/public/curso/e2539de527961dc7451ca5ac2839f9d15d2618f1",
+          "id_candidato": "sede-matematica",
+          "informacoes_academicas": [
+            {
+              "turno": "Noturno (Licenciatura) ou Vespertino/Noturno (Bacharelado)",
+              "habilitacoes": [
+                "Licenciatura ou Bacharelado"
+              ],
+              "graus_academicos": [
+                "Bacharel em Matemática ou Licenciado em Matemática"
+              ]
+            }
+          ]
+        },
+        "proveniencia": {
+          "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
+          "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
+          "verificado": [
+            "link no índice local",
+            "título",
+            "câmpus exibido no detalhe"
+          ],
+          "informacoes_academicas": "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML",
+          "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+          "pendente": [
+            "ID estável aprovado",
+            "interpretação de turnos, habilitações e graus como ofertas",
+            "centro e departamento",
+            "cursos da EaD",
+            "completude e condições de reutilização"
+          ]
+        }
+      }
+    },
+    {
+      "campus_id": "sede",
+      "nome": "Medicina",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/fa929caa1ce52eac3200a285e1c3dc694d9b804e",
+      "arquivo": "reviews/2026-10-17-cursos/capturas/sede-fa929caa1ce52eac3200a285e1c3dc694d9b804e.html",
+      "consultado_em": "2026-10-17T14:02:37.296380+00:00",
+      "status": "aceito",
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": {
+          "indice": "reviews/2026-10-17-cursos/capturas/cursos.html",
+          "detalhe": "reviews/2026-10-17-cursos/capturas/sede-fa929caa1ce52eac3200a285e1c3dc694d9b804e.html"
+        },
+        "fonte": {
+          "source_id": "cursos_graduacao",
+          "url": "https://www.pen.uem.br/site/public/curso/fa929caa1ce52eac3200a285e1c3dc694d9b804e",
+          "consultado_em": "2026-10-17T14:02:37.296380Z"
+        },
+        "curso": {
+          "nome": "Medicina",
+          "campus_id": "sede",
+          "modalidade": "presencial",
+          "url_detalhe": "https://www.pen.uem.br/site/public/curso/fa929caa1ce52eac3200a285e1c3dc694d9b804e",
+          "id_candidato": "sede-medicina",
+          "informacoes_academicas": [
+            {
+              "turno": "Integral",
+              "habilitacoes": [],
+              "graus_academicos": [
+                "Médico"
+              ]
+            }
+          ]
+        },
+        "proveniencia": {
+          "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
+          "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
+          "verificado": [
+            "link no índice local",
+            "título",
+            "câmpus exibido no detalhe"
+          ],
+          "informacoes_academicas": "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML",
+          "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+          "pendente": [
+            "ID estável aprovado",
+            "interpretação de turnos, habilitações e graus como ofertas",
+            "centro e departamento",
+            "cursos da EaD",
+            "completude e condições de reutilização"
+          ]
+        }
+      }
+    },
+    {
+      "campus_id": "sede",
+      "nome": "Música",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/bcd3389af4e0b7690b9a3e1b73230ed35d846971",
+      "arquivo": "reviews/2026-10-17-cursos/capturas/sede-bcd3389af4e0b7690b9a3e1b73230ed35d846971.html",
+      "consultado_em": "2026-10-17T14:02:37.905312+00:00",
+      "status": "aceito",
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": {
+          "indice": "reviews/2026-10-17-cursos/capturas/cursos.html",
+          "detalhe": "reviews/2026-10-17-cursos/capturas/sede-bcd3389af4e0b7690b9a3e1b73230ed35d846971.html"
+        },
+        "fonte": {
+          "source_id": "cursos_graduacao",
+          "url": "https://www.pen.uem.br/site/public/curso/bcd3389af4e0b7690b9a3e1b73230ed35d846971",
+          "consultado_em": "2026-10-17T14:02:37.905312Z"
+        },
+        "curso": {
+          "nome": "Música",
+          "campus_id": "sede",
+          "modalidade": "presencial",
+          "url_detalhe": "https://www.pen.uem.br/site/public/curso/bcd3389af4e0b7690b9a3e1b73230ed35d846971",
+          "id_candidato": "sede-musica",
+          "informacoes_academicas": [
+            {
+              "turno": "Integral",
+              "habilitacoes": [
+                "Licenciatura em Educação Musical",
+                "Bacharelado em Canto",
+                "Bacharelado em Composição",
+                "Bacharelado em Instrumento (opções: Flauta Transversal, Piano, Violão e Violino)",
+                "Bacharelado em Regência Coral"
+              ],
+              "graus_academicos": [
+                "Licenciado em Educação Musical",
+                "Cantor",
+                "Compositor",
+                "Músico Instrumentista",
+                "Regente Coral"
+              ]
+            }
+          ]
+        },
+        "proveniencia": {
+          "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
+          "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
+          "verificado": [
+            "link no índice local",
+            "título",
+            "câmpus exibido no detalhe"
+          ],
+          "informacoes_academicas": "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML",
+          "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+          "pendente": [
+            "ID estável aprovado",
+            "interpretação de turnos, habilitações e graus como ofertas",
+            "centro e departamento",
+            "cursos da EaD",
+            "completude e condições de reutilização"
+          ]
+        }
+      }
+    },
+    {
+      "campus_id": "sede",
+      "nome": "Nutrição",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/7655d392b2a210827aeb9e9694de6a297f1e5885",
+      "arquivo": "reviews/2026-10-17-cursos/capturas/sede-7655d392b2a210827aeb9e9694de6a297f1e5885.html",
+      "consultado_em": "2026-10-17T14:02:38.478875+00:00",
+      "status": "aceito",
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": {
+          "indice": "reviews/2026-10-17-cursos/capturas/cursos.html",
+          "detalhe": "reviews/2026-10-17-cursos/capturas/sede-7655d392b2a210827aeb9e9694de6a297f1e5885.html"
+        },
+        "fonte": {
+          "source_id": "cursos_graduacao",
+          "url": "https://www.pen.uem.br/site/public/curso/7655d392b2a210827aeb9e9694de6a297f1e5885",
+          "consultado_em": "2026-10-17T14:02:38.478875Z"
+        },
+        "curso": {
+          "nome": "Nutrição",
+          "campus_id": "sede",
+          "modalidade": "presencial",
+          "url_detalhe": "https://www.pen.uem.br/site/public/curso/7655d392b2a210827aeb9e9694de6a297f1e5885",
+          "id_candidato": "sede-nutricao",
+          "informacoes_academicas": [
+            {
+              "turno": "Noturno",
+              "habilitacoes": [
+                "Nutricionista"
+              ],
+              "graus_academicos": [
+                "Bacharel em Nutrição"
+              ]
+            }
+          ]
+        },
+        "proveniencia": {
+          "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
+          "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
+          "verificado": [
+            "link no índice local",
+            "título",
+            "câmpus exibido no detalhe"
+          ],
+          "informacoes_academicas": "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML",
+          "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+          "pendente": [
+            "ID estável aprovado",
+            "interpretação de turnos, habilitações e graus como ofertas",
+            "centro e departamento",
+            "cursos da EaD",
+            "completude e condições de reutilização"
+          ]
+        }
+      }
+    },
+    {
+      "campus_id": "sede",
+      "nome": "Odontologia",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/d1aa1ee83bb6686401703af6598109edfce0e346",
+      "arquivo": "reviews/2026-10-17-cursos/capturas/sede-d1aa1ee83bb6686401703af6598109edfce0e346.html",
+      "consultado_em": "2026-10-17T14:02:39.054437+00:00",
+      "status": "aceito",
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": {
+          "indice": "reviews/2026-10-17-cursos/capturas/cursos.html",
+          "detalhe": "reviews/2026-10-17-cursos/capturas/sede-d1aa1ee83bb6686401703af6598109edfce0e346.html"
+        },
+        "fonte": {
+          "source_id": "cursos_graduacao",
+          "url": "https://www.pen.uem.br/site/public/curso/d1aa1ee83bb6686401703af6598109edfce0e346",
+          "consultado_em": "2026-10-17T14:02:39.054437Z"
+        },
+        "curso": {
+          "nome": "Odontologia",
+          "campus_id": "sede",
+          "modalidade": "presencial",
+          "url_detalhe": "https://www.pen.uem.br/site/public/curso/d1aa1ee83bb6686401703af6598109edfce0e346",
+          "id_candidato": "sede-odontologia",
+          "informacoes_academicas": [
+            {
+              "turno": "Integral",
+              "habilitacoes": [
+                "Bacharelado"
+              ],
+              "graus_academicos": [
+                "Cirurgião Dentista"
+              ]
+            }
+          ]
+        },
+        "proveniencia": {
+          "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
+          "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
+          "verificado": [
+            "link no índice local",
+            "título",
+            "câmpus exibido no detalhe"
+          ],
+          "informacoes_academicas": "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML",
+          "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+          "pendente": [
+            "ID estável aprovado",
+            "interpretação de turnos, habilitações e graus como ofertas",
+            "centro e departamento",
+            "cursos da EaD",
+            "completude e condições de reutilização"
+          ]
+        }
+      }
+    },
+    {
+      "campus_id": "sede",
+      "nome": "Pedagogia",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/fb5db4852b539ec28d56e839c082987117b3aa3d",
+      "arquivo": "reviews/2026-10-17-cursos/capturas/sede-fb5db4852b539ec28d56e839c082987117b3aa3d.html",
+      "consultado_em": "2026-10-17T14:02:39.619809+00:00",
+      "status": "aceito",
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": {
+          "indice": "reviews/2026-10-17-cursos/capturas/cursos.html",
+          "detalhe": "reviews/2026-10-17-cursos/capturas/sede-fb5db4852b539ec28d56e839c082987117b3aa3d.html"
+        },
+        "fonte": {
+          "source_id": "cursos_graduacao",
+          "url": "https://www.pen.uem.br/site/public/curso/fb5db4852b539ec28d56e839c082987117b3aa3d",
+          "consultado_em": "2026-10-17T14:02:39.619809Z"
+        },
+        "curso": {
+          "nome": "Pedagogia",
+          "campus_id": "sede",
+          "modalidade": "presencial",
+          "url_detalhe": "https://www.pen.uem.br/site/public/curso/fb5db4852b539ec28d56e839c082987117b3aa3d",
+          "id_candidato": "sede-pedagogia",
+          "informacoes_academicas": [
+            {
+              "turno": "Matutino ou Noturno",
+              "habilitacoes": [
+                "Licenciatura"
+              ],
+              "graus_academicos": [
+                "Licenciado em Pedagogia"
+              ]
+            }
+          ]
+        },
+        "proveniencia": {
+          "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
+          "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
+          "verificado": [
+            "link no índice local",
+            "título",
+            "câmpus exibido no detalhe"
+          ],
+          "informacoes_academicas": "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML",
+          "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+          "pendente": [
+            "ID estável aprovado",
+            "interpretação de turnos, habilitações e graus como ofertas",
+            "centro e departamento",
+            "cursos da EaD",
+            "completude e condições de reutilização"
+          ]
+        }
+      }
+    },
+    {
+      "campus_id": "sede",
+      "nome": "Psicologia",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/f62c5867b4a4ed0fe50ed12212be16c0d9dcfb38",
+      "arquivo": "reviews/2026-10-17-cursos/capturas/sede-f62c5867b4a4ed0fe50ed12212be16c0d9dcfb38.html",
+      "consultado_em": "2026-10-17T14:02:40.199550+00:00",
+      "status": "aceito",
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": {
+          "indice": "reviews/2026-10-17-cursos/capturas/cursos.html",
+          "detalhe": "reviews/2026-10-17-cursos/capturas/sede-f62c5867b4a4ed0fe50ed12212be16c0d9dcfb38.html"
+        },
+        "fonte": {
+          "source_id": "cursos_graduacao",
+          "url": "https://www.pen.uem.br/site/public/curso/f62c5867b4a4ed0fe50ed12212be16c0d9dcfb38",
+          "consultado_em": "2026-10-17T14:02:40.199550Z"
+        },
+        "curso": {
+          "nome": "Psicologia",
+          "campus_id": "sede",
+          "modalidade": "presencial",
+          "url_detalhe": "https://www.pen.uem.br/site/public/curso/f62c5867b4a4ed0fe50ed12212be16c0d9dcfb38",
+          "id_candidato": "sede-psicologia",
+          "informacoes_academicas": [
+            {
+              "turno": "Integral",
+              "habilitacoes": [
+                "Formação de Psicólogo"
+              ],
+              "graus_academicos": [
+                "Psicólogo"
+              ]
+            }
+          ]
+        },
+        "proveniencia": {
+          "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
+          "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
+          "verificado": [
+            "link no índice local",
+            "título",
+            "câmpus exibido no detalhe"
+          ],
+          "informacoes_academicas": "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML",
+          "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+          "pendente": [
+            "ID estável aprovado",
+            "interpretação de turnos, habilitações e graus como ofertas",
+            "centro e departamento",
+            "cursos da EaD",
+            "completude e condições de reutilização"
+          ]
+        }
+      }
+    },
+    {
+      "campus_id": "sede",
+      "nome": "Química",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/d3c42d38b23e32805c12fe6b9d11703b0e02a47c",
+      "arquivo": "reviews/2026-10-17-cursos/capturas/sede-d3c42d38b23e32805c12fe6b9d11703b0e02a47c.html",
+      "consultado_em": "2026-10-17T14:02:40.782080+00:00",
+      "status": "aceito",
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": {
+          "indice": "reviews/2026-10-17-cursos/capturas/cursos.html",
+          "detalhe": "reviews/2026-10-17-cursos/capturas/sede-d3c42d38b23e32805c12fe6b9d11703b0e02a47c.html"
+        },
+        "fonte": {
+          "source_id": "cursos_graduacao",
+          "url": "https://www.pen.uem.br/site/public/curso/d3c42d38b23e32805c12fe6b9d11703b0e02a47c",
+          "consultado_em": "2026-10-17T14:02:40.782080Z"
+        },
+        "curso": {
+          "nome": "Química",
+          "campus_id": "sede",
+          "modalidade": "presencial",
+          "url_detalhe": "https://www.pen.uem.br/site/public/curso/d3c42d38b23e32805c12fe6b9d11703b0e02a47c",
+          "id_candidato": "sede-quimica",
+          "informacoes_academicas": [
+            {
+              "turno": "Noturno e Integral.",
+              "habilitacoes": [
+                "Licenciatura em Química (Noturno) e Bacharelado em Química (Integral)."
+              ],
+              "graus_academicos": [
+                "Licenciado em Química e Bacharel em Química."
+              ]
+            }
+          ]
+        },
+        "proveniencia": {
+          "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
+          "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
+          "verificado": [
+            "link no índice local",
+            "título",
+            "câmpus exibido no detalhe"
+          ],
+          "informacoes_academicas": "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML",
+          "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+          "pendente": [
+            "ID estável aprovado",
+            "interpretação de turnos, habilitações e graus como ofertas",
+            "centro e departamento",
+            "cursos da EaD",
+            "completude e condições de reutilização"
+          ]
+        }
+      }
+    },
+    {
+      "campus_id": "sede",
+      "nome": "Secretariado Executivo Trilíngue",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/f05f1ca5f7b5cdebef6b0e2692cca0f732702893",
+      "arquivo": "reviews/2026-10-17-cursos/capturas/sede-f05f1ca5f7b5cdebef6b0e2692cca0f732702893.html",
+      "consultado_em": "2026-10-17T14:02:41.356485+00:00",
+      "status": "aceito",
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": {
+          "indice": "reviews/2026-10-17-cursos/capturas/cursos.html",
+          "detalhe": "reviews/2026-10-17-cursos/capturas/sede-f05f1ca5f7b5cdebef6b0e2692cca0f732702893.html"
+        },
+        "fonte": {
+          "source_id": "cursos_graduacao",
+          "url": "https://www.pen.uem.br/site/public/curso/f05f1ca5f7b5cdebef6b0e2692cca0f732702893",
+          "consultado_em": "2026-10-17T14:02:41.356485Z"
+        },
+        "curso": {
+          "nome": "Secretariado Executivo Trilíngue",
+          "campus_id": "sede",
+          "modalidade": "presencial",
+          "url_detalhe": "https://www.pen.uem.br/site/public/curso/f05f1ca5f7b5cdebef6b0e2692cca0f732702893",
+          "id_candidato": "sede-secretariado-executivo-trilingue",
+          "informacoes_academicas": [
+            {
+              "turno": "Noturno",
+              "habilitacoes": [
+                "Bacharelado"
+              ],
+              "graus_academicos": [
+                "Bacharel em Secretariado Executivo Trilíngue"
+              ]
+            }
+          ]
+        },
+        "proveniencia": {
+          "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
+          "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
+          "verificado": [
+            "link no índice local",
+            "título",
+            "câmpus exibido no detalhe"
+          ],
+          "informacoes_academicas": "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML",
+          "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+          "pendente": [
+            "ID estável aprovado",
+            "interpretação de turnos, habilitações e graus como ofertas",
+            "centro e departamento",
+            "cursos da EaD",
+            "completude e condições de reutilização"
+          ]
+        }
+      }
+    },
+    {
+      "campus_id": "sede",
+      "nome": "Serviço Social",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/d3c90f4dbbcea8fa2eb28c852c5453760cf49d28",
+      "arquivo": "reviews/2026-10-17-cursos/capturas/sede-d3c90f4dbbcea8fa2eb28c852c5453760cf49d28.html",
+      "consultado_em": "2026-10-17T14:02:41.944166+00:00",
+      "status": "aceito",
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": {
+          "indice": "reviews/2026-10-17-cursos/capturas/cursos.html",
+          "detalhe": "reviews/2026-10-17-cursos/capturas/sede-d3c90f4dbbcea8fa2eb28c852c5453760cf49d28.html"
+        },
+        "fonte": {
+          "source_id": "cursos_graduacao",
+          "url": "https://www.pen.uem.br/site/public/curso/d3c90f4dbbcea8fa2eb28c852c5453760cf49d28",
+          "consultado_em": "2026-10-17T14:02:41.944166Z"
+        },
+        "curso": {
+          "nome": "Serviço Social",
+          "campus_id": "sede",
+          "modalidade": "presencial",
+          "url_detalhe": "https://www.pen.uem.br/site/public/curso/d3c90f4dbbcea8fa2eb28c852c5453760cf49d28",
+          "id_candidato": "sede-servico-social",
+          "informacoes_academicas": [
+            {
+              "turno": "Noturno",
+              "habilitacoes": [
+                "Bacharelado"
+              ],
+              "graus_academicos": [
+                "Bacharel em Serviço Social"
+              ]
+            }
+          ]
+        },
+        "proveniencia": {
+          "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
+          "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
+          "verificado": [
+            "link no índice local",
+            "título",
+            "câmpus exibido no detalhe"
+          ],
+          "informacoes_academicas": "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML",
+          "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+          "pendente": [
+            "ID estável aprovado",
+            "interpretação de turnos, habilitações e graus como ofertas",
+            "centro e departamento",
+            "cursos da EaD",
+            "completude e condições de reutilização"
+          ]
+        }
+      }
+    },
+    {
+      "campus_id": "sede",
+      "nome": "Zootecnia",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/56a2c1f3b7ca46811593de059fecdcc22a95f83c",
+      "arquivo": "reviews/2026-10-17-cursos/capturas/sede-56a2c1f3b7ca46811593de059fecdcc22a95f83c.html",
+      "consultado_em": "2026-10-17T14:02:42.552643+00:00",
+      "status": "aceito",
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": {
+          "indice": "reviews/2026-10-17-cursos/capturas/cursos.html",
+          "detalhe": "reviews/2026-10-17-cursos/capturas/sede-56a2c1f3b7ca46811593de059fecdcc22a95f83c.html"
+        },
+        "fonte": {
+          "source_id": "cursos_graduacao",
+          "url": "https://www.pen.uem.br/site/public/curso/56a2c1f3b7ca46811593de059fecdcc22a95f83c",
+          "consultado_em": "2026-10-17T14:02:42.552643Z"
+        },
+        "curso": {
+          "nome": "Zootecnia",
+          "campus_id": "sede",
+          "modalidade": "presencial",
+          "url_detalhe": "https://www.pen.uem.br/site/public/curso/56a2c1f3b7ca46811593de059fecdcc22a95f83c",
+          "id_candidato": "sede-zootecnia",
+          "informacoes_academicas": [
+            {
+              "turno": "Integral",
+              "habilitacoes": [],
+              "graus_academicos": [
+                "Zootecnista"
+              ]
+            }
+          ]
+        },
+        "proveniencia": {
+          "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
+          "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
+          "verificado": [
+            "link no índice local",
+            "título",
+            "câmpus exibido no detalhe"
+          ],
+          "informacoes_academicas": "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML",
+          "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+          "pendente": [
+            "ID estável aprovado",
+            "interpretação de turnos, habilitações e graus como ofertas",
+            "centro e departamento",
+            "cursos da EaD",
+            "completude e condições de reutilização"
+          ]
+        }
+      }
+    },
+    {
+      "campus_id": "crc",
+      "nome": "Ciências Contábeis",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/aeadaf59937288022995e17ad2cbd6141a15859d",
+      "arquivo": "reviews/2026-10-17-cursos/capturas/crc-aeadaf59937288022995e17ad2cbd6141a15859d.html",
+      "consultado_em": "2026-10-17T14:02:43.137416+00:00",
+      "status": "aceito",
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": {
+          "indice": "reviews/2026-10-17-cursos/capturas/cursos.html",
+          "detalhe": "reviews/2026-10-17-cursos/capturas/crc-aeadaf59937288022995e17ad2cbd6141a15859d.html"
+        },
+        "fonte": {
+          "source_id": "cursos_graduacao",
+          "url": "https://www.pen.uem.br/site/public/curso/aeadaf59937288022995e17ad2cbd6141a15859d",
+          "consultado_em": "2026-10-17T14:02:43.137416Z"
+        },
+        "curso": {
+          "nome": "Ciências Contábeis",
+          "campus_id": "crc",
+          "modalidade": "presencial",
+          "url_detalhe": "https://www.pen.uem.br/site/public/curso/aeadaf59937288022995e17ad2cbd6141a15859d",
+          "id_candidato": "crc-ciencias-contabeis",
+          "informacoes_academicas": [
+            {
+              "turno": "Noturno",
+              "habilitacoes": [
+                "Bacharelado"
+              ],
+              "graus_academicos": [
+                "Bacharel em Ciências Contábeis"
+              ]
+            }
+          ]
+        },
+        "proveniencia": {
+          "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
+          "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
+          "verificado": [
+            "link no índice local",
+            "título",
+            "câmpus exibido no detalhe"
+          ],
+          "informacoes_academicas": "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML",
+          "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+          "pendente": [
+            "ID estável aprovado",
+            "interpretação de turnos, habilitações e graus como ofertas",
+            "centro e departamento",
+            "cursos da EaD",
+            "completude e condições de reutilização"
+          ]
+        }
+      }
+    },
+    {
+      "campus_id": "crc",
+      "nome": "Design",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/7db3b1d39a16b27ae9d227ed395d6156bfb8f953",
+      "arquivo": "reviews/2026-10-17-cursos/capturas/crc-7db3b1d39a16b27ae9d227ed395d6156bfb8f953.html",
+      "consultado_em": "2026-10-17T14:02:43.733795+00:00",
+      "status": "aceito",
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": {
+          "indice": "reviews/2026-10-17-cursos/capturas/cursos.html",
+          "detalhe": "reviews/2026-10-17-cursos/capturas/crc-7db3b1d39a16b27ae9d227ed395d6156bfb8f953.html"
+        },
+        "fonte": {
+          "source_id": "cursos_graduacao",
+          "url": "https://www.pen.uem.br/site/public/curso/7db3b1d39a16b27ae9d227ed395d6156bfb8f953",
+          "consultado_em": "2026-10-17T14:02:43.733795Z"
+        },
+        "curso": {
+          "nome": "Design",
+          "campus_id": "crc",
+          "modalidade": "presencial",
+          "url_detalhe": "https://www.pen.uem.br/site/public/curso/7db3b1d39a16b27ae9d227ed395d6156bfb8f953",
+          "id_candidato": "crc-design",
+          "informacoes_academicas": [
+            {
+              "turno": "Integral",
+              "habilitacoes": [
+                "Bacharelado"
+              ],
+              "graus_academicos": [
+                "Bacharel em Design"
+              ]
+            }
+          ]
+        },
+        "proveniencia": {
+          "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
+          "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
+          "verificado": [
+            "link no índice local",
+            "título",
+            "câmpus exibido no detalhe"
+          ],
+          "informacoes_academicas": "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML",
+          "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+          "pendente": [
+            "ID estável aprovado",
+            "interpretação de turnos, habilitações e graus como ofertas",
+            "centro e departamento",
+            "cursos da EaD",
+            "completude e condições de reutilização"
+          ]
+        }
+      }
+    },
+    {
+      "campus_id": "crc",
+      "nome": "Moda",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/12a7f4520fd886646eb0608605d9fe852742e108",
+      "arquivo": "reviews/2026-10-17-cursos/capturas/crc-12a7f4520fd886646eb0608605d9fe852742e108.html",
+      "consultado_em": "2026-10-17T14:02:44.289357+00:00",
+      "status": "aceito",
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": {
+          "indice": "reviews/2026-10-17-cursos/capturas/cursos.html",
+          "detalhe": "reviews/2026-10-17-cursos/capturas/crc-12a7f4520fd886646eb0608605d9fe852742e108.html"
+        },
+        "fonte": {
+          "source_id": "cursos_graduacao",
+          "url": "https://www.pen.uem.br/site/public/curso/12a7f4520fd886646eb0608605d9fe852742e108",
+          "consultado_em": "2026-10-17T14:02:44.289357Z"
+        },
+        "curso": {
+          "nome": "Moda",
+          "campus_id": "crc",
+          "modalidade": "presencial",
+          "url_detalhe": "https://www.pen.uem.br/site/public/curso/12a7f4520fd886646eb0608605d9fe852742e108",
+          "id_candidato": "crc-moda",
+          "informacoes_academicas": [
+            {
+              "turno": "Matutino",
+              "habilitacoes": [
+                "Bacharelado em Moda - habilitação em modelagem e desenvolvimento de produto"
+              ],
+              "graus_academicos": [
+                "Bacharel em Moda"
+              ]
+            }
+          ]
+        },
+        "proveniencia": {
+          "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
+          "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
+          "verificado": [
+            "link no índice local",
+            "título",
+            "câmpus exibido no detalhe"
+          ],
+          "informacoes_academicas": "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML",
+          "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+          "pendente": [
+            "ID estável aprovado",
+            "interpretação de turnos, habilitações e graus como ofertas",
+            "centro e departamento",
+            "cursos da EaD",
+            "completude e condições de reutilização"
+          ]
+        }
+      }
+    },
+    {
+      "campus_id": "crc",
+      "nome": "Pedagogia",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/1109473bb540238fe3211cbab0bb495018363090",
+      "arquivo": "reviews/2026-10-17-cursos/capturas/crc-1109473bb540238fe3211cbab0bb495018363090.html",
+      "consultado_em": "2026-10-17T14:02:44.883746+00:00",
+      "status": "aceito",
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": {
+          "indice": "reviews/2026-10-17-cursos/capturas/cursos.html",
+          "detalhe": "reviews/2026-10-17-cursos/capturas/crc-1109473bb540238fe3211cbab0bb495018363090.html"
+        },
+        "fonte": {
+          "source_id": "cursos_graduacao",
+          "url": "https://www.pen.uem.br/site/public/curso/1109473bb540238fe3211cbab0bb495018363090",
+          "consultado_em": "2026-10-17T14:02:44.883746Z"
+        },
+        "curso": {
+          "nome": "Pedagogia",
+          "campus_id": "crc",
+          "modalidade": "presencial",
+          "url_detalhe": "https://www.pen.uem.br/site/public/curso/1109473bb540238fe3211cbab0bb495018363090",
+          "id_candidato": "crc-pedagogia",
+          "informacoes_academicas": [
+            {
+              "turno": "Noturno",
+              "habilitacoes": [
+                "Licenciatura"
+              ],
+              "graus_academicos": [
+                "Licenciado em Pedagogia"
+              ]
+            }
+          ]
+        },
+        "proveniencia": {
+          "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
+          "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
+          "verificado": [
+            "link no índice local",
+            "título",
+            "câmpus exibido no detalhe"
+          ],
+          "informacoes_academicas": "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML",
+          "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+          "pendente": [
+            "ID estável aprovado",
+            "interpretação de turnos, habilitações e graus como ofertas",
+            "centro e departamento",
+            "cursos da EaD",
+            "completude e condições de reutilização"
+          ]
+        }
+      }
+    },
+    {
+      "campus_id": "car",
+      "nome": "Engenharia Agrícola",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/7e57e246c1bb9a6a19bde73c135003e110ad48e3",
+      "arquivo": "reviews/2026-10-17-cursos/capturas/car-7e57e246c1bb9a6a19bde73c135003e110ad48e3.html",
+      "consultado_em": "2026-10-17T14:02:45.470473+00:00",
+      "status": "aceito",
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": {
+          "indice": "reviews/2026-10-17-cursos/capturas/cursos.html",
+          "detalhe": "reviews/2026-10-17-cursos/capturas/car-7e57e246c1bb9a6a19bde73c135003e110ad48e3.html"
+        },
+        "fonte": {
+          "source_id": "cursos_graduacao",
+          "url": "https://www.pen.uem.br/site/public/curso/7e57e246c1bb9a6a19bde73c135003e110ad48e3",
+          "consultado_em": "2026-10-17T14:02:45.470473Z"
+        },
+        "curso": {
+          "nome": "Engenharia Agrícola",
+          "campus_id": "car",
+          "modalidade": "presencial",
+          "url_detalhe": "https://www.pen.uem.br/site/public/curso/7e57e246c1bb9a6a19bde73c135003e110ad48e3",
+          "id_candidato": "car-engenharia-agricola",
+          "informacoes_academicas": [
+            {
+              "turno": "Integral",
+              "habilitacoes": [
+                "Licenciatura"
+              ],
+              "graus_academicos": [
+                "Engenheiro Agrícola"
+              ]
+            }
+          ]
+        },
+        "proveniencia": {
+          "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
+          "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
+          "verificado": [
+            "link no índice local",
+            "título",
+            "câmpus exibido no detalhe"
+          ],
+          "informacoes_academicas": "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML",
+          "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+          "pendente": [
+            "ID estável aprovado",
+            "interpretação de turnos, habilitações e graus como ofertas",
+            "centro e departamento",
+            "cursos da EaD",
+            "completude e condições de reutilização"
+          ]
+        }
+      }
+    },
+    {
+      "campus_id": "crg",
+      "nome": "Engenharia de Produção",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/36df9dc33c5f756f7890dc8b1f7c459e872dd2d8",
+      "arquivo": "reviews/2026-10-17-cursos/capturas/crg-36df9dc33c5f756f7890dc8b1f7c459e872dd2d8.html",
+      "consultado_em": "2026-10-17T14:02:46.075189+00:00",
+      "status": "aceito",
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": {
+          "indice": "reviews/2026-10-17-cursos/capturas/cursos.html",
+          "detalhe": "reviews/2026-10-17-cursos/capturas/crg-36df9dc33c5f756f7890dc8b1f7c459e872dd2d8.html"
+        },
+        "fonte": {
+          "source_id": "cursos_graduacao",
+          "url": "https://www.pen.uem.br/site/public/curso/36df9dc33c5f756f7890dc8b1f7c459e872dd2d8",
+          "consultado_em": "2026-10-17T14:02:46.075189Z"
+        },
+        "curso": {
+          "nome": "Engenharia de Produção",
+          "campus_id": "crg",
+          "modalidade": "presencial",
+          "url_detalhe": "https://www.pen.uem.br/site/public/curso/36df9dc33c5f756f7890dc8b1f7c459e872dd2d8",
+          "id_candidato": "crg-engenharia-de-producao",
+          "informacoes_academicas": [
+            {
+              "turno": "Noturno",
+              "habilitacoes": [
+                "Bacharelado"
+              ],
+              "graus_academicos": [
+                "Engenheiro de Produção"
+              ]
+            }
+          ]
+        },
+        "proveniencia": {
+          "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
+          "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
+          "verificado": [
+            "link no índice local",
+            "título",
+            "câmpus exibido no detalhe"
+          ],
+          "informacoes_academicas": "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML",
+          "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+          "pendente": [
+            "ID estável aprovado",
+            "interpretação de turnos, habilitações e graus como ofertas",
+            "centro e departamento",
+            "cursos da EaD",
+            "completude e condições de reutilização"
+          ]
+        }
+      }
+    },
+    {
+      "campus_id": "crg",
+      "nome": "Engenharia Têxtil",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/040f45414df3ff3edb75520eafe9cac6d737667d",
+      "arquivo": "reviews/2026-10-17-cursos/capturas/crg-040f45414df3ff3edb75520eafe9cac6d737667d.html",
+      "consultado_em": "2026-10-17T14:02:46.642934+00:00",
+      "status": "aceito",
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": {
+          "indice": "reviews/2026-10-17-cursos/capturas/cursos.html",
+          "detalhe": "reviews/2026-10-17-cursos/capturas/crg-040f45414df3ff3edb75520eafe9cac6d737667d.html"
+        },
+        "fonte": {
+          "source_id": "cursos_graduacao",
+          "url": "https://www.pen.uem.br/site/public/curso/040f45414df3ff3edb75520eafe9cac6d737667d",
+          "consultado_em": "2026-10-17T14:02:46.642934Z"
+        },
+        "curso": {
+          "nome": "Engenharia Têxtil",
+          "campus_id": "crg",
+          "modalidade": "presencial",
+          "url_detalhe": "https://www.pen.uem.br/site/public/curso/040f45414df3ff3edb75520eafe9cac6d737667d",
+          "id_candidato": "crg-engenharia-textil",
+          "informacoes_academicas": [
+            {
+              "turno": "Noturno",
+              "habilitacoes": [
+                "Bacharelado"
+              ],
+              "graus_academicos": [
+                "Engenheiro Têxtil"
+              ]
+            }
+          ]
+        },
+        "proveniencia": {
+          "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
+          "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
+          "verificado": [
+            "link no índice local",
+            "título",
+            "câmpus exibido no detalhe"
+          ],
+          "informacoes_academicas": "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML",
+          "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+          "pendente": [
+            "ID estável aprovado",
+            "interpretação de turnos, habilitações e graus como ofertas",
+            "centro e departamento",
+            "cursos da EaD",
+            "completude e condições de reutilização"
+          ]
+        }
+      }
+    },
+    {
+      "campus_id": "crg",
+      "nome": "Física",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/8346c99c55ab163bfc9188a115856c546a320417",
+      "arquivo": "reviews/2026-10-17-cursos/capturas/crg-8346c99c55ab163bfc9188a115856c546a320417.html",
+      "consultado_em": "2026-10-17T14:02:47.229833+00:00",
+      "status": "aceito",
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": {
+          "indice": "reviews/2026-10-17-cursos/capturas/cursos.html",
+          "detalhe": "reviews/2026-10-17-cursos/capturas/crg-8346c99c55ab163bfc9188a115856c546a320417.html"
+        },
+        "fonte": {
+          "source_id": "cursos_graduacao",
+          "url": "https://www.pen.uem.br/site/public/curso/8346c99c55ab163bfc9188a115856c546a320417",
+          "consultado_em": "2026-10-17T14:02:47.229833Z"
+        },
+        "curso": {
+          "nome": "Física",
+          "campus_id": "crg",
+          "modalidade": "presencial",
+          "url_detalhe": "https://www.pen.uem.br/site/public/curso/8346c99c55ab163bfc9188a115856c546a320417",
+          "id_candidato": "crg-fisica",
+          "informacoes_academicas": [
+            {
+              "turno": "Noturno",
+              "habilitacoes": [
+                "Licenciatura"
+              ],
+              "graus_academicos": [
+                "Licenciado em Física"
+              ]
+            }
+          ]
+        },
+        "proveniencia": {
+          "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
+          "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
+          "verificado": [
+            "link no índice local",
+            "título",
+            "câmpus exibido no detalhe"
+          ],
+          "informacoes_academicas": "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML",
+          "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+          "pendente": [
+            "ID estável aprovado",
+            "interpretação de turnos, habilitações e graus como ofertas",
+            "centro e departamento",
+            "cursos da EaD",
+            "completude e condições de reutilização"
+          ]
+        }
+      }
+    },
+    {
+      "campus_id": "crg",
+      "nome": "Física Médica",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/cf86ec0adf1d7e3f5fdff465b003fc3110a31bf2",
+      "arquivo": "reviews/2026-10-17-cursos/capturas/crg-cf86ec0adf1d7e3f5fdff465b003fc3110a31bf2.html",
+      "consultado_em": "2026-10-17T14:02:47.828880+00:00",
+      "status": "aceito",
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": {
+          "indice": "reviews/2026-10-17-cursos/capturas/cursos.html",
+          "detalhe": "reviews/2026-10-17-cursos/capturas/crg-cf86ec0adf1d7e3f5fdff465b003fc3110a31bf2.html"
+        },
+        "fonte": {
+          "source_id": "cursos_graduacao",
+          "url": "https://www.pen.uem.br/site/public/curso/cf86ec0adf1d7e3f5fdff465b003fc3110a31bf2",
+          "consultado_em": "2026-10-17T14:02:47.828880Z"
+        },
+        "curso": {
+          "nome": "Física Médica",
+          "campus_id": "crg",
+          "modalidade": "presencial",
+          "url_detalhe": "https://www.pen.uem.br/site/public/curso/cf86ec0adf1d7e3f5fdff465b003fc3110a31bf2",
+          "id_candidato": "crg-fisica-medica",
+          "informacoes_academicas": [
+            {
+              "turno": "Vespertino e Noturno",
+              "habilitacoes": [
+                "Bacharelado"
+              ],
+              "graus_academicos": [
+                "Bacharel em Física Médica"
+              ]
+            }
+          ]
+        },
+        "proveniencia": {
+          "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
+          "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
+          "verificado": [
+            "link no índice local",
+            "título",
+            "câmpus exibido no detalhe"
+          ],
+          "informacoes_academicas": "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML",
+          "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+          "pendente": [
+            "ID estável aprovado",
+            "interpretação de turnos, habilitações e graus como ofertas",
+            "centro e departamento",
+            "cursos da EaD",
+            "completude e condições de reutilização"
+          ]
+        }
+      }
+    },
+    {
+      "campus_id": "crv",
+      "nome": "Educação Física",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/960b256c8c7e809d45173618739ebf2a3f427e8a",
+      "arquivo": "reviews/2026-10-17-cursos/capturas/crv-960b256c8c7e809d45173618739ebf2a3f427e8a.html",
+      "consultado_em": "2026-10-17T14:02:48.400806+00:00",
+      "status": "aceito",
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": {
+          "indice": "reviews/2026-10-17-cursos/capturas/cursos.html",
+          "detalhe": "reviews/2026-10-17-cursos/capturas/crv-960b256c8c7e809d45173618739ebf2a3f427e8a.html"
+        },
+        "fonte": {
+          "source_id": "cursos_graduacao",
+          "url": "https://www.pen.uem.br/site/public/curso/960b256c8c7e809d45173618739ebf2a3f427e8a",
+          "consultado_em": "2026-10-17T14:02:48.400806Z"
+        },
+        "curso": {
+          "nome": "Educação Física",
+          "campus_id": "crv",
+          "modalidade": "presencial",
+          "url_detalhe": "https://www.pen.uem.br/site/public/curso/960b256c8c7e809d45173618739ebf2a3f427e8a",
+          "id_candidato": "crv-educacao-fisica",
+          "informacoes_academicas": [
+            {
+              "turno": "Noturno",
+              "habilitacoes": [
+                "Bacharelado e Licenciatura"
+              ],
+              "graus_academicos": [
+                "Bacharel em Educação Física e Licenciado em Educação Física"
+              ]
+            }
+          ]
+        },
+        "proveniencia": {
+          "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
+          "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
+          "verificado": [
+            "link no índice local",
+            "título",
+            "câmpus exibido no detalhe"
+          ],
+          "informacoes_academicas": "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML",
+          "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+          "pendente": [
+            "ID estável aprovado",
+            "interpretação de turnos, habilitações e graus como ofertas",
+            "centro e departamento",
+            "cursos da EaD",
+            "completude e condições de reutilização"
+          ]
+        }
+      }
+    },
+    {
+      "campus_id": "crv",
+      "nome": "História",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/9fc4d01378376f9de1f31f1c3f6dae2ad7a9f88c",
+      "arquivo": "reviews/2026-10-17-cursos/capturas/crv-9fc4d01378376f9de1f31f1c3f6dae2ad7a9f88c.html",
+      "consultado_em": "2026-10-17T14:02:48.965161+00:00",
+      "status": "aceito",
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": {
+          "indice": "reviews/2026-10-17-cursos/capturas/cursos.html",
+          "detalhe": "reviews/2026-10-17-cursos/capturas/crv-9fc4d01378376f9de1f31f1c3f6dae2ad7a9f88c.html"
+        },
+        "fonte": {
+          "source_id": "cursos_graduacao",
+          "url": "https://www.pen.uem.br/site/public/curso/9fc4d01378376f9de1f31f1c3f6dae2ad7a9f88c",
+          "consultado_em": "2026-10-17T14:02:48.965161Z"
+        },
+        "curso": {
+          "nome": "História",
+          "campus_id": "crv",
+          "modalidade": "presencial",
+          "url_detalhe": "https://www.pen.uem.br/site/public/curso/9fc4d01378376f9de1f31f1c3f6dae2ad7a9f88c",
+          "id_candidato": "crv-historia",
+          "informacoes_academicas": [
+            {
+              "turno": "Noturno",
+              "habilitacoes": [
+                "Licenciatura"
+              ],
+              "graus_academicos": [
+                "Licenciado em História"
+              ]
+            }
+          ]
+        },
+        "proveniencia": {
+          "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
+          "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
+          "verificado": [
+            "link no índice local",
+            "título",
+            "câmpus exibido no detalhe"
+          ],
+          "informacoes_academicas": "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML",
+          "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+          "pendente": [
+            "ID estável aprovado",
+            "interpretação de turnos, habilitações e graus como ofertas",
+            "centro e departamento",
+            "cursos da EaD",
+            "completude e condições de reutilização"
+          ]
+        }
+      }
+    },
+    {
+      "campus_id": "crv",
+      "nome": "Serviço Social",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/6548081f2b5226e6b338b5183cc02209a9e309f8",
+      "arquivo": "reviews/2026-10-17-cursos/capturas/crv-6548081f2b5226e6b338b5183cc02209a9e309f8.html",
+      "consultado_em": "2026-10-17T14:02:49.559980+00:00",
+      "status": "aceito",
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": {
+          "indice": "reviews/2026-10-17-cursos/capturas/cursos.html",
+          "detalhe": "reviews/2026-10-17-cursos/capturas/crv-6548081f2b5226e6b338b5183cc02209a9e309f8.html"
+        },
+        "fonte": {
+          "source_id": "cursos_graduacao",
+          "url": "https://www.pen.uem.br/site/public/curso/6548081f2b5226e6b338b5183cc02209a9e309f8",
+          "consultado_em": "2026-10-17T14:02:49.559980Z"
+        },
+        "curso": {
+          "nome": "Serviço Social",
+          "campus_id": "crv",
+          "modalidade": "presencial",
+          "url_detalhe": "https://www.pen.uem.br/site/public/curso/6548081f2b5226e6b338b5183cc02209a9e309f8",
+          "id_candidato": "crv-servico-social",
+          "informacoes_academicas": [
+            {
+              "turno": "Noturno",
+              "habilitacoes": [
+                "Bacharelado"
+              ],
+              "graus_academicos": [
+                "Bacharel em Serviço Social"
+              ]
+            }
+          ]
+        },
+        "proveniencia": {
+          "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
+          "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
+          "verificado": [
+            "link no índice local",
+            "título",
+            "câmpus exibido no detalhe"
+          ],
+          "informacoes_academicas": "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML",
+          "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+          "pendente": [
+            "ID estável aprovado",
+            "interpretação de turnos, habilitações e graus como ofertas",
+            "centro e departamento",
+            "cursos da EaD",
+            "completude e condições de reutilização"
+          ]
+        }
+      }
+    },
+    {
+      "campus_id": "cau",
+      "nome": "Agronomia",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/2306fd6d3b09ce5866f54d562f1bd4d61ef4d310",
+      "arquivo": "reviews/2026-10-17-cursos/capturas/cau-2306fd6d3b09ce5866f54d562f1bd4d61ef4d310.html",
+      "consultado_em": "2026-10-17T14:02:50.159224+00:00",
+      "status": "aceito",
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": {
+          "indice": "reviews/2026-10-17-cursos/capturas/cursos.html",
+          "detalhe": "reviews/2026-10-17-cursos/capturas/cau-2306fd6d3b09ce5866f54d562f1bd4d61ef4d310.html"
+        },
+        "fonte": {
+          "source_id": "cursos_graduacao",
+          "url": "https://www.pen.uem.br/site/public/curso/2306fd6d3b09ce5866f54d562f1bd4d61ef4d310",
+          "consultado_em": "2026-10-17T14:02:50.159224Z"
+        },
+        "curso": {
+          "nome": "Agronomia",
+          "campus_id": "cau",
+          "modalidade": "presencial",
+          "url_detalhe": "https://www.pen.uem.br/site/public/curso/2306fd6d3b09ce5866f54d562f1bd4d61ef4d310",
+          "id_candidato": "cau-agronomia",
+          "informacoes_academicas": [
+            {
+              "turno": "Integral",
+              "habilitacoes": [
+                "Bacharelado"
+              ],
+              "graus_academicos": [
+                "Engenheiro Agrônomo"
+              ]
+            }
+          ]
+        },
+        "proveniencia": {
+          "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
+          "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
+          "verificado": [
+            "link no índice local",
+            "título",
+            "câmpus exibido no detalhe"
+          ],
+          "informacoes_academicas": "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML",
+          "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+          "pendente": [
+            "ID estável aprovado",
+            "interpretação de turnos, habilitações e graus como ofertas",
+            "centro e departamento",
+            "cursos da EaD",
+            "completude e condições de reutilização"
+          ]
+        }
+      }
+    },
+    {
+      "campus_id": "cau",
+      "nome": "Arquitetura e Urbanismo (CAU)",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/70e5bf25384d1a42edf69f9a21b1afd2706264bf",
+      "arquivo": "reviews/2026-10-17-cursos/capturas/cau-70e5bf25384d1a42edf69f9a21b1afd2706264bf.html",
+      "consultado_em": "2026-10-17T14:02:50.744945+00:00",
+      "status": "aceito",
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": {
+          "indice": "reviews/2026-10-17-cursos/capturas/cursos.html",
+          "detalhe": "reviews/2026-10-17-cursos/capturas/cau-70e5bf25384d1a42edf69f9a21b1afd2706264bf.html"
+        },
+        "fonte": {
+          "source_id": "cursos_graduacao",
+          "url": "https://www.pen.uem.br/site/public/curso/70e5bf25384d1a42edf69f9a21b1afd2706264bf",
+          "consultado_em": "2026-10-17T14:02:50.744945Z"
+        },
+        "curso": {
+          "nome": "Arquitetura e Urbanismo (CAU)",
+          "campus_id": "cau",
+          "modalidade": "presencial",
+          "url_detalhe": "https://www.pen.uem.br/site/public/curso/70e5bf25384d1a42edf69f9a21b1afd2706264bf",
+          "id_candidato": "cau-arquitetura-e-urbanismo-cau",
+          "informacoes_academicas": [
+            {
+              "turno": "Noturno",
+              "habilitacoes": [
+                "Bacharelado"
+              ],
+              "graus_academicos": [
+                "Arquiteto e Urbanista"
+              ]
+            }
+          ]
+        },
+        "proveniencia": {
+          "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
+          "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
+          "verificado": [
+            "link no índice local",
+            "título",
+            "câmpus exibido no detalhe"
+          ],
+          "informacoes_academicas": "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML",
+          "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+          "pendente": [
+            "ID estável aprovado",
+            "interpretação de turnos, habilitações e graus como ofertas",
+            "centro e departamento",
+            "cursos da EaD",
+            "completude e condições de reutilização"
+          ]
+        }
+      }
+    },
+    {
+      "campus_id": "cau",
+      "nome": "Engenharia Ambiental",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/502733aa2bd2cec35fc203e1c943d5bb0fb9ea85",
+      "arquivo": "reviews/2026-10-17-cursos/capturas/cau-502733aa2bd2cec35fc203e1c943d5bb0fb9ea85.html",
+      "consultado_em": "2026-10-17T14:02:51.314907+00:00",
+      "status": "aceito",
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": {
+          "indice": "reviews/2026-10-17-cursos/capturas/cursos.html",
+          "detalhe": "reviews/2026-10-17-cursos/capturas/cau-502733aa2bd2cec35fc203e1c943d5bb0fb9ea85.html"
+        },
+        "fonte": {
+          "source_id": "cursos_graduacao",
+          "url": "https://www.pen.uem.br/site/public/curso/502733aa2bd2cec35fc203e1c943d5bb0fb9ea85",
+          "consultado_em": "2026-10-17T14:02:51.314907Z"
+        },
+        "curso": {
+          "nome": "Engenharia Ambiental",
+          "campus_id": "cau",
+          "modalidade": "presencial",
+          "url_detalhe": "https://www.pen.uem.br/site/public/curso/502733aa2bd2cec35fc203e1c943d5bb0fb9ea85",
+          "id_candidato": "cau-engenharia-ambiental",
+          "informacoes_academicas": [
+            {
+              "turno": "Integral",
+              "habilitacoes": [
+                "Bacharelado"
+              ],
+              "graus_academicos": [
+                "Engenheiro Ambiental"
+              ]
+            }
+          ]
+        },
+        "proveniencia": {
+          "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
+          "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
+          "verificado": [
+            "link no índice local",
+            "título",
+            "câmpus exibido no detalhe"
+          ],
+          "informacoes_academicas": "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML",
+          "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+          "pendente": [
+            "ID estável aprovado",
+            "interpretação de turnos, habilitações e graus como ofertas",
+            "centro e departamento",
+            "cursos da EaD",
+            "completude e condições de reutilização"
+          ]
+        }
+      }
+    },
+    {
+      "campus_id": "cau",
+      "nome": "Engenharia Civil",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/6a7aab799e7ad63d1b1c6da013dad55a60e530c6",
+      "arquivo": "reviews/2026-10-17-cursos/capturas/cau-6a7aab799e7ad63d1b1c6da013dad55a60e530c6.html",
+      "consultado_em": "2026-10-17T14:02:51.886028+00:00",
+      "status": "aceito",
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": {
+          "indice": "reviews/2026-10-17-cursos/capturas/cursos.html",
+          "detalhe": "reviews/2026-10-17-cursos/capturas/cau-6a7aab799e7ad63d1b1c6da013dad55a60e530c6.html"
+        },
+        "fonte": {
+          "source_id": "cursos_graduacao",
+          "url": "https://www.pen.uem.br/site/public/curso/6a7aab799e7ad63d1b1c6da013dad55a60e530c6",
+          "consultado_em": "2026-10-17T14:02:51.886028Z"
+        },
+        "curso": {
+          "nome": "Engenharia Civil",
+          "campus_id": "cau",
+          "modalidade": "presencial",
+          "url_detalhe": "https://www.pen.uem.br/site/public/curso/6a7aab799e7ad63d1b1c6da013dad55a60e530c6",
+          "id_candidato": "cau-engenharia-civil",
+          "informacoes_academicas": [
+            {
+              "turno": "Integral",
+              "habilitacoes": [
+                "Bacharelado"
+              ],
+              "graus_academicos": [
+                "Engenheiro Civil"
+              ]
+            }
+          ]
+        },
+        "proveniencia": {
+          "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
+          "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
+          "verificado": [
+            "link no índice local",
+            "título",
+            "câmpus exibido no detalhe"
+          ],
+          "informacoes_academicas": "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML",
+          "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+          "pendente": [
+            "ID estável aprovado",
+            "interpretação de turnos, habilitações e graus como ofertas",
+            "centro e departamento",
+            "cursos da EaD",
+            "completude e condições de reutilização"
+          ]
+        }
+      }
+    },
+    {
+      "campus_id": "cau",
+      "nome": "Engenharia de Alimentos",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/9d641693818e10613e10ed81ffb304538b5879af",
+      "arquivo": "reviews/2026-10-17-cursos/capturas/cau-9d641693818e10613e10ed81ffb304538b5879af.html",
+      "consultado_em": "2026-10-17T14:02:52.472967+00:00",
+      "status": "aceito",
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": {
+          "indice": "reviews/2026-10-17-cursos/capturas/cursos.html",
+          "detalhe": "reviews/2026-10-17-cursos/capturas/cau-9d641693818e10613e10ed81ffb304538b5879af.html"
+        },
+        "fonte": {
+          "source_id": "cursos_graduacao",
+          "url": "https://www.pen.uem.br/site/public/curso/9d641693818e10613e10ed81ffb304538b5879af",
+          "consultado_em": "2026-10-17T14:02:52.472967Z"
+        },
+        "curso": {
+          "nome": "Engenharia de Alimentos",
+          "campus_id": "cau",
+          "modalidade": "presencial",
+          "url_detalhe": "https://www.pen.uem.br/site/public/curso/9d641693818e10613e10ed81ffb304538b5879af",
+          "id_candidato": "cau-engenharia-de-alimentos",
+          "informacoes_academicas": [
+            {
+              "turno": "Noturno",
+              "habilitacoes": [
+                "Bacharelado"
+              ],
+              "graus_academicos": [
+                "Engenheiro de Alimentos"
+              ]
+            }
+          ]
+        },
+        "proveniencia": {
+          "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
+          "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
+          "verificado": [
+            "link no índice local",
+            "título",
+            "câmpus exibido no detalhe"
+          ],
+          "informacoes_academicas": "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML",
+          "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+          "pendente": [
+            "ID estável aprovado",
+            "interpretação de turnos, habilitações e graus como ofertas",
+            "centro e departamento",
+            "cursos da EaD",
+            "completude e condições de reutilização"
+          ]
+        }
+      }
+    },
+    {
+      "campus_id": "cau",
+      "nome": "Engenharia de Computação",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/43caef2d561852ad382805245aa19aa9cdc1c599",
+      "arquivo": "reviews/2026-10-17-cursos/capturas/cau-43caef2d561852ad382805245aa19aa9cdc1c599.html",
+      "consultado_em": "2026-10-17T14:02:53.051807+00:00",
+      "status": "aceito",
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": {
+          "indice": "reviews/2026-10-17-cursos/capturas/cursos.html",
+          "detalhe": "reviews/2026-10-17-cursos/capturas/cau-43caef2d561852ad382805245aa19aa9cdc1c599.html"
+        },
+        "fonte": {
+          "source_id": "cursos_graduacao",
+          "url": "https://www.pen.uem.br/site/public/curso/43caef2d561852ad382805245aa19aa9cdc1c599",
+          "consultado_em": "2026-10-17T14:02:53.051807Z"
+        },
+        "curso": {
+          "nome": "Engenharia de Computação",
+          "campus_id": "cau",
+          "modalidade": "presencial",
+          "url_detalhe": "https://www.pen.uem.br/site/public/curso/43caef2d561852ad382805245aa19aa9cdc1c599",
+          "id_candidato": "cau-engenharia-de-computacao",
+          "informacoes_academicas": [
+            {
+              "turno": "Integral",
+              "habilitacoes": [
+                "Bacharelado"
+              ],
+              "graus_academicos": [
+                "Engenheiro de computação"
+              ]
+            }
+          ]
+        },
+        "proveniencia": {
+          "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
+          "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
+          "verificado": [
+            "link no índice local",
+            "título",
+            "câmpus exibido no detalhe"
+          ],
+          "informacoes_academicas": "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML",
+          "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+          "pendente": [
+            "ID estável aprovado",
+            "interpretação de turnos, habilitações e graus como ofertas",
+            "centro e departamento",
+            "cursos da EaD",
+            "completude e condições de reutilização"
+          ]
+        }
+      }
+    },
+    {
+      "campus_id": "cau",
+      "nome": "Medicina Veterinária",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/f542855bdcba7ef43783150e689417f8e5406d37",
+      "arquivo": "reviews/2026-10-17-cursos/capturas/cau-f542855bdcba7ef43783150e689417f8e5406d37.html",
+      "consultado_em": "2026-10-17T14:02:53.640653+00:00",
+      "status": "aceito",
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": {
+          "indice": "reviews/2026-10-17-cursos/capturas/cursos.html",
+          "detalhe": "reviews/2026-10-17-cursos/capturas/cau-f542855bdcba7ef43783150e689417f8e5406d37.html"
+        },
+        "fonte": {
+          "source_id": "cursos_graduacao",
+          "url": "https://www.pen.uem.br/site/public/curso/f542855bdcba7ef43783150e689417f8e5406d37",
+          "consultado_em": "2026-10-17T14:02:53.640653Z"
+        },
+        "curso": {
+          "nome": "Medicina Veterinária",
+          "campus_id": "cau",
+          "modalidade": "presencial",
+          "url_detalhe": "https://www.pen.uem.br/site/public/curso/f542855bdcba7ef43783150e689417f8e5406d37",
+          "id_candidato": "cau-medicina-veterinaria",
+          "informacoes_academicas": [
+            {
+              "turno": "Integral",
+              "habilitacoes": [],
+              "graus_academicos": [
+                "Médico Veterinário"
+              ]
+            }
+          ]
+        },
+        "proveniencia": {
+          "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
+          "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
+          "verificado": [
+            "link no índice local",
+            "título",
+            "câmpus exibido no detalhe"
+          ],
+          "informacoes_academicas": "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML",
+          "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+          "pendente": [
+            "ID estável aprovado",
+            "interpretação de turnos, habilitações e graus como ofertas",
+            "centro e departamento",
+            "cursos da EaD",
+            "completude e condições de reutilização"
+          ]
+        }
+      }
+    },
+    {
+      "campus_id": "cau",
+      "nome": "Tecnologia em Alimentos",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/3136474849d7799daa54d076fe89e80f85edb326",
+      "arquivo": "reviews/2026-10-17-cursos/capturas/cau-3136474849d7799daa54d076fe89e80f85edb326.html",
+      "consultado_em": "2026-10-17T14:02:54.211864+00:00",
+      "status": "aceito",
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": {
+          "indice": "reviews/2026-10-17-cursos/capturas/cursos.html",
+          "detalhe": "reviews/2026-10-17-cursos/capturas/cau-3136474849d7799daa54d076fe89e80f85edb326.html"
+        },
+        "fonte": {
+          "source_id": "cursos_graduacao",
+          "url": "https://www.pen.uem.br/site/public/curso/3136474849d7799daa54d076fe89e80f85edb326",
+          "consultado_em": "2026-10-17T14:02:54.211864Z"
+        },
+        "curso": {
+          "nome": "Tecnologia em Alimentos",
+          "campus_id": "cau",
+          "modalidade": "presencial",
+          "url_detalhe": "https://www.pen.uem.br/site/public/curso/3136474849d7799daa54d076fe89e80f85edb326",
+          "id_candidato": "cau-tecnologia-em-alimentos",
+          "informacoes_academicas": [
+            {
+              "turno": "Noturno",
+              "habilitacoes": [
+                "Tecnólogo"
+              ],
+              "graus_academicos": [
+                "Tecnólogo em Alimentos"
+              ]
+            }
+          ]
+        },
+        "proveniencia": {
+          "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
+          "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
+          "verificado": [
+            "link no índice local",
+            "título",
+            "câmpus exibido no detalhe"
+          ],
+          "informacoes_academicas": "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML",
+          "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+          "pendente": [
+            "ID estável aprovado",
+            "interpretação de turnos, habilitações e graus como ofertas",
+            "centro e departamento",
+            "cursos da EaD",
+            "completude e condições de reutilização"
+          ]
+        }
+      }
+    },
+    {
+      "campus_id": "cau",
+      "nome": "Tecnologia em Construção Civil",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/3673b5e874bc67ec1c73c09ac6355a851e381e04",
+      "arquivo": "reviews/2026-10-17-cursos/capturas/cau-3673b5e874bc67ec1c73c09ac6355a851e381e04.html",
+      "consultado_em": "2026-10-17T14:02:54.822858+00:00",
+      "status": "aceito",
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": {
+          "indice": "reviews/2026-10-17-cursos/capturas/cursos.html",
+          "detalhe": "reviews/2026-10-17-cursos/capturas/cau-3673b5e874bc67ec1c73c09ac6355a851e381e04.html"
+        },
+        "fonte": {
+          "source_id": "cursos_graduacao",
+          "url": "https://www.pen.uem.br/site/public/curso/3673b5e874bc67ec1c73c09ac6355a851e381e04",
+          "consultado_em": "2026-10-17T14:02:54.822858Z"
+        },
+        "curso": {
+          "nome": "Tecnologia em Construção Civil",
+          "campus_id": "cau",
+          "modalidade": "presencial",
+          "url_detalhe": "https://www.pen.uem.br/site/public/curso/3673b5e874bc67ec1c73c09ac6355a851e381e04",
+          "id_candidato": "cau-tecnologia-em-construcao-civil",
+          "informacoes_academicas": [
+            {
+              "turno": "Noturno",
+              "habilitacoes": [
+                "Tecnólogo"
+              ],
+              "graus_academicos": [
+                "Tecnólogo em Construção Civil"
+              ]
+            }
+          ]
+        },
+        "proveniencia": {
+          "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
+          "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
+          "verificado": [
+            "link no índice local",
+            "título",
+            "câmpus exibido no detalhe"
+          ],
+          "informacoes_academicas": "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML",
+          "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+          "pendente": [
+            "ID estável aprovado",
+            "interpretação de turnos, habilitações e graus como ofertas",
+            "centro e departamento",
+            "cursos da EaD",
+            "completude e condições de reutilização"
+          ]
+        }
+      }
+    },
+    {
+      "campus_id": "cau",
+      "nome": "Tecnologia em Gastronomia",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/e071ea6754a5cdba3184864e2b48e9daa134817b",
+      "arquivo": "reviews/2026-10-17-cursos/capturas/cau-e071ea6754a5cdba3184864e2b48e9daa134817b.html",
+      "consultado_em": "2026-10-17T14:02:55.416129+00:00",
+      "status": "aceito",
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": {
+          "indice": "reviews/2026-10-17-cursos/capturas/cursos.html",
+          "detalhe": "reviews/2026-10-17-cursos/capturas/cau-e071ea6754a5cdba3184864e2b48e9daa134817b.html"
+        },
+        "fonte": {
+          "source_id": "cursos_graduacao",
+          "url": "https://www.pen.uem.br/site/public/curso/e071ea6754a5cdba3184864e2b48e9daa134817b",
+          "consultado_em": "2026-10-17T14:02:55.416129Z"
+        },
+        "curso": {
+          "nome": "Tecnologia em Gastronomia",
+          "campus_id": "cau",
+          "modalidade": "presencial",
+          "url_detalhe": "https://www.pen.uem.br/site/public/curso/e071ea6754a5cdba3184864e2b48e9daa134817b",
+          "id_candidato": "cau-tecnologia-em-gastronomia",
+          "informacoes_academicas": [
+            {
+              "turno": "Matutino",
+              "habilitacoes": [
+                "Tecnólogo em Gastronomia"
+              ],
+              "graus_academicos": []
+            }
+          ]
+        },
+        "proveniencia": {
+          "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
+          "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
+          "verificado": [
+            "link no índice local",
+            "título",
+            "câmpus exibido no detalhe"
+          ],
+          "informacoes_academicas": "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML",
+          "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+          "pendente": [
+            "ID estável aprovado",
+            "interpretação de turnos, habilitações e graus como ofertas",
+            "centro e departamento",
+            "cursos da EaD",
+            "completude e condições de reutilização"
+          ]
+        }
+      }
+    },
+    {
+      "campus_id": "cau",
+      "nome": "Tecnologia em Meio Ambiente",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/a5180cfbe7d6195130bef28fb542f14fa45efa56",
+      "arquivo": "reviews/2026-10-17-cursos/capturas/cau-a5180cfbe7d6195130bef28fb542f14fa45efa56.html",
+      "consultado_em": "2026-10-17T14:02:56.005327+00:00",
+      "status": "aceito",
+      "previa": {
+        "modo": "previa",
+        "publicavel": false,
+        "entrada": {
+          "indice": "reviews/2026-10-17-cursos/capturas/cursos.html",
+          "detalhe": "reviews/2026-10-17-cursos/capturas/cau-a5180cfbe7d6195130bef28fb542f14fa45efa56.html"
+        },
+        "fonte": {
+          "source_id": "cursos_graduacao",
+          "url": "https://www.pen.uem.br/site/public/curso/a5180cfbe7d6195130bef28fb542f14fa45efa56",
+          "consultado_em": "2026-10-17T14:02:56.005327Z"
+        },
+        "curso": {
+          "nome": "Tecnologia em Meio Ambiente",
+          "campus_id": "cau",
+          "modalidade": "presencial",
+          "url_detalhe": "https://www.pen.uem.br/site/public/curso/a5180cfbe7d6195130bef28fb542f14fa45efa56",
+          "id_candidato": "cau-tecnologia-em-meio-ambiente",
+          "informacoes_academicas": [
+            {
+              "turno": "Noturno",
+              "habilitacoes": [
+                "Tecnólogo"
+              ],
+              "graus_academicos": [
+                "Tecnólogo em Meio Ambiente"
+              ]
+            }
+          ]
+        },
+        "proveniencia": {
+          "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
+          "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
+          "verificado": [
+            "link no índice local",
+            "título",
+            "câmpus exibido no detalhe"
+          ],
+          "informacoes_academicas": "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML",
+          "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+          "pendente": [
+            "ID estável aprovado",
+            "interpretação de turnos, habilitações e graus como ofertas",
+            "centro e departamento",
+            "cursos da EaD",
+            "completude e condições de reutilização"
+          ]
+        }
+      }
+    }
+  ],
+  "fora_do_indice": [],
+  "proveniencia": {
+    "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+    "unidade": "uma entrada do índice por câmpus; blocos acadêmicos não são ofertas",
+    "revisao_pendente": [
+      "IDs estáveis",
+      "interpretação de ofertas",
+      "centro e departamento",
+      "EaD",
+      "completude e condições de reutilização"
+    ]
+  }
+}
