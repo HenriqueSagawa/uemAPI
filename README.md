@@ -1,6 +1,6 @@
 # uemAPI
 
-API comunitária, independente e **não oficial** para informações públicas da Universidade Estadual de Maringá. Este repositório contém a base da v0.1 Fundação. Há conferências de prévias reais de câmpus, centros e departamentos; as fontes e o snapshot de produção ainda não estão aprovados para publicação.
+API comunitária, independente e **não oficial** para informações públicas da Universidade Estadual de Maringá. Este repositório contém a base da v0.1 Fundação. Há conferências de prévias reais de câmpus, centros, departamentos e cursos presenciais; as fontes e o snapshot de produção ainda não estão aprovados para publicação.
 
 ## O que já existe
 
@@ -153,8 +153,10 @@ O [lote de 16 de outubro de 2026](reviews/2026-10-16-campi-centros/README.md) re
 
 O [lote de departamentos da mesma data](reviews/2026-10-16-departamentos/README.md) reúne 49 candidatos nas sete páginas da PLD, com 48 decisões técnicas aprovadas, uma pendente para a grafia do DEM e 15 exclusões conferidas. A completude e a atualidade das listas permanecem não verificadas.
 
-1. Revisar no PR as decisões e evidências de departamentos, incluindo as exclusões e a pendência do DEM.
-2. Aplicar o fluxo às capturas reais de cursos; resolver cobertura da EaD, vínculos e IDs estáveis de cursos.
+O [lote de cursos de 17 de outubro de 2026](reviews/2026-10-17-cursos/README.md) confere 67 detalhes do índice presencial da PEN, com 66 decisões técnicas aprovadas e uma pendente para os valores de Engenharia Agrícola. A EaD permanece fora do lote, e as chaves de revisão não são IDs permanentes da API.
+
+1. Revisar no PR as decisões e evidências de cursos; esclarecer a habilitação de Engenharia Agrícola e o nome canônico do DEM.
+2. Resolver cobertura da EaD, unidade das ofertas, vínculos e IDs estáveis de cursos.
 3. Verificar condições de reutilização das fontes e aprovar o snapshot completo antes de publicar os primeiros JSON reais.
 
 O projeto não coleta dados pessoais, conteúdos restritos ou informações que exijam autenticação.

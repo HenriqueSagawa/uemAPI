@@ -1,0 +1,944 @@
+{
+  "versao": 1,
+  "dataset": "cursos",
+  "decisoes": [
+    {
+      "tipo": "registro",
+      "id": "car|https://www.pen.uem.br/site/public/curso/7e57e246c1bb9a6a19bde73c135003e110ad48e3",
+      "impressao": "4da0e16ebd2f097bdc4b00ea03ca36d5428fee92058d8b89f3ad63949b9fc1bb",
+      "decisao": "pendente",
+      "justificativa": "Conferidos o link e o nome Engenharia Agrícola na seção do câmpus car do índice, o título e o breadcrumb do detalhe. Seção acadêmica: bloco 1: turno=Integral, 1 habilitação(ões), 1 grau(s). A fonte apresenta Habilitação: Licenciatura e Grau Acadêmico: Engenheiro Agrícola. A extração é fiel, mas a combinação precisa ser esclarecida antes de aprovação; nenhum valor foi corrigido por suposição. A decisão cobre fidelidade aos campos presentes na captura, sem aprovar IDs estáveis, interpretação de ofertas, vínculos com centro/departamento ou atualidade institucional.",
+      "evidencias": [
+        "https://www.pen.uem.br/site/public/cursos",
+        "https://www.pen.uem.br/site/public/curso/7e57e246c1bb9a6a19bde73c135003e110ad48e3",
+        "reviews/2026-10-17-cursos/capturas.json",
+        "reviews/2026-10-17-cursos/conferencia.md"
+      ],
+      "data_decisao": "2026-10-17T14:06:09.014322+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "cau|https://www.pen.uem.br/site/public/curso/2306fd6d3b09ce5866f54d562f1bd4d61ef4d310",
+      "impressao": "602d9174ed20a83318c9774650c171ec04ef1eb18b083313a6c0b546e94d2e8c",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos o link e o nome Agronomia na seção do câmpus cau do índice, o título e o breadcrumb do detalhe. Seção acadêmica: bloco 1: turno=Integral, 1 habilitação(ões), 1 grau(s). Valores de turno, habilitação e grau conferidos com os rótulos da seção inicial. A decisão cobre fidelidade aos campos presentes na captura, sem aprovar IDs estáveis, interpretação de ofertas, vínculos com centro/departamento ou atualidade institucional.",
+      "evidencias": [
+        "https://www.pen.uem.br/site/public/cursos",
+        "https://www.pen.uem.br/site/public/curso/2306fd6d3b09ce5866f54d562f1bd4d61ef4d310",
+        "reviews/2026-10-17-cursos/capturas.json",
+        "reviews/2026-10-17-cursos/conferencia.md"
+      ],
+      "data_decisao": "2026-10-17T14:06:09.014322+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "cau|https://www.pen.uem.br/site/public/curso/3136474849d7799daa54d076fe89e80f85edb326",
+      "impressao": "0f66a513d9ca6c44de37b469917a97f65276e7f915b8a6bfb1127d1aef1bd78d",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos o link e o nome Tecnologia em Alimentos na seção do câmpus cau do índice, o título e o breadcrumb do detalhe. Seção acadêmica: bloco 1: turno=Noturno, 1 habilitação(ões), 1 grau(s). Valores de turno, habilitação e grau conferidos com os rótulos da seção inicial. A decisão cobre fidelidade aos campos presentes na captura, sem aprovar IDs estáveis, interpretação de ofertas, vínculos com centro/departamento ou atualidade institucional.",
+      "evidencias": [
+        "https://www.pen.uem.br/site/public/cursos",
+        "https://www.pen.uem.br/site/public/curso/3136474849d7799daa54d076fe89e80f85edb326",
+        "reviews/2026-10-17-cursos/capturas.json",
+        "reviews/2026-10-17-cursos/conferencia.md"
+      ],
+      "data_decisao": "2026-10-17T14:06:09.014322+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "cau|https://www.pen.uem.br/site/public/curso/3673b5e874bc67ec1c73c09ac6355a851e381e04",
+      "impressao": "fadcad6523f2ddbe1644c36ed5d4f7ed290d43b30d1ec85b55edfdeab3e403d5",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos o link e o nome Tecnologia em Construção Civil na seção do câmpus cau do índice, o título e o breadcrumb do detalhe. Seção acadêmica: bloco 1: turno=Noturno, 1 habilitação(ões), 1 grau(s). Valores de turno, habilitação e grau conferidos com os rótulos da seção inicial. A decisão cobre fidelidade aos campos presentes na captura, sem aprovar IDs estáveis, interpretação de ofertas, vínculos com centro/departamento ou atualidade institucional.",
+      "evidencias": [
+        "https://www.pen.uem.br/site/public/cursos",
+        "https://www.pen.uem.br/site/public/curso/3673b5e874bc67ec1c73c09ac6355a851e381e04",
+        "reviews/2026-10-17-cursos/capturas.json",
+        "reviews/2026-10-17-cursos/conferencia.md"
+      ],
+      "data_decisao": "2026-10-17T14:06:09.014322+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "cau|https://www.pen.uem.br/site/public/curso/43caef2d561852ad382805245aa19aa9cdc1c599",
+      "impressao": "f11fcfc0e477f8e5b5ecc45adc126b551a41bed1a0e15276ccf0138926a57fea",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos o link e o nome Engenharia de Computação na seção do câmpus cau do índice, o título e o breadcrumb do detalhe. Seção acadêmica: bloco 1: turno=Integral, 1 habilitação(ões), 1 grau(s). Preservada a grafia Engenheiro de computação no campo de grau. A decisão cobre fidelidade aos campos presentes na captura, sem aprovar IDs estáveis, interpretação de ofertas, vínculos com centro/departamento ou atualidade institucional.",
+      "evidencias": [
+        "https://www.pen.uem.br/site/public/cursos",
+        "https://www.pen.uem.br/site/public/curso/43caef2d561852ad382805245aa19aa9cdc1c599",
+        "reviews/2026-10-17-cursos/capturas.json",
+        "reviews/2026-10-17-cursos/conferencia.md"
+      ],
+      "data_decisao": "2026-10-17T14:06:09.014322+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "cau|https://www.pen.uem.br/site/public/curso/502733aa2bd2cec35fc203e1c943d5bb0fb9ea85",
+      "impressao": "7334b6d720a40b7096a45122abacf44659a228360e1d4231fcea31a7bdd7c058",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos o link e o nome Engenharia Ambiental na seção do câmpus cau do índice, o título e o breadcrumb do detalhe. Seção acadêmica: bloco 1: turno=Integral, 1 habilitação(ões), 1 grau(s). Valores de turno, habilitação e grau conferidos com os rótulos da seção inicial. A decisão cobre fidelidade aos campos presentes na captura, sem aprovar IDs estáveis, interpretação de ofertas, vínculos com centro/departamento ou atualidade institucional.",
+      "evidencias": [
+        "https://www.pen.uem.br/site/public/cursos",
+        "https://www.pen.uem.br/site/public/curso/502733aa2bd2cec35fc203e1c943d5bb0fb9ea85",
+        "reviews/2026-10-17-cursos/capturas.json",
+        "reviews/2026-10-17-cursos/conferencia.md"
+      ],
+      "data_decisao": "2026-10-17T14:06:09.014322+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "cau|https://www.pen.uem.br/site/public/curso/6a7aab799e7ad63d1b1c6da013dad55a60e530c6",
+      "impressao": "9fc96cafd5f882e804155866d1a94c1126b8d83be43c663746ff0954b59e2d75",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos o link e o nome Engenharia Civil na seção do câmpus cau do índice, o título e o breadcrumb do detalhe. Seção acadêmica: bloco 1: turno=Integral, 1 habilitação(ões), 1 grau(s). Valores de turno, habilitação e grau conferidos com os rótulos da seção inicial. A decisão cobre fidelidade aos campos presentes na captura, sem aprovar IDs estáveis, interpretação de ofertas, vínculos com centro/departamento ou atualidade institucional.",
+      "evidencias": [
+        "https://www.pen.uem.br/site/public/cursos",
+        "https://www.pen.uem.br/site/public/curso/6a7aab799e7ad63d1b1c6da013dad55a60e530c6",
+        "reviews/2026-10-17-cursos/capturas.json",
+        "reviews/2026-10-17-cursos/conferencia.md"
+      ],
+      "data_decisao": "2026-10-17T14:06:09.014322+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "cau|https://www.pen.uem.br/site/public/curso/70e5bf25384d1a42edf69f9a21b1afd2706264bf",
+      "impressao": "f83237791b60491408813f512557d8b98ffe8128581b48d126bb69bf917904cd",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos o link e o nome Arquitetura e Urbanismo (CAU) na seção do câmpus cau do índice, o título e o breadcrumb do detalhe. Seção acadêmica: bloco 1: turno=Noturno, 1 habilitação(ões), 1 grau(s). Preservado o sufixo (CAU) do nome no índice e no título. Os dois-pontos fora de strong foram consumidos; a captura acadêmica terminou antes da coordenação. A decisão cobre fidelidade aos campos presentes na captura, sem aprovar IDs estáveis, interpretação de ofertas, vínculos com centro/departamento ou atualidade institucional.",
+      "evidencias": [
+        "https://www.pen.uem.br/site/public/cursos",
+        "https://www.pen.uem.br/site/public/curso/70e5bf25384d1a42edf69f9a21b1afd2706264bf",
+        "reviews/2026-10-17-cursos/capturas.json",
+        "reviews/2026-10-17-cursos/conferencia.md"
+      ],
+      "data_decisao": "2026-10-17T14:06:09.014322+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "cau|https://www.pen.uem.br/site/public/curso/9d641693818e10613e10ed81ffb304538b5879af",
+      "impressao": "57ed5ba9fe1eb3a76e62de833f578e752742a9c2d64091f6f6658f7f64f2a275",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos o link e o nome Engenharia de Alimentos na seção do câmpus cau do índice, o título e o breadcrumb do detalhe. Seção acadêmica: bloco 1: turno=Noturno, 1 habilitação(ões), 1 grau(s). Valores de turno, habilitação e grau conferidos com os rótulos da seção inicial. A decisão cobre fidelidade aos campos presentes na captura, sem aprovar IDs estáveis, interpretação de ofertas, vínculos com centro/departamento ou atualidade institucional.",
+      "evidencias": [
+        "https://www.pen.uem.br/site/public/cursos",
+        "https://www.pen.uem.br/site/public/curso/9d641693818e10613e10ed81ffb304538b5879af",
+        "reviews/2026-10-17-cursos/capturas.json",
+        "reviews/2026-10-17-cursos/conferencia.md"
+      ],
+      "data_decisao": "2026-10-17T14:06:09.014322+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "cau|https://www.pen.uem.br/site/public/curso/a5180cfbe7d6195130bef28fb542f14fa45efa56",
+      "impressao": "92b32472fc3d8e68329598288a4bac191ac66fa8c9b909f7b7fa797da8de04b9",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos o link e o nome Tecnologia em Meio Ambiente na seção do câmpus cau do índice, o título e o breadcrumb do detalhe. Seção acadêmica: bloco 1: turno=Noturno, 1 habilitação(ões), 1 grau(s). Valores de turno, habilitação e grau conferidos com os rótulos da seção inicial. A decisão cobre fidelidade aos campos presentes na captura, sem aprovar IDs estáveis, interpretação de ofertas, vínculos com centro/departamento ou atualidade institucional.",
+      "evidencias": [
+        "https://www.pen.uem.br/site/public/cursos",
+        "https://www.pen.uem.br/site/public/curso/a5180cfbe7d6195130bef28fb542f14fa45efa56",
+        "reviews/2026-10-17-cursos/capturas.json",
+        "reviews/2026-10-17-cursos/conferencia.md"
+      ],
+      "data_decisao": "2026-10-17T14:06:09.014322+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "cau|https://www.pen.uem.br/site/public/curso/e071ea6754a5cdba3184864e2b48e9daa134817b",
+      "impressao": "09c947a7a79cba4ec933b5f87fd3709496dae4cd4b2ffae58c70fb60970ef690",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos o link e o nome Tecnologia em Gastronomia na seção do câmpus cau do índice, o título e o breadcrumb do detalhe. Seção acadêmica: bloco 1: turno=Matutino, 1 habilitação(ões), 0 grau(s). Sem grau explícito na seção conferida; graus_academicos permanece vazio e não foi preenchido a partir da habilitação. A decisão cobre fidelidade aos campos presentes na captura, sem aprovar IDs estáveis, interpretação de ofertas, vínculos com centro/departamento ou atualidade institucional.",
+      "evidencias": [
+        "https://www.pen.uem.br/site/public/cursos",
+        "https://www.pen.uem.br/site/public/curso/e071ea6754a5cdba3184864e2b48e9daa134817b",
+        "reviews/2026-10-17-cursos/capturas.json",
+        "reviews/2026-10-17-cursos/conferencia.md"
+      ],
+      "data_decisao": "2026-10-17T14:06:09.014322+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "cau|https://www.pen.uem.br/site/public/curso/f542855bdcba7ef43783150e689417f8e5406d37",
+      "impressao": "7baaaf8c4865f543bd659aecb745751b427876b026db594cbdf9eda748eb1ef3",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos o link e o nome Medicina Veterinária na seção do câmpus cau do índice, o título e o breadcrumb do detalhe. Seção acadêmica: bloco 1: turno=Integral, 0 habilitação(ões), 1 grau(s). Sem rótulo de habilitação na seção conferida; lista vazia preservada, sem deduzir um valor do grau. A decisão cobre fidelidade aos campos presentes na captura, sem aprovar IDs estáveis, interpretação de ofertas, vínculos com centro/departamento ou atualidade institucional.",
+      "evidencias": [
+        "https://www.pen.uem.br/site/public/cursos",
+        "https://www.pen.uem.br/site/public/curso/f542855bdcba7ef43783150e689417f8e5406d37",
+        "reviews/2026-10-17-cursos/capturas.json",
+        "reviews/2026-10-17-cursos/conferencia.md"
+      ],
+      "data_decisao": "2026-10-17T14:06:09.014322+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "crc|https://www.pen.uem.br/site/public/curso/1109473bb540238fe3211cbab0bb495018363090",
+      "impressao": "990ec458b325f8fe7db951f970a96d9aa3d7ec5c1d970fd6befb385501084ffe",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos o link e o nome Pedagogia na seção do câmpus crc do índice, o título e o breadcrumb do detalhe. Seção acadêmica: bloco 1: turno=Noturno, 1 habilitação(ões), 1 grau(s). Valores de turno, habilitação e grau conferidos com os rótulos da seção inicial. A decisão cobre fidelidade aos campos presentes na captura, sem aprovar IDs estáveis, interpretação de ofertas, vínculos com centro/departamento ou atualidade institucional.",
+      "evidencias": [
+        "https://www.pen.uem.br/site/public/cursos",
+        "https://www.pen.uem.br/site/public/curso/1109473bb540238fe3211cbab0bb495018363090",
+        "reviews/2026-10-17-cursos/capturas.json",
+        "reviews/2026-10-17-cursos/conferencia.md"
+      ],
+      "data_decisao": "2026-10-17T14:06:09.014322+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "crc|https://www.pen.uem.br/site/public/curso/12a7f4520fd886646eb0608605d9fe852742e108",
+      "impressao": "1cf7c3fc84c535a24656e4f06766e3e3423bed93e907dd73e9eae026e29e173f",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos o link e o nome Moda na seção do câmpus crc do índice, o título e o breadcrumb do detalhe. Seção acadêmica: bloco 1: turno=Matutino, 1 habilitação(ões), 1 grau(s). Preservada a habilitação completa em modelagem e desenvolvimento de produto. A decisão cobre fidelidade aos campos presentes na captura, sem aprovar IDs estáveis, interpretação de ofertas, vínculos com centro/departamento ou atualidade institucional.",
+      "evidencias": [
+        "https://www.pen.uem.br/site/public/cursos",
+        "https://www.pen.uem.br/site/public/curso/12a7f4520fd886646eb0608605d9fe852742e108",
+        "reviews/2026-10-17-cursos/capturas.json",
+        "reviews/2026-10-17-cursos/conferencia.md"
+      ],
+      "data_decisao": "2026-10-17T14:06:09.014322+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "crc|https://www.pen.uem.br/site/public/curso/7db3b1d39a16b27ae9d227ed395d6156bfb8f953",
+      "impressao": "29fedf9df15b8b2870b61d9c74af2737ca1502003652dcdc6796c53dab05f08d",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos o link e o nome Design na seção do câmpus crc do índice, o título e o breadcrumb do detalhe. Seção acadêmica: bloco 1: turno=Integral, 1 habilitação(ões), 1 grau(s). Valores de turno, habilitação e grau conferidos com os rótulos da seção inicial. A decisão cobre fidelidade aos campos presentes na captura, sem aprovar IDs estáveis, interpretação de ofertas, vínculos com centro/departamento ou atualidade institucional.",
+      "evidencias": [
+        "https://www.pen.uem.br/site/public/cursos",
+        "https://www.pen.uem.br/site/public/curso/7db3b1d39a16b27ae9d227ed395d6156bfb8f953",
+        "reviews/2026-10-17-cursos/capturas.json",
+        "reviews/2026-10-17-cursos/conferencia.md"
+      ],
+      "data_decisao": "2026-10-17T14:06:09.014322+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "crc|https://www.pen.uem.br/site/public/curso/aeadaf59937288022995e17ad2cbd6141a15859d",
+      "impressao": "58c790f3f82bb216a23191edf4ec2606087d38f7118d7d9960f28be055889baa",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos o link e o nome Ciências Contábeis na seção do câmpus crc do índice, o título e o breadcrumb do detalhe. Seção acadêmica: bloco 1: turno=Noturno, 1 habilitação(ões), 1 grau(s). Valores de turno, habilitação e grau conferidos com os rótulos da seção inicial. A decisão cobre fidelidade aos campos presentes na captura, sem aprovar IDs estáveis, interpretação de ofertas, vínculos com centro/departamento ou atualidade institucional.",
+      "evidencias": [
+        "https://www.pen.uem.br/site/public/cursos",
+        "https://www.pen.uem.br/site/public/curso/aeadaf59937288022995e17ad2cbd6141a15859d",
+        "reviews/2026-10-17-cursos/capturas.json",
+        "reviews/2026-10-17-cursos/conferencia.md"
+      ],
+      "data_decisao": "2026-10-17T14:06:09.014322+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "crg|https://www.pen.uem.br/site/public/curso/040f45414df3ff3edb75520eafe9cac6d737667d",
+      "impressao": "91846d8b5fdbc54c42c09126023cf959b70c6abbfaeadcb31e68cf3430667594",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos o link e o nome Engenharia Têxtil na seção do câmpus crg do índice, o título e o breadcrumb do detalhe. Seção acadêmica: bloco 1: turno=Noturno, 1 habilitação(ões), 1 grau(s). Valores de turno, habilitação e grau conferidos com os rótulos da seção inicial. A decisão cobre fidelidade aos campos presentes na captura, sem aprovar IDs estáveis, interpretação de ofertas, vínculos com centro/departamento ou atualidade institucional.",
+      "evidencias": [
+        "https://www.pen.uem.br/site/public/cursos",
+        "https://www.pen.uem.br/site/public/curso/040f45414df3ff3edb75520eafe9cac6d737667d",
+        "reviews/2026-10-17-cursos/capturas.json",
+        "reviews/2026-10-17-cursos/conferencia.md"
+      ],
+      "data_decisao": "2026-10-17T14:06:09.014322+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "crg|https://www.pen.uem.br/site/public/curso/36df9dc33c5f756f7890dc8b1f7c459e872dd2d8",
+      "impressao": "3bfa06b492036097dba93a4d65e2d8217087ff26faa3f7afd0dcacb6d622d86a",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos o link e o nome Engenharia de Produção na seção do câmpus crg do índice, o título e o breadcrumb do detalhe. Seção acadêmica: bloco 1: turno=Noturno, 1 habilitação(ões), 1 grau(s). Valores de turno, habilitação e grau conferidos com os rótulos da seção inicial. A decisão cobre fidelidade aos campos presentes na captura, sem aprovar IDs estáveis, interpretação de ofertas, vínculos com centro/departamento ou atualidade institucional.",
+      "evidencias": [
+        "https://www.pen.uem.br/site/public/cursos",
+        "https://www.pen.uem.br/site/public/curso/36df9dc33c5f756f7890dc8b1f7c459e872dd2d8",
+        "reviews/2026-10-17-cursos/capturas.json",
+        "reviews/2026-10-17-cursos/conferencia.md"
+      ],
+      "data_decisao": "2026-10-17T14:06:09.014322+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "crg|https://www.pen.uem.br/site/public/curso/8346c99c55ab163bfc9188a115856c546a320417",
+      "impressao": "c225e11d74bfa2d713908ae8fa09cf58c87bea68fa3f1462b9c2c612dd91fdc0",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos o link e o nome Física na seção do câmpus crg do índice, o título e o breadcrumb do detalhe. Seção acadêmica: bloco 1: turno=Noturno, 1 habilitação(ões), 1 grau(s). Valores de turno, habilitação e grau conferidos com os rótulos da seção inicial. A decisão cobre fidelidade aos campos presentes na captura, sem aprovar IDs estáveis, interpretação de ofertas, vínculos com centro/departamento ou atualidade institucional.",
+      "evidencias": [
+        "https://www.pen.uem.br/site/public/cursos",
+        "https://www.pen.uem.br/site/public/curso/8346c99c55ab163bfc9188a115856c546a320417",
+        "reviews/2026-10-17-cursos/capturas.json",
+        "reviews/2026-10-17-cursos/conferencia.md"
+      ],
+      "data_decisao": "2026-10-17T14:06:09.014322+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "crg|https://www.pen.uem.br/site/public/curso/cf86ec0adf1d7e3f5fdff465b003fc3110a31bf2",
+      "impressao": "f6f918339a8f916c683b45ab60efaa341c1060be049fccac3d0bf10579101c5f",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos o link e o nome Física Médica na seção do câmpus crg do índice, o título e o breadcrumb do detalhe. Seção acadêmica: bloco 1: turno=Vespertino e Noturno, 1 habilitação(ões), 1 grau(s). Vespertino e Noturno foi preservado como um único texto de turno. A decisão cobre fidelidade aos campos presentes na captura, sem aprovar IDs estáveis, interpretação de ofertas, vínculos com centro/departamento ou atualidade institucional.",
+      "evidencias": [
+        "https://www.pen.uem.br/site/public/cursos",
+        "https://www.pen.uem.br/site/public/curso/cf86ec0adf1d7e3f5fdff465b003fc3110a31bf2",
+        "reviews/2026-10-17-cursos/capturas.json",
+        "reviews/2026-10-17-cursos/conferencia.md"
+      ],
+      "data_decisao": "2026-10-17T14:06:09.014322+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "crv|https://www.pen.uem.br/site/public/curso/6548081f2b5226e6b338b5183cc02209a9e309f8",
+      "impressao": "f9a0a19765c31825b6ee12beb710a51b562c88c829b75578813385b4d8a0c520",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos o link e o nome Serviço Social na seção do câmpus crv do índice, o título e o breadcrumb do detalhe. Seção acadêmica: bloco 1: turno=Noturno, 1 habilitação(ões), 1 grau(s). Valores de turno, habilitação e grau conferidos com os rótulos da seção inicial. A decisão cobre fidelidade aos campos presentes na captura, sem aprovar IDs estáveis, interpretação de ofertas, vínculos com centro/departamento ou atualidade institucional.",
+      "evidencias": [
+        "https://www.pen.uem.br/site/public/cursos",
+        "https://www.pen.uem.br/site/public/curso/6548081f2b5226e6b338b5183cc02209a9e309f8",
+        "reviews/2026-10-17-cursos/capturas.json",
+        "reviews/2026-10-17-cursos/conferencia.md"
+      ],
+      "data_decisao": "2026-10-17T14:06:09.014322+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "crv|https://www.pen.uem.br/site/public/curso/960b256c8c7e809d45173618739ebf2a3f427e8a",
+      "impressao": "306a498ac52c862979db5d97b4c0895bc65d9ab8c77ac21577069e247431a154",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos o link e o nome Educação Física na seção do câmpus crv do índice, o título e o breadcrumb do detalhe. Seção acadêmica: bloco 1: turno=Noturno, 1 habilitação(ões), 1 grau(s). Mantidas as duas formações no texto de habilitação e grau, sem desdobrá-las em ofertas. A decisão cobre fidelidade aos campos presentes na captura, sem aprovar IDs estáveis, interpretação de ofertas, vínculos com centro/departamento ou atualidade institucional.",
+      "evidencias": [
+        "https://www.pen.uem.br/site/public/cursos",
+        "https://www.pen.uem.br/site/public/curso/960b256c8c7e809d45173618739ebf2a3f427e8a",
+        "reviews/2026-10-17-cursos/capturas.json",
+        "reviews/2026-10-17-cursos/conferencia.md"
+      ],
+      "data_decisao": "2026-10-17T14:06:09.014322+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "crv|https://www.pen.uem.br/site/public/curso/9fc4d01378376f9de1f31f1c3f6dae2ad7a9f88c",
+      "impressao": "9fca997328eff34707cd41c9ff4e52ede74a2c131b46593fc65e991fb83611ad",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos o link e o nome História na seção do câmpus crv do índice, o título e o breadcrumb do detalhe. Seção acadêmica: bloco 1: turno=Noturno, 1 habilitação(ões), 1 grau(s). Valores de turno, habilitação e grau conferidos com os rótulos da seção inicial. A decisão cobre fidelidade aos campos presentes na captura, sem aprovar IDs estáveis, interpretação de ofertas, vínculos com centro/departamento ou atualidade institucional.",
+      "evidencias": [
+        "https://www.pen.uem.br/site/public/cursos",
+        "https://www.pen.uem.br/site/public/curso/9fc4d01378376f9de1f31f1c3f6dae2ad7a9f88c",
+        "reviews/2026-10-17-cursos/capturas.json",
+        "reviews/2026-10-17-cursos/conferencia.md"
+      ],
+      "data_decisao": "2026-10-17T14:06:09.014322+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "sede|https://www.pen.uem.br/site/public/curso/036f863d951541fb0f3a74b69bbfe24f99eae65d",
+      "impressao": "0b67f0d64fb9ebf4b0bd40ad989136d5fb6288224314dc2add87bab49d855b7a",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos o link e o nome Ciência da Computação na seção do câmpus sede do índice, o título e o breadcrumb do detalhe. Seção acadêmica: bloco 1: turno=Integral, 1 habilitação(ões), 1 grau(s). Valores de turno, habilitação e grau conferidos com os rótulos da seção inicial. A decisão cobre fidelidade aos campos presentes na captura, sem aprovar IDs estáveis, interpretação de ofertas, vínculos com centro/departamento ou atualidade institucional.",
+      "evidencias": [
+        "https://www.pen.uem.br/site/public/cursos",
+        "https://www.pen.uem.br/site/public/curso/036f863d951541fb0f3a74b69bbfe24f99eae65d",
+        "reviews/2026-10-17-cursos/capturas.json",
+        "reviews/2026-10-17-cursos/conferencia.md"
+      ],
+      "data_decisao": "2026-10-17T14:06:09.014322+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "sede|https://www.pen.uem.br/site/public/curso/07144c884de58a0d5ce0cb1e89b60704a68b9104",
+      "impressao": "e7aa805c4b8839ddb7c3de20e277958ad477e78468a06f0c91f2d16688f7a7b8",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos o link e o nome Bioquímica na seção do câmpus sede do índice, o título e o breadcrumb do detalhe. Seção acadêmica: bloco 1: turno=Integral, 1 habilitação(ões), 1 grau(s). Valores de turno, habilitação e grau conferidos com os rótulos da seção inicial. A decisão cobre fidelidade aos campos presentes na captura, sem aprovar IDs estáveis, interpretação de ofertas, vínculos com centro/departamento ou atualidade institucional.",
+      "evidencias": [
+        "https://www.pen.uem.br/site/public/cursos",
+        "https://www.pen.uem.br/site/public/curso/07144c884de58a0d5ce0cb1e89b60704a68b9104",
+        "reviews/2026-10-17-cursos/capturas.json",
+        "reviews/2026-10-17-cursos/conferencia.md"
+      ],
+      "data_decisao": "2026-10-17T14:06:09.014322+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "sede|https://www.pen.uem.br/site/public/curso/17bfb4afc121bb2a7f0d8a2c7b80e89e291290fb",
+      "impressao": "39d208716bd213befb21fcfb8cbe97c2ac998b4e53be15af28c70d749c8bfb77",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos o link e o nome Ciências Sociais na seção do câmpus sede do índice, o título e o breadcrumb do detalhe. Seção acadêmica: bloco 1: turno=Noturno, 1 habilitação(ões), 1 grau(s). Preservadas as alternativas e/ou na habilitação e no grau, sem desdobrar ofertas. A decisão cobre fidelidade aos campos presentes na captura, sem aprovar IDs estáveis, interpretação de ofertas, vínculos com centro/departamento ou atualidade institucional.",
+      "evidencias": [
+        "https://www.pen.uem.br/site/public/cursos",
+        "https://www.pen.uem.br/site/public/curso/17bfb4afc121bb2a7f0d8a2c7b80e89e291290fb",
+        "reviews/2026-10-17-cursos/capturas.json",
+        "reviews/2026-10-17-cursos/conferencia.md"
+      ],
+      "data_decisao": "2026-10-17T14:06:09.014322+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "sede|https://www.pen.uem.br/site/public/curso/1b0eb399801d4d24fb064045ab225191932e5449",
+      "impressao": "724f1ff6051c9ba2c4292071d79c27cad655588319214dcf05c0fccecea2e8e9",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos o link e o nome Farmácia na seção do câmpus sede do índice, o título e o breadcrumb do detalhe. Seção acadêmica: bloco 1: turno=Integral, 1 habilitação(ões), 1 grau(s). Valores de turno, habilitação e grau conferidos com os rótulos da seção inicial. A decisão cobre fidelidade aos campos presentes na captura, sem aprovar IDs estáveis, interpretação de ofertas, vínculos com centro/departamento ou atualidade institucional.",
+      "evidencias": [
+        "https://www.pen.uem.br/site/public/cursos",
+        "https://www.pen.uem.br/site/public/curso/1b0eb399801d4d24fb064045ab225191932e5449",
+        "reviews/2026-10-17-cursos/capturas.json",
+        "reviews/2026-10-17-cursos/conferencia.md"
+      ],
+      "data_decisao": "2026-10-17T14:06:09.014322+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "sede|https://www.pen.uem.br/site/public/curso/1b77ae89ab3cecbc6265ae9650a50856e8efdd55",
+      "impressao": "3e8347e6e07372417c08c0ecd78f2051345453b89a6421cc98043ef4cb13a3fc",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos o link e o nome Engenharia de Alimentos na seção do câmpus sede do índice, o título e o breadcrumb do detalhe. Seção acadêmica: bloco 1: turno=Integral, 1 habilitação(ões), 1 grau(s). Valores de turno, habilitação e grau conferidos com os rótulos da seção inicial. A decisão cobre fidelidade aos campos presentes na captura, sem aprovar IDs estáveis, interpretação de ofertas, vínculos com centro/departamento ou atualidade institucional.",
+      "evidencias": [
+        "https://www.pen.uem.br/site/public/cursos",
+        "https://www.pen.uem.br/site/public/curso/1b77ae89ab3cecbc6265ae9650a50856e8efdd55",
+        "reviews/2026-10-17-cursos/capturas.json",
+        "reviews/2026-10-17-cursos/conferencia.md"
+      ],
+      "data_decisao": "2026-10-17T14:06:09.014322+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "sede|https://www.pen.uem.br/site/public/curso/1c4e7e505f3137fa180f0e5580c8a129737f1043",
+      "impressao": "e45d879deb39f37471e4a202dfff16ed6d43f9d095480575dcd4f7d9c9b6e6d2",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos o link e o nome Artes Visuais na seção do câmpus sede do índice, o título e o breadcrumb do detalhe. Seção acadêmica: bloco 1: turno=Vespertino, 1 habilitação(ões), 1 grau(s). Valores de turno, habilitação e grau conferidos com os rótulos da seção inicial. A decisão cobre fidelidade aos campos presentes na captura, sem aprovar IDs estáveis, interpretação de ofertas, vínculos com centro/departamento ou atualidade institucional.",
+      "evidencias": [
+        "https://www.pen.uem.br/site/public/cursos",
+        "https://www.pen.uem.br/site/public/curso/1c4e7e505f3137fa180f0e5580c8a129737f1043",
+        "reviews/2026-10-17-cursos/capturas.json",
+        "reviews/2026-10-17-cursos/conferencia.md"
+      ],
+      "data_decisao": "2026-10-17T14:06:09.014322+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "sede|https://www.pen.uem.br/site/public/curso/22523083f7a79c12ef6fdd3045a3ee87dec80de6",
+      "impressao": "cf179179fe701c2633161b4c8901f37bb69c16cbd095c039f488b3fb3cf27cdd",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos o link e o nome Biotecnologia na seção do câmpus sede do índice, o título e o breadcrumb do detalhe. Seção acadêmica: bloco 1: turno=Noturno, 1 habilitação(ões), 1 grau(s). Valores de turno, habilitação e grau conferidos com os rótulos da seção inicial. A decisão cobre fidelidade aos campos presentes na captura, sem aprovar IDs estáveis, interpretação de ofertas, vínculos com centro/departamento ou atualidade institucional.",
+      "evidencias": [
+        "https://www.pen.uem.br/site/public/cursos",
+        "https://www.pen.uem.br/site/public/curso/22523083f7a79c12ef6fdd3045a3ee87dec80de6",
+        "reviews/2026-10-17-cursos/capturas.json",
+        "reviews/2026-10-17-cursos/conferencia.md"
+      ],
+      "data_decisao": "2026-10-17T14:06:09.014322+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "sede|https://www.pen.uem.br/site/public/curso/3921879996d45763607d78a5a1107e0afbe77cc2",
+      "impressao": "1f12dd540437b3072e6ced2cd2a547078869f79d6a789d1e56182a43e9183095",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos o link e o nome Enfermagem na seção do câmpus sede do índice, o título e o breadcrumb do detalhe. Seção acadêmica: bloco 1: turno=Integral, 1 habilitação(ões), 1 grau(s). Valores de turno, habilitação e grau conferidos com os rótulos da seção inicial. A decisão cobre fidelidade aos campos presentes na captura, sem aprovar IDs estáveis, interpretação de ofertas, vínculos com centro/departamento ou atualidade institucional.",
+      "evidencias": [
+        "https://www.pen.uem.br/site/public/cursos",
+        "https://www.pen.uem.br/site/public/curso/3921879996d45763607d78a5a1107e0afbe77cc2",
+        "reviews/2026-10-17-cursos/capturas.json",
+        "reviews/2026-10-17-cursos/conferencia.md"
+      ],
+      "data_decisao": "2026-10-17T14:06:09.014322+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "sede|https://www.pen.uem.br/site/public/curso/4615bb2ede074db880b90837bf74ebcd38105268",
+      "impressao": "65e760945b22ced587927f3a78b611355b3cfd21bb120ec36eac8fa3dead40ae",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos o link e o nome Estatística na seção do câmpus sede do índice, o título e o breadcrumb do detalhe. Seção acadêmica: bloco 1: turno=Integral, 1 habilitação(ões), 1 grau(s). Preservados Não se aplica como habilitação e Bacharelado como grau, nos campos em que a página os apresenta. A decisão cobre fidelidade aos campos presentes na captura, sem aprovar IDs estáveis, interpretação de ofertas, vínculos com centro/departamento ou atualidade institucional.",
+      "evidencias": [
+        "https://www.pen.uem.br/site/public/cursos",
+        "https://www.pen.uem.br/site/public/curso/4615bb2ede074db880b90837bf74ebcd38105268",
+        "reviews/2026-10-17-cursos/capturas.json",
+        "reviews/2026-10-17-cursos/conferencia.md"
+      ],
+      "data_decisao": "2026-10-17T14:06:09.014322+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "sede|https://www.pen.uem.br/site/public/curso/49e8d300892d71c2f5c276f4d30e1c94c589ea35",
+      "impressao": "a75980b9a4c5d773c15e64556ab450a1b08f54cede11a106a1946c1411bc4018",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos o link e o nome Engenharia Química na seção do câmpus sede do índice, o título e o breadcrumb do detalhe. Seção acadêmica: bloco 1: turno=Integral, 1 habilitação(ões), 1 grau(s). Valores de turno, habilitação e grau conferidos com os rótulos da seção inicial. A decisão cobre fidelidade aos campos presentes na captura, sem aprovar IDs estáveis, interpretação de ofertas, vínculos com centro/departamento ou atualidade institucional.",
+      "evidencias": [
+        "https://www.pen.uem.br/site/public/cursos",
+        "https://www.pen.uem.br/site/public/curso/49e8d300892d71c2f5c276f4d30e1c94c589ea35",
+        "reviews/2026-10-17-cursos/capturas.json",
+        "reviews/2026-10-17-cursos/conferencia.md"
+      ],
+      "data_decisao": "2026-10-17T14:06:09.014322+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "sede|https://www.pen.uem.br/site/public/curso/519a2cb9db78185f88cf29cc185d33b827c22434",
+      "impressao": "4d7b0b4a01651750e459e6e27f5807e3d0dfd4d72b27095ac8023296af965e2d",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos o link e o nome Direito na seção do câmpus sede do índice, o título e o breadcrumb do detalhe. Seção acadêmica: bloco 1: turno=Matutino ou Noturno, 1 habilitação(ões), 1 grau(s). Valores de turno, habilitação e grau conferidos com os rótulos da seção inicial. A decisão cobre fidelidade aos campos presentes na captura, sem aprovar IDs estáveis, interpretação de ofertas, vínculos com centro/departamento ou atualidade institucional.",
+      "evidencias": [
+        "https://www.pen.uem.br/site/public/cursos",
+        "https://www.pen.uem.br/site/public/curso/519a2cb9db78185f88cf29cc185d33b827c22434",
+        "reviews/2026-10-17-cursos/capturas.json",
+        "reviews/2026-10-17-cursos/conferencia.md"
+      ],
+      "data_decisao": "2026-10-17T14:06:09.014322+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "sede|https://www.pen.uem.br/site/public/curso/56a2c1f3b7ca46811593de059fecdcc22a95f83c",
+      "impressao": "71da6679734cbdb03b0d3f7cd647368254b71acb26891e5b6f2b2ed552626dab",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos o link e o nome Zootecnia na seção do câmpus sede do índice, o título e o breadcrumb do detalhe. Seção acadêmica: bloco 1: turno=Integral, 0 habilitação(ões), 1 grau(s). Sem rótulo de habilitação na seção conferida; lista vazia preservada, sem inferir outro valor do grau Zootecnista. A decisão cobre fidelidade aos campos presentes na captura, sem aprovar IDs estáveis, interpretação de ofertas, vínculos com centro/departamento ou atualidade institucional.",
+      "evidencias": [
+        "https://www.pen.uem.br/site/public/cursos",
+        "https://www.pen.uem.br/site/public/curso/56a2c1f3b7ca46811593de059fecdcc22a95f83c",
+        "reviews/2026-10-17-cursos/capturas.json",
+        "reviews/2026-10-17-cursos/conferencia.md"
+      ],
+      "data_decisao": "2026-10-17T14:06:09.014322+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "sede|https://www.pen.uem.br/site/public/curso/68e1e85d77ef7308b6b5ac9c2b7ded5c31fb38fb",
+      "impressao": "8e724cbc3c9c8bc106469f2aa1f51ca26b10a52bab298964ea8776c664da68d8",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos o link e o nome Engenharia de Produção na seção do câmpus sede do índice, o título e o breadcrumb do detalhe. Seção acadêmica: bloco 1: turno=Integral, 1 habilitação(ões), 1 grau(s). Valores de turno, habilitação e grau conferidos com os rótulos da seção inicial. A decisão cobre fidelidade aos campos presentes na captura, sem aprovar IDs estáveis, interpretação de ofertas, vínculos com centro/departamento ou atualidade institucional.",
+      "evidencias": [
+        "https://www.pen.uem.br/site/public/cursos",
+        "https://www.pen.uem.br/site/public/curso/68e1e85d77ef7308b6b5ac9c2b7ded5c31fb38fb",
+        "reviews/2026-10-17-cursos/capturas.json",
+        "reviews/2026-10-17-cursos/conferencia.md"
+      ],
+      "data_decisao": "2026-10-17T14:06:09.014322+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "sede|https://www.pen.uem.br/site/public/curso/7655d392b2a210827aeb9e9694de6a297f1e5885",
+      "impressao": "f4ce10024b49d863c9ca26bb59e6fea2015534359c7e137fc6444d65063dbe82",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos o link e o nome Nutrição na seção do câmpus sede do índice, o título e o breadcrumb do detalhe. Seção acadêmica: bloco 1: turno=Noturno, 1 habilitação(ões), 1 grau(s). Preservado Nutricionista no campo de habilitação, tal como a página apresenta; sem normalização para outro termo. A decisão cobre fidelidade aos campos presentes na captura, sem aprovar IDs estáveis, interpretação de ofertas, vínculos com centro/departamento ou atualidade institucional.",
+      "evidencias": [
+        "https://www.pen.uem.br/site/public/cursos",
+        "https://www.pen.uem.br/site/public/curso/7655d392b2a210827aeb9e9694de6a297f1e5885",
+        "reviews/2026-10-17-cursos/capturas.json",
+        "reviews/2026-10-17-cursos/conferencia.md"
+      ],
+      "data_decisao": "2026-10-17T14:06:09.014322+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "sede|https://www.pen.uem.br/site/public/curso/76b47ff84354ec3e62f4fe12bd46b85f6e0bd350",
+      "impressao": "5a0e8a04b6fd71a61db1146b1499d92b82da2af79db5dfa5fdce5b325c30e696",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos o link e o nome Geografia na seção do câmpus sede do índice, o título e o breadcrumb do detalhe. Seção acadêmica: bloco 1: turno=Matutino ou Noturno, 1 habilitação(ões), 1 grau(s). Preservadas as alternativas e/ou da habilitação e do grau, sem escolher uma combinação. A decisão cobre fidelidade aos campos presentes na captura, sem aprovar IDs estáveis, interpretação de ofertas, vínculos com centro/departamento ou atualidade institucional.",
+      "evidencias": [
+        "https://www.pen.uem.br/site/public/cursos",
+        "https://www.pen.uem.br/site/public/curso/76b47ff84354ec3e62f4fe12bd46b85f6e0bd350",
+        "reviews/2026-10-17-cursos/capturas.json",
+        "reviews/2026-10-17-cursos/conferencia.md"
+      ],
+      "data_decisao": "2026-10-17T14:06:09.014322+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "sede|https://www.pen.uem.br/site/public/curso/79b513cb43a03e85d492f06487be472692ed3ef9",
+      "impressao": "eaef04f6f13f09a572b5f168410c3325f31aeb730ff9b77c5e6ba0d44ff515db",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos o link e o nome Engenharia Elétrica na seção do câmpus sede do índice, o título e o breadcrumb do detalhe. Seção acadêmica: bloco 1: turno=Integral, 1 habilitação(ões), 1 grau(s). Valores de turno, habilitação e grau conferidos com os rótulos da seção inicial. A decisão cobre fidelidade aos campos presentes na captura, sem aprovar IDs estáveis, interpretação de ofertas, vínculos com centro/departamento ou atualidade institucional.",
+      "evidencias": [
+        "https://www.pen.uem.br/site/public/cursos",
+        "https://www.pen.uem.br/site/public/curso/79b513cb43a03e85d492f06487be472692ed3ef9",
+        "reviews/2026-10-17-cursos/capturas.json",
+        "reviews/2026-10-17-cursos/conferencia.md"
+      ],
+      "data_decisao": "2026-10-17T14:06:09.014322+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "sede|https://www.pen.uem.br/site/public/curso/8ccbdb7427f60db26279a115d613303966b5533e",
+      "impressao": "c68014f1a9aa5cab1b796b366a29b72d67398096bdedb8262433d71dcc8b3bc7",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos o link e o nome História na seção do câmpus sede do índice, o título e o breadcrumb do detalhe. Seção acadêmica: bloco 1: turno=Matutino ou Noturno, 1 habilitação(ões), 1 grau(s). Valores de turno, habilitação e grau conferidos com os rótulos da seção inicial. A decisão cobre fidelidade aos campos presentes na captura, sem aprovar IDs estáveis, interpretação de ofertas, vínculos com centro/departamento ou atualidade institucional.",
+      "evidencias": [
+        "https://www.pen.uem.br/site/public/cursos",
+        "https://www.pen.uem.br/site/public/curso/8ccbdb7427f60db26279a115d613303966b5533e",
+        "reviews/2026-10-17-cursos/capturas.json",
+        "reviews/2026-10-17-cursos/conferencia.md"
+      ],
+      "data_decisao": "2026-10-17T14:06:09.014322+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "sede|https://www.pen.uem.br/site/public/curso/9de1325b805833842edf30b8d6b14b7a46914bff",
+      "impressao": "6f148ce904d7cfe1931dfc54d257c59bb215140504c8d1649ae66a4a4c4929fe",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos o link e o nome Artes Cênicas na seção do câmpus sede do índice, o título e o breadcrumb do detalhe. Seção acadêmica: bloco 1: turno=Matutino, 1 habilitação(ões), 1 grau(s). Valores de turno, habilitação e grau conferidos com os rótulos da seção inicial. A decisão cobre fidelidade aos campos presentes na captura, sem aprovar IDs estáveis, interpretação de ofertas, vínculos com centro/departamento ou atualidade institucional.",
+      "evidencias": [
+        "https://www.pen.uem.br/site/public/cursos",
+        "https://www.pen.uem.br/site/public/curso/9de1325b805833842edf30b8d6b14b7a46914bff",
+        "reviews/2026-10-17-cursos/capturas.json",
+        "reviews/2026-10-17-cursos/conferencia.md"
+      ],
+      "data_decisao": "2026-10-17T14:06:09.014322+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "sede|https://www.pen.uem.br/site/public/curso/a99a3305e6ffbd5db96ef5506978504214b31397",
+      "impressao": "0b83a422c2740f6d2bf549ca6fe9e2ed160e989e4f79c5fdcd2622a2857191fa",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos o link e o nome Engenharia de Software na seção do câmpus sede do índice, o título e o breadcrumb do detalhe. Seção acadêmica: bloco 1: turno=Noturno, 1 habilitação(ões), 1 grau(s). Valores de turno, habilitação e grau conferidos com os rótulos da seção inicial. A decisão cobre fidelidade aos campos presentes na captura, sem aprovar IDs estáveis, interpretação de ofertas, vínculos com centro/departamento ou atualidade institucional.",
+      "evidencias": [
+        "https://www.pen.uem.br/site/public/cursos",
+        "https://www.pen.uem.br/site/public/curso/a99a3305e6ffbd5db96ef5506978504214b31397",
+        "reviews/2026-10-17-cursos/capturas.json",
+        "reviews/2026-10-17-cursos/conferencia.md"
+      ],
+      "data_decisao": "2026-10-17T14:06:09.014322+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "sede|https://www.pen.uem.br/site/public/curso/b28b3a111305a333255ca38188d25e001550a3f4",
+      "impressao": "9feefa5adaa8c16d1fd183b5ca3aede1347b2536702c5e6f7c429407c9d7ca2f",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos o link e o nome Engenharia Mecânica na seção do câmpus sede do índice, o título e o breadcrumb do detalhe. Seção acadêmica: bloco 1: turno=Integral, 1 habilitação(ões), 1 grau(s). Valores de turno, habilitação e grau conferidos com os rótulos da seção inicial. A decisão cobre fidelidade aos campos presentes na captura, sem aprovar IDs estáveis, interpretação de ofertas, vínculos com centro/departamento ou atualidade institucional.",
+      "evidencias": [
+        "https://www.pen.uem.br/site/public/cursos",
+        "https://www.pen.uem.br/site/public/curso/b28b3a111305a333255ca38188d25e001550a3f4",
+        "reviews/2026-10-17-cursos/capturas.json",
+        "reviews/2026-10-17-cursos/conferencia.md"
+      ],
+      "data_decisao": "2026-10-17T14:06:09.014322+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "sede|https://www.pen.uem.br/site/public/curso/b6573dc09a867d10270a581dae8a3166c84bc57c",
+      "impressao": "c876743beae5e952fb71b34b91bde76de0b76552d9d07f3dc6493d31c73b1900",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos o link e o nome Arquitetura e Urbanismo na seção do câmpus sede do índice, o título e o breadcrumb do detalhe. Seção acadêmica: bloco 1: turno=integral, 1 habilitação(ões), 1 grau(s). Valores de turno, habilitação e grau conferidos com os rótulos da seção inicial. A decisão cobre fidelidade aos campos presentes na captura, sem aprovar IDs estáveis, interpretação de ofertas, vínculos com centro/departamento ou atualidade institucional.",
+      "evidencias": [
+        "https://www.pen.uem.br/site/public/cursos",
+        "https://www.pen.uem.br/site/public/curso/b6573dc09a867d10270a581dae8a3166c84bc57c",
+        "reviews/2026-10-17-cursos/capturas.json",
+        "reviews/2026-10-17-cursos/conferencia.md"
+      ],
+      "data_decisao": "2026-10-17T14:06:09.014322+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "sede|https://www.pen.uem.br/site/public/curso/b7cbe3319cbe1355820bcb60719e3dd5f72adaea",
+      "impressao": "874a80bf9540f09641ff1f8076839a657d6791889b897ce65dedcc4704434013",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos o link e o nome Ciências Biológicas na seção do câmpus sede do índice, o título e o breadcrumb do detalhe. Seção acadêmica: bloco 1: turno=Integral, 3 habilitação(ões), 0 grau(s); bloco 2: turno=Noturno, 1 habilitação(ões), 1 grau(s). Dois blocos preservados: integral com três habilitações e sem grau explícito; noturno com licenciatura e seu grau. Não transferido o grau noturno para o bloco integral. A decisão cobre fidelidade aos campos presentes na captura, sem aprovar IDs estáveis, interpretação de ofertas, vínculos com centro/departamento ou atualidade institucional.",
+      "evidencias": [
+        "https://www.pen.uem.br/site/public/cursos",
+        "https://www.pen.uem.br/site/public/curso/b7cbe3319cbe1355820bcb60719e3dd5f72adaea",
+        "reviews/2026-10-17-cursos/capturas.json",
+        "reviews/2026-10-17-cursos/conferencia.md"
+      ],
+      "data_decisao": "2026-10-17T14:06:09.014322+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "sede|https://www.pen.uem.br/site/public/curso/bcd3389af4e0b7690b9a3e1b73230ed35d846971",
+      "impressao": "54775473b126ee9e1455595bc7a560d313eff9bb05c5632df94c12a9b4013b35",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos o link e o nome Música na seção do câmpus sede do índice, o título e o breadcrumb do detalhe. Seção acadêmica: bloco 1: turno=Integral, 5 habilitação(ões), 5 grau(s). Preservadas as cinco habilitações e os cinco graus como listas; não foi inferida uma correspondência entre os itens. A decisão cobre fidelidade aos campos presentes na captura, sem aprovar IDs estáveis, interpretação de ofertas, vínculos com centro/departamento ou atualidade institucional.",
+      "evidencias": [
+        "https://www.pen.uem.br/site/public/cursos",
+        "https://www.pen.uem.br/site/public/curso/bcd3389af4e0b7690b9a3e1b73230ed35d846971",
+        "reviews/2026-10-17-cursos/capturas.json",
+        "reviews/2026-10-17-cursos/conferencia.md"
+      ],
+      "data_decisao": "2026-10-17T14:06:09.014322+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "sede|https://www.pen.uem.br/site/public/curso/c519c0122b004a4de534f49bb2743b1845135444",
+      "impressao": "42b11f3f47f2e4cf4ccec4db5ba3ffffb2b641eb5da30d68377220e656a227af",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos o link e o nome Comunicação e Multimeios na seção do câmpus sede do índice, o título e o breadcrumb do detalhe. Seção acadêmica: bloco 1: turno=Noturno, 1 habilitação(ões), 1 grau(s). Valores de turno, habilitação e grau conferidos com os rótulos da seção inicial. A decisão cobre fidelidade aos campos presentes na captura, sem aprovar IDs estáveis, interpretação de ofertas, vínculos com centro/departamento ou atualidade institucional.",
+      "evidencias": [
+        "https://www.pen.uem.br/site/public/cursos",
+        "https://www.pen.uem.br/site/public/curso/c519c0122b004a4de534f49bb2743b1845135444",
+        "reviews/2026-10-17-cursos/capturas.json",
+        "reviews/2026-10-17-cursos/conferencia.md"
+      ],
+      "data_decisao": "2026-10-17T14:06:09.014322+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "sede|https://www.pen.uem.br/site/public/curso/c63ba080122ba603cfd83bc3483b79b53cef52a0",
+      "impressao": "fb461c1be9b09159e8415b9d0b7f446f857a8ab4f63236f634daaa9041455014",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos o link e o nome Biomedicina na seção do câmpus sede do índice, o título e o breadcrumb do detalhe. Seção acadêmica: bloco 1: turno=Integral, 1 habilitação(ões), 1 grau(s). Valores de turno, habilitação e grau conferidos com os rótulos da seção inicial. A decisão cobre fidelidade aos campos presentes na captura, sem aprovar IDs estáveis, interpretação de ofertas, vínculos com centro/departamento ou atualidade institucional.",
+      "evidencias": [
+        "https://www.pen.uem.br/site/public/cursos",
+        "https://www.pen.uem.br/site/public/curso/c63ba080122ba603cfd83bc3483b79b53cef52a0",
+        "reviews/2026-10-17-cursos/capturas.json",
+        "reviews/2026-10-17-cursos/conferencia.md"
+      ],
+      "data_decisao": "2026-10-17T14:06:09.014322+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "sede|https://www.pen.uem.br/site/public/curso/c6e9c1b9daea38a42b28d6d97f567ce6d551aeb0",
+      "impressao": "8aeda8bfd9969714ece0da4a63b06b7ccbb63d0374494cc879c2fecc842dd8e4",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos o link e o nome Administração na seção do câmpus sede do índice, o título e o breadcrumb do detalhe. Seção acadêmica: bloco 1: turno=matutino ou noturno, 1 habilitação(ões), 1 grau(s). Valores de turno, habilitação e grau conferidos com os rótulos da seção inicial. A decisão cobre fidelidade aos campos presentes na captura, sem aprovar IDs estáveis, interpretação de ofertas, vínculos com centro/departamento ou atualidade institucional.",
+      "evidencias": [
+        "https://www.pen.uem.br/site/public/cursos",
+        "https://www.pen.uem.br/site/public/curso/c6e9c1b9daea38a42b28d6d97f567ce6d551aeb0",
+        "reviews/2026-10-17-cursos/capturas.json",
+        "reviews/2026-10-17-cursos/conferencia.md"
+      ],
+      "data_decisao": "2026-10-17T14:06:09.014322+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "sede|https://www.pen.uem.br/site/public/curso/c7a280761ab813afa3f63f1f9aa7eada0c7914c5",
+      "impressao": "1bcb1b91ee04fa064c9df00b3830b0837e3da969532a6e0691c67a994179f30d",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos o link e o nome Letras na seção do câmpus sede do índice, o título e o breadcrumb do detalhe. Seção acadêmica: bloco 1: turno=null, 4 habilitação(ões), 1 grau(s). Quatro habilitações separadas por quebras de linha foram preservadas. O grau posterior ao prazo foi capturado; turno permanece null porque os turnos aparecem dentro das habilitações. A decisão cobre fidelidade aos campos presentes na captura, sem aprovar IDs estáveis, interpretação de ofertas, vínculos com centro/departamento ou atualidade institucional.",
+      "evidencias": [
+        "https://www.pen.uem.br/site/public/cursos",
+        "https://www.pen.uem.br/site/public/curso/c7a280761ab813afa3f63f1f9aa7eada0c7914c5",
+        "reviews/2026-10-17-cursos/capturas.json",
+        "reviews/2026-10-17-cursos/conferencia.md"
+      ],
+      "data_decisao": "2026-10-17T14:06:09.014322+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "sede|https://www.pen.uem.br/site/public/curso/d1aa1ee83bb6686401703af6598109edfce0e346",
+      "impressao": "58f30d0ea3422e3d795e40997a8599d337d4c6c0438fe78a6db7b0e8c854393a",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos o link e o nome Odontologia na seção do câmpus sede do índice, o título e o breadcrumb do detalhe. Seção acadêmica: bloco 1: turno=Integral, 1 habilitação(ões), 1 grau(s). Valores de turno, habilitação e grau conferidos com os rótulos da seção inicial. A decisão cobre fidelidade aos campos presentes na captura, sem aprovar IDs estáveis, interpretação de ofertas, vínculos com centro/departamento ou atualidade institucional.",
+      "evidencias": [
+        "https://www.pen.uem.br/site/public/cursos",
+        "https://www.pen.uem.br/site/public/curso/d1aa1ee83bb6686401703af6598109edfce0e346",
+        "reviews/2026-10-17-cursos/capturas.json",
+        "reviews/2026-10-17-cursos/conferencia.md"
+      ],
+      "data_decisao": "2026-10-17T14:06:09.014322+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "sede|https://www.pen.uem.br/site/public/curso/d3c228f4f03dd8ad8910dd6c06ec309f1db423a9",
+      "impressao": "af40f851d319810c8c2fafcc21564e6eec4ec3f8779ef63d35ce43da044cacbe",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos o link e o nome Agronomia na seção do câmpus sede do índice, o título e o breadcrumb do detalhe. Seção acadêmica: bloco 1: turno=integral, 1 habilitação(ões), 1 grau(s). Valores de turno, habilitação e grau conferidos com os rótulos da seção inicial. A decisão cobre fidelidade aos campos presentes na captura, sem aprovar IDs estáveis, interpretação de ofertas, vínculos com centro/departamento ou atualidade institucional.",
+      "evidencias": [
+        "https://www.pen.uem.br/site/public/cursos",
+        "https://www.pen.uem.br/site/public/curso/d3c228f4f03dd8ad8910dd6c06ec309f1db423a9",
+        "reviews/2026-10-17-cursos/capturas.json",
+        "reviews/2026-10-17-cursos/conferencia.md"
+      ],
+      "data_decisao": "2026-10-17T14:06:09.014322+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "sede|https://www.pen.uem.br/site/public/curso/d3c42d38b23e32805c12fe6b9d11703b0e02a47c",
+      "impressao": "ff3fa7378dd039aee9db8a8455bf5f13ef04d7f842030c7ba29e9e18574add7c",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos o link e o nome Química na seção do câmpus sede do índice, o título e o breadcrumb do detalhe. Seção acadêmica: bloco 1: turno=Noturno e Integral., 1 habilitação(ões), 1 grau(s). Conferidos TURNOS, dois-pontos fora do destaque e PRAZO PARA CONCLUSÃO; os três valores acadêmicos e sua pontuação foram preservados. A decisão cobre fidelidade aos campos presentes na captura, sem aprovar IDs estáveis, interpretação de ofertas, vínculos com centro/departamento ou atualidade institucional.",
+      "evidencias": [
+        "https://www.pen.uem.br/site/public/cursos",
+        "https://www.pen.uem.br/site/public/curso/d3c42d38b23e32805c12fe6b9d11703b0e02a47c",
+        "reviews/2026-10-17-cursos/capturas.json",
+        "reviews/2026-10-17-cursos/conferencia.md"
+      ],
+      "data_decisao": "2026-10-17T14:06:09.014322+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "sede|https://www.pen.uem.br/site/public/curso/d3c90f4dbbcea8fa2eb28c852c5453760cf49d28",
+      "impressao": "be55254a6b05309c67fdfdb867c8688484e789533580dcec07bd60bf39db2c28",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos o link e o nome Serviço Social na seção do câmpus sede do índice, o título e o breadcrumb do detalhe. Seção acadêmica: bloco 1: turno=Noturno, 1 habilitação(ões), 1 grau(s). Valores de turno, habilitação e grau conferidos com os rótulos da seção inicial. A decisão cobre fidelidade aos campos presentes na captura, sem aprovar IDs estáveis, interpretação de ofertas, vínculos com centro/departamento ou atualidade institucional.",
+      "evidencias": [
+        "https://www.pen.uem.br/site/public/cursos",
+        "https://www.pen.uem.br/site/public/curso/d3c90f4dbbcea8fa2eb28c852c5453760cf49d28",
+        "reviews/2026-10-17-cursos/capturas.json",
+        "reviews/2026-10-17-cursos/conferencia.md"
+      ],
+      "data_decisao": "2026-10-17T14:06:09.014322+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "sede|https://www.pen.uem.br/site/public/curso/d59ab31e8573afe43ff5098c2d9bfc8b284a8e64",
+      "impressao": "294374cb593ac375a6c6b0b6d0942cd6bd1a69fabe94b53cba909019dbdcc673",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos o link e o nome Ciências Econômicas na seção do câmpus sede do índice, o título e o breadcrumb do detalhe. Seção acadêmica: bloco 1: turno=Integral ou Noturno, 1 habilitação(ões), 1 grau(s). Mantido Integral ou Noturno como um valor textual; prazos específicos por turno foram ignorados. A decisão cobre fidelidade aos campos presentes na captura, sem aprovar IDs estáveis, interpretação de ofertas, vínculos com centro/departamento ou atualidade institucional.",
+      "evidencias": [
+        "https://www.pen.uem.br/site/public/cursos",
+        "https://www.pen.uem.br/site/public/curso/d59ab31e8573afe43ff5098c2d9bfc8b284a8e64",
+        "reviews/2026-10-17-cursos/capturas.json",
+        "reviews/2026-10-17-cursos/conferencia.md"
+      ],
+      "data_decisao": "2026-10-17T14:06:09.014322+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "sede|https://www.pen.uem.br/site/public/curso/d8d9634c4fbb4b091b8b66bd181ff3b16f3b1aea",
+      "impressao": "4520e41401d776932cfdd48bab13823996d3814ca21865677259960a79ea0c70",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos o link e o nome Engenharia Civil na seção do câmpus sede do índice, o título e o breadcrumb do detalhe. Seção acadêmica: bloco 1: turno=Integral, 1 habilitação(ões), 1 grau(s). Valores de turno, habilitação e grau conferidos com os rótulos da seção inicial. A decisão cobre fidelidade aos campos presentes na captura, sem aprovar IDs estáveis, interpretação de ofertas, vínculos com centro/departamento ou atualidade institucional.",
+      "evidencias": [
+        "https://www.pen.uem.br/site/public/cursos",
+        "https://www.pen.uem.br/site/public/curso/d8d9634c4fbb4b091b8b66bd181ff3b16f3b1aea",
+        "reviews/2026-10-17-cursos/capturas.json",
+        "reviews/2026-10-17-cursos/conferencia.md"
+      ],
+      "data_decisao": "2026-10-17T14:06:09.014322+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "sede|https://www.pen.uem.br/site/public/curso/dcffb82a4cca8e4383e5221e958095a206c79c51",
+      "impressao": "f5dc1192a7ff7d74082dc884b6beb18fb18658d9c6a2619e448e3e16ff883444",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos o link e o nome Engenharia Têxtil na seção do câmpus sede do índice, o título e o breadcrumb do detalhe. Seção acadêmica: bloco 1: turno=Noturno, 1 habilitação(ões), 1 grau(s). Valores de turno, habilitação e grau conferidos com os rótulos da seção inicial. A decisão cobre fidelidade aos campos presentes na captura, sem aprovar IDs estáveis, interpretação de ofertas, vínculos com centro/departamento ou atualidade institucional.",
+      "evidencias": [
+        "https://www.pen.uem.br/site/public/cursos",
+        "https://www.pen.uem.br/site/public/curso/dcffb82a4cca8e4383e5221e958095a206c79c51",
+        "reviews/2026-10-17-cursos/capturas.json",
+        "reviews/2026-10-17-cursos/conferencia.md"
+      ],
+      "data_decisao": "2026-10-17T14:06:09.014322+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "sede|https://www.pen.uem.br/site/public/curso/e01f37bde71329590bac28c8df99e80927a7b5f4",
+      "impressao": "f58ffeb7787ac24d5b7a6519e9ccd1a97dfaf80d957f08084158046e6f804823",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos o link e o nome Física na seção do câmpus sede do índice, o título e o breadcrumb do detalhe. Seção acadêmica: bloco 1: turno=null, 1 habilitação(ões), 1 grau(s). Sem rótulo próprio de turno; turno permanece null, com os turnos parentéticos preservados no texto de habilitação. A decisão cobre fidelidade aos campos presentes na captura, sem aprovar IDs estáveis, interpretação de ofertas, vínculos com centro/departamento ou atualidade institucional.",
+      "evidencias": [
+        "https://www.pen.uem.br/site/public/cursos",
+        "https://www.pen.uem.br/site/public/curso/e01f37bde71329590bac28c8df99e80927a7b5f4",
+        "reviews/2026-10-17-cursos/capturas.json",
+        "reviews/2026-10-17-cursos/conferencia.md"
+      ],
+      "data_decisao": "2026-10-17T14:06:09.014322+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "sede|https://www.pen.uem.br/site/public/curso/e2539de527961dc7451ca5ac2839f9d15d2618f1",
+      "impressao": "a48f2541bd6829bb249d81615f2116990541cfe6641bfd9864aed69d85efae8b",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos o link e o nome Matemática na seção do câmpus sede do índice, o título e o breadcrumb do detalhe. Seção acadêmica: bloco 1: turno=Noturno (Licenciatura) ou Vespertino/Noturno (Bacharelado), 1 habilitação(ões), 1 grau(s). Preservadas as condições de turno por habilitação e as alternativas de grau como textos da fonte. A decisão cobre fidelidade aos campos presentes na captura, sem aprovar IDs estáveis, interpretação de ofertas, vínculos com centro/departamento ou atualidade institucional.",
+      "evidencias": [
+        "https://www.pen.uem.br/site/public/cursos",
+        "https://www.pen.uem.br/site/public/curso/e2539de527961dc7451ca5ac2839f9d15d2618f1",
+        "reviews/2026-10-17-cursos/capturas.json",
+        "reviews/2026-10-17-cursos/conferencia.md"
+      ],
+      "data_decisao": "2026-10-17T14:06:09.014322+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "sede|https://www.pen.uem.br/site/public/curso/e53b26acbed443bcd3ae755221f91131fbed31e3",
+      "impressao": "1f200bd82e65649bbad3ac80284bf867de96069f908afa70ecb14d8181304d3d",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos o link e o nome Filosofia na seção do câmpus sede do índice, o título e o breadcrumb do detalhe. Seção acadêmica: bloco 1: turno=Noturno, 1 habilitação(ões), 1 grau(s). Valores de turno, habilitação e grau conferidos com os rótulos da seção inicial. A decisão cobre fidelidade aos campos presentes na captura, sem aprovar IDs estáveis, interpretação de ofertas, vínculos com centro/departamento ou atualidade institucional.",
+      "evidencias": [
+        "https://www.pen.uem.br/site/public/cursos",
+        "https://www.pen.uem.br/site/public/curso/e53b26acbed443bcd3ae755221f91131fbed31e3",
+        "reviews/2026-10-17-cursos/capturas.json",
+        "reviews/2026-10-17-cursos/conferencia.md"
+      ],
+      "data_decisao": "2026-10-17T14:06:09.014322+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "sede|https://www.pen.uem.br/site/public/curso/e609c318d959a8099b8bfd33bfb0904cf64ce0a1",
+      "impressao": "514cff4a3917391671dd801f18aef02597a0d48ed9937687dd9e6c4b7ee39203",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos o link e o nome Ciências Contábeis na seção do câmpus sede do índice, o título e o breadcrumb do detalhe. Seção acadêmica: bloco 1: turno=Matutino ou Noturno, 1 habilitação(ões), 1 grau(s). Valores de turno, habilitação e grau conferidos com os rótulos da seção inicial. A decisão cobre fidelidade aos campos presentes na captura, sem aprovar IDs estáveis, interpretação de ofertas, vínculos com centro/departamento ou atualidade institucional.",
+      "evidencias": [
+        "https://www.pen.uem.br/site/public/cursos",
+        "https://www.pen.uem.br/site/public/curso/e609c318d959a8099b8bfd33bfb0904cf64ce0a1",
+        "reviews/2026-10-17-cursos/capturas.json",
+        "reviews/2026-10-17-cursos/conferencia.md"
+      ],
+      "data_decisao": "2026-10-17T14:06:09.014322+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "sede|https://www.pen.uem.br/site/public/curso/e9764f0dddf8667c55086ce4bd2c43e465024fd5",
+      "impressao": "e8000ba9ad879d5ee5cd35fc92935e3019a7af8a08b679aaea65005a4cc690e9",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos o link e o nome Engenharia de Controle e Automação - Inteligência Artificial na seção do câmpus sede do índice, o título e o breadcrumb do detalhe. Seção acadêmica: bloco 1: turno=Integral, 1 habilitação(ões), 1 grau(s). O título destacado dentro da seção antecede os rótulos acadêmicos e foi ignorado sem perder os três campos. A decisão cobre fidelidade aos campos presentes na captura, sem aprovar IDs estáveis, interpretação de ofertas, vínculos com centro/departamento ou atualidade institucional.",
+      "evidencias": [
+        "https://www.pen.uem.br/site/public/cursos",
+        "https://www.pen.uem.br/site/public/curso/e9764f0dddf8667c55086ce4bd2c43e465024fd5",
+        "reviews/2026-10-17-cursos/capturas.json",
+        "reviews/2026-10-17-cursos/conferencia.md"
+      ],
+      "data_decisao": "2026-10-17T14:06:09.014322+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "sede|https://www.pen.uem.br/site/public/curso/f05f1ca5f7b5cdebef6b0e2692cca0f732702893",
+      "impressao": "10c0df354856e0dfb97162569783a3c82c4587dc61d77ce4c9518bdea799246c",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos o link e o nome Secretariado Executivo Trilíngue na seção do câmpus sede do índice, o título e o breadcrumb do detalhe. Seção acadêmica: bloco 1: turno=Noturno, 1 habilitação(ões), 1 grau(s). Valores de turno, habilitação e grau conferidos com os rótulos da seção inicial. A decisão cobre fidelidade aos campos presentes na captura, sem aprovar IDs estáveis, interpretação de ofertas, vínculos com centro/departamento ou atualidade institucional.",
+      "evidencias": [
+        "https://www.pen.uem.br/site/public/cursos",
+        "https://www.pen.uem.br/site/public/curso/f05f1ca5f7b5cdebef6b0e2692cca0f732702893",
+        "reviews/2026-10-17-cursos/capturas.json",
+        "reviews/2026-10-17-cursos/conferencia.md"
+      ],
+      "data_decisao": "2026-10-17T14:06:09.014322+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "sede|https://www.pen.uem.br/site/public/curso/f1f2375d3d7bd9b7277f7e5d4302cf4736025b69",
+      "impressao": "3791c2ea619854196a13172d8e803ffcdf01231adf1a3c9c6c8729d015c74c47",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos o link e o nome Educação Física na seção do câmpus sede do índice, o título e o breadcrumb do detalhe. Seção acadêmica: bloco 1: turno=Integral ou Noturno, 1 habilitação(ões), 1 grau(s). Mantidas as condições de turno presentes na habilitação; não foram criadas ofertas separadas. A decisão cobre fidelidade aos campos presentes na captura, sem aprovar IDs estáveis, interpretação de ofertas, vínculos com centro/departamento ou atualidade institucional.",
+      "evidencias": [
+        "https://www.pen.uem.br/site/public/cursos",
+        "https://www.pen.uem.br/site/public/curso/f1f2375d3d7bd9b7277f7e5d4302cf4736025b69",
+        "reviews/2026-10-17-cursos/capturas.json",
+        "reviews/2026-10-17-cursos/conferencia.md"
+      ],
+      "data_decisao": "2026-10-17T14:06:09.014322+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "sede|https://www.pen.uem.br/site/public/curso/f62c5867b4a4ed0fe50ed12212be16c0d9dcfb38",
+      "impressao": "47b684bb4933f4c95617f6d891086e44791278d01e62ae5ba0405893701d46c3",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos o link e o nome Psicologia na seção do câmpus sede do índice, o título e o breadcrumb do detalhe. Seção acadêmica: bloco 1: turno=Integral, 1 habilitação(ões), 1 grau(s). Valores de turno, habilitação e grau conferidos com os rótulos da seção inicial. A decisão cobre fidelidade aos campos presentes na captura, sem aprovar IDs estáveis, interpretação de ofertas, vínculos com centro/departamento ou atualidade institucional.",
+      "evidencias": [
+        "https://www.pen.uem.br/site/public/cursos",
+        "https://www.pen.uem.br/site/public/curso/f62c5867b4a4ed0fe50ed12212be16c0d9dcfb38",
+        "reviews/2026-10-17-cursos/capturas.json",
+        "reviews/2026-10-17-cursos/conferencia.md"
+      ],
+      "data_decisao": "2026-10-17T14:06:09.014322+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "sede|https://www.pen.uem.br/site/public/curso/fa929caa1ce52eac3200a285e1c3dc694d9b804e",
+      "impressao": "4840496a18d114555275ae4028ba9c295e49ec7f0e3027848ff214a219f28cc0",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos o link e o nome Medicina na seção do câmpus sede do índice, o título e o breadcrumb do detalhe. Seção acadêmica: bloco 1: turno=Integral, 0 habilitação(ões), 1 grau(s). Sem rótulo de habilitação na seção conferida; lista vazia preservada, sem inferir Bacharelado do grau Médico. A decisão cobre fidelidade aos campos presentes na captura, sem aprovar IDs estáveis, interpretação de ofertas, vínculos com centro/departamento ou atualidade institucional.",
+      "evidencias": [
+        "https://www.pen.uem.br/site/public/cursos",
+        "https://www.pen.uem.br/site/public/curso/fa929caa1ce52eac3200a285e1c3dc694d9b804e",
+        "reviews/2026-10-17-cursos/capturas.json",
+        "reviews/2026-10-17-cursos/conferencia.md"
+      ],
+      "data_decisao": "2026-10-17T14:06:09.014322+00:00"
+    },
+    {
+      "tipo": "registro",
+      "id": "sede|https://www.pen.uem.br/site/public/curso/fb5db4852b539ec28d56e839c082987117b3aa3d",
+      "impressao": "b068a202d1a92e5d3f214a5a09c53aeb61d0fd97b43dba9afb731165a59df937",
+      "decisao": "aprovado",
+      "justificativa": "Conferidos o link e o nome Pedagogia na seção do câmpus sede do índice, o título e o breadcrumb do detalhe. Seção acadêmica: bloco 1: turno=Matutino ou Noturno, 1 habilitação(ões), 1 grau(s). Valores de turno, habilitação e grau conferidos com os rótulos da seção inicial. A decisão cobre fidelidade aos campos presentes na captura, sem aprovar IDs estáveis, interpretação de ofertas, vínculos com centro/departamento ou atualidade institucional.",
+      "evidencias": [
+        "https://www.pen.uem.br/site/public/cursos",
+        "https://www.pen.uem.br/site/public/curso/fb5db4852b539ec28d56e839c082987117b3aa3d",
+        "reviews/2026-10-17-cursos/capturas.json",
+        "reviews/2026-10-17-cursos/conferencia.md"
+      ],
+      "data_decisao": "2026-10-17T14:06:09.014322+00:00"
+    }
+  ]
+}

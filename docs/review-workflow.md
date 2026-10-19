@@ -123,3 +123,10 @@ aparecem como pendências. Mesmo com todas as decisões registradas, o resultado
 `publicavel: false`: a chave de revisão não resolve os IDs estáveis, os blocos acadêmicos
 não foram desdobrados em ofertas, os vínculos e a completude ainda exigem conferência e
 as condições de reutilização das fontes seguem pendentes.
+
+A [primeira execução com capturas reais de cursos](../reviews/2026-10-17-cursos/README.md)
+registra o índice, seus 67 detalhes e decisões por entrada, com horários, hashes
+e instruções de reprodução. Foram aprovadas tecnicamente 66 correspondências
+com as capturas; Engenharia Agrícola ficou pendente pela combinação de habilitação
+e grau exibida na fonte. A EaD continua como inconsistência de cobertura, e o
+relatório permanece `todos_itens_aprovados: false` e `publicavel: false`.
