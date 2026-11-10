@@ -1,6 +1,6 @@
 # Inventário inicial de fontes da uemAPI
 
-Revisão inicial: 25 de setembro de 2026; índice dos centros reconferido em 26 de setembro. Este inventário avalia as sete URLs já propostas em `sources/registry.yaml`. Todas permanecem **candidatas**. Acesso público à página confirma que ela pode ser lida sem login; não confirma permissão para coleta automatizada ou redistribuição de um dataset.
+Revisão inicial: 25 de setembro de 2026; índice dos centros reconferido em 26 de setembro. A tabela inicial cobre as sete URLs originalmente propostas em `sources/registry.yaml`; as conferências posteriores e fontes de apoio estão registradas ao final. Todas permanecem **candidatas**. Acesso público à página confirma que ela pode ser lida sem login; não confirma permissão para coleta automatizada ou redistribuição de um dataset.
 
 | Fonte | Dados observados | Uso proposto | Limite encontrado |
 | --- | --- | --- | --- |
@@ -38,3 +38,23 @@ Em 16 de outubro de 2026, a [primeira conferência real de câmpus e centros](..
 Na mesma data, a [primeira conferência real de departamentos](../reviews/2026-10-16-departamentos/README.md) capturou novamente o índice da PLD e as sete páginas vinculadas. Foram aceitos 49 candidatos, sem siglas repetidas entre centros, e conferidas 15 exclusões pelos rótulos. A revisão técnica aprovou a correspondência de 48 candidatos com a listagem e manteve o DEM pendente por sua grafia. Os links foram preservados sem leitura dos documentos; a completude, a atualidade, a classificação dos demais órgãos e as condições de reutilização permanecem pendentes. Nenhum dado de produção foi publicado.
 
 Em 17 de outubro de 2026, a [primeira conferência real de cursos](../reviews/2026-10-17-cursos/README.md) capturou o índice da PEN e seus 67 detalhes presenciais. Todas as capturas foram aceitas pelo coletor, e os nomes, câmpus e campos acadêmicos foram confrontados com o HTML. A revisão técnica registrou 66 decisões aprovadas por fidelidade à captura e uma pendente para Engenharia Agrícola, cuja página combina habilitação de Licenciatura e grau de Engenheiro Agrícola. O link para a EaD foi registrado sem coleta do NEAD. A completude institucional, as ofertas, os IDs estáveis, os vínculos e as condições de reutilização continuam pendentes; nenhum snapshot de produção foi criado.
+
+## Fontes de apoio e decisões complementares de 22 de outubro de 2026
+
+O [novo lote de evidências](../reviews/2026-10-22-pendencias/README.md) reconferiu
+a página do CTC, o índice da PEN e o detalhe de Engenharia Agrícola, além dos
+documentos de apoio. Os dois valores que ficaram pendentes foram rejeitados para
+uso canônico nas novas decisões; há propostas de normalização ainda não aplicadas.
+
+| Fonte incorporada ao catálogo | Evidência usada | Limite |
+| --- | --- | --- |
+| Regulamento do DEM, Resolução 106/2018-CI/CTC | Página PDF 2, Anexo I, art. 1º, identifica o nome do departamento. As cópias da PLD e do DEM são idênticas por SHA-256. | A nomenclatura não comprova situação atual nem revisão integral dos regulamentos. |
+| PPC de Engenharia Agrícola vinculado na PEN, Resolução 042/2022-CI/CCA | Páginas PDF 1 e 2 delimitam o público e registram a habilitação específica e a formação de bacharel. | Abrangência para ingressantes a partir de 2023; não generalizar a outras turmas. |
+| Edital 072/2025-DAA, segunda republicação, ingresso em 2026 | Página PDF/impressa 16 corrobora Bacharelado para Engenharia Agrícola (CAR). | Categoria de formação e grau profissional têm significados diferentes; vagas e ofertas não foram incorporadas. |
+
+As datas no catálogo descrevem as fontes efetivamente consultadas. O índice de
+câmpus foi conferido em 16/10; o índice de centros e as sete páginas, em 16/10;
+o índice da PEN foi reconferido em 22/10. Os demais 66 detalhes mantêm a captura
+de 17/10. Fontes que não foram revisitadas conservam suas datas anteriores. O
+estado `candidate`, os intervalos não definidos e a reutilização não verificada
+foram preservados.

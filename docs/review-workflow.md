@@ -130,3 +130,20 @@ e instruções de reprodução. Foram aprovadas tecnicamente 66 correspondência
 com as capturas; Engenharia Agrícola ficou pendente pela combinação de habilitação
 e grau exibida na fonte. A EaD continua como inconsistência de cobertura, e o
 relatório permanece `todos_itens_aprovados: false` e `publicavel: false`.
+
+## Decisões complementares com fontes de apoio
+
+O [lote de 22 de outubro de 2026](../reviews/2026-10-22-pendencias/README.md)
+preserva os lotes originais e registra novas decisões para os valores do DEM e
+de Engenharia Agrícola. As decisões passaram de pendentes para rejeitadas para
+uso canônico, acompanhadas de propostas de normalização com evidências.
+
+As propostas identificam campo, valor observado, valor proposto, impressão da
+base e abrangência. Elas não mudam os valores extraídos nem são consumidas pelo
+comando de revisão. A aplicação futura precisa conferir esses elementos e
+registrar a proveniência do valor normalizado. Rejeitar um candidato incompatível
+não remove a instituição ou o curso do inventário e não aprova a publicação.
+
+A revisão de cursos desse lote usa o consolidado de 17/10 com novas decisões:
+ela não representa uma recaptura dos 67 detalhes. As demais decisões conservam
+as datas e impressões originais.
