@@ -1,0 +1,76 @@
+{
+  "versao": 1,
+  "modo": "proposta_normalizacao",
+  "publicavel": false,
+  "aplicadas": false,
+  "propostas": [
+    {
+      "dataset": "departamentos",
+      "id": "dem",
+      "centro_sigla": "CTC",
+      "arquivo_base": "reviews/2026-10-22-pendencias/ctc-previa.json",
+      "impressao_base": "1d1931efd45902e991ece591c64ef38244fe923c16600e9e3e38fe63707a22f7",
+      "campo": "/nome",
+      "valor_observado": "Deparamento de Engenharia Mecânica",
+      "valor_proposto": "Departamento de Engenharia Mecânica",
+      "estado": "proposta_para_revisao",
+      "decidido_em": "2026-10-22T18:05:36.774730+00:00",
+      "escopo": "Nome institucional na Resolução 106/2018-CI/CTC; não atesta situação atual da unidade.",
+      "referencias": [
+        {
+          "source_id": "dem_regulamento",
+          "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc/dem-deparamento-de-engenharia-mecancia-resolucao-106-2018-ctc-pdf-crdownload/@@download/file/DEM%20-%20Deparamento%20de%20Engenharia%20Mec%C3%A2nica%20%28resolucao-106-2018-ctc%29.crdownload",
+          "arquivo_captura": "reviews/2026-10-22-pendencias/capturas/dem-regulamento-pld.pdf",
+          "sha256": "f625434772d38ab83f8bbb5d5105bada2d7dd101d0180fdce9e2a72852862f70",
+          "localizador": "página PDF 2, Anexo I, art. 1º"
+        },
+        {
+          "source_id": "dem_regulamento",
+          "url": "https://dem.uem.br/arquivos/resolucoes-dem/resolucao-106-2018-ctc.pdf",
+          "arquivo_captura": "reviews/2026-10-22-pendencias/capturas/dem-regulamento.pdf",
+          "sha256": "f625434772d38ab83f8bbb5d5105bada2d7dd101d0180fdce9e2a72852862f70",
+          "localizador": "página PDF 2, cópia idêntica no domínio do DEM"
+        }
+      ]
+    },
+    {
+      "dataset": "cursos",
+      "id": "car|https://www.pen.uem.br/site/public/curso/7e57e246c1bb9a6a19bde73c135003e110ad48e3",
+      "arquivo_base": "reviews/2026-10-17-cursos/cursos-consolidados.json",
+      "captura_atual": "reviews/2026-10-22-pendencias/engenharia-agricola-previa.json",
+      "impressao_base": "4da0e16ebd2f097bdc4b00ea03ca36d5428fee92058d8b89f3ad63949b9fc1bb",
+      "campo": "/informacoes_academicas/0/habilitacoes",
+      "valor_observado": [
+        "Licenciatura"
+      ],
+      "valor_proposto": [
+        "Bacharel em Engenharia Agrícola"
+      ],
+      "estado": "proposta_para_revisao",
+      "decidido_em": "2026-10-22T18:05:36.774730+00:00",
+      "escopo": "Habilitação expressa no PPC aprovado pela Resolução 042/2022-CI/CCA para ingressantes a partir de 2023; não generalizar a outras turmas nem substituir o grau profissional por uma categoria de formação.",
+      "referencias": [
+        {
+          "source_id": "engenharia_agricola_ppc",
+          "url": "https://www.pen.uem.br/site/public/assets/files/19944F3D475A0C509C267FE117F4A9F8/20230524_140812-engenhariaagricola.pdf",
+          "arquivo_captura": "reviews/2026-10-22-pendencias/capturas/engenharia-agricola-ppc-2023.pdf",
+          "sha256": "1531882a0bd12e2d9a76643d7e4b6c3fe14a82bee9d50ba11da7550c35415f3b",
+          "localizador": "página PDF 1: abrangência; página PDF 2: itens 1.1, 1.2 e 1.6"
+        },
+        {
+          "source_id": "daa_ingresso_2026",
+          "url": "https://daa.uem.br/editais-e-portarias/editais-e-portarias-2025-1/edital-072-2025-daa-processos-especiais-de-ingresso-2026-2a-republicacao.pdf",
+          "arquivo_captura": "reviews/2026-10-22-pendencias/capturas/daa-ingresso-2026.pdf",
+          "sha256": "9617e95d2c6d7dffb65cf5af2229aabaa878572ce6731cf073a8aa4e11c2c6ed",
+          "localizador": "página PDF/impressa 16, linha Engenharia Agrícola (CAR); corroboração da categoria Bacharelado"
+        }
+      ]
+    }
+  ],
+  "limites": [
+    "Este arquivo é uma proposta declarativa e não é consumido pelos coletores ou pela API.",
+    "Caminhos de campo referem-se ao registro revisado, não ao documento JSON completo.",
+    "A aplicação futura exige conferir a impressão base, o valor observado e a abrangência da evidência.",
+    "Os valores extraídos e os lotes históricos permanecem preservados."
+  ]
+}
