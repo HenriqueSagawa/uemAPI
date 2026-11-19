@@ -25,3 +25,17 @@ em que foram observados, sem inferência entre eles. A combinação de Licenciat
 e Engenheiro Agrícola na página de Engenharia Agrícola ficou pendente de
 esclarecimento. A aceitação do detalhe pelo parser e a fidelidade à captura não
 resolvem essas decisões de modelagem nem aprovam o ID candidato como permanente.
+
+## Esclarecimento de Engenharia Agrícola
+
+As [evidências de 22 de outubro de 2026](../reviews/2026-10-22-pendencias/README.md)
+mostram uma divergência entre o HTML da PEN, que conserva Licenciatura, e o PPC
+atualmente vinculado. O PPC apresenta a habilitação Bacharel em Engenharia
+Agrícola e delimita sua aplicação aos ingressantes a partir de 2023; o edital de
+ingresso de 2026 corrobora a categoria Bacharelado no CAR.
+
+A nova decisão rejeita o valor candidato e propõe a redação específica do PPC,
+sem alterar o grau profissional extraído ou o ID candidato. A proposta não é
+aplicada pelo coletor. A categoria de formação do edital e o grau profissional
+não devem ser tratados como campos equivalentes. A unidade de curso e sua
+abrangência por turma ainda precisam ser definidas antes da publicação.

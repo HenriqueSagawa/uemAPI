@@ -1,0 +1,49 @@
+{
+  "modo": "previa",
+  "publicavel": false,
+  "entrada": {
+    "indice": "reviews/2026-10-22-pendencias/capturas/cursos-indice.html",
+    "detalhe": "reviews/2026-10-22-pendencias/capturas/engenharia-agricola.html"
+  },
+  "fonte": {
+    "source_id": "cursos_graduacao",
+    "url": "https://www.pen.uem.br/site/public/curso/7e57e246c1bb9a6a19bde73c135003e110ad48e3",
+    "consultado_em": "2026-10-22T17:58:36.288383Z"
+  },
+  "curso": {
+    "nome": "Engenharia Agrícola",
+    "campus_id": "car",
+    "modalidade": "presencial",
+    "url_detalhe": "https://www.pen.uem.br/site/public/curso/7e57e246c1bb9a6a19bde73c135003e110ad48e3",
+    "id_candidato": "car-engenharia-agricola",
+    "informacoes_academicas": [
+      {
+        "turno": "Integral",
+        "habilitacoes": [
+          "Licenciatura"
+        ],
+        "graus_academicos": [
+          "Engenheiro Agrícola"
+        ]
+      }
+    ]
+  },
+  "proveniencia": {
+    "unidade": "uma entrada do índice por câmpus; blocos não são ofertas separadas",
+    "id_candidato": "câmpus e nome normalizado; muda se o nome mudar e exige revisão",
+    "verificado": [
+      "link no índice local",
+      "título",
+      "câmpus exibido no detalhe"
+    ],
+    "informacoes_academicas": "campos acadêmicos da seção inicial, agrupados pela ordem dos rótulos HTML",
+    "origem_arquivos": "não autenticada; URLs institucionais apenas de referência",
+    "pendente": [
+      "ID estável aprovado",
+      "interpretação de turnos, habilitações e graus como ofertas",
+      "centro e departamento",
+      "cursos da EaD",
+      "completude e condições de reutilização"
+    ]
+  }
+}

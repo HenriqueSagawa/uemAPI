@@ -155,7 +155,9 @@ O [lote de departamentos da mesma data](reviews/2026-10-16-departamentos/README.
 
 O [lote de cursos de 17 de outubro de 2026](reviews/2026-10-17-cursos/README.md) confere 67 detalhes do índice presencial da PEN, com 66 decisões técnicas aprovadas e uma pendente para os valores de Engenharia Agrícola. A EaD permanece fora do lote, e as chaves de revisão não são IDs permanentes da API.
 
-1. Revisar no PR as decisões e evidências de cursos; esclarecer a habilitação de Engenharia Agrícola e o nome canônico do DEM.
+As [decisões complementares de 22 de outubro](reviews/2026-10-22-pendencias/README.md) confrontam o DEM com seu regulamento e Engenharia Agrícola com o PPC vinculado e um edital da DAA. Os dois valores incompatíveis foram rejeitados nas novas revisões, com normalizações propostas e delimitadas pelas evidências. Os lotes anteriores permanecem preservados; as propostas ainda não são aplicadas pela API.
+
+1. Revisar as decisões complementares e incorporar as normalizações na futura geração do snapshot, conferindo a base e a abrangência de cada evidência.
 2. Resolver cobertura da EaD, unidade das ofertas, vínculos e IDs estáveis de cursos.
 3. Verificar condições de reutilização das fontes e aprovar o snapshot completo antes de publicar os primeiros JSON reais.
 

@@ -1,0 +1,140 @@
+{
+  "versao": 1,
+  "metodo": "GET HTTPS com curl e validação TLS; redirecionamentos HTTPS registrados",
+  "codigo_base": "731c0a8fd00cba334c5162a8991aca21e6dcf19d",
+  "capturas": [
+    {
+      "arquivo": "reviews/2026-10-22-pendencias/capturas/ctc.html",
+      "url_solicitada": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc",
+      "iniciado_em": "2026-10-22T17:58:32.281654+00:00",
+      "consultado_em": "2026-10-22T17:58:32.788772+00:00",
+      "status": "capturado",
+      "url_final": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc",
+      "http_status": 200,
+      "content_type": "text/html;charset=utf-8",
+      "tls_verificado": true,
+      "bytes": 32398,
+      "sha256": "1f80adc8abddef5e8181b9ec3120663b2bfcd455a37524df1136d344abdfc18d"
+    },
+    {
+      "arquivo": "reviews/2026-10-22-pendencias/capturas/dem-regulamento-view.html",
+      "url_solicitada": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc/dem-deparamento-de-engenharia-mecancia-resolucao-106-2018-ctc-pdf-crdownload/view",
+      "iniciado_em": "2026-10-22T17:58:32.789343+00:00",
+      "consultado_em": "2026-10-22T17:58:33.401752+00:00",
+      "status": "capturado",
+      "url_final": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc/dem-deparamento-de-engenharia-mecancia-resolucao-106-2018-ctc-pdf-crdownload/view",
+      "http_status": 200,
+      "content_type": "text/html;charset=utf-8",
+      "tls_verificado": true,
+      "bytes": 22021,
+      "sha256": "5f9501e99e5c2ea1ed3c6b6a4cb48dadf88373f6ff625435854021388ecf4102"
+    },
+    {
+      "arquivo": "reviews/2026-10-22-pendencias/capturas/dem-regulamento.pdf",
+      "url_solicitada": "https://dem.uem.br/arquivos/resolucoes-dem/resolucao-106-2018-ctc.pdf",
+      "iniciado_em": "2026-10-22T17:58:33.402299+00:00",
+      "consultado_em": "2026-10-22T17:58:35.452375+00:00",
+      "status": "capturado",
+      "url_final": "https://dem.uem.br/arquivos/resolucoes-dem/resolucao-106-2018-ctc.pdf",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "tls_verificado": true,
+      "bytes": 597236,
+      "sha256": "f625434772d38ab83f8bbb5d5105bada2d7dd101d0180fdce9e2a72852862f70"
+    },
+    {
+      "arquivo": "reviews/2026-10-22-pendencias/capturas/dem-home.html",
+      "url_solicitada": "https://dem.uem.br/",
+      "iniciado_em": "2026-10-22T17:58:35.454252+00:00",
+      "consultado_em": "2026-10-22T17:58:35.935837+00:00",
+      "status": "capturado",
+      "url_final": "https://dem.uem.br/",
+      "http_status": 200,
+      "content_type": "text/html;charset=utf-8",
+      "tls_verificado": true,
+      "bytes": 25733,
+      "sha256": "739bc2b7dab8d5aede72d23bfabdcbb7676312fd11ffdf97c2e79ec0d11497d3"
+    },
+    {
+      "arquivo": "reviews/2026-10-22-pendencias/capturas/engenharia-agricola.html",
+      "url_solicitada": "https://www.pen.uem.br/site/public/curso/7e57e246c1bb9a6a19bde73c135003e110ad48e3",
+      "iniciado_em": "2026-10-22T17:58:35.936438+00:00",
+      "consultado_em": "2026-10-22T17:58:36.288383+00:00",
+      "status": "capturado",
+      "url_final": "https://www.pen.uem.br/site/public/curso/7e57e246c1bb9a6a19bde73c135003e110ad48e3",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "tls_verificado": true,
+      "bytes": 23656,
+      "sha256": "eebce75398ee39146b034fe280220bb9221607a3423513e3c9c1ed82a1a9564b"
+    },
+    {
+      "arquivo": "reviews/2026-10-22-pendencias/capturas/engenharia-agricola-pen.pdf",
+      "url_solicitada": "https://www.pen.uem.br/site/public/assets/files/19944F3D475A0C509C267FE117F4A9F8/20210310_114004-engenhariaagricola.pdf",
+      "iniciado_em": "2026-10-22T17:58:36.288860+00:00",
+      "consultado_em": "2026-10-22T17:58:36.710143+00:00",
+      "status": "capturado",
+      "url_final": "https://www.pen.uem.br/site/public/assets/files/19944F3D475A0C509C267FE117F4A9F8/20210310_114004-engenhariaagricola.pdf",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "tls_verificado": true,
+      "bytes": 161552,
+      "sha256": "ed03bc9b100161a93016c22f7c199720b83ed33cb7a854555dc464979a972e57"
+    },
+    {
+      "arquivo": "reviews/2026-10-22-pendencias/capturas/daa-ingresso-2026.pdf",
+      "url_solicitada": "https://daa.uem.br/editais-e-portarias/editais-e-portarias-2025-1/edital-072-2025-daa-processos-especiais-de-ingresso-2026-2a-republicacao.pdf",
+      "iniciado_em": "2026-10-22T18:00:03.304601+00:00",
+      "consultado_em": "2026-10-22T18:00:03.594163+00:00",
+      "status": "capturado",
+      "url_final": "https://daa.uem.br/editais-e-portarias/editais-e-portarias-2025-1/edital-072-2025-daa-processos-especiais-de-ingresso-2026-2a-republicacao.pdf",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "tls_verificado": true,
+      "bytes": 422713,
+      "sha256": "9617e95d2c6d7dffb65cf5af2229aabaa878572ce6731cf073a8aa4e11c2c6ed"
+    },
+    {
+      "arquivo": "reviews/2026-10-22-pendencias/capturas/engenharia-agricola-ppc-2023.pdf",
+      "url_solicitada": "https://www.pen.uem.br/site/public/assets/files/19944F3D475A0C509C267FE117F4A9F8/20230524_140812-engenhariaagricola.pdf",
+      "iniciado_em": "2026-10-22T18:00:45.403758+00:00",
+      "consultado_em": "2026-10-22T18:00:45.694038+00:00",
+      "status": "capturado",
+      "url_final": "https://www.pen.uem.br/site/public/assets/files/19944F3D475A0C509C267FE117F4A9F8/20230524_140812-engenhariaagricola.pdf",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "tls_verificado": true,
+      "bytes": 881660,
+      "sha256": "1531882a0bd12e2d9a76643d7e4b6c3fe14a82bee9d50ba11da7550c35415f3b"
+    },
+    {
+      "arquivo": "reviews/2026-10-22-pendencias/capturas/dem-regulamento-pld.pdf",
+      "url_solicitada": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc/dem-deparamento-de-engenharia-mecancia-resolucao-106-2018-ctc-pdf-crdownload/@@download/file/DEM%20-%20Deparamento%20de%20Engenharia%20Mec%C3%A2nica%20%28resolucao-106-2018-ctc%29.crdownload",
+      "iniciado_em": "2026-10-22T18:00:47.308874+00:00",
+      "consultado_em": "2026-10-22T18:00:47.626531+00:00",
+      "status": "capturado",
+      "url_final": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc/dem-deparamento-de-engenharia-mecancia-resolucao-106-2018-ctc-pdf-crdownload/@@download/file/DEM%20-%20Deparamento%20de%20Engenharia%20Mec%C3%A2nica%20%28resolucao-106-2018-ctc%29.crdownload",
+      "http_status": 200,
+      "content_type": "application/octet-stream",
+      "tls_verificado": true,
+      "bytes": 597236,
+      "sha256": "f625434772d38ab83f8bbb5d5105bada2d7dd101d0180fdce9e2a72852862f70"
+    },
+    {
+      "arquivo": "reviews/2026-10-22-pendencias/capturas/cursos-indice.html",
+      "url_solicitada": "https://www.pen.uem.br/site/public/cursos",
+      "iniciado_em": "2026-10-22T18:03:59.566536+00:00",
+      "consultado_em": "2026-10-22T18:03:59.864981+00:00",
+      "status": "capturado",
+      "url_final": "https://www.pen.uem.br/site/public/cursos",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "tls_verificado": true,
+      "bytes": 39241,
+      "sha256": "8e576319551f6af65a69217a7169eb2b8c02126fb6f730d90c923189fef865e3"
+    }
+  ],
+  "limites": [
+    "Registro local de obtenção, sem assinatura institucional ou autorização de redistribuição."
+  ]
+}

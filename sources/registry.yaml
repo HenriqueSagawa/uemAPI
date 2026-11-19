@@ -9,10 +9,15 @@ sources:
     access: public
     role: primary
     status: candidate
-    last_verified: "2026-09-25"
+    last_verified: "2026-10-16"
     review_interval_days: null
     reuse_conditions: not_verified
-    notes: "HTML confirma sede em Maringá e conjunto de seis municípios regionais. A prévia aplica IDs, nomes, siglas e vínculos com municípios da tabela revisada, apoiada pelo relatório Base de Dados 2025; rótulos dos links não são validados."
+    notes: >-
+      Conferência documentada em reviews/2026-10-16-campi-centros/README.md,
+      com URLs, horários e hashes. O HTML confirma sede em Maringá e conjunto
+      de seis municípios regionais. IDs, nomes, siglas e vínculos com municípios
+      vêm da tabela local e de fontes de apoio; o coletor não valida os rótulos
+      dos links. A conferência dos candidatos não aprova reutilização ou publicação.
 
   estrutura_uem:
     dataset:
@@ -40,10 +45,17 @@ sources:
     access: public
     role: primary
     status: candidate
-    last_verified: "2026-09-26"
+    last_verified: "2026-10-16"
     review_interval_days: null
     reuse_conditions: not_verified
-    notes: "O coletor de centros gera prévia dos sete centros extraídos do índice, com siglas, nomes e links, sem visitar as páginas vinculadas. Essas páginas apresentam departamentos, siglas e também outras entradas. app.collectors.departamentos lê uma cópia local de um centro por execução, gera candidatos com ID interno derivado da sigla e mantém rótulos, links e exclusões para revisão. A estrutura foi conferida em 2026-09-26; completude, câmpus, situação atual, origem do arquivo e reutilização não estão verificados. As prévias não criam snapshot nem acessam a rede."
+    notes: >-
+      Índice e sete páginas de centros conferidos em 2026-10-16 nos lotes
+      reviews/2026-10-16-campi-centros/ e reviews/2026-10-16-departamentos/.
+      O índice sustenta nomes, siglas e links; as páginas vinculadas sustentam
+      candidatos a departamentos, rótulos e exclusões auditáveis. Em 2026-10-22,
+      somente a página do CTC e o documento do DEM foram reconferidos em
+      reviews/2026-10-22-pendencias/; isso não atualiza a data do índice inteiro.
+      Completude, câmpus, situação atual e reutilização seguem não verificados.
 
   base_dados_uem:
     dataset:
@@ -60,7 +72,12 @@ sources:
     last_verified: "2026-09-25"
     review_interval_days: null
     reuse_conditions: not_verified
-    notes: "Página HTML que lista PDFs anuais. O relatório 2025 usa dados de 2024 e informa direitos reservados."
+    notes: >-
+      Página HTML que lista PDFs anuais. Sua data de verificação permanece
+      2026-09-25. O PDF v05-base-de-dados-2024-2025.pdf foi consultado novamente
+      em 2026-10-16 para a revisão de câmpus, conforme
+      reviews/2026-10-16-campi-centros/capturas.json; essa captura não revalida
+      o índice HTML. O relatório usa ano base 2024 e informa direitos reservados.
 
   cursos_graduacao:
     dataset: cursos
@@ -70,10 +87,18 @@ sources:
     access: public
     role: primary
     status: candidate
-    last_verified: "2026-09-25"
+    last_verified: "2026-10-22"
     review_interval_days: null
     reuse_conditions: not_verified
-    notes: "O coletor do índice gera prévia das entradas presenciais por câmpus e registra o link para o NEAD. app.collectors.curso_detalhes lê HTML local de uma página de detalhe, confere título e câmpus com o índice e preserva blocos de turno, habilitações e graus, sem inferir ofertas. IDs por câmpus e nome são apenas candidatos; centro e departamento não constam no índice, o código da URL não foi validado como ID institucional e a EaD não está coberta."
+    notes: >-
+      O lote reviews/2026-10-17-cursos/ confere o índice e 67 detalhes presenciais,
+      preservando blocos acadêmicos sem inferir ofertas. Em 2026-10-22 foram
+      reconferidos o índice e somente o detalhe de Engenharia Agrícola, em
+      reviews/2026-10-22-pendencias/. A página conserva Licenciatura, em divergência
+      com o PPC vinculado; o candidato foi rejeitado para uso canônico e há uma
+      normalização proposta com evidências. Os outros 66 detalhes não foram
+      recapturados nessa data. IDs estáveis, EaD, vínculos, completude e reutilização
+      continuam pendentes; last_verified registra o índice, não a aprovação do dataset.
 
   portal_graduacao:
     dataset: cursos
@@ -103,3 +128,56 @@ sources:
     review_interval_days: null
     reuse_conditions: not_verified
     notes: "Página pública aponta para consultas acadêmicas; acesso e formato das páginas de resultados ainda precisam de verificação."
+
+  dem_regulamento:
+    dataset: departamentos
+    url: "https://dem.uem.br/arquivos/resolucoes-dem/resolucao-106-2018-ctc.pdf"
+    type: pdf
+    collector: null
+    access: public
+    role: validation
+    status: candidate
+    last_verified: "2026-10-22"
+    review_interval_days: null
+    reuse_conditions: not_verified
+    notes: >-
+      Resolução 106/2018-CI/CTC, página PDF 2, Anexo I, art. 1º, sustenta o nome
+      Departamento de Engenharia Mecânica (DEM). A cópia do DEM e o arquivo
+      vinculado na PLD têm SHA-256 idênticos no lote reviews/2026-10-22-pendencias/.
+      O regulamento sustenta a nomenclatura; não foi usado para afirmar status atual.
+
+  engenharia_agricola_ppc:
+    dataset: cursos
+    url: "https://www.pen.uem.br/site/public/assets/files/19944F3D475A0C509C267FE117F4A9F8/20230524_140812-engenhariaagricola.pdf"
+    type: pdf
+    collector: null
+    access: public
+    role: validation
+    status: candidate
+    last_verified: "2026-10-22"
+    review_interval_days: null
+    reuse_conditions: not_verified
+    notes: >-
+      PPC atualmente vinculado no detalhe de Engenharia Agrícola da PEN.
+      Resolução 042/2022-CI/CCA: página PDF 1 delimita ingressantes a partir de
+      2023; página PDF 2, item 1.1, registra Bacharel em Engenharia Agrícola como
+      habilitação, e item 1.6 assinala Bacharel. Evidência de normalização em
+      reviews/2026-10-22-pendencias/, sem generalizar para outras turmas ou publicar dados.
+
+  daa_ingresso_2026:
+    dataset: cursos
+    url: "https://daa.uem.br/editais-e-portarias/editais-e-portarias-2025-1/edital-072-2025-daa-processos-especiais-de-ingresso-2026-2a-republicacao.pdf"
+    type: pdf
+    collector: null
+    access: public
+    role: validation
+    status: candidate
+    last_verified: "2026-10-22"
+    review_interval_days: null
+    reuse_conditions: not_verified
+    notes: >-
+      Edital 072/2025-DAA, segunda republicação, para ingresso em 2026. Página
+      PDF/impressa 16 relaciona Engenharia Agrícola (CAR), Integral, Bacharelado.
+      Corrobora a categoria de formação; não substitui o grau profissional
+      Engenheiro Agrícola nem comprova ofertas, vagas ou status atuais fora do edital.
+      Conferência em reviews/2026-10-22-pendencias/README.md.
