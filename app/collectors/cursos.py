@@ -3,7 +3,6 @@
 import argparse
 import json
 import re
-import unicodedata
 from collections import Counter
 from dataclasses import asdict, dataclass
 from datetime import datetime
@@ -11,6 +10,7 @@ from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urljoin
 
+from app.core.normalize import fold
 from app.schemas.common import Fonte
 
 SOURCE_URL = "https://www.pen.uem.br/site/public/cursos"
@@ -23,25 +23,18 @@ class CourseSourceError(ValueError):
     """O índice local não corresponde à estrutura esperada."""
 
 
-def _normalize(value: str) -> str:
-    without_accents = "".join(
-        char for char in unicodedata.normalize("NFKD", value) if not unicodedata.combining(char)
-    )
-    return " ".join(without_accents.casefold().split())
-
-
 # Associação explícita com os IDs da API. A página da PEN não fornece esses IDs.
 CAMPUS_HEADINGS = {
-    _normalize("Campus Sede - Maringá/PR"): "sede",
-    _normalize("Campus Regional de Cianorte - Cianorte/PR"): "crc",
-    _normalize("Campus do Arenito - Cidade Gaúcha/PR"): "car",
-    _normalize("Campus Regional do Arenito - Cidade Gaúcha/PR"): "car",
-    _normalize("Campus Regional de Goioerê - Goioerê/PR"): "crg",
-    _normalize("Campus Regional do Noroeste - Diamante do Norte/PR"): "crn",
-    _normalize("Campus Regional de Umuarama - Umuarama/PR"): "cau",
-    _normalize("Campus Regional do Vale do Ivaí - Ivaiporã/PR"): "crv",
+    fold("Campus Sede - Maringá/PR"): "sede",
+    fold("Campus Regional de Cianorte - Cianorte/PR"): "crc",
+    fold("Campus do Arenito - Cidade Gaúcha/PR"): "car",
+    fold("Campus Regional do Arenito - Cidade Gaúcha/PR"): "car",
+    fold("Campus Regional de Goioerê - Goioerê/PR"): "crg",
+    fold("Campus Regional do Noroeste - Diamante do Norte/PR"): "crn",
+    fold("Campus Regional de Umuarama - Umuarama/PR"): "cau",
+    fold("Campus Regional do Vale do Ivaí - Ivaiporã/PR"): "crv",
 }
-DISTANCE_HEADING = _normalize("Modalidade de Educação a Distância")
+DISTANCE_HEADING = fold("Modalidade de Educação a Distância")
 # Seções presentes no índice da PEN verificado em 2026-09-25. Mudanças exigem revisão.
 EXPECTED_CAMPUS_IDS = frozenset({"sede", "crc", "car", "crg", "crv", "cau"})
 
@@ -138,7 +131,7 @@ class CourseIndexParser(HTMLParser):
             self._main = False
 
     def _set_heading(self, heading: str) -> None:
-        normalized = _normalize(heading)
+        normalized = fold(heading)
         if normalized == DISTANCE_HEADING:
             section = "ead"
         elif normalized.startswith("campus "):

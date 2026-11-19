@@ -3,7 +3,6 @@
 import argparse
 import json
 import re
-import unicodedata
 from dataclasses import dataclass
 from datetime import datetime
 from html.parser import HTMLParser
@@ -11,6 +10,7 @@ from pathlib import Path
 
 from pydantic import ValidationError
 
+from app.core.normalize import fold
 from app.schemas.campus import Campus
 from app.schemas.common import Fonte
 
@@ -80,20 +80,13 @@ class Paragraphs(HTMLParser):
             self._inside_paragraph = False
 
 
-def _normalize(value: str) -> str:
-    without_accents = "".join(
-        char for char in unicodedata.normalize("NFKD", value) if not unicodedata.combining(char)
-    )
-    return " ".join(without_accents.casefold().split())
-
-
 def extract_regional_cities(html: str) -> set[str]:
     parser = Paragraphs()
     parser.feed(html)
     matching_lists = [
         match.group("cidades")
         for paragraph in parser.paragraphs
-        if (match := REGIONAL_LIST.search(_normalize(paragraph)))
+        if (match := REGIONAL_LIST.search(fold(paragraph)))
     ]
     if len(matching_lists) != 1:
         raise CampusSourceError("a lista institucional de câmpus não foi encontrada uma única vez")
