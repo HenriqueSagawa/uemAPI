@@ -28,6 +28,26 @@ A documentação interativa estará em <http://127.0.0.1:8000/docs>. Até que os
 
 Também é possível construir uma imagem com `docker build -t uem-api .` e iniciar com `docker run --rm -p 8000:8000 uem-api`. A imagem atual inclui apenas o diretório `data/` vazio e, portanto, informa indisponibilidade até receber dados revisados.
 
+## Geração do snapshot revisado
+
+O snapshot é montado offline a partir dos lotes revisados declarados em
+[`reviews/snapshot-inputs.json`](reviews/snapshot-inputs.json). O comando padrão é
+um dry-run e só imprime o diff e o relatório; `--write` substitui os quatro
+arquivos de `data/` de forma atômica, depois de validar o resultado:
+
+```bash
+python scripts/update_data.py
+python scripts/update_data.py --write
+python scripts/validate_data.py
+python scripts/validate_sources.py
+```
+
+A geração recusa revisões com decisões pendentes ou desatualizadas, confere as
+propostas de normalização contra a impressão e o valor observado e não inventa
+grau para cursos com blocos acadêmicos ambíguos. `data/` continua vazio até a
+aprovação humana do snapshot e das condições de reutilização das fontes. Consulte
+[os detalhes do pipeline](docs/snapshot-generation.md).
+
 ## Prévia local do coletor de câmpus
 
 O primeiro coletor lê somente um arquivo HTML local. Ele confere a presença da sede em Maringá e o conjunto dos seis municípios regionais descritos na [página de câmpus](https://www.uem.br/a-uem/campus). Em seguida, aplica o mapeamento local definido conforme a [tabela revisada](docs/campus-identifiers.md) para obter IDs, nomes, siglas e a associação de cada câmpus ao município. Ele não confere os nomes dos links da página. A prévia em JSON traz esses limites no campo `proveniencia`; o `fonte.url` de cada registro aponta para a página institucional de referência, mas não comprova que o arquivo local veio dela nem que ela sustenta todos os campos. O comando não acessa a rede nem grava em `data/`.
