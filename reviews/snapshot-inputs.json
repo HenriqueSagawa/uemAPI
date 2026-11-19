@@ -1,0 +1,38 @@
+{
+  "versao": 1,
+  "normalizacoes": "2026-10-22-pendencias/normalizacoes-propostas.json",
+  "datasets": {
+    "campi": {
+      "previs": ["2026-10-16-campi-centros/campi-previa.json"],
+      "revisoes": ["2026-10-16-campi-centros/campi-revisao.json"]
+    },
+    "centros": {
+      "previs": ["2026-10-16-campi-centros/centros-previa.json"],
+      "revisoes": ["2026-10-16-campi-centros/centros-revisao.json"]
+    },
+    "departamentos": {
+      "previs": [
+        "2026-10-16-departamentos/cca/previa.json",
+        "2026-10-16-departamentos/ccb/previa.json",
+        "2026-10-16-departamentos/cce/previa.json",
+        "2026-10-16-departamentos/cch/previa.json",
+        "2026-10-16-departamentos/ccs/previa.json",
+        "2026-10-16-departamentos/csa/previa.json",
+        "2026-10-22-pendencias/ctc-previa.json"
+      ],
+      "revisoes": [
+        "2026-10-16-departamentos/cca/revisao.json",
+        "2026-10-16-departamentos/ccb/revisao.json",
+        "2026-10-16-departamentos/cce/revisao.json",
+        "2026-10-16-departamentos/cch/revisao.json",
+        "2026-10-16-departamentos/ccs/revisao.json",
+        "2026-10-16-departamentos/csa/revisao.json",
+        "2026-10-22-pendencias/ctc-revisao.json"
+      ]
+    },
+    "cursos": {
+      "previs": ["2026-10-17-cursos/cursos-consolidados.json"],
+      "revisoes": ["2026-10-22-pendencias/cursos-revisao.json"]
+    }
+  }
+}

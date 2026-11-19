@@ -101,16 +101,16 @@ def _references_exist(snapshot: Snapshot) -> None:
                 raise DatasetError("cursos: centro e departamento incompatíveis")
 
 
-def load_snapshot(data_dir: Path) -> Snapshot:
-    """Read and validate all four files before exposing any records."""
+def parse_snapshot(raw: Mapping[str, Any]) -> Snapshot:
+    """Validate all four in-memory datasets before exposing any records."""
     parsed = {}
     for dataset, model in DATASET_TYPES.items():
-        path = data_dir / f"{dataset}.json"
+        if dataset not in raw:
+            raise DatasetError(f"{dataset}: dataset ausente")
         try:
-            raw = json.loads(path.read_text(encoding="utf-8"))
-            records = TypeAdapter(list[model]).validate_python(raw)
-        except (OSError, UnicodeError, json.JSONDecodeError, ValidationError) as exc:
-            raise DatasetError(f"{dataset}: arquivo ausente ou inválido") from exc
+            records = TypeAdapter(list[model]).validate_python(raw[dataset])
+        except ValidationError as exc:
+            raise DatasetError(f"{dataset}: registros inválidos") from exc
         if not records:
             raise DatasetError(f"{dataset}: dataset vazio")
         parsed[dataset] = tuple(records)
@@ -121,3 +121,15 @@ def load_snapshot(data_dir: Path) -> Snapshot:
     snapshot = Snapshot(**parsed)
     _references_exist(snapshot)
     return snapshot
+
+
+def load_snapshot(data_dir: Path) -> Snapshot:
+    """Read and validate all four files before exposing any records."""
+    raw = {}
+    for dataset in DATASET_TYPES:
+        path = data_dir / f"{dataset}.json"
+        try:
+            raw[dataset] = json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, UnicodeError, json.JSONDecodeError) as exc:
+            raise DatasetError(f"{dataset}: arquivo ausente ou inválido") from exc
+    return parse_snapshot(raw)
