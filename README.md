@@ -190,3 +190,18 @@ Próximas etapas, sem alterar automaticamente o snapshot publicado:
 4. Revisar as fontes aprovadas dentro do intervalo de 180 dias e registrar novas decisões antes de substituir os dados.
 
 O projeto não coleta dados pessoais, conteúdos restritos ou informações que exijam autenticação.
+
+## Comunidade e contribuição
+
+- [Como contribuir](CONTRIBUTING.md), incluindo o fluxo de revisão de dados.
+- [Código de Conduta](CODE_OF_CONDUCT.md).
+- [Política de Segurança](SECURITY.md): relate vulnerabilidades em canal privado.
+- [Suporte](SUPPORT.md): onde abrir bugs, correções de dados e sugestões.
+- [Changelog](CHANGELOG.md): mudanças relevantes e limitações por versão.
+
+## Licença
+
+Distribuído sob a [licença MIT](LICENSE). A uemAPI é um projeto independente e
+não oficial; a licença do código não concede direitos sobre as páginas
+institucionais usadas como fonte nem autoriza reutilização fora do escopo
+registrado em `sources/registry.yaml`.

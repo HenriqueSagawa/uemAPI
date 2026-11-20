@@ -1,0 +1,57 @@
+name: Sugerir funcionalidade
+description: Proponha uma melhoria para a API, os dados ou a documentação.
+title: "[feat] "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Antes de propor, verifique se a melhoria já existe ou está documentada.
+        Mudanças de contrato e de dados podem exigir discussão de escopo.
+
+  - type: textarea
+    id: problema
+    attributes:
+      label: Problema ou necessidade
+      description: Qual problema a proposta resolve?
+      placeholder: Descreva o cenário e quem é afetado.
+    validations:
+      required: true
+
+  - type: textarea
+    id: solucao
+    attributes:
+      label: Solução proposta
+      description: Como você imagina a mudança?
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternativas
+    attributes:
+      label: Alternativas consideradas
+      description: Outras abordagens, workarounds ou impactos.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Área
+      options:
+        - API e contrato
+        - Dados e revisão
+        - Documentação
+        - Infraestrutura e CI
+        - Outro
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: confirmacoes
+    attributes:
+      label: Confirmações
+      options:
+        - label: Procurei issues e documentação existentes.
+          required: true
+        - label: Entendo que dados novos exigem fonte e revisão.
+          required: true

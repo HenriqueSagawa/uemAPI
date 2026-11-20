@@ -1,0 +1,84 @@
+name: Relatar um bug
+description: Informe um erro na API, na documentação ou na infraestrutura.
+title: "[bug] "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por relatar. Não inclua tokens, dados pessoais ou conteúdo
+        restrito. Para vulnerabilidades, use o canal privado em SECURITY.md.
+
+  - type: textarea
+    id: descricao
+    attributes:
+      label: Descrição
+      description: O que está errado?
+      placeholder: Descreva o problema de forma objetiva.
+    validations:
+      required: true
+
+  - type: textarea
+    id: passos
+    attributes:
+      label: Como reproduzir
+      description: Liste os passos, comandos ou requisições.
+      placeholder: |
+        1. Acesse ...
+        2. Chame ...
+        3. Observe ...
+    validations:
+      required: true
+
+  - type: input
+    id: esperado
+    attributes:
+      label: Comportamento esperado
+      placeholder: O que deveria acontecer?
+    validations:
+      required: true
+
+  - type: input
+    id: observado
+    attributes:
+      label: Comportamento observado
+      placeholder: O que aconteceu de fato?
+    validations:
+      required: true
+
+  - type: dropdown
+    id: ambiente
+    attributes:
+      label: Ambiente
+      options:
+        - Produção (uem-api.vercel.app)
+        - Execução local
+        - Docker
+        - Outro
+    validations:
+      required: true
+
+  - type: input
+    id: versao
+    attributes:
+      label: Versão ou commit
+      description: Informe a versão, tag ou commit, se souber.
+      placeholder: v0.1.0, 301fbc4, main...
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs ou resposta relevantes
+      description: Remova tokens, cookies, dados pessoais e conteúdo restrito.
+      render: shell
+
+  - type: checkboxes
+    id: confirmacoes
+    attributes:
+      label: Confirmações
+      options:
+        - label: Procurei issues existentes com o mesmo problema.
+          required: true
+        - label: Removi segredos, dados pessoais e conteúdo restrito deste relato.
+          required: true

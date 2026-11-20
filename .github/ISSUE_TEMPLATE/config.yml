@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Documentação do projeto
+    url: https://github.com/HenriqueSagawa/uemAPI#readme
+    about: Leia o README e a documentação antes de abrir uma issue.
+  - name: Relatar vulnerabilidade de segurança
+    url: https://github.com/HenriqueSagawa/uemAPI/security/advisories/new
+    about: Use o canal privado. Não abra issue pública para vulnerabilidades.

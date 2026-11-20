@@ -1,0 +1,93 @@
+name: Correção de dados
+description: Proponha uma correção com fonte pública e evidência verificável.
+title: "[dados] "
+labels:
+  - data
+body:
+  - type: markdown
+    attributes:
+      value: |
+        O snapshot é revisado e gerado a partir de lotes com decisões
+        registradas. Correções sem fonte pública e evidência não podem ser
+        aceitas. Não inclua dados pessoais.
+
+  - type: dropdown
+    id: dataset
+    attributes:
+      label: Dataset
+      options:
+        - campi
+        - centros
+        - departamentos
+        - cursos
+    validations:
+      required: true
+
+  - type: input
+    id: registro
+    attributes:
+      label: ID do registro
+      description: Informe o ID publicado, como `sede`, `ctc` ou `car-engenharia-agricola`.
+      placeholder: sede
+    validations:
+      required: true
+
+  - type: input
+    id: campo
+    attributes:
+      label: Campo
+      description: Informe o campo que precisa ser corrigido.
+      placeholder: nome, sigla, grau, campus_id...
+    validations:
+      required: true
+
+  - type: input
+    id: valor_atual
+    attributes:
+      label: Valor atual
+      placeholder: Valor hoje publicado pela API.
+    validations:
+      required: true
+
+  - type: input
+    id: valor_correto
+    attributes:
+      label: Valor observado na fonte
+      placeholder: Valor sustentado pela fonte pública.
+    validations:
+      required: true
+
+  - type: input
+    id: fonte
+    attributes:
+      label: URL da fonte
+      description: Use uma URL pública e, de preferência, HTTPS.
+      placeholder: https://...
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidencia
+    attributes:
+      label: Evidência e contexto
+      description: Explique onde a informação aparece e por que ela sustenta a correção.
+      placeholder: Página, seção, data de consulta, trecho relevante...
+    validations:
+      required: true
+
+  - type: textarea
+    id: observacoes
+    attributes:
+      label: Observações adicionais
+
+  - type: checkboxes
+    id: confirmacoes
+    attributes:
+      label: Confirmações
+      options:
+        - label: A correção é baseada em fonte pública verificável, não em suposição.
+          required: true
+        - label: Não incluí dados pessoais, credenciais ou conteúdo restrito.
+          required: true
+        - label: Entendo que a correção passa por revisão e pode não ser aplicada imediatamente.
+          required: true
