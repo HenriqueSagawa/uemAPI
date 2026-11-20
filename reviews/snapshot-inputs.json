@@ -1,6 +1,7 @@
 {
   "versao": 1,
   "normalizacoes": "2026-10-22-pendencias/normalizacoes-propostas.json",
+  "ids_cursos": "course-ids.json",
   "datasets": {
     "campi": {
       "previs": ["2026-10-16-campi-centros/campi-previa.json"],

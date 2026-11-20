@@ -1,0 +1,93 @@
+[
+  {
+    "id": "car",
+    "nome": "Câmpus Regional do Arenito",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "campi_uem",
+      "url": "https://www.uem.br/a-uem/campus",
+      "consultado_em": "2026-10-16T15:28:56.372959Z"
+    },
+    "sigla": "CAR",
+    "cidade": "Cidade Gaúcha",
+    "endereco": null
+  },
+  {
+    "id": "cau",
+    "nome": "Câmpus Regional de Umuarama",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "campi_uem",
+      "url": "https://www.uem.br/a-uem/campus",
+      "consultado_em": "2026-10-16T15:28:56.372959Z"
+    },
+    "sigla": "CAU",
+    "cidade": "Umuarama",
+    "endereco": null
+  },
+  {
+    "id": "crc",
+    "nome": "Câmpus Regional de Cianorte",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "campi_uem",
+      "url": "https://www.uem.br/a-uem/campus",
+      "consultado_em": "2026-10-16T15:28:56.372959Z"
+    },
+    "sigla": "CRC",
+    "cidade": "Cianorte",
+    "endereco": null
+  },
+  {
+    "id": "crg",
+    "nome": "Câmpus Regional de Goioerê",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "campi_uem",
+      "url": "https://www.uem.br/a-uem/campus",
+      "consultado_em": "2026-10-16T15:28:56.372959Z"
+    },
+    "sigla": "CRG",
+    "cidade": "Goioerê",
+    "endereco": null
+  },
+  {
+    "id": "crn",
+    "nome": "Câmpus Regional do Noroeste",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "campi_uem",
+      "url": "https://www.uem.br/a-uem/campus",
+      "consultado_em": "2026-10-16T15:28:56.372959Z"
+    },
+    "sigla": "CRN",
+    "cidade": "Diamante do Norte",
+    "endereco": null
+  },
+  {
+    "id": "crv",
+    "nome": "Câmpus Regional do Vale do Ivaí",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "campi_uem",
+      "url": "https://www.uem.br/a-uem/campus",
+      "consultado_em": "2026-10-16T15:28:56.372959Z"
+    },
+    "sigla": "CRV",
+    "cidade": "Ivaiporã",
+    "endereco": null
+  },
+  {
+    "id": "sede",
+    "nome": "Câmpus Sede",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "campi_uem",
+      "url": "https://www.uem.br/a-uem/campus",
+      "consultado_em": "2026-10-16T15:28:56.372959Z"
+    },
+    "sigla": null,
+    "cidade": "Maringá",
+    "endereco": null
+  }
+]

@@ -1,6 +1,6 @@
 # Inventário inicial de fontes da uemAPI
 
-Revisão inicial: 25 de setembro de 2026; índice dos centros reconferido em 26 de setembro. A tabela inicial cobre as sete URLs originalmente propostas em `sources/registry.yaml`; as conferências posteriores e fontes de apoio estão registradas ao final. Todas permanecem **candidatas**. Acesso público à página confirma que ela pode ser lida sem login; não confirma permissão para coleta automatizada ou redistribuição de um dataset.
+Revisão inicial: 25 de setembro de 2026; índice dos centros reconferido em 26 de setembro. A tabela inicial cobre as sete URLs originalmente propostas em `sources/registry.yaml`; as conferências posteriores e fontes de apoio estão registradas ao final. As três fontes usadas pelo snapshot v0.1.0 (`campi_uem`, `centros_pld` e `cursos_graduacao`) estão **aprovadas** para o escopo da [publicação](../reviews/2026-11-20-publicacao/README.md); as demais permanecem **candidatas**. Acesso público à página confirma que ela pode ser lida sem login; não confirma permissão para coleta automatizada ou redistribuição de um dataset.
 
 | Fonte | Dados observados | Uso proposto | Limite encontrado |
 | --- | --- | --- | --- |
@@ -14,30 +14,30 @@ Revisão inicial: 25 de setembro de 2026; índice dos centros reconferido em 26 
 
 ## Decisões antes do primeiro coletor
 
-1. **Identificadores e siglas de câmpus.** A [regra de IDs](campus-identifiers.md) usa as seis siglas regionais registradas pela UEM e `sede` como ID interno para Maringá. A sede permanece sem sigla institucional no schema; a aplicação dessa regra aos dados reais ainda exige revisão antes da publicação.
+1. **Identificadores e siglas de câmpus.** A [regra de IDs](campus-identifiers.md) usa as seis siglas regionais registradas pela UEM e `sede` como ID interno para Maringá. A sede permanece sem sigla institucional no schema. A regra foi aplicada ao snapshot v0.1.0 e permanece sujeita a nova revisão se a fonte mudar.
 2. **Unidade de curso.** A PEN lista cursos por câmpus e encaminha a modalidade a distância ao NEAD; o portal informa 80 cursos. O catálogo da CPR, consultado anteriormente, mostrava 57 resultados. Não tratar essas contagens como equivalentes sem entender se contam cursos, ofertas, turnos ou modalidades. Um curso com ofertas distintas não deve ser mesclado por nome.
-3. **Reutilização e frequência.** Não foi identificada uma licença geral de dados para essas páginas. O relatório anual declara direitos reservados. Antes de automatizar ou redistribuir, revisar as condições aplicáveis a cada fonte e definir frequência prudente de acesso. `review_interval_days` permanece sem valor no registro até essa decisão.
+3. **Reutilização e frequência.** Não foi identificada uma licença geral de dados para essas páginas. O relatório anual declara direitos reservados. As três fontes usadas no snapshot v0.1.0 foram aprovadas para o escopo publicado, com `review_interval_days: 180`; as demais continuam sem intervalo definido e sem autorização de publicação. A aprovação não constitui licença geral para terceiros.
 4. **Cobertura dos vínculos.** Conferir os sete centros e suas páginas de departamentos. Vínculos curso–departamento não devem ser inferidos apenas por semelhança de nome ou pelo centro do curso.
 
-Um protótipo do coletor de câmpus agora lê HTML local, valida a lista de municípios e gera uma prévia em JSON para revisão. Ele não busca páginas automaticamente nem cria um dataset de produção. As condições de reutilização e o snapshot completo continuam pendentes antes da publicação.
+Um protótipo do coletor de câmpus agora lê HTML local, valida a lista de municípios e gera uma prévia em JSON para revisão. Ele não busca páginas automaticamente nem cria um dataset de produção. A aprovação de reutilização e do snapshot v0.1.0 está registrada em [`reviews/2026-11-20-publicacao/`](../reviews/2026-11-20-publicacao/README.md).
 
 O coletor de cursos lê uma cópia local do índice da PEN e gera uma prévia de entradas presenciais por câmpus. Ele não atribui IDs da API, não desdobra turnos ou habilitações e não inclui os cursos da EaD. A revisão do JSON e das condições de reutilização continua necessária antes de qualquer publicação. Nenhum dataset de produção foi criado nesta etapa.
 
-O coletor de centros lê uma cópia local do índice da PLD, valida as sete siglas observadas e gera uma prévia com nomes e links das páginas de cada centro. Os IDs são derivados das siglas em minúsculas. O coletor não lê essas páginas nem classifica os departamentos e outros órgãos nelas listados. A revisão da prévia e das condições de reutilização continua pendente; nenhum dataset de produção foi criado.
+O coletor de centros lê uma cópia local do índice da PLD, valida as sete siglas observadas e gera uma prévia com nomes e links das páginas de cada centro. Os IDs são derivados das siglas em minúsculas. O coletor não lê essas páginas nem classifica os departamentos e outros órgãos nelas listados. A revisão do lote e a aprovação do snapshot v0.1.0 estão registradas em [`reviews/2026-11-20-publicacao/`](../reviews/2026-11-20-publicacao/README.md).
 
 O coletor de departamentos lê uma página local de centro da PLD por execução. Os candidatos trazem siglas e nomes dos links; o vínculo com o centro é conferido pelo título e pela entrada do regulamento do próprio centro. O ID em minúsculas é uma proposta interna, e câmpus e situação atual não são inferidos. Rótulos e links permanecem disponíveis para auditoria, inclusive nas entradas excluídas por não identificarem departamentos. A prévia não autentica o arquivo, não lê os regulamentos nem verifica a completude das listas. A estrutura foi confrontada com páginas dos sete centros em 26 de setembro de 2026; isso não aprova o dataset nem as condições de reutilização.
 
 A prévia consolidada de departamentos associa capturas locais aos sete centros por manifesto, executa o coletor individual em cada fonte disponível e relata centros aceitos, ausentes ou inválidos. Siglas repetidas entre centros aceitos são destacadas para revisão. Mesmo quando as sete fontes são aceitas, o relatório não comprova que cada página contém todos os departamentos daquele centro; as listas, os vínculos e as condições de reutilização ainda exigem revisão. Nenhum dataset de produção é gerado.
 
-O coletor de detalhe dos cursos lê uma página local da PEN e a confere com uma entrada do índice também salva localmente. A prévia consolidada usa um manifesto explícito das capturas para relatar aceitos, ausências, falhas por curso e entradas fora do índice; uma falha individual não interrompe as demais. Preserva blocos de turnos, habilitações e graus sem desdobrá-los em ofertas. O ID por câmpus e nome é candidato e exige um mapeamento persistente antes de publicar dados. A [regra e seus limites](course-identity.md) documentam essa decisão. Nenhum dado pessoal da página de detalhe é emitido na prévia.
+O coletor de detalhe dos cursos lê uma página local da PEN e a confere com uma entrada do índice também salva localmente. A prévia consolidada usa um manifesto explícito das capturas para relatar aceitos, ausências, falhas por curso e entradas fora do índice; uma falha individual não interrompe as demais. Preserva blocos de turnos, habilitações e graus sem desdobrá-los em ofertas. O ID por câmpus e nome é candidato; o snapshot v0.1.0 usa o mapeamento persistente de `reviews/course-ids.json`. A [regra e seus limites](course-identity.md) documentam essa decisão. Nenhum dado pessoal da página de detalhe é emitido na prévia.
 
 O [fluxo local de revisão](review-workflow.md) compara prévias de câmpus, centros, departamentos e cursos, destaca mudanças por registro e associa justificativas e evidências a decisões sobre candidatos. Para cursos, o lote consolidado mantém capturas ausentes, inválidas e fora do índice como pendências; a chave de revisão combina câmpus e URL do detalhe, sem se tornar ID permanente da API. Mudanças nos registros ou na proveniência exigem nova decisão. O fluxo não autentica as capturas, não resolve as condições de reutilização e não gera dados de produção.
 
-Em 16 de outubro de 2026, a [primeira conferência real de câmpus e centros](../reviews/2026-10-16-campi-centros/README.md) gerou sete candidatos de cada dataset e registrou decisões técnicas assistidas, com evidências e hashes das capturas locais. As fontes de apoio dos câmpus foram consultadas novamente, incluindo as páginas 8 e 17 do relatório de ano base 2024. A conferência preservou as escolhas documentadas do Arenito e de Diamante do Norte e manteve `status: desconhecido`. As decisões estão disponíveis para revisão no PR; o estado das fontes permanece `candidate` até a aprovação das condições de reutilização e do snapshot completo.
+Em 16 de outubro de 2026, a [primeira conferência real de câmpus e centros](../reviews/2026-10-16-campi-centros/README.md) gerou sete candidatos de cada dataset e registrou decisões técnicas assistidas, com evidências e hashes das capturas locais. As fontes de apoio dos câmpus foram consultadas novamente, incluindo as páginas 8 e 17 do relatório de ano base 2024. A conferência preservou as escolhas documentadas do Arenito e de Diamante do Norte e manteve `status: desconhecido`. As decisões estão disponíveis para revisão; naquele momento as fontes permaneciam `candidate`. A aprovação posterior está registrada em [20 de novembro de 2026](../reviews/2026-11-20-publicacao/README.md).
 
 Na mesma data, a [primeira conferência real de departamentos](../reviews/2026-10-16-departamentos/README.md) capturou novamente o índice da PLD e as sete páginas vinculadas. Foram aceitos 49 candidatos, sem siglas repetidas entre centros, e conferidas 15 exclusões pelos rótulos. A revisão técnica aprovou a correspondência de 48 candidatos com a listagem e manteve o DEM pendente por sua grafia. Os links foram preservados sem leitura dos documentos; a completude, a atualidade, a classificação dos demais órgãos e as condições de reutilização permanecem pendentes. Nenhum dado de produção foi publicado.
 
-Em 17 de outubro de 2026, a [primeira conferência real de cursos](../reviews/2026-10-17-cursos/README.md) capturou o índice da PEN e seus 67 detalhes presenciais. Todas as capturas foram aceitas pelo coletor, e os nomes, câmpus e campos acadêmicos foram confrontados com o HTML. A revisão técnica registrou 66 decisões aprovadas por fidelidade à captura e uma pendente para Engenharia Agrícola, cuja página combina habilitação de Licenciatura e grau de Engenheiro Agrícola. O link para a EaD foi registrado sem coleta do NEAD. A completude institucional, as ofertas, os IDs estáveis, os vínculos e as condições de reutilização continuam pendentes; nenhum snapshot de produção foi criado.
+Em 17 de outubro de 2026, a [primeira conferência real de cursos](../reviews/2026-10-17-cursos/README.md) capturou o índice da PEN e seus 67 detalhes presenciais. Todas as capturas foram aceitas pelo coletor, e os nomes, câmpus e campos acadêmicos foram confrontados com o HTML. A revisão técnica registrou 66 decisões aprovadas por fidelidade à captura e uma pendente para Engenharia Agrícola, cuja página combina habilitação de Licenciatura e grau de Engenheiro Agrícola. O link para a EaD foi registrado sem coleta do NEAD. A completude institucional, as ofertas e os vínculos continuam pendentes. Os IDs estáveis passaram a ser aplicados pelo mapeamento de `reviews/course-ids.json`, e o snapshot de produção foi criado após a aprovação de 20 de novembro de 2026.
 
 ## Fontes de apoio e decisões complementares de 22 de outubro de 2026
 
@@ -55,6 +55,14 @@ uso canônico nas novas decisões; há propostas de normalização ainda não ap
 As datas no catálogo descrevem as fontes efetivamente consultadas. O índice de
 câmpus foi conferido em 16/10; o índice de centros e as sete páginas, em 16/10;
 o índice da PEN foi reconferido em 22/10. Os demais 66 detalhes mantêm a captura
-de 17/10. Fontes que não foram revisitadas conservam suas datas anteriores. O
-estado `candidate`, os intervalos não definidos e a reutilização não verificada
-foram preservados.
+de 17/10. Fontes que não foram revisitadas conservam suas datas anteriores.
+
+## Publicação v0.1.0
+
+Em 20 de novembro de 2026, as fontes `campi_uem`, `centros_pld` e
+`cursos_graduacao` foram aprovadas para o escopo do snapshot v0.1.0, com
+reutilização verificada e revisão a cada 180 dias. As fontes de apoio usadas nas
+normalizações continuam candidatas e não são referenciadas pelos registros
+publicados. O escopo, as contagens e as limitações estão em
+[`reviews/2026-11-20-publicacao/`](../reviews/2026-11-20-publicacao/README.md).
+A aprovação não constitui licença geral nem valida coleta futura sem nova revisão.

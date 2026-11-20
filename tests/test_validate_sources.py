@@ -43,7 +43,9 @@ def registry() -> dict:
 def test_accepts_the_committed_registry():
     sources = validate_sources.load_registry(ROOT / "sources" / "registry.yaml")
     assert "campi_uem" in sources
-    assert sources["campi_uem"]["reuse_conditions"] == "not_verified"
+    assert sources["campi_uem"]["status"] == "approved"
+    assert sources["campi_uem"]["reuse_conditions"] == "verified"
+    assert sources["campi_uem"]["review_interval_days"] == 180
 
 
 def test_validates_datasets_declared_as_single_value_or_list(registry):

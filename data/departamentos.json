@@ -1,0 +1,639 @@
+[
+  {
+    "id": "dab",
+    "nome": "Departamento de Análises Clínicas e Biomedicina",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "centros_pld",
+      "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-da-saude-ccs",
+      "consultado_em": "2026-10-16T16:41:28.393221Z"
+    },
+    "sigla": "DAB",
+    "centro_sigla": "CCS",
+    "campus_id": null
+  },
+  {
+    "id": "dad",
+    "nome": "Departamento de Administração",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "centros_pld",
+      "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-sociais-aplicadas-csa",
+      "consultado_em": "2026-10-16T16:41:28.789629Z"
+    },
+    "sigla": "DAD",
+    "centro_sigla": "CSA",
+    "campus_id": null
+  },
+  {
+    "id": "dag",
+    "nome": "Departamento de Agronomia",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "centros_pld",
+      "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-agrarias",
+      "consultado_em": "2026-10-16T16:41:25.775401Z"
+    },
+    "sigla": "DAG",
+    "centro_sigla": "CCA",
+    "campus_id": null
+  },
+  {
+    "id": "dal",
+    "nome": "Departamento de Engenharia de Alimentos",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "centros_pld",
+      "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc",
+      "consultado_em": "2026-10-22T17:58:32.788772Z"
+    },
+    "sigla": "DAL",
+    "centro_sigla": "CTC",
+    "campus_id": null
+  },
+  {
+    "id": "dam",
+    "nome": "Departamento de Meio-Ambiente",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "centros_pld",
+      "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc",
+      "consultado_em": "2026-10-22T17:58:32.788772Z"
+    },
+    "sigla": "DAM",
+    "centro_sigla": "CTC",
+    "campus_id": null
+  },
+  {
+    "id": "dau",
+    "nome": "Departamento de Arquitetura e Urbanismo",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "centros_pld",
+      "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc",
+      "consultado_em": "2026-10-22T17:58:32.788772Z"
+    },
+    "sigla": "DAU",
+    "centro_sigla": "CTC",
+    "campus_id": null
+  },
+  {
+    "id": "dbc",
+    "nome": "Departamento de Biotecnologia, Genética e Biologia Celular",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "centros_pld",
+      "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-biologicas-ccb",
+      "consultado_em": "2026-10-16T16:41:26.252243Z"
+    },
+    "sigla": "DBC",
+    "centro_sigla": "CCB",
+    "campus_id": null
+  },
+  {
+    "id": "dbi",
+    "nome": "Departamento de Biologia",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "centros_pld",
+      "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-biologicas-ccb",
+      "consultado_em": "2026-10-16T16:41:26.252243Z"
+    },
+    "sigla": "DBI",
+    "centro_sigla": "CCB",
+    "campus_id": null
+  },
+  {
+    "id": "dbq",
+    "nome": "Departamento de Bioquímica",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "centros_pld",
+      "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-biologicas-ccb",
+      "consultado_em": "2026-10-16T16:41:26.252243Z"
+    },
+    "sigla": "DBQ",
+    "centro_sigla": "CCB",
+    "campus_id": null
+  },
+  {
+    "id": "dbs",
+    "nome": "Departamento de Ciências Básicas da Saúde",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "centros_pld",
+      "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-da-saude-ccs",
+      "consultado_em": "2026-10-16T16:41:28.393221Z"
+    },
+    "sigla": "DBS",
+    "centro_sigla": "CCS",
+    "campus_id": null
+  },
+  {
+    "id": "dca",
+    "nome": "Departamento de Ciências Agronômicas",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "centros_pld",
+      "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-agrarias",
+      "consultado_em": "2026-10-16T16:41:25.775401Z"
+    },
+    "sigla": "DCA",
+    "centro_sigla": "CCA",
+    "campus_id": null
+  },
+  {
+    "id": "dcc",
+    "nome": "Departamento de Ciências Contábeis",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "centros_pld",
+      "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-sociais-aplicadas-csa",
+      "consultado_em": "2026-10-16T16:41:28.789629Z"
+    },
+    "sigla": "DCC",
+    "centro_sigla": "CSA",
+    "campus_id": null
+  },
+  {
+    "id": "dci",
+    "nome": "Departamento de Ciências",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "centros_pld",
+      "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-exatas-cce",
+      "consultado_em": "2026-10-16T16:41:26.583225Z"
+    },
+    "sigla": "DCI",
+    "centro_sigla": "CCE",
+    "campus_id": null
+  },
+  {
+    "id": "dcm",
+    "nome": "Departamento de Ciências Morfológicas",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "centros_pld",
+      "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-biologicas-ccb",
+      "consultado_em": "2026-10-16T16:41:26.252243Z"
+    },
+    "sigla": "DCM",
+    "centro_sigla": "CCB",
+    "campus_id": null
+  },
+  {
+    "id": "dco",
+    "nome": "Departamento de Economia",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "centros_pld",
+      "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-sociais-aplicadas-csa",
+      "consultado_em": "2026-10-16T16:41:28.789629Z"
+    },
+    "sigla": "DCO",
+    "centro_sigla": "CSA",
+    "campus_id": null
+  },
+  {
+    "id": "dcs",
+    "nome": "Departamento de Ciências Sociais",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "centros_pld",
+      "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch",
+      "consultado_em": "2026-10-16T16:41:27.840273Z"
+    },
+    "sigla": "DCS",
+    "centro_sigla": "CCH",
+    "campus_id": null
+  },
+  {
+    "id": "ddm",
+    "nome": "Departamento de Design e Moda",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "centros_pld",
+      "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc",
+      "consultado_em": "2026-10-22T17:58:32.788772Z"
+    },
+    "sigla": "DDM",
+    "centro_sigla": "CTC",
+    "campus_id": null
+  },
+  {
+    "id": "ddp",
+    "nome": "Departamento de Direito Público",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "centros_pld",
+      "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-sociais-aplicadas-csa",
+      "consultado_em": "2026-10-16T16:41:28.789629Z"
+    },
+    "sigla": "DDP",
+    "centro_sigla": "CSA",
+    "campus_id": null
+  },
+  {
+    "id": "dea",
+    "nome": "Departamento de Engenharia Agrícola",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "centros_pld",
+      "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-agrarias",
+      "consultado_em": "2026-10-16T16:41:25.775401Z"
+    },
+    "sigla": "DEA",
+    "centro_sigla": "CCA",
+    "campus_id": null
+  },
+  {
+    "id": "dec",
+    "nome": "Departamento de Engenharia Civil",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "centros_pld",
+      "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc",
+      "consultado_em": "2026-10-22T17:58:32.788772Z"
+    },
+    "sigla": "DEC",
+    "centro_sigla": "CTC",
+    "campus_id": null
+  },
+  {
+    "id": "def",
+    "nome": "Departamento de Educação Física",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "centros_pld",
+      "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-da-saude-ccs",
+      "consultado_em": "2026-10-16T16:41:28.393221Z"
+    },
+    "sigla": "DEF",
+    "centro_sigla": "CCS",
+    "campus_id": null
+  },
+  {
+    "id": "dem",
+    "nome": "Departamento de Engenharia Mecânica",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "centros_pld",
+      "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc",
+      "consultado_em": "2026-10-22T17:58:32.788772Z"
+    },
+    "sigla": "DEM",
+    "centro_sigla": "CTC",
+    "campus_id": null
+  },
+  {
+    "id": "dep",
+    "nome": "Departamento de Engenharia de Produção",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "centros_pld",
+      "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc",
+      "consultado_em": "2026-10-22T17:58:32.788772Z"
+    },
+    "sigla": "DEP",
+    "centro_sigla": "CTC",
+    "campus_id": null
+  },
+  {
+    "id": "des",
+    "nome": "Departamento de Estatística",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "centros_pld",
+      "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-exatas-cce",
+      "consultado_em": "2026-10-16T16:41:26.583225Z"
+    },
+    "sigla": "DES",
+    "centro_sigla": "CCE",
+    "campus_id": null
+  },
+  {
+    "id": "det",
+    "nome": "Departamento de Engenharia Têxtil",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "centros_pld",
+      "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc",
+      "consultado_em": "2026-10-22T17:58:32.788772Z"
+    },
+    "sigla": "DET",
+    "centro_sigla": "CTC",
+    "campus_id": null
+  },
+  {
+    "id": "dfa",
+    "nome": "Departamento de Farmácia",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "centros_pld",
+      "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-da-saude-ccs",
+      "consultado_em": "2026-10-16T16:41:28.393221Z"
+    },
+    "sigla": "DFA",
+    "centro_sigla": "CCS",
+    "campus_id": null
+  },
+  {
+    "id": "dfe",
+    "nome": "Departamento de Fundamentos da Educação",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "centros_pld",
+      "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch",
+      "consultado_em": "2026-10-16T16:41:27.840273Z"
+    },
+    "sigla": "DFE",
+    "centro_sigla": "CCH",
+    "campus_id": null
+  },
+  {
+    "id": "dfi",
+    "nome": "Departamento de Física",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "centros_pld",
+      "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-exatas-cce",
+      "consultado_em": "2026-10-16T16:41:26.583225Z"
+    },
+    "sigla": "DFI",
+    "centro_sigla": "CCE",
+    "campus_id": null
+  },
+  {
+    "id": "dfl",
+    "nome": "Departamento de Filosofia",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "centros_pld",
+      "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch",
+      "consultado_em": "2026-10-16T16:41:27.840273Z"
+    },
+    "sigla": "DFL",
+    "centro_sigla": "CCH",
+    "campus_id": null
+  },
+  {
+    "id": "dfs",
+    "nome": "Departamento de Ciências Fisiológicas",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "centros_pld",
+      "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-biologicas-ccb",
+      "consultado_em": "2026-10-16T16:41:26.252243Z"
+    },
+    "sigla": "DFS",
+    "centro_sigla": "CCB",
+    "campus_id": null
+  },
+  {
+    "id": "dft",
+    "nome": "Departamento de Farmacologia e Terapêutica",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "centros_pld",
+      "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-da-saude-ccs",
+      "consultado_em": "2026-10-16T16:41:28.393221Z"
+    },
+    "sigla": "DFT",
+    "centro_sigla": "CCS",
+    "campus_id": null
+  },
+  {
+    "id": "dge",
+    "nome": "Departamento de Geografia",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "centros_pld",
+      "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch",
+      "consultado_em": "2026-10-16T16:41:27.840273Z"
+    },
+    "sigla": "DGE",
+    "centro_sigla": "CCH",
+    "campus_id": null
+  },
+  {
+    "id": "dhi",
+    "nome": "Departamento de História",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "centros_pld",
+      "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch",
+      "consultado_em": "2026-10-16T16:41:27.840273Z"
+    },
+    "sigla": "DHI",
+    "centro_sigla": "CCH",
+    "campus_id": null
+  },
+  {
+    "id": "din",
+    "nome": "Departamento de Informática",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "centros_pld",
+      "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc",
+      "consultado_em": "2026-10-22T17:58:32.788772Z"
+    },
+    "sigla": "DIN",
+    "centro_sigla": "CTC",
+    "campus_id": null
+  },
+  {
+    "id": "dlm",
+    "nome": "Departamento de Letras Modernas",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "centros_pld",
+      "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch",
+      "consultado_em": "2026-10-16T16:41:27.840273Z"
+    },
+    "sigla": "DLM",
+    "centro_sigla": "CCH",
+    "campus_id": null
+  },
+  {
+    "id": "dlp",
+    "nome": "Departamento de Língua Portuguesa",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "centros_pld",
+      "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch",
+      "consultado_em": "2026-10-16T16:41:27.840273Z"
+    },
+    "sigla": "DLP",
+    "centro_sigla": "CCH",
+    "campus_id": null
+  },
+  {
+    "id": "dma",
+    "nome": "Departamento de Matemática",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "centros_pld",
+      "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-exatas-cce",
+      "consultado_em": "2026-10-16T16:41:26.583225Z"
+    },
+    "sigla": "DMA",
+    "centro_sigla": "CCE",
+    "campus_id": null
+  },
+  {
+    "id": "dmc",
+    "nome": "Departamento de Música e Artes Cênicas",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "centros_pld",
+      "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch",
+      "consultado_em": "2026-10-16T16:41:27.840273Z"
+    },
+    "sigla": "DMC",
+    "centro_sigla": "CCH",
+    "campus_id": null
+  },
+  {
+    "id": "dmd",
+    "nome": "Departamento de Medicina",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "centros_pld",
+      "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-da-saude-ccs",
+      "consultado_em": "2026-10-16T16:41:28.393221Z"
+    },
+    "sigla": "DMD",
+    "centro_sigla": "CCS",
+    "campus_id": null
+  },
+  {
+    "id": "dmo",
+    "nome": "Departamento de Ciências do Movimento Humano",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "centros_pld",
+      "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-da-saude-ccs",
+      "consultado_em": "2026-10-16T16:41:28.393221Z"
+    },
+    "sigla": "DMO",
+    "centro_sigla": "CCS",
+    "campus_id": null
+  },
+  {
+    "id": "dmv",
+    "nome": "Departamento de Medicina Veterinária",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "centros_pld",
+      "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-agrarias",
+      "consultado_em": "2026-10-16T16:41:25.775401Z"
+    },
+    "sigla": "DMV",
+    "centro_sigla": "CCA",
+    "campus_id": null
+  },
+  {
+    "id": "dod",
+    "nome": "Departamento de Odontologia",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "centros_pld",
+      "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-da-saude-ccs",
+      "consultado_em": "2026-10-16T16:41:28.393221Z"
+    },
+    "sigla": "DOD",
+    "centro_sigla": "CCS",
+    "campus_id": null
+  },
+  {
+    "id": "dpd",
+    "nome": "Departamento de Pedagogia",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "centros_pld",
+      "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch",
+      "consultado_em": "2026-10-16T16:41:27.840273Z"
+    },
+    "sigla": "DPD",
+    "centro_sigla": "CCH",
+    "campus_id": null
+  },
+  {
+    "id": "dpp",
+    "nome": "Departamento de Direito Privado e Processual",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "centros_pld",
+      "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-sociais-aplicadas-csa",
+      "consultado_em": "2026-10-16T16:41:28.789629Z"
+    },
+    "sigla": "DPP",
+    "centro_sigla": "CSA",
+    "campus_id": null
+  },
+  {
+    "id": "dqi",
+    "nome": "Departamento de Química",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "centros_pld",
+      "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-exatas-cce",
+      "consultado_em": "2026-10-16T16:41:26.583225Z"
+    },
+    "sigla": "DQI",
+    "centro_sigla": "CCE",
+    "campus_id": null
+  },
+  {
+    "id": "dtc",
+    "nome": "Departamento de Tecnologia",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "centros_pld",
+      "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-tecnologia-ctc",
+      "consultado_em": "2026-10-22T17:58:32.788772Z"
+    },
+    "sigla": "DTC",
+    "centro_sigla": "CTC",
+    "campus_id": null
+  },
+  {
+    "id": "dtl",
+    "nome": "Departamento de Teorias Linguísticas e Literárias",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "centros_pld",
+      "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch",
+      "consultado_em": "2026-10-16T16:41:27.840273Z"
+    },
+    "sigla": "DTL",
+    "centro_sigla": "CCH",
+    "campus_id": null
+  },
+  {
+    "id": "dtp",
+    "nome": "Departamento de Teoria e Prática da Educação",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "centros_pld",
+      "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-humanas-letras-e-artes-cch",
+      "consultado_em": "2026-10-16T16:41:27.840273Z"
+    },
+    "sigla": "DTP",
+    "centro_sigla": "CCH",
+    "campus_id": null
+  },
+  {
+    "id": "dzo",
+    "nome": "Departamento de Zootecnia",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "centros_pld",
+      "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino/centro-de-ciencias-agrarias",
+      "consultado_em": "2026-10-16T16:41:25.775401Z"
+    },
+    "sigla": "DZO",
+    "centro_sigla": "CCA",
+    "campus_id": null
+  }
+]

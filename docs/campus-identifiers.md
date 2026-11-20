@@ -24,4 +24,4 @@ Para `car`, a tabela mantém **Câmpus Regional do Arenito**, forma usada no rel
 - A consulta por ID ignora diferenças entre maiúsculas e minúsculas. Assim, `/v1/campi/CRC` e `/v1/campi/crc` identificam o mesmo registro.
 - O coletor usa esta tabela explícita e interrompe a prévia quando os municípios da página não correspondem aos esperados. A validação do HTML cobre a sede em Maringá e o conjunto dos municípios regionais; nomes, siglas e vínculos de cada câmpus com um município dependem desta tabela e de suas fontes de apoio. O coletor não cria IDs automaticamente a partir do nome da cidade nem valida os rótulos dos links.
 
-Nenhum registro real foi publicado. A fonte permanece como `candidate` até a revisão de reutilização e do snapshot completo.
+O snapshot v0.1.0 publica os sete câmpus com estes IDs. A fonte `campi_uem` está aprovada para o escopo descrito na [aprovação de publicação](../reviews/2026-11-20-publicacao/README.md); isso não constitui licença geral de reutilização.

@@ -1,0 +1,32 @@
+{
+  "versao": 1,
+  "publicacao": "v0.1.0",
+  "aprovado_por": "HenriqueSagawa",
+  "data_aprovacao": "2026-11-20",
+  "escopo": "Publicação do snapshot v0.1.0 da uemAPI com 7 câmpus, 7 centros, 49 departamentos e 67 cursos presenciais, gerado dos lotes revisados declarados em reviews/snapshot-inputs.json.",
+  "snapshot_consultado_em": "2026-10-22T17:58:32.788772+00:00",
+  "contagens": {
+    "campi": 7,
+    "centros": 7,
+    "departamentos": 49,
+    "cursos": 67
+  },
+  "fontes": [
+    "campi_uem",
+    "centros_pld",
+    "cursos_graduacao"
+  ],
+  "limitacoes": [
+    "Cursos de graduação a distância (EaD) não estão incluídos.",
+    "Todos os registros publicados mantêm status desconhecido; a situação atual não foi verificada.",
+    "Os cursos não têm centro_sigla nem departamento_sigla, e os departamentos não têm campus_id; os filtros correspondentes ficam vazios.",
+    "O campo grau preserva o valor observado ou null quando não foi possível inferir um único grau; três cursos ficaram com grau null.",
+    "Os valores de grau misturam categorias de formação e títulos profissionais e não formam uma classificação normalizada.",
+    "A grafia de Engenharia Agrícola na fonte diverge do PPC vinculado; a normalização proposta não foi aplicada ao modelo canônico.",
+    "A completude e a atualidade das listas de departamentos não foram verificadas.",
+    "Os vínculos institucionais entre cursos, centros e departamentos não foram comprovados e não foram preenchidos.",
+    "Os nomes dos centros aparecem em maiúsculas como na fonte, incluindo Arquitetura e Urbanismo (CAU).",
+    "Turnos, habilitações e ofertas não foram desdobrados em registros independentes.",
+    "A aprovação cobre este snapshot e não constitui licença geral de reutilização das páginas institucionais."
+  ]
+}

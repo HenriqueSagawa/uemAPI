@@ -1,0 +1,79 @@
+[
+  {
+    "id": "cca",
+    "nome": "CENTRO DE CIÊNCIAS AGRÁRIAS",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "centros_pld",
+      "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino",
+      "consultado_em": "2026-10-16T15:29:31.827522Z"
+    },
+    "sigla": "CCA"
+  },
+  {
+    "id": "ccb",
+    "nome": "CENTRO DE CIÊNCIAS BIOLÓGICAS",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "centros_pld",
+      "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino",
+      "consultado_em": "2026-10-16T15:29:31.827522Z"
+    },
+    "sigla": "CCB"
+  },
+  {
+    "id": "cce",
+    "nome": "CENTRO DE CIÊNCIAS EXATAS",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "centros_pld",
+      "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino",
+      "consultado_em": "2026-10-16T15:29:31.827522Z"
+    },
+    "sigla": "CCE"
+  },
+  {
+    "id": "cch",
+    "nome": "CENTRO DE CIÊNCIAS HUMANAS, LETRAS E ARTES",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "centros_pld",
+      "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino",
+      "consultado_em": "2026-10-16T15:29:31.827522Z"
+    },
+    "sigla": "CCH"
+  },
+  {
+    "id": "ccs",
+    "nome": "CENTRO DE CIÊNCIAS DA SAÚDE",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "centros_pld",
+      "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino",
+      "consultado_em": "2026-10-16T15:29:31.827522Z"
+    },
+    "sigla": "CCS"
+  },
+  {
+    "id": "csa",
+    "nome": "CENTRO DE CIÊNCIAS SOCIAIS APLICADAS",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "centros_pld",
+      "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino",
+      "consultado_em": "2026-10-16T15:29:31.827522Z"
+    },
+    "sigla": "CSA"
+  },
+  {
+    "id": "ctc",
+    "nome": "CENTRO DE TECNOLOGIA",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "centros_pld",
+      "url": "https://pld.uem.br/dvl/regulamentos/centros-de-ensino",
+      "consultado_em": "2026-10-16T15:29:31.827522Z"
+    },
+    "sigla": "CTC"
+  }
+]

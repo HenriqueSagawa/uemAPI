@@ -1,0 +1,1074 @@
+[
+  {
+    "id": "car-engenharia-agricola",
+    "nome": "Engenharia Agrícola",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "cursos_graduacao",
+      "url": "https://www.pen.uem.br/site/public/curso/7e57e246c1bb9a6a19bde73c135003e110ad48e3",
+      "consultado_em": "2026-10-17T14:02:45.470473Z"
+    },
+    "nivel": "graduacao",
+    "grau": "Engenheiro Agrícola",
+    "modalidade": "presencial",
+    "campus_id": "car",
+    "centro_sigla": null,
+    "departamento_sigla": null
+  },
+  {
+    "id": "cau-agronomia",
+    "nome": "Agronomia",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "cursos_graduacao",
+      "url": "https://www.pen.uem.br/site/public/curso/2306fd6d3b09ce5866f54d562f1bd4d61ef4d310",
+      "consultado_em": "2026-10-17T14:02:50.159224Z"
+    },
+    "nivel": "graduacao",
+    "grau": "Engenheiro Agrônomo",
+    "modalidade": "presencial",
+    "campus_id": "cau",
+    "centro_sigla": null,
+    "departamento_sigla": null
+  },
+  {
+    "id": "cau-arquitetura-e-urbanismo-cau",
+    "nome": "Arquitetura e Urbanismo (CAU)",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "cursos_graduacao",
+      "url": "https://www.pen.uem.br/site/public/curso/70e5bf25384d1a42edf69f9a21b1afd2706264bf",
+      "consultado_em": "2026-10-17T14:02:50.744945Z"
+    },
+    "nivel": "graduacao",
+    "grau": "Arquiteto e Urbanista",
+    "modalidade": "presencial",
+    "campus_id": "cau",
+    "centro_sigla": null,
+    "departamento_sigla": null
+  },
+  {
+    "id": "cau-engenharia-ambiental",
+    "nome": "Engenharia Ambiental",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "cursos_graduacao",
+      "url": "https://www.pen.uem.br/site/public/curso/502733aa2bd2cec35fc203e1c943d5bb0fb9ea85",
+      "consultado_em": "2026-10-17T14:02:51.314907Z"
+    },
+    "nivel": "graduacao",
+    "grau": "Engenheiro Ambiental",
+    "modalidade": "presencial",
+    "campus_id": "cau",
+    "centro_sigla": null,
+    "departamento_sigla": null
+  },
+  {
+    "id": "cau-engenharia-civil",
+    "nome": "Engenharia Civil",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "cursos_graduacao",
+      "url": "https://www.pen.uem.br/site/public/curso/6a7aab799e7ad63d1b1c6da013dad55a60e530c6",
+      "consultado_em": "2026-10-17T14:02:51.886028Z"
+    },
+    "nivel": "graduacao",
+    "grau": "Engenheiro Civil",
+    "modalidade": "presencial",
+    "campus_id": "cau",
+    "centro_sigla": null,
+    "departamento_sigla": null
+  },
+  {
+    "id": "cau-engenharia-de-alimentos",
+    "nome": "Engenharia de Alimentos",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "cursos_graduacao",
+      "url": "https://www.pen.uem.br/site/public/curso/9d641693818e10613e10ed81ffb304538b5879af",
+      "consultado_em": "2026-10-17T14:02:52.472967Z"
+    },
+    "nivel": "graduacao",
+    "grau": "Engenheiro de Alimentos",
+    "modalidade": "presencial",
+    "campus_id": "cau",
+    "centro_sigla": null,
+    "departamento_sigla": null
+  },
+  {
+    "id": "cau-engenharia-de-computacao",
+    "nome": "Engenharia de Computação",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "cursos_graduacao",
+      "url": "https://www.pen.uem.br/site/public/curso/43caef2d561852ad382805245aa19aa9cdc1c599",
+      "consultado_em": "2026-10-17T14:02:53.051807Z"
+    },
+    "nivel": "graduacao",
+    "grau": "Engenheiro de computação",
+    "modalidade": "presencial",
+    "campus_id": "cau",
+    "centro_sigla": null,
+    "departamento_sigla": null
+  },
+  {
+    "id": "cau-medicina-veterinaria",
+    "nome": "Medicina Veterinária",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "cursos_graduacao",
+      "url": "https://www.pen.uem.br/site/public/curso/f542855bdcba7ef43783150e689417f8e5406d37",
+      "consultado_em": "2026-10-17T14:02:53.640653Z"
+    },
+    "nivel": "graduacao",
+    "grau": "Médico Veterinário",
+    "modalidade": "presencial",
+    "campus_id": "cau",
+    "centro_sigla": null,
+    "departamento_sigla": null
+  },
+  {
+    "id": "cau-tecnologia-em-alimentos",
+    "nome": "Tecnologia em Alimentos",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "cursos_graduacao",
+      "url": "https://www.pen.uem.br/site/public/curso/3136474849d7799daa54d076fe89e80f85edb326",
+      "consultado_em": "2026-10-17T14:02:54.211864Z"
+    },
+    "nivel": "graduacao",
+    "grau": "Tecnólogo em Alimentos",
+    "modalidade": "presencial",
+    "campus_id": "cau",
+    "centro_sigla": null,
+    "departamento_sigla": null
+  },
+  {
+    "id": "cau-tecnologia-em-construcao-civil",
+    "nome": "Tecnologia em Construção Civil",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "cursos_graduacao",
+      "url": "https://www.pen.uem.br/site/public/curso/3673b5e874bc67ec1c73c09ac6355a851e381e04",
+      "consultado_em": "2026-10-17T14:02:54.822858Z"
+    },
+    "nivel": "graduacao",
+    "grau": "Tecnólogo em Construção Civil",
+    "modalidade": "presencial",
+    "campus_id": "cau",
+    "centro_sigla": null,
+    "departamento_sigla": null
+  },
+  {
+    "id": "cau-tecnologia-em-gastronomia",
+    "nome": "Tecnologia em Gastronomia",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "cursos_graduacao",
+      "url": "https://www.pen.uem.br/site/public/curso/e071ea6754a5cdba3184864e2b48e9daa134817b",
+      "consultado_em": "2026-10-17T14:02:55.416129Z"
+    },
+    "nivel": "graduacao",
+    "grau": null,
+    "modalidade": "presencial",
+    "campus_id": "cau",
+    "centro_sigla": null,
+    "departamento_sigla": null
+  },
+  {
+    "id": "cau-tecnologia-em-meio-ambiente",
+    "nome": "Tecnologia em Meio Ambiente",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "cursos_graduacao",
+      "url": "https://www.pen.uem.br/site/public/curso/a5180cfbe7d6195130bef28fb542f14fa45efa56",
+      "consultado_em": "2026-10-17T14:02:56.005327Z"
+    },
+    "nivel": "graduacao",
+    "grau": "Tecnólogo em Meio Ambiente",
+    "modalidade": "presencial",
+    "campus_id": "cau",
+    "centro_sigla": null,
+    "departamento_sigla": null
+  },
+  {
+    "id": "crc-ciencias-contabeis",
+    "nome": "Ciências Contábeis",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "cursos_graduacao",
+      "url": "https://www.pen.uem.br/site/public/curso/aeadaf59937288022995e17ad2cbd6141a15859d",
+      "consultado_em": "2026-10-17T14:02:43.137416Z"
+    },
+    "nivel": "graduacao",
+    "grau": "Bacharel em Ciências Contábeis",
+    "modalidade": "presencial",
+    "campus_id": "crc",
+    "centro_sigla": null,
+    "departamento_sigla": null
+  },
+  {
+    "id": "crc-design",
+    "nome": "Design",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "cursos_graduacao",
+      "url": "https://www.pen.uem.br/site/public/curso/7db3b1d39a16b27ae9d227ed395d6156bfb8f953",
+      "consultado_em": "2026-10-17T14:02:43.733795Z"
+    },
+    "nivel": "graduacao",
+    "grau": "Bacharel em Design",
+    "modalidade": "presencial",
+    "campus_id": "crc",
+    "centro_sigla": null,
+    "departamento_sigla": null
+  },
+  {
+    "id": "crc-moda",
+    "nome": "Moda",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "cursos_graduacao",
+      "url": "https://www.pen.uem.br/site/public/curso/12a7f4520fd886646eb0608605d9fe852742e108",
+      "consultado_em": "2026-10-17T14:02:44.289357Z"
+    },
+    "nivel": "graduacao",
+    "grau": "Bacharel em Moda",
+    "modalidade": "presencial",
+    "campus_id": "crc",
+    "centro_sigla": null,
+    "departamento_sigla": null
+  },
+  {
+    "id": "crc-pedagogia",
+    "nome": "Pedagogia",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "cursos_graduacao",
+      "url": "https://www.pen.uem.br/site/public/curso/1109473bb540238fe3211cbab0bb495018363090",
+      "consultado_em": "2026-10-17T14:02:44.883746Z"
+    },
+    "nivel": "graduacao",
+    "grau": "Licenciado em Pedagogia",
+    "modalidade": "presencial",
+    "campus_id": "crc",
+    "centro_sigla": null,
+    "departamento_sigla": null
+  },
+  {
+    "id": "crg-engenharia-de-producao",
+    "nome": "Engenharia de Produção",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "cursos_graduacao",
+      "url": "https://www.pen.uem.br/site/public/curso/36df9dc33c5f756f7890dc8b1f7c459e872dd2d8",
+      "consultado_em": "2026-10-17T14:02:46.075189Z"
+    },
+    "nivel": "graduacao",
+    "grau": "Engenheiro de Produção",
+    "modalidade": "presencial",
+    "campus_id": "crg",
+    "centro_sigla": null,
+    "departamento_sigla": null
+  },
+  {
+    "id": "crg-engenharia-textil",
+    "nome": "Engenharia Têxtil",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "cursos_graduacao",
+      "url": "https://www.pen.uem.br/site/public/curso/040f45414df3ff3edb75520eafe9cac6d737667d",
+      "consultado_em": "2026-10-17T14:02:46.642934Z"
+    },
+    "nivel": "graduacao",
+    "grau": "Engenheiro Têxtil",
+    "modalidade": "presencial",
+    "campus_id": "crg",
+    "centro_sigla": null,
+    "departamento_sigla": null
+  },
+  {
+    "id": "crg-fisica",
+    "nome": "Física",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "cursos_graduacao",
+      "url": "https://www.pen.uem.br/site/public/curso/8346c99c55ab163bfc9188a115856c546a320417",
+      "consultado_em": "2026-10-17T14:02:47.229833Z"
+    },
+    "nivel": "graduacao",
+    "grau": "Licenciado em Física",
+    "modalidade": "presencial",
+    "campus_id": "crg",
+    "centro_sigla": null,
+    "departamento_sigla": null
+  },
+  {
+    "id": "crg-fisica-medica",
+    "nome": "Física Médica",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "cursos_graduacao",
+      "url": "https://www.pen.uem.br/site/public/curso/cf86ec0adf1d7e3f5fdff465b003fc3110a31bf2",
+      "consultado_em": "2026-10-17T14:02:47.828880Z"
+    },
+    "nivel": "graduacao",
+    "grau": "Bacharel em Física Médica",
+    "modalidade": "presencial",
+    "campus_id": "crg",
+    "centro_sigla": null,
+    "departamento_sigla": null
+  },
+  {
+    "id": "crv-educacao-fisica",
+    "nome": "Educação Física",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "cursos_graduacao",
+      "url": "https://www.pen.uem.br/site/public/curso/960b256c8c7e809d45173618739ebf2a3f427e8a",
+      "consultado_em": "2026-10-17T14:02:48.400806Z"
+    },
+    "nivel": "graduacao",
+    "grau": "Bacharel em Educação Física e Licenciado em Educação Física",
+    "modalidade": "presencial",
+    "campus_id": "crv",
+    "centro_sigla": null,
+    "departamento_sigla": null
+  },
+  {
+    "id": "crv-historia",
+    "nome": "História",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "cursos_graduacao",
+      "url": "https://www.pen.uem.br/site/public/curso/9fc4d01378376f9de1f31f1c3f6dae2ad7a9f88c",
+      "consultado_em": "2026-10-17T14:02:48.965161Z"
+    },
+    "nivel": "graduacao",
+    "grau": "Licenciado em História",
+    "modalidade": "presencial",
+    "campus_id": "crv",
+    "centro_sigla": null,
+    "departamento_sigla": null
+  },
+  {
+    "id": "crv-servico-social",
+    "nome": "Serviço Social",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "cursos_graduacao",
+      "url": "https://www.pen.uem.br/site/public/curso/6548081f2b5226e6b338b5183cc02209a9e309f8",
+      "consultado_em": "2026-10-17T14:02:49.559980Z"
+    },
+    "nivel": "graduacao",
+    "grau": "Bacharel em Serviço Social",
+    "modalidade": "presencial",
+    "campus_id": "crv",
+    "centro_sigla": null,
+    "departamento_sigla": null
+  },
+  {
+    "id": "sede-administracao",
+    "nome": "Administração",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "cursos_graduacao",
+      "url": "https://www.pen.uem.br/site/public/curso/c6e9c1b9daea38a42b28d6d97f567ce6d551aeb0",
+      "consultado_em": "2026-10-17T14:02:17.238974Z"
+    },
+    "nivel": "graduacao",
+    "grau": "Bacharel em Administração",
+    "modalidade": "presencial",
+    "campus_id": "sede",
+    "centro_sigla": null,
+    "departamento_sigla": null
+  },
+  {
+    "id": "sede-agronomia",
+    "nome": "Agronomia",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "cursos_graduacao",
+      "url": "https://www.pen.uem.br/site/public/curso/d3c228f4f03dd8ad8910dd6c06ec309f1db423a9",
+      "consultado_em": "2026-10-17T14:02:17.822057Z"
+    },
+    "nivel": "graduacao",
+    "grau": "Engenheiro Agrônomo",
+    "modalidade": "presencial",
+    "campus_id": "sede",
+    "centro_sigla": null,
+    "departamento_sigla": null
+  },
+  {
+    "id": "sede-arquitetura-e-urbanismo",
+    "nome": "Arquitetura e Urbanismo",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "cursos_graduacao",
+      "url": "https://www.pen.uem.br/site/public/curso/b6573dc09a867d10270a581dae8a3166c84bc57c",
+      "consultado_em": "2026-10-17T14:02:18.405251Z"
+    },
+    "nivel": "graduacao",
+    "grau": "Arquiteto e Urbanista",
+    "modalidade": "presencial",
+    "campus_id": "sede",
+    "centro_sigla": null,
+    "departamento_sigla": null
+  },
+  {
+    "id": "sede-artes-cenicas",
+    "nome": "Artes Cênicas",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "cursos_graduacao",
+      "url": "https://www.pen.uem.br/site/public/curso/9de1325b805833842edf30b8d6b14b7a46914bff",
+      "consultado_em": "2026-10-17T14:02:19.022967Z"
+    },
+    "nivel": "graduacao",
+    "grau": "Licenciado em Teatro",
+    "modalidade": "presencial",
+    "campus_id": "sede",
+    "centro_sigla": null,
+    "departamento_sigla": null
+  },
+  {
+    "id": "sede-artes-visuais",
+    "nome": "Artes Visuais",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "cursos_graduacao",
+      "url": "https://www.pen.uem.br/site/public/curso/1c4e7e505f3137fa180f0e5580c8a129737f1043",
+      "consultado_em": "2026-10-17T14:02:19.629570Z"
+    },
+    "nivel": "graduacao",
+    "grau": "Licenciado em Artes Visuais",
+    "modalidade": "presencial",
+    "campus_id": "sede",
+    "centro_sigla": null,
+    "departamento_sigla": null
+  },
+  {
+    "id": "sede-biomedicina",
+    "nome": "Biomedicina",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "cursos_graduacao",
+      "url": "https://www.pen.uem.br/site/public/curso/c63ba080122ba603cfd83bc3483b79b53cef52a0",
+      "consultado_em": "2026-10-17T14:02:20.228812Z"
+    },
+    "nivel": "graduacao",
+    "grau": "Biomédico",
+    "modalidade": "presencial",
+    "campus_id": "sede",
+    "centro_sigla": null,
+    "departamento_sigla": null
+  },
+  {
+    "id": "sede-bioquimica",
+    "nome": "Bioquímica",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "cursos_graduacao",
+      "url": "https://www.pen.uem.br/site/public/curso/07144c884de58a0d5ce0cb1e89b60704a68b9104",
+      "consultado_em": "2026-10-17T14:02:20.805721Z"
+    },
+    "nivel": "graduacao",
+    "grau": "Bioquímico",
+    "modalidade": "presencial",
+    "campus_id": "sede",
+    "centro_sigla": null,
+    "departamento_sigla": null
+  },
+  {
+    "id": "sede-biotecnologia",
+    "nome": "Biotecnologia",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "cursos_graduacao",
+      "url": "https://www.pen.uem.br/site/public/curso/22523083f7a79c12ef6fdd3045a3ee87dec80de6",
+      "consultado_em": "2026-10-17T14:02:21.389803Z"
+    },
+    "nivel": "graduacao",
+    "grau": "Bacharel em Biotecnologia",
+    "modalidade": "presencial",
+    "campus_id": "sede",
+    "centro_sigla": null,
+    "departamento_sigla": null
+  },
+  {
+    "id": "sede-ciencia-da-computacao",
+    "nome": "Ciência da Computação",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "cursos_graduacao",
+      "url": "https://www.pen.uem.br/site/public/curso/036f863d951541fb0f3a74b69bbfe24f99eae65d",
+      "consultado_em": "2026-10-17T14:02:21.990234Z"
+    },
+    "nivel": "graduacao",
+    "grau": "Bacharel em Ciência da Computação",
+    "modalidade": "presencial",
+    "campus_id": "sede",
+    "centro_sigla": null,
+    "departamento_sigla": null
+  },
+  {
+    "id": "sede-ciencias-biologicas",
+    "nome": "Ciências Biológicas",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "cursos_graduacao",
+      "url": "https://www.pen.uem.br/site/public/curso/b7cbe3319cbe1355820bcb60719e3dd5f72adaea",
+      "consultado_em": "2026-10-17T14:02:22.571352Z"
+    },
+    "nivel": "graduacao",
+    "grau": null,
+    "modalidade": "presencial",
+    "campus_id": "sede",
+    "centro_sigla": null,
+    "departamento_sigla": null
+  },
+  {
+    "id": "sede-ciencias-contabeis",
+    "nome": "Ciências Contábeis",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "cursos_graduacao",
+      "url": "https://www.pen.uem.br/site/public/curso/e609c318d959a8099b8bfd33bfb0904cf64ce0a1",
+      "consultado_em": "2026-10-17T14:02:23.161950Z"
+    },
+    "nivel": "graduacao",
+    "grau": "Bacharel em Ciências Contábeis",
+    "modalidade": "presencial",
+    "campus_id": "sede",
+    "centro_sigla": null,
+    "departamento_sigla": null
+  },
+  {
+    "id": "sede-ciencias-economicas",
+    "nome": "Ciências Econômicas",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "cursos_graduacao",
+      "url": "https://www.pen.uem.br/site/public/curso/d59ab31e8573afe43ff5098c2d9bfc8b284a8e64",
+      "consultado_em": "2026-10-17T14:02:23.747946Z"
+    },
+    "nivel": "graduacao",
+    "grau": "Bacharel em Ciências Econômicas",
+    "modalidade": "presencial",
+    "campus_id": "sede",
+    "centro_sigla": null,
+    "departamento_sigla": null
+  },
+  {
+    "id": "sede-ciencias-sociais",
+    "nome": "Ciências Sociais",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "cursos_graduacao",
+      "url": "https://www.pen.uem.br/site/public/curso/17bfb4afc121bb2a7f0d8a2c7b80e89e291290fb",
+      "consultado_em": "2026-10-17T14:02:24.325130Z"
+    },
+    "nivel": "graduacao",
+    "grau": "Bacharel e/ou Licenciado em Ciências Sociais",
+    "modalidade": "presencial",
+    "campus_id": "sede",
+    "centro_sigla": null,
+    "departamento_sigla": null
+  },
+  {
+    "id": "sede-comunicacao-e-multimeios",
+    "nome": "Comunicação e Multimeios",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "cursos_graduacao",
+      "url": "https://www.pen.uem.br/site/public/curso/c519c0122b004a4de534f49bb2743b1845135444",
+      "consultado_em": "2026-10-17T14:02:24.912276Z"
+    },
+    "nivel": "graduacao",
+    "grau": "Bacharel em Comunicação e Multimeios",
+    "modalidade": "presencial",
+    "campus_id": "sede",
+    "centro_sigla": null,
+    "departamento_sigla": null
+  },
+  {
+    "id": "sede-direito",
+    "nome": "Direito",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "cursos_graduacao",
+      "url": "https://www.pen.uem.br/site/public/curso/519a2cb9db78185f88cf29cc185d33b827c22434",
+      "consultado_em": "2026-10-17T14:02:25.486921Z"
+    },
+    "nivel": "graduacao",
+    "grau": "Bacharel em Direito",
+    "modalidade": "presencial",
+    "campus_id": "sede",
+    "centro_sigla": null,
+    "departamento_sigla": null
+  },
+  {
+    "id": "sede-educacao-fisica",
+    "nome": "Educação Física",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "cursos_graduacao",
+      "url": "https://www.pen.uem.br/site/public/curso/f1f2375d3d7bd9b7277f7e5d4302cf4736025b69",
+      "consultado_em": "2026-10-17T14:02:26.065501Z"
+    },
+    "nivel": "graduacao",
+    "grau": "Licenciado ou Bacharel em Educação Física",
+    "modalidade": "presencial",
+    "campus_id": "sede",
+    "centro_sigla": null,
+    "departamento_sigla": null
+  },
+  {
+    "id": "sede-enfermagem",
+    "nome": "Enfermagem",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "cursos_graduacao",
+      "url": "https://www.pen.uem.br/site/public/curso/3921879996d45763607d78a5a1107e0afbe77cc2",
+      "consultado_em": "2026-10-17T14:02:26.744169Z"
+    },
+    "nivel": "graduacao",
+    "grau": "Enfermeiro",
+    "modalidade": "presencial",
+    "campus_id": "sede",
+    "centro_sigla": null,
+    "departamento_sigla": null
+  },
+  {
+    "id": "sede-engenharia-civil",
+    "nome": "Engenharia Civil",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "cursos_graduacao",
+      "url": "https://www.pen.uem.br/site/public/curso/d8d9634c4fbb4b091b8b66bd181ff3b16f3b1aea",
+      "consultado_em": "2026-10-17T14:02:27.331741Z"
+    },
+    "nivel": "graduacao",
+    "grau": "Engenheiro Civil",
+    "modalidade": "presencial",
+    "campus_id": "sede",
+    "centro_sigla": null,
+    "departamento_sigla": null
+  },
+  {
+    "id": "sede-engenharia-de-alimentos",
+    "nome": "Engenharia de Alimentos",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "cursos_graduacao",
+      "url": "https://www.pen.uem.br/site/public/curso/1b77ae89ab3cecbc6265ae9650a50856e8efdd55",
+      "consultado_em": "2026-10-17T14:02:27.921877Z"
+    },
+    "nivel": "graduacao",
+    "grau": "Engenheiro de Alimentos",
+    "modalidade": "presencial",
+    "campus_id": "sede",
+    "centro_sigla": null,
+    "departamento_sigla": null
+  },
+  {
+    "id": "sede-engenharia-de-controle-e-automacao-inteligencia-artificial",
+    "nome": "Engenharia de Controle e Automação - Inteligência Artificial",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "cursos_graduacao",
+      "url": "https://www.pen.uem.br/site/public/curso/e9764f0dddf8667c55086ce4bd2c43e465024fd5",
+      "consultado_em": "2026-10-17T14:02:28.506996Z"
+    },
+    "nivel": "graduacao",
+    "grau": "Engenheiro de Controle e Automação",
+    "modalidade": "presencial",
+    "campus_id": "sede",
+    "centro_sigla": null,
+    "departamento_sigla": null
+  },
+  {
+    "id": "sede-engenharia-de-producao",
+    "nome": "Engenharia de Produção",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "cursos_graduacao",
+      "url": "https://www.pen.uem.br/site/public/curso/68e1e85d77ef7308b6b5ac9c2b7ded5c31fb38fb",
+      "consultado_em": "2026-10-17T14:02:29.093631Z"
+    },
+    "nivel": "graduacao",
+    "grau": "Engenheiro de Produção",
+    "modalidade": "presencial",
+    "campus_id": "sede",
+    "centro_sigla": null,
+    "departamento_sigla": null
+  },
+  {
+    "id": "sede-engenharia-de-software",
+    "nome": "Engenharia de Software",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "cursos_graduacao",
+      "url": "https://www.pen.uem.br/site/public/curso/a99a3305e6ffbd5db96ef5506978504214b31397",
+      "consultado_em": "2026-10-17T14:02:29.690749Z"
+    },
+    "nivel": "graduacao",
+    "grau": "Bacharel em Engenharia de Software",
+    "modalidade": "presencial",
+    "campus_id": "sede",
+    "centro_sigla": null,
+    "departamento_sigla": null
+  },
+  {
+    "id": "sede-engenharia-eletrica",
+    "nome": "Engenharia Elétrica",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "cursos_graduacao",
+      "url": "https://www.pen.uem.br/site/public/curso/79b513cb43a03e85d492f06487be472692ed3ef9",
+      "consultado_em": "2026-10-17T14:02:30.278619Z"
+    },
+    "nivel": "graduacao",
+    "grau": "Engenheiro Eletricista",
+    "modalidade": "presencial",
+    "campus_id": "sede",
+    "centro_sigla": null,
+    "departamento_sigla": null
+  },
+  {
+    "id": "sede-engenharia-mecanica",
+    "nome": "Engenharia Mecânica",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "cursos_graduacao",
+      "url": "https://www.pen.uem.br/site/public/curso/b28b3a111305a333255ca38188d25e001550a3f4",
+      "consultado_em": "2026-10-17T14:02:30.856938Z"
+    },
+    "nivel": "graduacao",
+    "grau": "Engenheiro Mecânico",
+    "modalidade": "presencial",
+    "campus_id": "sede",
+    "centro_sigla": null,
+    "departamento_sigla": null
+  },
+  {
+    "id": "sede-engenharia-quimica",
+    "nome": "Engenharia Química",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "cursos_graduacao",
+      "url": "https://www.pen.uem.br/site/public/curso/49e8d300892d71c2f5c276f4d30e1c94c589ea35",
+      "consultado_em": "2026-10-17T14:02:31.460864Z"
+    },
+    "nivel": "graduacao",
+    "grau": "Engenheiro Químico",
+    "modalidade": "presencial",
+    "campus_id": "sede",
+    "centro_sigla": null,
+    "departamento_sigla": null
+  },
+  {
+    "id": "sede-engenharia-textil",
+    "nome": "Engenharia Têxtil",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "cursos_graduacao",
+      "url": "https://www.pen.uem.br/site/public/curso/dcffb82a4cca8e4383e5221e958095a206c79c51",
+      "consultado_em": "2026-10-17T14:02:32.043690Z"
+    },
+    "nivel": "graduacao",
+    "grau": "Engenheiro Têxtil",
+    "modalidade": "presencial",
+    "campus_id": "sede",
+    "centro_sigla": null,
+    "departamento_sigla": null
+  },
+  {
+    "id": "sede-estatistica",
+    "nome": "Estatística",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "cursos_graduacao",
+      "url": "https://www.pen.uem.br/site/public/curso/4615bb2ede074db880b90837bf74ebcd38105268",
+      "consultado_em": "2026-10-17T14:02:32.620635Z"
+    },
+    "nivel": "graduacao",
+    "grau": "Bacharelado",
+    "modalidade": "presencial",
+    "campus_id": "sede",
+    "centro_sigla": null,
+    "departamento_sigla": null
+  },
+  {
+    "id": "sede-farmacia",
+    "nome": "Farmácia",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "cursos_graduacao",
+      "url": "https://www.pen.uem.br/site/public/curso/1b0eb399801d4d24fb064045ab225191932e5449",
+      "consultado_em": "2026-10-17T14:02:33.195505Z"
+    },
+    "nivel": "graduacao",
+    "grau": "Farmacêutico",
+    "modalidade": "presencial",
+    "campus_id": "sede",
+    "centro_sigla": null,
+    "departamento_sigla": null
+  },
+  {
+    "id": "sede-filosofia",
+    "nome": "Filosofia",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "cursos_graduacao",
+      "url": "https://www.pen.uem.br/site/public/curso/e53b26acbed443bcd3ae755221f91131fbed31e3",
+      "consultado_em": "2026-10-17T14:02:33.771040Z"
+    },
+    "nivel": "graduacao",
+    "grau": "Licenciado em Filosofia",
+    "modalidade": "presencial",
+    "campus_id": "sede",
+    "centro_sigla": null,
+    "departamento_sigla": null
+  },
+  {
+    "id": "sede-fisica",
+    "nome": "Física",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "cursos_graduacao",
+      "url": "https://www.pen.uem.br/site/public/curso/e01f37bde71329590bac28c8df99e80927a7b5f4",
+      "consultado_em": "2026-10-17T14:02:34.341501Z"
+    },
+    "nivel": "graduacao",
+    "grau": "Licenciado ou Bacharel em Física",
+    "modalidade": "presencial",
+    "campus_id": "sede",
+    "centro_sigla": null,
+    "departamento_sigla": null
+  },
+  {
+    "id": "sede-geografia",
+    "nome": "Geografia",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "cursos_graduacao",
+      "url": "https://www.pen.uem.br/site/public/curso/76b47ff84354ec3e62f4fe12bd46b85f6e0bd350",
+      "consultado_em": "2026-10-17T14:02:34.926246Z"
+    },
+    "nivel": "graduacao",
+    "grau": "Bacharel em Geografia e/ou Licenciado em Geografia",
+    "modalidade": "presencial",
+    "campus_id": "sede",
+    "centro_sigla": null,
+    "departamento_sigla": null
+  },
+  {
+    "id": "sede-historia",
+    "nome": "História",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "cursos_graduacao",
+      "url": "https://www.pen.uem.br/site/public/curso/8ccbdb7427f60db26279a115d613303966b5533e",
+      "consultado_em": "2026-10-17T14:02:35.535770Z"
+    },
+    "nivel": "graduacao",
+    "grau": "Licenciado em História",
+    "modalidade": "presencial",
+    "campus_id": "sede",
+    "centro_sigla": null,
+    "departamento_sigla": null
+  },
+  {
+    "id": "sede-letras",
+    "nome": "Letras",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "cursos_graduacao",
+      "url": "https://www.pen.uem.br/site/public/curso/c7a280761ab813afa3f63f1f9aa7eada0c7914c5",
+      "consultado_em": "2026-10-17T14:02:36.127641Z"
+    },
+    "nivel": "graduacao",
+    "grau": "Licenciado em Letras / Bacharel em Tradução",
+    "modalidade": "presencial",
+    "campus_id": "sede",
+    "centro_sigla": null,
+    "departamento_sigla": null
+  },
+  {
+    "id": "sede-matematica",
+    "nome": "Matemática",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "cursos_graduacao",
+      "url": "https://www.pen.uem.br/site/public/curso/e2539de527961dc7451ca5ac2839f9d15d2618f1",
+      "consultado_em": "2026-10-17T14:02:36.699553Z"
+    },
+    "nivel": "graduacao",
+    "grau": "Bacharel em Matemática ou Licenciado em Matemática",
+    "modalidade": "presencial",
+    "campus_id": "sede",
+    "centro_sigla": null,
+    "departamento_sigla": null
+  },
+  {
+    "id": "sede-medicina",
+    "nome": "Medicina",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "cursos_graduacao",
+      "url": "https://www.pen.uem.br/site/public/curso/fa929caa1ce52eac3200a285e1c3dc694d9b804e",
+      "consultado_em": "2026-10-17T14:02:37.296380Z"
+    },
+    "nivel": "graduacao",
+    "grau": "Médico",
+    "modalidade": "presencial",
+    "campus_id": "sede",
+    "centro_sigla": null,
+    "departamento_sigla": null
+  },
+  {
+    "id": "sede-musica",
+    "nome": "Música",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "cursos_graduacao",
+      "url": "https://www.pen.uem.br/site/public/curso/bcd3389af4e0b7690b9a3e1b73230ed35d846971",
+      "consultado_em": "2026-10-17T14:02:37.905312Z"
+    },
+    "nivel": "graduacao",
+    "grau": null,
+    "modalidade": "presencial",
+    "campus_id": "sede",
+    "centro_sigla": null,
+    "departamento_sigla": null
+  },
+  {
+    "id": "sede-nutricao",
+    "nome": "Nutrição",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "cursos_graduacao",
+      "url": "https://www.pen.uem.br/site/public/curso/7655d392b2a210827aeb9e9694de6a297f1e5885",
+      "consultado_em": "2026-10-17T14:02:38.478875Z"
+    },
+    "nivel": "graduacao",
+    "grau": "Bacharel em Nutrição",
+    "modalidade": "presencial",
+    "campus_id": "sede",
+    "centro_sigla": null,
+    "departamento_sigla": null
+  },
+  {
+    "id": "sede-odontologia",
+    "nome": "Odontologia",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "cursos_graduacao",
+      "url": "https://www.pen.uem.br/site/public/curso/d1aa1ee83bb6686401703af6598109edfce0e346",
+      "consultado_em": "2026-10-17T14:02:39.054437Z"
+    },
+    "nivel": "graduacao",
+    "grau": "Cirurgião Dentista",
+    "modalidade": "presencial",
+    "campus_id": "sede",
+    "centro_sigla": null,
+    "departamento_sigla": null
+  },
+  {
+    "id": "sede-pedagogia",
+    "nome": "Pedagogia",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "cursos_graduacao",
+      "url": "https://www.pen.uem.br/site/public/curso/fb5db4852b539ec28d56e839c082987117b3aa3d",
+      "consultado_em": "2026-10-17T14:02:39.619809Z"
+    },
+    "nivel": "graduacao",
+    "grau": "Licenciado em Pedagogia",
+    "modalidade": "presencial",
+    "campus_id": "sede",
+    "centro_sigla": null,
+    "departamento_sigla": null
+  },
+  {
+    "id": "sede-psicologia",
+    "nome": "Psicologia",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "cursos_graduacao",
+      "url": "https://www.pen.uem.br/site/public/curso/f62c5867b4a4ed0fe50ed12212be16c0d9dcfb38",
+      "consultado_em": "2026-10-17T14:02:40.199550Z"
+    },
+    "nivel": "graduacao",
+    "grau": "Psicólogo",
+    "modalidade": "presencial",
+    "campus_id": "sede",
+    "centro_sigla": null,
+    "departamento_sigla": null
+  },
+  {
+    "id": "sede-quimica",
+    "nome": "Química",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "cursos_graduacao",
+      "url": "https://www.pen.uem.br/site/public/curso/d3c42d38b23e32805c12fe6b9d11703b0e02a47c",
+      "consultado_em": "2026-10-17T14:02:40.782080Z"
+    },
+    "nivel": "graduacao",
+    "grau": "Licenciado em Química e Bacharel em Química.",
+    "modalidade": "presencial",
+    "campus_id": "sede",
+    "centro_sigla": null,
+    "departamento_sigla": null
+  },
+  {
+    "id": "sede-secretariado-executivo-trilingue",
+    "nome": "Secretariado Executivo Trilíngue",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "cursos_graduacao",
+      "url": "https://www.pen.uem.br/site/public/curso/f05f1ca5f7b5cdebef6b0e2692cca0f732702893",
+      "consultado_em": "2026-10-17T14:02:41.356485Z"
+    },
+    "nivel": "graduacao",
+    "grau": "Bacharel em Secretariado Executivo Trilíngue",
+    "modalidade": "presencial",
+    "campus_id": "sede",
+    "centro_sigla": null,
+    "departamento_sigla": null
+  },
+  {
+    "id": "sede-servico-social",
+    "nome": "Serviço Social",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "cursos_graduacao",
+      "url": "https://www.pen.uem.br/site/public/curso/d3c90f4dbbcea8fa2eb28c852c5453760cf49d28",
+      "consultado_em": "2026-10-17T14:02:41.944166Z"
+    },
+    "nivel": "graduacao",
+    "grau": "Bacharel em Serviço Social",
+    "modalidade": "presencial",
+    "campus_id": "sede",
+    "centro_sigla": null,
+    "departamento_sigla": null
+  },
+  {
+    "id": "sede-zootecnia",
+    "nome": "Zootecnia",
+    "status": "desconhecido",
+    "fonte": {
+      "source_id": "cursos_graduacao",
+      "url": "https://www.pen.uem.br/site/public/curso/56a2c1f3b7ca46811593de059fecdcc22a95f83c",
+      "consultado_em": "2026-10-17T14:02:42.552643Z"
+    },
+    "nivel": "graduacao",
+    "grau": "Zootecnista",
+    "modalidade": "presencial",
+    "campus_id": "sede",
+    "centro_sigla": null,
+    "departamento_sigla": null
+  }
+]

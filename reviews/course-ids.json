@@ -1,0 +1,341 @@
+{
+  "versao": 1,
+  "nota": "IDs estáveis da API por câmpus e URL de detalhe. O ID não deve mudar quando o nome do curso mudar. Uma URL nova exige uma nova entrada e nova decisão de revisão.",
+  "cursos": [
+    {
+      "campus_id": "car",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/7e57e246c1bb9a6a19bde73c135003e110ad48e3",
+      "id": "car-engenharia-agricola"
+    },
+    {
+      "campus_id": "cau",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/2306fd6d3b09ce5866f54d562f1bd4d61ef4d310",
+      "id": "cau-agronomia"
+    },
+    {
+      "campus_id": "cau",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/3136474849d7799daa54d076fe89e80f85edb326",
+      "id": "cau-tecnologia-em-alimentos"
+    },
+    {
+      "campus_id": "cau",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/3673b5e874bc67ec1c73c09ac6355a851e381e04",
+      "id": "cau-tecnologia-em-construcao-civil"
+    },
+    {
+      "campus_id": "cau",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/43caef2d561852ad382805245aa19aa9cdc1c599",
+      "id": "cau-engenharia-de-computacao"
+    },
+    {
+      "campus_id": "cau",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/502733aa2bd2cec35fc203e1c943d5bb0fb9ea85",
+      "id": "cau-engenharia-ambiental"
+    },
+    {
+      "campus_id": "cau",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/6a7aab799e7ad63d1b1c6da013dad55a60e530c6",
+      "id": "cau-engenharia-civil"
+    },
+    {
+      "campus_id": "cau",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/70e5bf25384d1a42edf69f9a21b1afd2706264bf",
+      "id": "cau-arquitetura-e-urbanismo-cau"
+    },
+    {
+      "campus_id": "cau",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/9d641693818e10613e10ed81ffb304538b5879af",
+      "id": "cau-engenharia-de-alimentos"
+    },
+    {
+      "campus_id": "cau",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/a5180cfbe7d6195130bef28fb542f14fa45efa56",
+      "id": "cau-tecnologia-em-meio-ambiente"
+    },
+    {
+      "campus_id": "cau",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/e071ea6754a5cdba3184864e2b48e9daa134817b",
+      "id": "cau-tecnologia-em-gastronomia"
+    },
+    {
+      "campus_id": "cau",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/f542855bdcba7ef43783150e689417f8e5406d37",
+      "id": "cau-medicina-veterinaria"
+    },
+    {
+      "campus_id": "crc",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/1109473bb540238fe3211cbab0bb495018363090",
+      "id": "crc-pedagogia"
+    },
+    {
+      "campus_id": "crc",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/12a7f4520fd886646eb0608605d9fe852742e108",
+      "id": "crc-moda"
+    },
+    {
+      "campus_id": "crc",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/7db3b1d39a16b27ae9d227ed395d6156bfb8f953",
+      "id": "crc-design"
+    },
+    {
+      "campus_id": "crc",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/aeadaf59937288022995e17ad2cbd6141a15859d",
+      "id": "crc-ciencias-contabeis"
+    },
+    {
+      "campus_id": "crg",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/040f45414df3ff3edb75520eafe9cac6d737667d",
+      "id": "crg-engenharia-textil"
+    },
+    {
+      "campus_id": "crg",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/36df9dc33c5f756f7890dc8b1f7c459e872dd2d8",
+      "id": "crg-engenharia-de-producao"
+    },
+    {
+      "campus_id": "crg",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/8346c99c55ab163bfc9188a115856c546a320417",
+      "id": "crg-fisica"
+    },
+    {
+      "campus_id": "crg",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/cf86ec0adf1d7e3f5fdff465b003fc3110a31bf2",
+      "id": "crg-fisica-medica"
+    },
+    {
+      "campus_id": "crv",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/6548081f2b5226e6b338b5183cc02209a9e309f8",
+      "id": "crv-servico-social"
+    },
+    {
+      "campus_id": "crv",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/960b256c8c7e809d45173618739ebf2a3f427e8a",
+      "id": "crv-educacao-fisica"
+    },
+    {
+      "campus_id": "crv",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/9fc4d01378376f9de1f31f1c3f6dae2ad7a9f88c",
+      "id": "crv-historia"
+    },
+    {
+      "campus_id": "sede",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/036f863d951541fb0f3a74b69bbfe24f99eae65d",
+      "id": "sede-ciencia-da-computacao"
+    },
+    {
+      "campus_id": "sede",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/07144c884de58a0d5ce0cb1e89b60704a68b9104",
+      "id": "sede-bioquimica"
+    },
+    {
+      "campus_id": "sede",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/17bfb4afc121bb2a7f0d8a2c7b80e89e291290fb",
+      "id": "sede-ciencias-sociais"
+    },
+    {
+      "campus_id": "sede",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/1b0eb399801d4d24fb064045ab225191932e5449",
+      "id": "sede-farmacia"
+    },
+    {
+      "campus_id": "sede",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/1b77ae89ab3cecbc6265ae9650a50856e8efdd55",
+      "id": "sede-engenharia-de-alimentos"
+    },
+    {
+      "campus_id": "sede",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/1c4e7e505f3137fa180f0e5580c8a129737f1043",
+      "id": "sede-artes-visuais"
+    },
+    {
+      "campus_id": "sede",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/22523083f7a79c12ef6fdd3045a3ee87dec80de6",
+      "id": "sede-biotecnologia"
+    },
+    {
+      "campus_id": "sede",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/3921879996d45763607d78a5a1107e0afbe77cc2",
+      "id": "sede-enfermagem"
+    },
+    {
+      "campus_id": "sede",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/4615bb2ede074db880b90837bf74ebcd38105268",
+      "id": "sede-estatistica"
+    },
+    {
+      "campus_id": "sede",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/49e8d300892d71c2f5c276f4d30e1c94c589ea35",
+      "id": "sede-engenharia-quimica"
+    },
+    {
+      "campus_id": "sede",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/519a2cb9db78185f88cf29cc185d33b827c22434",
+      "id": "sede-direito"
+    },
+    {
+      "campus_id": "sede",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/56a2c1f3b7ca46811593de059fecdcc22a95f83c",
+      "id": "sede-zootecnia"
+    },
+    {
+      "campus_id": "sede",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/68e1e85d77ef7308b6b5ac9c2b7ded5c31fb38fb",
+      "id": "sede-engenharia-de-producao"
+    },
+    {
+      "campus_id": "sede",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/7655d392b2a210827aeb9e9694de6a297f1e5885",
+      "id": "sede-nutricao"
+    },
+    {
+      "campus_id": "sede",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/76b47ff84354ec3e62f4fe12bd46b85f6e0bd350",
+      "id": "sede-geografia"
+    },
+    {
+      "campus_id": "sede",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/79b513cb43a03e85d492f06487be472692ed3ef9",
+      "id": "sede-engenharia-eletrica"
+    },
+    {
+      "campus_id": "sede",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/8ccbdb7427f60db26279a115d613303966b5533e",
+      "id": "sede-historia"
+    },
+    {
+      "campus_id": "sede",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/9de1325b805833842edf30b8d6b14b7a46914bff",
+      "id": "sede-artes-cenicas"
+    },
+    {
+      "campus_id": "sede",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/a99a3305e6ffbd5db96ef5506978504214b31397",
+      "id": "sede-engenharia-de-software"
+    },
+    {
+      "campus_id": "sede",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/b28b3a111305a333255ca38188d25e001550a3f4",
+      "id": "sede-engenharia-mecanica"
+    },
+    {
+      "campus_id": "sede",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/b6573dc09a867d10270a581dae8a3166c84bc57c",
+      "id": "sede-arquitetura-e-urbanismo"
+    },
+    {
+      "campus_id": "sede",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/b7cbe3319cbe1355820bcb60719e3dd5f72adaea",
+      "id": "sede-ciencias-biologicas"
+    },
+    {
+      "campus_id": "sede",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/bcd3389af4e0b7690b9a3e1b73230ed35d846971",
+      "id": "sede-musica"
+    },
+    {
+      "campus_id": "sede",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/c519c0122b004a4de534f49bb2743b1845135444",
+      "id": "sede-comunicacao-e-multimeios"
+    },
+    {
+      "campus_id": "sede",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/c63ba080122ba603cfd83bc3483b79b53cef52a0",
+      "id": "sede-biomedicina"
+    },
+    {
+      "campus_id": "sede",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/c6e9c1b9daea38a42b28d6d97f567ce6d551aeb0",
+      "id": "sede-administracao"
+    },
+    {
+      "campus_id": "sede",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/c7a280761ab813afa3f63f1f9aa7eada0c7914c5",
+      "id": "sede-letras"
+    },
+    {
+      "campus_id": "sede",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/d1aa1ee83bb6686401703af6598109edfce0e346",
+      "id": "sede-odontologia"
+    },
+    {
+      "campus_id": "sede",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/d3c228f4f03dd8ad8910dd6c06ec309f1db423a9",
+      "id": "sede-agronomia"
+    },
+    {
+      "campus_id": "sede",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/d3c42d38b23e32805c12fe6b9d11703b0e02a47c",
+      "id": "sede-quimica"
+    },
+    {
+      "campus_id": "sede",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/d3c90f4dbbcea8fa2eb28c852c5453760cf49d28",
+      "id": "sede-servico-social"
+    },
+    {
+      "campus_id": "sede",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/d59ab31e8573afe43ff5098c2d9bfc8b284a8e64",
+      "id": "sede-ciencias-economicas"
+    },
+    {
+      "campus_id": "sede",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/d8d9634c4fbb4b091b8b66bd181ff3b16f3b1aea",
+      "id": "sede-engenharia-civil"
+    },
+    {
+      "campus_id": "sede",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/dcffb82a4cca8e4383e5221e958095a206c79c51",
+      "id": "sede-engenharia-textil"
+    },
+    {
+      "campus_id": "sede",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/e01f37bde71329590bac28c8df99e80927a7b5f4",
+      "id": "sede-fisica"
+    },
+    {
+      "campus_id": "sede",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/e2539de527961dc7451ca5ac2839f9d15d2618f1",
+      "id": "sede-matematica"
+    },
+    {
+      "campus_id": "sede",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/e53b26acbed443bcd3ae755221f91131fbed31e3",
+      "id": "sede-filosofia"
+    },
+    {
+      "campus_id": "sede",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/e609c318d959a8099b8bfd33bfb0904cf64ce0a1",
+      "id": "sede-ciencias-contabeis"
+    },
+    {
+      "campus_id": "sede",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/e9764f0dddf8667c55086ce4bd2c43e465024fd5",
+      "id": "sede-engenharia-de-controle-e-automacao-inteligencia-artificial"
+    },
+    {
+      "campus_id": "sede",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/f05f1ca5f7b5cdebef6b0e2692cca0f732702893",
+      "id": "sede-secretariado-executivo-trilingue"
+    },
+    {
+      "campus_id": "sede",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/f1f2375d3d7bd9b7277f7e5d4302cf4736025b69",
+      "id": "sede-educacao-fisica"
+    },
+    {
+      "campus_id": "sede",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/f62c5867b4a4ed0fe50ed12212be16c0d9dcfb38",
+      "id": "sede-psicologia"
+    },
+    {
+      "campus_id": "sede",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/fa929caa1ce52eac3200a285e1c3dc694d9b804e",
+      "id": "sede-medicina"
+    },
+    {
+      "campus_id": "sede",
+      "url_detalhe": "https://www.pen.uem.br/site/public/curso/fb5db4852b539ec28d56e839c082987117b3aa3d",
+      "id": "sede-pedagogia"
+    }
+  ]
+}

@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import re
 from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
@@ -20,6 +21,8 @@ from app.review.cursos import load_course_preview
 from app.review.previews import fingerprint, load_preview
 from app.services.repository import DatasetError, parse_snapshot
 
+COURSE_ID = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
+
 
 class SnapshotError(ValueError):
     """O snapshot não pode ser gerado com segurança a partir das entradas."""
@@ -35,6 +38,7 @@ class DatasetInputs:
 class SnapshotManifest:
     path: Path
     normalizacoes: Path | None
+    ids_cursos: Path
     inputs: dict[str, DatasetInputs]
 
 
@@ -97,7 +101,45 @@ def load_manifest(path: Path) -> SnapshotManifest:
             raise SnapshotError(f"normalizações não encontradas: {normalizacoes}")
     else:
         normalizacoes_path = None
-    return SnapshotManifest(path.resolve(), normalizacoes_path, inputs)
+    ids_cursos = raw.get("ids_cursos")
+    if not isinstance(ids_cursos, str) or not ids_cursos.strip():
+        raise SnapshotError("manifesto sem mapeamento de IDs de cursos")
+    ids_cursos_path = (base / ids_cursos).resolve()
+    if not ids_cursos_path.is_file():
+        raise SnapshotError(f"mapeamento de IDs de cursos não encontrado: {ids_cursos}")
+    return SnapshotManifest(path.resolve(), normalizacoes_path, ids_cursos_path, inputs)
+
+
+def _load_course_ids(path: Path) -> dict[str, str]:
+    """Carrega o mapeamento persistente de IDs por câmpus e URL de detalhe."""
+    raw = read_json(path)
+    if not isinstance(raw, dict) or raw.get("versao") != 1:
+        raise SnapshotError("mapeamento de IDs de cursos inválido")
+    entries = raw.get("cursos")
+    if not isinstance(entries, list) or not entries:
+        raise SnapshotError("mapeamento de IDs de cursos sem entradas")
+    ids: dict[str, str] = {}
+    values: set[str] = set()
+    for item in entries:
+        if not isinstance(item, dict) or set(item) != {"campus_id", "url_detalhe", "id"}:
+            raise SnapshotError("entrada inválida no mapeamento de IDs de cursos")
+        campus_id = item["campus_id"]
+        url = item["url_detalhe"]
+        value = item["id"]
+        if not isinstance(campus_id, str) or not campus_id.strip():
+            raise SnapshotError("câmpus inválido no mapeamento de IDs de cursos")
+        if not isinstance(url, str) or not url.startswith("https://"):
+            raise SnapshotError("URL de detalhe inválida no mapeamento de IDs de cursos")
+        if not isinstance(value, str) or not COURSE_ID.fullmatch(value):
+            raise SnapshotError(f"ID de curso inválido no mapeamento: {value!r}")
+        key = f"{campus_id}|{url}"
+        if key in ids:
+            raise SnapshotError(f"curso repetido no mapeamento de IDs: {key}")
+        if value in values:
+            raise SnapshotError(f"ID de curso repetido no mapeamento: {value}")
+        ids[key] = value
+        values.add(value)
+    return ids
 
 
 def _review_gate(path: Path, coverage: list[str]) -> None:
@@ -198,7 +240,13 @@ def _course_grau(record: dict[str, Any], problems: list[dict[str, str]]) -> str 
 def _project(
     records: dict[str, dict[str, dict[str, Any]]],
     previews: dict[str, _PreviewSet],
-) -> tuple[dict[str, list[dict[str, Any]]], list[str], list[dict[str, str]]]:
+    course_ids: dict[str, str],
+) -> tuple[
+    dict[str, list[dict[str, Any]]],
+    list[str],
+    list[dict[str, str]],
+    list[str],
+]:
     ignored_fields: set[str] = set()
     grau_problems: list[dict[str, str]] = []
     datasets = {}
@@ -215,7 +263,10 @@ def _project(
                 "consultado_em": previews[name].consultado_em[key],
             }
             if name == "cursos":
-                item["id"] = record["id_candidato"]
+                published_id = course_ids.get(key)
+                if published_id is None:
+                    raise SnapshotError(f"curso aceito sem ID estável no mapeamento: {key}")
+                item["id"] = published_id
                 item["nivel"] = "graduacao"
                 item["grau"] = _course_grau(record, grau_problems)
                 item["centro_sigla"] = None
@@ -223,7 +274,8 @@ def _project(
             items.append(item)
         items.sort(key=lambda entry: str(entry["id"]).casefold())
         datasets[name] = items
-    return datasets, sorted(ignored_fields), grau_problems
+    unused_ids = sorted(set(course_ids) - set(records["cursos"]))
+    return datasets, sorted(ignored_fields), grau_problems, unused_ids
 
 
 def _validate(datasets: dict[str, list[dict[str, Any]]]) -> None:
@@ -264,6 +316,7 @@ def _applied_report(outcome: NormalizationOutcome) -> tuple[list[dict], list[dic
 def build_snapshot(manifest_path: Path) -> BuiltSnapshot:
     """Gera os quatro datasets somente a partir de lotes com decisões finais."""
     manifest = load_manifest(manifest_path)
+    course_ids = _load_course_ids(manifest.ids_cursos)
     coverage: list[str] = []
     previews = {
         name: _load_previews(name, manifest.inputs[name], coverage)
@@ -277,13 +330,16 @@ def build_snapshot(manifest_path: Path) -> BuiltSnapshot:
     if manifest.normalizacoes is not None:
         records, outcome = apply_proposals(load_proposals(manifest.normalizacoes), records, digests)
 
-    datasets, ignored_fields, grau_problems = _project(records, previews)
+    datasets, ignored_fields, grau_problems, unused_ids = _project(records, previews, course_ids)
     _validate(datasets)
     aplicadas, ignoradas = _applied_report(outcome)
     report = {
         "publicavel": False,
         "manifesto": str(manifest.path),
         "normalizacoes": str(manifest.normalizacoes) if manifest.normalizacoes else None,
+        "ids_cursos": str(manifest.ids_cursos),
+        "ids_cursos_utilizados": len(course_ids) - len(unused_ids),
+        "ids_cursos_nao_utilizados": unused_ids,
         "contagens": {name: len(datasets[name]) for name in DATASETS},
         "normalizacoes_aplicadas": aplicadas,
         "normalizacoes_ignoradas": ignoradas,

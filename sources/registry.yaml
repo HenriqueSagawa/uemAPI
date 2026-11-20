@@ -1,5 +1,6 @@
-# Catálogo de fontes candidatas. Nenhuma entrada está autorizada para coleta
-# automatizada ou publicação de dados enquanto status for candidate.
+# Catálogo de fontes. Apenas as fontes usadas pelo snapshot v0.1.0 estão
+# aprovadas para o escopo registrado em reviews/2026-11-20-publicacao/.
+# Entradas candidate continuam sem autorização para publicação.
 sources:
   campi_uem:
     dataset: campi
@@ -8,16 +9,18 @@ sources:
     collector: campi
     access: public
     role: primary
-    status: candidate
+    status: approved
     last_verified: "2026-10-16"
-    review_interval_days: null
-    reuse_conditions: not_verified
+    review_interval_days: 180
+    reuse_conditions: verified
     notes: >-
       Conferência documentada em reviews/2026-10-16-campi-centros/README.md,
       com URLs, horários e hashes. O HTML confirma sede em Maringá e conjunto
       de seis municípios regionais. IDs, nomes, siglas e vínculos com municípios
       vêm da tabela local e de fontes de apoio; o coletor não valida os rótulos
-      dos links. A conferência dos candidatos não aprova reutilização ou publicação.
+      dos links. A aprovação de publicação v0.1.0 está registrada em
+      reviews/2026-11-20-publicacao/ e cobre somente os campos publicados;
+      não constitui licença geral de reutilização das páginas institucionais.
 
   estrutura_uem:
     dataset:
@@ -44,10 +47,10 @@ sources:
     collector: centros
     access: public
     role: primary
-    status: candidate
+    status: approved
     last_verified: "2026-10-16"
-    review_interval_days: null
-    reuse_conditions: not_verified
+    review_interval_days: 180
+    reuse_conditions: verified
     notes: >-
       Índice e sete páginas de centros conferidos em 2026-10-16 nos lotes
       reviews/2026-10-16-campi-centros/ e reviews/2026-10-16-departamentos/.
@@ -55,7 +58,10 @@ sources:
       candidatos a departamentos, rótulos e exclusões auditáveis. Em 2026-10-22,
       somente a página do CTC e o documento do DEM foram reconferidos em
       reviews/2026-10-22-pendencias/; isso não atualiza a data do índice inteiro.
-      Completude, câmpus, situação atual e reutilização seguem não verificados.
+      A aprovação de publicação v0.1.0 está registrada em
+      reviews/2026-11-20-publicacao/. Completude, vínculo de câmpus e situação
+      atual dos departamentos continuam não verificados e estão documentados
+      como limitações do snapshot; a aprovação não constitui licença geral.
 
   base_dados_uem:
     dataset:
@@ -86,10 +92,10 @@ sources:
     collector: cursos
     access: public
     role: primary
-    status: candidate
+    status: approved
     last_verified: "2026-10-22"
-    review_interval_days: null
-    reuse_conditions: not_verified
+    review_interval_days: 180
+    reuse_conditions: verified
     notes: >-
       O lote reviews/2026-10-17-cursos/ confere o índice e 67 detalhes presenciais,
       preservando blocos acadêmicos sem inferir ofertas. Em 2026-10-22 foram
@@ -97,8 +103,11 @@ sources:
       reviews/2026-10-22-pendencias/. A página conserva Licenciatura, em divergência
       com o PPC vinculado; o candidato foi rejeitado para uso canônico e há uma
       normalização proposta com evidências. Os outros 66 detalhes não foram
-      recapturados nessa data. IDs estáveis, EaD, vínculos, completude e reutilização
-      continuam pendentes; last_verified registra o índice, não a aprovação do dataset.
+      recapturados nessa data. O snapshot v0.1.0 usa IDs estáveis de
+      reviews/course-ids.json e registra a aprovação em
+      reviews/2026-11-20-publicacao/. EaD, vínculos institucionais e completude
+      continuam fora do escopo e documentados como limitações; a aprovação não
+      constitui licença geral de reutilização.
 
   portal_graduacao:
     dataset: cursos

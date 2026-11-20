@@ -70,6 +70,52 @@ def test_write_creates_snapshot_and_next_run_shows_no_changes(tmp_path, capsys):
     assert all(value == {"criados": 0, "removidos": 0, "alterados": 0} for value in totals.values())
 
 
+def test_check_accepts_a_snapshot_matching_the_reviews(tmp_path, capsys):
+    data_dir = tmp_path / "data"
+    assert _run(capsys, "--manifest", str(MANIFEST), "--data-dir", str(data_dir), "--write")[0] == 0
+    code, report, _ = _run(
+        capsys, "--manifest", str(MANIFEST), "--data-dir", str(data_dir), "--check"
+    )
+    assert code == 0
+    assert report["verificacao"] == {"ok": True, "problemas": []}
+
+
+def test_check_detects_drift_and_missing_snapshot(tmp_path, capsys):
+    data_dir = tmp_path / "data"
+    assert _run(capsys, "--manifest", str(MANIFEST), "--data-dir", str(data_dir), "--write")[0] == 0
+    campi = data_dir / "campi.json"
+    campi.write_text(campi.read_text(encoding="utf-8") + "\n", encoding="utf-8")
+
+    code, report, _ = _run(
+        capsys, "--manifest", str(MANIFEST), "--data-dir", str(data_dir), "--check"
+    )
+    assert code == 1
+    assert report["verificacao"]["ok"] is False
+    assert report["verificacao"]["problemas"] == ["divergente: campi.json"]
+
+    code, report, _ = _run(
+        capsys, "--manifest", str(MANIFEST), "--data-dir", str(tmp_path / "vazio"), "--check"
+    )
+    assert code == 1
+    assert len(report["verificacao"]["problemas"]) == len(DATASETS)
+    assert all(item.startswith("ausente:") for item in report["verificacao"]["problemas"])
+
+
+def test_write_and_check_are_mutually_exclusive(tmp_path, capsys):
+    with pytest.raises(SystemExit):
+        update_data.main(
+            [
+                "--manifest",
+                str(MANIFEST),
+                "--data-dir",
+                str(tmp_path / "data"),
+                "--write",
+                "--check",
+            ]
+        )
+    assert "not allowed" in capsys.readouterr().err
+
+
 def test_previous_snapshot_is_not_touched_when_review_is_pending(tmp_path, capsys, built):
     data_dir = tmp_path / "data"
     data_dir.mkdir()
@@ -83,6 +129,7 @@ def test_previous_snapshot_is_not_touched_when_review_is_pending(tmp_path, capsy
         entry["previs"] = [str((base / item).resolve()) for item in entry["previs"]]
         entry["revisoes"] = [str((base / item).resolve()) for item in entry["revisoes"]]
     raw["normalizacoes"] = str((base / raw["normalizacoes"]).resolve())
+    raw["ids_cursos"] = str((base / raw["ids_cursos"]).resolve())
     raw["datasets"]["departamentos"]["revisoes"][-1] = str(
         (ROOT / "reviews" / "2026-10-16-departamentos" / "ctc" / "revisao.json").resolve()
     )

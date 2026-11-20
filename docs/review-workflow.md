@@ -2,7 +2,7 @@
 
 As prévias produzidas pelos coletores são candidatas. O comando de revisão compara duas prévias do mesmo dataset, destaca mudanças e associa decisões registradas a versões específicas de cada registro. Ele não acessa a rede, não altera as prévias e não cria arquivos em `data/`.
 
-Uma [execução com capturas reais de câmpus e centros](../reviews/2026-10-16-campi-centros/README.md) registra URLs, horários, hashes, justificativas por registro e instruções de reprodução local. As decisões técnicas desse lote estão disponíveis para revisão no PR; a aprovação do snapshot e das condições de reutilização continua separada.
+Uma [execução com capturas reais de câmpus e centros](../reviews/2026-10-16-campi-centros/README.md) registra URLs, horários, hashes, justificativas por registro e instruções de reprodução local. As decisões técnicas desse lote estão disponíveis para revisão. A aprovação do snapshot e das condições de reutilização é uma etapa separada e, para a v0.1.0, está registrada em [`reviews/2026-11-20-publicacao/`](../reviews/2026-11-20-publicacao/README.md).
 
 ## Preparar as prévias
 
@@ -54,7 +54,7 @@ python -m app.review.previews \
 
 Cada decisão usa a `impressao` gerada para o registro e sua proveniência. Uma mudança de nome, ID, sigla, cidade, fonte, link de centro, status ou proveniência torna a decisão anterior `decisao_desatualizada`. Uma nova data de captura, sozinha, não a invalida. Registros removidos têm decisões próprias. Decisões que não correspondem a um registro atual ou a uma remoção aparecem em `decisoes_obsoletas`; IDs ausentes ou inesperados aparecem em `inconsistencias_cobertura`.
 
-`todos_itens_aprovados` indica apenas que as decisões do relatório foram registradas e que não há inconsistências de cobertura. O relatório permanece `publicavel: false`: a origem dos arquivos locais não é autenticada, as condições de reutilização das fontes continuam pendentes e a API exige revisão do snapshot completo de quatro datasets antes de publicar dados.
+`todos_itens_aprovados` indica apenas que as decisões do relatório foram registradas e que não há inconsistências de cobertura. O relatório permanece `publicavel: false`: a origem dos arquivos locais não é autenticada e a revisão de uma prévia não substitui a aprovação do snapshot completo. A publicação da v0.1.0 foi registrada separadamente em [`reviews/2026-11-20-publicacao/`](../reviews/2026-11-20-publicacao/README.md).
 
 ## Departamentos de um centro
 
@@ -120,9 +120,11 @@ O relatório confere as contagens do lote, as seções de câmpus observadas na 
 os IDs candidatos, a correspondência entre cada detalhe aceito e sua entrada no índice,
 e a proveniência declarada. Capturas fora do índice e a EaD ainda não incluída também
 aparecem como pendências. Mesmo com todas as decisões registradas, o resultado fica
-`publicavel: false`: a chave de revisão não resolve os IDs estáveis, os blocos acadêmicos
-não foram desdobrados em ofertas, os vínculos e a completude ainda exigem conferência e
-as condições de reutilização das fontes seguem pendentes.
+`publicavel: false`: o relatório de revisão não é a aprovação de publicação. O snapshot
+v0.1.0 usa IDs estáveis de [`reviews/course-ids.json`](../reviews/course-ids.json) e
+registra a aprovação em
+[`reviews/2026-11-20-publicacao/`](../reviews/2026-11-20-publicacao/README.md);
+blocos acadêmicos não desdobrados em ofertas e a EaD permanecem como limitações.
 
 A [primeira execução com capturas reais de cursos](../reviews/2026-10-17-cursos/README.md)
 registra o índice, seus 67 detalhes e decisões por entrada, com horários, hashes
@@ -140,10 +142,21 @@ uso canônico, acompanhadas de propostas de normalização com evidências.
 
 As propostas identificam campo, valor observado, valor proposto, impressão da
 base e abrangência. Elas não mudam os valores extraídos nem são consumidas pelo
-comando de revisão. A aplicação futura precisa conferir esses elementos e
-registrar a proveniência do valor normalizado. Rejeitar um candidato incompatível
-não remove a instituição ou o curso do inventário e não aprova a publicação.
+comando de revisão. O pipeline de snapshot confere a impressão e o valor
+observado antes de aplicar: a normalização do DEM é aplicada, e a proposta de
+Engenharia Agrícola é ignorada por estar fora do modelo canônico. Rejeitar um
+candidato incompatível não remove a instituição ou o curso do inventário e não
+aprova a publicação.
 
 A revisão de cursos desse lote usa o consolidado de 17/10 com novas decisões:
 ela não representa uma recaptura dos 67 detalhes. As demais decisões conservam
 as datas e impressões originais.
+
+## Aprovação de publicação
+
+A [aprovação de 20 de novembro de 2026](../reviews/2026-11-20-publicacao/README.md)
+registra o escopo da v0.1.0, as fontes aprovadas e as limitações do snapshot. Ela
+é conferida por `scripts/validate_publication.py` junto com a geração
+determinística e o catálogo de fontes. Uma revisão técnica posterior não altera
+`data/` automaticamente: é preciso gerar o snapshot, revisar o diff e registrar
+uma nova aprovação.

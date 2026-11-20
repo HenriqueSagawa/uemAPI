@@ -15,6 +15,7 @@ from app.pipeline import (  # noqa: E402
     build_snapshot,
     diff_snapshot,
     read_snapshot,
+    serialize_snapshot,
     write_snapshot,
 )
 from app.services.repository import DatasetError  # noqa: E402
@@ -36,10 +37,16 @@ def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--manifest", type=Path, default=ROOT / "reviews" / "snapshot-inputs.json")
     parser.add_argument("--data-dir", type=Path, default=ROOT / "data")
-    parser.add_argument(
+    action = parser.add_mutually_exclusive_group()
+    action.add_argument(
         "--write",
         action="store_true",
         help="substitui os quatro arquivos em --data-dir após validar o resultado",
+    )
+    action.add_argument(
+        "--check",
+        action="store_true",
+        help="falha quando data/ difere do snapshot gerado ou está ausente",
     )
     args = parser.parse_args(argv)
     try:
@@ -50,10 +57,27 @@ def main(argv: list[str] | None = None) -> int:
         return 2
     report = {
         "escrita": False,
+        "verificacao": None,
         "data_dir": str(args.data_dir),
         "diff": diff_snapshot(previous, built.datasets),
         **built.report,
     }
+    if args.check:
+        texts = serialize_snapshot(built.datasets)
+        problems = []
+        for name in DATASETS:
+            filename = f"{name}.json"
+            path = args.data_dir / filename
+            try:
+                current = path.read_text(encoding="utf-8")
+            except OSError:
+                problems.append(f"ausente: {filename}")
+                continue
+            if current != texts[filename]:
+                problems.append(f"divergente: {filename}")
+        report["verificacao"] = {"ok": not problems, "problemas": problems}
+        print(json.dumps(report, ensure_ascii=False, indent=2))
+        return 0 if not problems else 1
     if args.write:
         try:
             write_snapshot(built.datasets, args.data_dir)

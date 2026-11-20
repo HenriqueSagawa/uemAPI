@@ -76,6 +76,66 @@ def test_projects_academic_blocks_without_inference(built):
     assert cursos["sede-administracao"]["grau"] == "Bacharel em Administração"
 
 
+def test_uses_the_persistent_course_id_mapping(built):
+    mapping = json.loads((ROOT / "reviews" / "course-ids.json").read_text(encoding="utf-8"))
+    assert len(mapping["cursos"]) == 67
+    assert built.report["ids_cursos_utilizados"] == 67
+    assert built.report["ids_cursos_nao_utilizados"] == []
+    assert built.report["ids_cursos"].endswith("reviews/course-ids.json")
+    ids = [item["id"] for item in built.datasets["cursos"]]
+    assert len(ids) == len(set(ids)) == 67
+    assert "car-engenharia-agricola" in ids
+
+
+def _course_ids() -> dict:
+    return json.loads((ROOT / "reviews" / "course-ids.json").read_text(encoding="utf-8"))
+
+
+def _manifest_with_ids(tmp_path: Path, ids: dict) -> Path:
+    path = tmp_path / "course-ids.json"
+    path.write_text(json.dumps(ids, ensure_ascii=False), encoding="utf-8")
+    raw = _manifest(tmp_path)
+    raw["ids_cursos"] = str(path)
+    return _write_manifest(tmp_path, raw)
+
+
+def test_rejects_a_course_without_a_stable_id(tmp_path):
+    ids = _course_ids()
+    ids["cursos"] = ids["cursos"][1:]
+    with pytest.raises(SnapshotError, match="sem ID estável"):
+        build_snapshot(_manifest_with_ids(tmp_path, ids))
+
+
+def test_rejects_duplicated_course_ids(tmp_path):
+    ids = _course_ids()
+    ids["cursos"][1]["id"] = ids["cursos"][0]["id"]
+    with pytest.raises(SnapshotError, match="ID de curso repetido"):
+        build_snapshot(_manifest_with_ids(tmp_path, ids))
+
+
+def test_reports_mappings_that_are_not_used(tmp_path):
+    ids = _course_ids()
+    ids["cursos"].append(
+        {
+            "campus_id": "sede",
+            "url_detalhe": "https://www.pen.uem.br/site/public/curso/" + "f" * 40,
+            "id": "sede-curso-futuro",
+        }
+    )
+    built = build_snapshot(_manifest_with_ids(tmp_path, ids))
+    assert built.report["ids_cursos_utilizados"] == 67
+    assert built.report["ids_cursos_nao_utilizados"] == [
+        "sede|https://www.pen.uem.br/site/public/curso/" + "f" * 40
+    ]
+
+
+def test_manifest_requires_course_id_mapping(tmp_path):
+    raw = _manifest(tmp_path)
+    del raw["ids_cursos"]
+    with pytest.raises(SnapshotError, match="sem mapeamento"):
+        build_snapshot(_write_manifest(tmp_path, raw))
+
+
 def test_ignores_preview_fields_outside_the_contract(built):
     assert "url_pagina_vinculada" in built.report["campos_ignorados"]
     for centro in built.datasets["centros"]:
@@ -142,6 +202,7 @@ def _manifest(tmp_path: Path) -> dict:
         entry["previs"] = [str((base / item).resolve()) for item in entry["previs"]]
         entry["revisoes"] = [str((base / item).resolve()) for item in entry["revisoes"]]
     raw["normalizacoes"] = str((base / raw["normalizacoes"]).resolve())
+    raw["ids_cursos"] = str((base / raw["ids_cursos"]).resolve())
     return raw
 
 

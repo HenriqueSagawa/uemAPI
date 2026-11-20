@@ -1,6 +1,6 @@
 # uemAPI
 
-API comunitária, independente e **não oficial** para informações públicas da Universidade Estadual de Maringá. Este repositório contém a base da v0.1 Fundação. Há conferências de prévias reais de câmpus, centros, departamentos e cursos presenciais; as fontes e o snapshot de produção ainda não estão aprovados para publicação.
+API comunitária, independente e **não oficial** para informações públicas da Universidade Estadual de Maringá. A v0.1.0 publica um snapshot revisado com 7 câmpus, 7 centros, 49 departamentos e 67 cursos presenciais de graduação. As fontes usadas e as limitações conhecidas estão registradas na [aprovação de publicação](reviews/2026-11-20-publicacao/README.md); a API não substitui os canais oficiais da UEM.
 
 ## O que já existe
 
@@ -11,7 +11,7 @@ API comunitária, independente e **não oficial** para informações públicas d
 - Schemas, formato de erro, proveniência por registro e documentação OpenAPI em `/docs`.
 - Carregamento de um snapshot JSON completo na inicialização, com validação de modelos, unicidade e referências. Se um arquivo estiver ausente ou inválido, `/v1/health` e as consultas respondem 503.
 
-Os registros dos testes servem apenas para verificar o contrato e não constituem um dataset aprovado para `data/`. O contrato de dados poderá ser refinado depois da conferência das fontes reais.
+Os registros dos testes servem apenas para verificar o contrato. O dataset publicado é o snapshot revisado em `data/`, descrito na [aprovação de publicação](reviews/2026-11-20-publicacao/README.md).
 
 ## Desenvolvimento local
 
@@ -24,9 +24,9 @@ python -m pip install -e '.[dev]'
 python -m uvicorn app.main:app --reload
 ```
 
-A documentação interativa estará em <http://127.0.0.1:8000/docs>. Até que os quatro arquivos aprovados existam em `data/`, as consultas retornam 503. Para usar outro diretório de dados, defina `UEM_API_DATA_DIR` (consulte `.env.example`).
+A documentação interativa estará em <http://127.0.0.1:8000/docs>. Os quatro arquivos do snapshot revisado estão em `data/`; se algum estiver ausente ou inválido, as consultas retornam 503. Para usar outro diretório de dados, defina `UEM_API_DATA_DIR` (consulte `.env.example`).
 
-Também é possível construir uma imagem com `docker build -t uem-api .` e iniciar com `docker run --rm -p 8000:8000 uem-api`. A imagem atual inclui apenas o diretório `data/` vazio e, portanto, informa indisponibilidade até receber dados revisados.
+Também é possível construir uma imagem com `docker build -t uem-api .` e iniciar com `docker run --rm -p 8000:8000 uem-api`. A imagem inclui o snapshot revisado de `data/`.
 
 ## Geração do snapshot revisado
 
@@ -37,16 +37,19 @@ arquivos de `data/` de forma atômica, depois de validar o resultado:
 
 ```bash
 python scripts/update_data.py
+python scripts/update_data.py --check
 python scripts/update_data.py --write
-python scripts/validate_data.py
+python scripts/validate_data.py --require
 python scripts/validate_sources.py
+python scripts/validate_publication.py
 ```
 
 A geração recusa revisões com decisões pendentes ou desatualizadas, confere as
-propostas de normalização contra a impressão e o valor observado e não inventa
-grau para cursos com blocos acadêmicos ambíguos. `data/` continua vazio até a
-aprovação humana do snapshot e das condições de reutilização das fontes. Consulte
-[os detalhes do pipeline](docs/snapshot-generation.md).
+propostas de normalização contra a impressão e o valor observado, exige IDs
+estáveis para todos os cursos aceitos e não inventa grau para cursos com blocos
+acadêmicos ambíguos. `--check` falha quando `data/` difere da geração
+determinística; `validate_publication.py` confere ainda as fontes usadas e o
+registro de aprovação. Consulte [os detalhes do pipeline](docs/snapshot-generation.md).
 
 ## Prévia local do coletor de câmpus
 
@@ -58,7 +61,7 @@ O primeiro coletor lê somente um arquivo HTML local. Ele confere a presença da
   --consultado-em 2026-09-25T12:00:00Z
 ```
 
-A fixture acima é um exemplo criado para testes. Ao usar um HTML capturado da página real, informe em `--consultado-em` a data e hora dessa captura. Se a lista de câmpus não corresponder aos sete registros esperados, o comando falha e exige revisão. A saída é apenas uma prévia: as condições de reutilização e o snapshot completo ainda precisam ser aprovados antes da publicação.
+A fixture acima é um exemplo criado para testes. Ao usar um HTML capturado da página real, informe em `--consultado-em` a data e hora dessa captura. Se a lista de câmpus não corresponder aos sete registros esperados, o comando falha e exige revisão. A saída é apenas uma prévia; o snapshot publicado da v0.1.0 está congelado em `data/` e novas capturas exigem revisão antes de substituí-lo.
 
 ## Prévia local dos centros de ensino
 
@@ -70,7 +73,7 @@ python -m app.collectors.centros \
   --consultado-em 2026-09-26T12:00:00Z
 ```
 
-A fixture é apenas um exemplo de teste. Para uma captura real, informe a hora da captura. O comando não acessa a rede, não visita as páginas vinculadas e não grava em `data/`. Os departamentos e demais órgãos dessas páginas ainda precisam ser separados e conferidos. `fonte.url` identifica o índice de referência, sem comprovar a origem do arquivo local. A saída permanece `publicavel: false` até a revisão dos registros e das condições de reutilização.
+A fixture é apenas um exemplo de teste. Para uma captura real, informe a hora da captura. O comando não acessa a rede, não visita as páginas vinculadas e não grava em `data/`. Os departamentos e demais órgãos dessas páginas ainda precisam ser separados e conferidos. `fonte.url` identifica o índice de referência, sem comprovar a origem do arquivo local. A saída permanece `publicavel: false`; o snapshot publicado da v0.1.0 está congelado em `data/`.
 
 ## Prévia local dos cursos da PEN
 
@@ -84,7 +87,7 @@ python -m app.collectors.cursos \
 
 Para comparar com uma captura anterior, acrescente `--html-anterior caminho/para/cursos-anteriores.html`. A prévia lista entradas removidas e adicionadas por câmpus, mostra as contagens antes e depois e sinaliza mudanças de nome ou no link da EaD. Sem esse arquivo, `comparacao.status` fica como `sem_captura_anterior` e a revisão manual continua necessária. O comando apenas lê os arquivos locais e imprime JSON.
 
-A fixture é um exemplo para testes. Com uma cópia da página real, informe a hora em que ela foi capturada. A saída é uma prévia não publicável: cada entrada corresponde a um link da lista em um câmpus, e cursos de mesmo nome em câmpus diferentes permanecem separados. O coletor compara as seções de câmpus com a cobertura observada na PEN em 25 de setembro de 2026; se uma seção desaparecer ou surgir, a prévia falha e pede revisão. O coletor não usa o código da URL como ID institucional nem infere grau, centro ou departamento. Turnos e habilitações das páginas de detalhe e os cursos da EaD exigem uma etapa própria de revisão. As condições de reutilização da fonte também continuam pendentes.
+A fixture é um exemplo para testes. Com uma cópia da página real, informe a hora em que ela foi capturada. A saída é uma prévia não publicável: cada entrada corresponde a um link da lista em um câmpus, e cursos de mesmo nome em câmpus diferentes permanecem separados. O coletor compara as seções de câmpus com a cobertura observada na PEN em 25 de setembro de 2026; se uma seção desaparecer ou surgir, a prévia falha e pede revisão. O coletor não usa o código da URL como ID institucional nem infere grau, centro ou departamento. Turnos e habilitações das páginas de detalhe e os cursos da EaD exigem uma etapa própria de revisão. O snapshot publicado usa o mapeamento persistente de `reviews/course-ids.json`; novas capturas exigem revisão antes de alterar IDs ou dados.
 
 ## Prévia local do detalhe de um curso da PEN
 
@@ -99,7 +102,7 @@ python -m app.collectors.curso_detalhes \
   --consultado-em 2026-09-26T12:00:00Z
 ```
 
-O comando lê somente arquivos locais e imprime JSON. O título e o câmpus da página de detalhe devem coincidir com a entrada indicada no índice. Turnos, habilitações e graus são preservados em blocos conforme aparecem na seção acadêmica inicial; esses blocos ainda não representam ofertas independentes. O coletor separa valores por elementos HTML, não por quebras de linha do arquivo. Rótulos não acadêmicos encerram a captura; trechos ambíguos e contatos detectados em valores acadêmicos causam erro. Nomes, contatos e descrição do curso não são campos da prévia. O `id_candidato` combina o câmpus com o nome normalizado, mas muda se o nome mudar. Consulte a [decisão sobre unidade e IDs de cursos](docs/course-identity.md). O resultado permanece `publicavel: false` e não cria registros em `data/`.
+O comando lê somente arquivos locais e imprime JSON. O título e o câmpus da página de detalhe devem coincidir com a entrada indicada no índice. Turnos, habilitações e graus são preservados em blocos conforme aparecem na seção acadêmica inicial; esses blocos ainda não representam ofertas independentes. O coletor separa valores por elementos HTML, não por quebras de linha do arquivo. Rótulos não acadêmicos encerram a captura; trechos ambíguos e contatos detectados em valores acadêmicos causam erro. Nomes, contatos e descrição do curso não são campos da prévia. O `id_candidato` combina o câmpus com o nome normalizado e continua sendo apenas uma proposta do coletor; o snapshot publicado usa o mapeamento persistente de [`reviews/course-ids.json`](reviews/course-ids.json). Consulte a [decisão sobre unidade e IDs de cursos](docs/course-identity.md). O resultado permanece `publicavel: false` e não cria registros em `data/`.
 
 ## Prévia consolidada dos detalhes de cursos
 
@@ -129,7 +132,7 @@ python -m app.collectors.departamentos \
 
 A prévia usa a sigla em minúsculas como ID interno candidato, sem afirmar que seja um identificador institucional. Remove o sufixo de resolução do nome e mantém os demais parênteses. Reconhece a grafia `Deparamento de Engenharia Mecânica` na entrada `DEM`, preservando o nome e registrando uma observação para revisão. `campus_id` permanece `null` e `status` permanece `desconhecido`; a página de regulamentos não comprova esses campos. Os links dos regulamentos são preservados, mas seu conteúdo não é lido.
 
-A captura deve conter o conteúdo principal da PLD (`article#content`, título `documentFirstHeading`, `div#content-core` e lista `div.entries` com `article.entry`). Cada entrada admite um único link textual no cabeçalho e, opcionalmente, um link de ícone para a mesma URL. Mudanças nessa estrutura, siglas ou URLs duplicadas, artigos aninhados, ausência de departamentos ou links fora da página institucional do centro interrompem a prévia. O coletor não possui uma lista completa de siglas esperadas: remoções de entradas e completude precisam de conferência manual. A origem do arquivo local não é autenticada, a cobertura dos demais centros e as condições de reutilização continuam pendentes, e `publicavel` permanece `false`.
+A captura deve conter o conteúdo principal da PLD (`article#content`, título `documentFirstHeading`, `div#content-core` e lista `div.entries` com `article.entry`). Cada entrada admite um único link textual no cabeçalho e, opcionalmente, um link de ícone para a mesma URL. Mudanças nessa estrutura, siglas ou URLs duplicadas, artigos aninhados, ausência de departamentos ou links fora da página institucional do centro interrompem a prévia. O coletor não possui uma lista completa de siglas esperadas: remoções de entradas e completude precisam de conferência manual. A origem do arquivo local não é autenticada, a cobertura dos demais centros continua exigindo conferência e `publicavel` permanece `false`. O snapshot publicado da v0.1.0 está congelado em `data/`.
 
 ## Prévia consolidada dos departamentos
 
@@ -140,7 +143,7 @@ python -m app.collectors.departamentos_consolidados \
   --manifesto tests/fixtures/departamentos_consolidados_manifesto.json
 ```
 
-O comando lê apenas arquivos locais e imprime JSON, sem acessar a rede nem gravar em `data/`. O relatório traz uma prévia individual para cada centro aceito, informa centros `sem_captura`, com `arquivo_ausente`, `falha_leitura` ou `invalido`, e identifica siglas de departamentos repetidas entre centros aceitos. Uma captura inválida não impede a análise das outras; manifestos ambíguos, com centro desconhecido, entrada duplicada, arquivo reutilizado ou horário sem fuso são rejeitados. `cobertura_fontes_completa` indica apenas que as sete páginas esperadas foram processadas. Ainda é preciso revisar cada página para verificar a completude e a atualidade de sua lista, resolver duplicidades e aprovar os dados e as condições de reutilização. A saída permanece `publicavel: false`.
+O comando lê apenas arquivos locais e imprime JSON, sem acessar a rede nem gravar em `data/`. O relatório traz uma prévia individual para cada centro aceito, informa centros `sem_captura`, com `arquivo_ausente`, `falha_leitura` ou `invalido`, e identifica siglas de departamentos repetidas entre centros aceitos. Uma captura inválida não impede a análise das outras; manifestos ambíguos, com centro desconhecido, entrada duplicada, arquivo reutilizado ou horário sem fuso são rejeitados. `cobertura_fontes_completa` indica apenas que as sete páginas esperadas foram processadas. Ainda é preciso revisar cada página para verificar a completude e a atualidade de sua lista antes de substituir o snapshot. A saída permanece `publicavel: false`.
 
 ## Revisão local de prévias
 
@@ -167,18 +170,23 @@ python -m pytest
 
 O diretório configurado deve conter `campi.json`, `centros.json`, `departamentos.json` e `cursos.json`. Cada arquivo contém uma lista JSON não vazia de registros do schema correspondente. Cada registro inclui `id`, `nome` e `fonte` com `source_id`, `url` e `consultado_em` com fuso horário. Os schemas em `app/schemas/` definem os demais campos. Todos os quatro arquivos são validados juntos; nenhum subconjunto é publicado isoladamente.
 
-## Próximas etapas
+## Publicação e próximas etapas
 
-O [lote de 16 de outubro de 2026](reviews/2026-10-16-campi-centros/README.md) registra a primeira conferência real de sete câmpus e sete centros, com capturas locais identificadas por hash, decisões e relatórios não publicáveis.
+A [aprovação de publicação de 20 de novembro de 2026](reviews/2026-11-20-publicacao/README.md) registra o escopo do snapshot v0.1.0, as três fontes aprovadas, o mapeamento de IDs e as limitações conhecidas. O snapshot é reproduzível a partir das revisões e pode ser conferido com `python scripts/update_data.py --check` e `python scripts/validate_publication.py`.
 
-O [lote de departamentos da mesma data](reviews/2026-10-16-departamentos/README.md) reúne 49 candidatos nas sete páginas da PLD, com 48 decisões técnicas aprovadas, uma pendente para a grafia do DEM e 15 exclusões conferidas. A completude e a atualidade das listas permanecem não verificadas.
+O [lote de 16 de outubro de 2026](reviews/2026-10-16-campi-centros/README.md) registra a primeira conferência real de sete câmpus e sete centros, com capturas locais identificadas por hash e decisões registradas.
 
-O [lote de cursos de 17 de outubro de 2026](reviews/2026-10-17-cursos/README.md) confere 67 detalhes do índice presencial da PEN, com 66 decisões técnicas aprovadas e uma pendente para os valores de Engenharia Agrícola. A EaD permanece fora do lote, e as chaves de revisão não são IDs permanentes da API.
+O [lote de departamentos da mesma data](reviews/2026-10-16-departamentos/README.md) reúne 49 candidatos nas sete páginas da PLD, com 48 decisões técnicas aprovadas, uma pendente para a grafia do DEM e 15 exclusões conferidas. A completude e a atualidade das listas permanecem não verificadas no snapshot publicado.
 
-As [decisões complementares de 22 de outubro](reviews/2026-10-22-pendencias/README.md) confrontam o DEM com seu regulamento e Engenharia Agrícola com o PPC vinculado e um edital da DAA. Os dois valores incompatíveis foram rejeitados nas novas revisões, com normalizações propostas e delimitadas pelas evidências. Os lotes anteriores permanecem preservados; as propostas ainda não são aplicadas pela API.
+O [lote de cursos de 17 de outubro de 2026](reviews/2026-10-17-cursos/README.md) confere 67 detalhes do índice presencial da PEN, com 66 decisões técnicas aprovadas e uma pendente para os valores de Engenharia Agrícola. A EaD permanece fora do lote, e os IDs publicados vêm do mapeamento persistente, não da chave de revisão.
 
-1. Revisar as decisões complementares e incorporar as normalizações na futura geração do snapshot, conferindo a base e a abrangência de cada evidência.
-2. Resolver cobertura da EaD, unidade das ofertas, vínculos e IDs estáveis de cursos.
-3. Verificar condições de reutilização das fontes e aprovar o snapshot completo antes de publicar os primeiros JSON reais.
+As [decisões complementares de 22 de outubro](reviews/2026-10-22-pendencias/README.md) confrontam o DEM com seu regulamento e Engenharia Agrícola com o PPC vinculado e um edital da DAA. Os dois valores incompatíveis foram rejeitados nas novas revisões, com normalizações propostas e delimitadas pelas evidências. A normalização do DEM é aplicada; a proposta de Engenharia Agrícola permanece ignorada por estar fora do modelo canônico.
+
+Próximas etapas, sem alterar automaticamente o snapshot publicado:
+
+1. Ampliar a cobertura de cursos EaD e definir a unidade de ofertas, turnos e habilitações.
+2. Comprovar vínculos entre cursos, centros e departamentos antes de preenchê-los.
+3. Revisar a completude e a atualidade das listas de departamentos.
+4. Revisar as fontes aprovadas dentro do intervalo de 180 dias e registrar novas decisões antes de substituir os dados.
 
 O projeto não coleta dados pessoais, conteúdos restritos ou informações que exijam autenticação.

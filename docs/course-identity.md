@@ -8,13 +8,20 @@ O índice da PEN fornece um link de curso sob um câmpus. A prévia trata esse p
 
 O coletor de detalhe monta `id_candidato` como `<campus_id>-<nome-normalizado>`: letras minúsculas sem acentos e grupos de outros caracteres substituídos por hífens. Ele verifica se há colisões entre todas as entradas do índice local. O código hexadecimal da URL da PEN é preservado como referência da fonte e não é tratado como ID institucional.
 
-Esse ID é apenas uma proposta interna. Uma mudança de nome pode mudá-lo, e duas denominações parecidas podem colidir. Antes de publicar `cursos.json`, é preciso aprovar e registrar um mapeamento persistente dos IDs e revisar mudanças de nome ou URL sem trocar IDs automaticamente.
+Esse ID é apenas uma proposta interna do coletor. Uma mudança de nome pode
+mudá-lo, e duas denominações parecidas podem colidir. O snapshot publicado não
+usa esse valor diretamente: ele aplica o mapeamento persistente de
+[`reviews/course-ids.json`](../reviews/course-ids.json), indexado por `campus_id`
+e `url_detalhe`. O pipeline exige ID para todo curso aceito, recusa IDs repetidos
+e informa mapeamentos não utilizados. Uma mudança de nome não troca o ID; uma URL
+nova exige uma nova entrada e uma nova decisão de revisão. O escopo publicado está
+registrado na [aprovação da v0.1.0](../reviews/2026-11-20-publicacao/README.md).
 
 ## Limites da página de detalhe
 
 Os blocos de informações acadêmicas seguem a ordem de `Turno`, `Habilitação/Habilitações` e `Grau Acadêmico` na página. Itens de habilitação e grau podem ser elementos `<li>` ou linhas iniciadas por `-` e separadas por `<br>`, como em Letras. Uma lista de habilitações sob um turno permanece no mesmo bloco; o coletor não deduz qual grau corresponde a cada habilitação nem interpreta “matutino ou noturno” como duas ofertas. Páginas como Ciências Biológicas, Letras e Música mostram por que essa revisão é necessária.
 
-O detalhe é conferido com o título e o câmpus do índice salvo. A origem dos arquivos não é autenticada. A captura dos campos acadêmicos usa rótulos e separadores HTML (`<br>`, parágrafos e itens de lista); quebras de formatação no código da página viram espaços. São aceitos `Turno` e `Turnos`, inclusive quando os dois-pontos ficam fora de `<strong>`. Um título destacado antes dos campos acadêmicos é ignorado. Os rótulos `Prazo Mínimo`, `Prazo de Conclusão`, `Prazo Mínimo de Conclusão`, `Prazo Máximo de Conclusão` e `Prazo para Conclusão` delimitam valores ignorados; a leitura continua no próximo campo acadêmico, como ocorre em [Letras](https://www.pen.uem.br/site/public/curso/c7a280761ab813afa3f63f1f9aa7eada0c7914c5). Outros rótulos de prazo exigem revisão. Rótulos pessoais encerram a captura; trechos avulsos ambíguos e contatos detectados em valores acadêmicos causam erro. O coletor não lê conteúdo de documentos vinculados e não extrai campos de coordenação, contatos ou textos descritivos. A cobertura da EaD, os vínculos com centro e departamento, a completude e as condições de reutilização continuam pendentes. Nenhum resultado desta etapa é publicável.
+O detalhe é conferido com o título e o câmpus do índice salvo. A origem dos arquivos não é autenticada. A captura dos campos acadêmicos usa rótulos e separadores HTML (`<br>`, parágrafos e itens de lista); quebras de formatação no código da página viram espaços. São aceitos `Turno` e `Turnos`, inclusive quando os dois-pontos ficam fora de `<strong>`. Um título destacado antes dos campos acadêmicos é ignorado. Os rótulos `Prazo Mínimo`, `Prazo de Conclusão`, `Prazo Mínimo de Conclusão`, `Prazo Máximo de Conclusão` e `Prazo para Conclusão` delimitam valores ignorados; a leitura continua no próximo campo acadêmico, como ocorre em [Letras](https://www.pen.uem.br/site/public/curso/c7a280761ab813afa3f63f1f9aa7eada0c7914c5). Outros rótulos de prazo exigem revisão. Rótulos pessoais encerram a captura; trechos avulsos ambíguos e contatos detectados em valores acadêmicos causam erro. O coletor não lê conteúdo de documentos vinculados e não extrai campos de coordenação, contatos ou textos descritivos. A cobertura da EaD, os vínculos com centro e departamento e a completude continuam fora do escopo do snapshot v0.1.0. A saída do coletor permanece `publicavel: false`; a publicação é registrada separadamente.
 
 ## Conferência real inicial
 
@@ -36,6 +43,8 @@ ingresso de 2026 corrobora a categoria Bacharelado no CAR.
 
 A nova decisão rejeita o valor candidato e propõe a redação específica do PPC,
 sem alterar o grau profissional extraído ou o ID candidato. A proposta não é
-aplicada pelo coletor. A categoria de formação do edital e o grau profissional
-não devem ser tratados como campos equivalentes. A unidade de curso e sua
-abrangência por turma ainda precisam ser definidas antes da publicação.
+aplicada pelo coletor nem pelo modelo canônico: o snapshot v0.1.0 mantém o valor
+observado e registra a divergência como limitação. A categoria de formação do
+edital e o grau profissional não devem ser tratados como campos equivalentes. A
+unidade de curso e sua abrangência por turma permanecem fora do escopo publicado
+e exigem nova decisão de modelagem.

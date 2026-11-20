@@ -17,4 +17,31 @@ jobs:
       - run: python -m ruff format --check .
       - run: python -m pytest
       - run: python scripts/validate_sources.py
-      - run: python scripts/validate_data.py
+      - run: python scripts/validate_data.py --require
+      - run: python scripts/update_data.py --check
+      - run: python scripts/validate_publication.py
+      - run: docker build -t uem-api:ci .
+      - name: Smoke test the published container
+        run: |
+          trap 'docker stop uem-api-ci >/dev/null 2>&1 || true' EXIT
+          docker run --rm -d --name uem-api-ci -p 8000:8000 uem-api:ci
+          for attempt in $(seq 1 30); do
+            if curl -fsS http://127.0.0.1:8000/v1/health > /tmp/uem-health.json; then
+              break
+            fi
+            sleep 1
+          done
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          health = json.loads(Path("/tmp/uem-health.json").read_text(encoding="utf-8"))
+          assert health["status"] == "ready", health
+          assert health["datasets"] == {
+              "campi": 7,
+              "centros": 7,
+              "departamentos": 49,
+              "cursos": 67,
+          }, health
+          print(health)
+          PY
