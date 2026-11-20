@@ -8,6 +8,10 @@ __pycache__
 .env
 tests
 docs
+reviews
+sources
+scripts
 dist
 build
 *.egg-info
+data/.snapshot-*
