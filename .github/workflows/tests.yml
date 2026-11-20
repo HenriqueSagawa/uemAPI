@@ -16,3 +16,5 @@ jobs:
       - run: python -m ruff check .
       - run: python -m ruff format --check .
       - run: python -m pytest
+      - run: python scripts/validate_sources.py
+      - run: python scripts/validate_data.py

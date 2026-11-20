@@ -2,7 +2,6 @@
 
 import argparse
 import json
-import re
 from dataclasses import asdict, dataclass, field
 from datetime import datetime
 from html.parser import HTMLParser
@@ -13,9 +12,9 @@ from app.collectors.cursos import (
     DETAIL_URL,
     SOURCE_URL,
     CourseCandidate,
-    _normalize,
     collect_courses,
 )
+from app.core.normalize import fold, slug
 from app.schemas.common import Fonte
 
 DETAIL_CAMPUSES = {
@@ -230,7 +229,7 @@ def _parse_academic_blocks(parts: list[tuple[str, str]]) -> list[AcademicBlock]:
         if not value:
             continue
         if kind == "heading":
-            normalized_heading = _normalize(value.removesuffix(":"))
+            normalized_heading = fold(value.removesuffix(":"))
             if (
                 normalized_heading not in ACADEMIC_LABELS
                 and normalized_heading not in IGNORED_LABELS
@@ -268,7 +267,7 @@ def _parse_academic_blocks(parts: list[tuple[str, str]]) -> list[AcademicBlock]:
         else:
             inline_value = ""
         if kind == "label":
-            normalized = _normalize(value)
+            normalized = fold(value)
             field_name = ACADEMIC_LABELS.get(normalized)
             if field_name is None:
                 if normalized in IGNORED_LABELS:
@@ -316,10 +315,10 @@ def _parse_academic_blocks(parts: list[tuple[str, str]]) -> list[AcademicBlock]:
 
 
 def candidate_id(course: CourseCandidate) -> str:
-    slug = re.sub(r"[^a-z0-9]+", "-", _normalize(course.nome)).strip("-")
-    if not slug:
+    candidate = slug(course.nome)
+    if not candidate:
         raise CourseDetailSourceError("nome sem ID candidato válido")
-    return f"{course.campus_id}-{slug}"
+    return f"{course.campus_id}-{candidate}"
 
 
 @dataclass
@@ -368,9 +367,9 @@ def collect_course_detail_from_candidate(
         raise
     except ValueError as exc:
         raise CourseDetailSourceError("HTML de detalhe inválido") from exc
-    if _normalize(title) != _normalize(course.nome):
+    if fold(title) != fold(course.nome):
         raise CourseDetailSourceError("título do detalhe difere do índice")
-    if DETAIL_CAMPUSES.get(_normalize(breadcrumb)) != course.campus_id:
+    if DETAIL_CAMPUSES.get(fold(breadcrumb)) != course.campus_id:
         raise CourseDetailSourceError("câmpus do detalhe difere do índice")
     fonte = Fonte(source_id="cursos_graduacao", url=course.url_detalhe, consultado_em=consultado_em)
     return CourseDetailCollection(course, candidate_id(course), blocks, fonte)
